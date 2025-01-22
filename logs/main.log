@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "/home/junkais/test/small_sim.py", line 12, in <module>
+    from helpers.model import *
+  File "/home/junkais/test/helpers/model.py", line 2, in <module>
+    import openai
+ModuleNotFoundError: No module named 'openai'
+Traceback (most recent call last):
+  File "/home/junkais/test/small_sim.py", line 12, in <module>
+    from helpers.model import *
+  File "/home/junkais/test/helpers/model.py", line 2, in <module>
+    import openai
+ModuleNotFoundError: No module named 'openai'
+Traceback (most recent call last):
+  File "/home/junkais/test/small_sim.py", line 12, in <module>
+    from helpers.model import *
+  File "/home/junkais/test/helpers/model.py", line 2, in <module>
+    import openai
+ModuleNotFoundError: No module named 'openai'

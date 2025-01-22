@@ -1,0 +1,3506 @@
+{
+  "id": "legalization of drugs",
+  "claims": {
+    "connector": "I more or less agree with what my peers are saying here. And therefore, all in all,",
+    "pro": [
+      " legalization of drugs is a good idea",
+      " all drugs should be legal"
+    ],
+    "con": [
+      " legalization of drugs is a bad idea",
+      " all drugs should be illegal"
+    ]
+  },
+  "intro": "Let's discuss legalization of drugs!",
+  "prompt": "I more or less agree with what my peers are saying here. Regarding the legalization of drugs, I'd just add the following thought:\n",
+  "initial_posts": [
+    {
+      "type": "pro",
+      "text": "All drugs  should be legalised.\n\n  The enforcement of the criminalisation of drugs has harmed communities around the world and should be stopped."
+    },
+    {
+      "type": "pro",
+      "text": "Criminalising the activity of drug users has negative effects on individuals, their families, and society."
+    },
+    {
+      "type": "pro",
+      "text": "The incarceration of drug users negatively impacts their families."
+    },
+    {
+      "type": "pro",
+      "text": "Research has found that the children of incarcerated adults are more likely to develop emotional and behavioural problems (p. 117 )."
+    },
+    {
+      "type": "pro",
+      "text": "Some studies indicate that the children of incarcerated parents are around six times more likely  to eventually become incarcerated themselves."
+    },
+    {
+      "type": "pro",
+      "text": "Incarceration tends to cost governments significant amounts of money that may otherwise be used to fund foster care, adoption agencies, and educational services that could support the children of drug users (p. 117 )."
+    },
+    {
+      "type": "pro",
+      "text": "The incarceration of drug offenders is highly expensive (p. 3 )."
+    },
+    {
+      "type": "pro",
+      "text": "Corrections expenditures constitute the second-fastest growing expense in US state budgets (p. 7 )."
+    },
+    {
+      "type": "con",
+      "text": "In some cases, the forced removal of a substance abuser from their family environment via incarceration may have a net positive impact  on other members of that family."
+    },
+    {
+      "type": "pro",
+      "text": "If drugs were legalised, prison systems would be less overcrowded, which is a significant social issue  in the US."
+    },
+    {
+      "type": "pro",
+      "text": "Prison overcrowding often means that inmates do not receive the resources and care they need. Hunger, health issues and a lack of access to medicine often plague overcrowded prisons ."
+    },
+    {
+      "type": "pro",
+      "text": "As of 2020, there were over 450,000  people behind bars for drug-related crimes in the US, representing 1 in 5 inmates."
+    },
+    {
+      "type": "con",
+      "text": "Given that this is mostly a problem in the US, it implies a problem with the US legal system rather than with the banning of drugs."
+    },
+    {
+      "type": "con",
+      "text": "Many other countries  have significantly more overcrowded prisons than the US does. Legalisation could help resolve this serious issue in those countries, too."
+    },
+    {
+      "type": "pro",
+      "text": "It is too easy to convict suspects  in the US. This is not as true in most other countries, meaning that drug legalisation would have little impact on prison overcrowding elsewhere."
+    },
+    {
+      "type": "con",
+      "text": "In any legal system where drug use is prohibited by law, these otherwise innocent drug users will always be criminalised."
+    },
+    {
+      "type": "pro",
+      "text": "The methods required for policing drugs are often dangerous and invasive."
+    },
+    {
+      "type": "pro",
+      "text": "In the US, police officers use 'no-knock raids' to surprise potentially dangerous drug offenders, which frequently leads to the deaths  of innocent civilians ."
+    },
+    {
+      "type": "con",
+      "text": "Since the high-profile killing of innocent civilian Breonna Taylor in a drugs raid in 2020, many US states and districts have introduced or considered proposals to completely or partially ban  no-knock warrants."
+    },
+    {
+      "type": "pro",
+      "text": "Almost 90%  of wiretaps are for drug trafficking in the US. This constitutes a major violation of citizens' privacy."
+    },
+    {
+      "type": "con",
+      "text": "It is not necessary to end drug prohibition in order to mitigate cruel and dangerous policing practices: adapting  the criminal justice system with regards to drug law enforcement would be sufficient."
+    },
+    {
+      "type": "pro",
+      "text": "Imprisonment has negative long-term repercussions for individuals."
+    },
+    {
+      "type": "pro",
+      "text": "Incarceration often creates, or else fails to treat, substance use disorders or other mental illnesses."
+    },
+    {
+      "type": "pro",
+      "text": "Studies have found that, compared with the overall population, former inmates are 40 times more likely  to die from an opioid overdose in the two-week period following release, and 10-18 times more likely  in the year following release."
+    },
+    {
+      "type": "pro",
+      "text": "Many prisons around the world force prisoners into inhumane conditions, thereby damaging their mental health. (p. 1 )"
+    },
+    {
+      "type": "con",
+      "text": "Poor mental health in prison has become a major focus of prison reform , so strategies to mitigate this issue will likely be prioritised when prison policy changes are implemented."
+    },
+    {
+      "type": "pro",
+      "text": "Those who have been to prison find it very hard to find employment upon their release (p. 3 )."
+    },
+    {
+      "type": "pro",
+      "text": "Due to this, many who leave prison often continue to commit crime  to make money."
+    },
+    {
+      "type": "pro",
+      "text": "Many who go to prison suffer from stigma , affecting their employment opportunities and their daily life."
+    },
+    {
+      "type": "con",
+      "text": "More governments and corporations have recognized the stigma surrounding former prison inmates and begun hiring  a greater number of them, which at least partially mitigates this issue."
+    },
+    {
+      "type": "con",
+      "text": "Some countries have started expunging  marijuana convictions from the records of former criminals, making it easier for them to find jobs."
+    },
+    {
+      "type": "con",
+      "text": "Time spent in prison can have a lasting positive impact on an offender's life by deterring them from future crime and rehabilitating them via training and well-being programmes."
+    },
+    {
+      "type": "pro",
+      "text": "Imprisonment significantly increases  employment rates among former convicts due to the increased likelihood of their participation in training programmes while in prison, which in turn has a highly positive impact on recidivism rates and thus on the overall amount of time spent out of prison."
+    },
+    {
+      "type": "con",
+      "text": "Recidivism rates are often very high , indicating that prisons are not effective deterrents of crime."
+    },
+    {
+      "type": "con",
+      "text": "The number of arrests for drug-related crimes are already plateauing  or slightly declining  in many parts of the world, indicating a less aggressive approach to policing drugs."
+    },
+    {
+      "type": "pro",
+      "text": "Due to widescale controversies regarding aggressive and discriminatory policing, many police forces and governments have felt pressure  to change their styles of policing."
+    },
+    {
+      "type": "con",
+      "text": "In 2018-19, 59% of all stop-and-searches conducted in the UK were drug-related (p. 34 ). This indicates that, even while drug arrests have decreased, heavy drug policing is still highly prevalent."
+    },
+    {
+      "type": "con",
+      "text": "Drug offenses still made up almost 15%  of all arrests in the US in 2019, and drug arrests have begun to increase again  since 2015."
+    },
+    {
+      "type": "con",
+      "text": "It is likely that many of those arrests are not solely for drug use or possession but are also for violence or gang activity, which would still be policed under legalisation."
+    },
+    {
+      "type": "pro",
+      "text": "Many police forces have explicitly changed their strategies for drug policing, focusing less on marijuana use or individual dealers and more on diverting users to treatment (pp. 2-4 )."
+    },
+    {
+      "type": "con",
+      "text": ""
+    },
+    {
+      "type": "pro",
+      "text": "Drug prohibition has been used as a racist policy for the mass incarceration of people of color."
+    },
+    {
+      "type": "con",
+      "text": "Other countries, like Japan , have strict drug laws which are not used as instruments of social oppression."
+    },
+    {
+      "type": "con",
+      "text": "Drug legalisation would not necessarily improve the conditions of those discriminated against: there are still many other forms of systemic racism unrelated to drug prohibition."
+    },
+    {
+      "type": "con",
+      "text": "The fact that other systematic racial issues exist does not mean this particular racist law should not be challenged."
+    },
+    {
+      "type": "pro",
+      "text": "Supremacist or racist governments will always find ways to criminalise minority groups. For example, 'loitering ' was considered a criminal offence for which black men could be sent to unpaid labour camps for years until the early 20th century."
+    },
+    {
+      "type": "pro",
+      "text": "Racist policing has been observed in many other forms  of law enforcement, such as in police traffic surveillance."
+    },
+    {
+      "type": "pro",
+      "text": "In the US, the War on Drugs has led to the mass incarceration  of African Americans and other minority groups."
+    },
+    {
+      "type": "pro",
+      "text": "Incarceration rates for selling or possessing drugs are higher for black youths than white youths, despite the fact that white youths are more likely  to sell drugs than their black peers."
+    },
+    {
+      "type": "con",
+      "text": "Racial disparities in US prisons have decreased . While a gap still exists, its reduction is an indication that other efforts to make policing less racist can be successful."
+    },
+    {
+      "type": "con",
+      "text": "Drug legalisation will not remove the underlying incentives that governments have for pursuing mass incarceration. Stopping those causes is a more effective way to lessen these racist arrests."
+    },
+    {
+      "type": "pro",
+      "text": "The prevalence of racist mass incarceration in the US is in part due to the large influence of private prisons , who profit from - and thus are incentivised to fuel - growing numbers of arrests."
+    },
+    {
+      "type": "con",
+      "text": "Only 8%  of American prisoners are in private prisons and many states do not use them at all. Causes of the mass incarceration problem, therefore, go far beyond the influence of private prisons."
+    },
+    {
+      "type": "pro",
+      "text": "Private prison companies often bribe judges  to give longer sentences to those on trial. This will continue to happen regardless of drug legalisation."
+    },
+    {
+      "type": "con",
+      "text": "Often, states have had to rely on private prisons to deal with an exploding number  of arrests. If significantly fewer people are being charged and arrested for drug crimes in the first place, private prisons may have less influence."
+    },
+    {
+      "type": "con",
+      "text": "Many other strategies to target the sources of racist policing are often not as popular. Drug legalisation may be an important first step to solving the problem without triggering large sociopolitical backlash."
+    },
+    {
+      "type": "pro",
+      "text": "More radical  solutions to systemic racism within the police force are often very unpopular."
+    },
+    {
+      "type": "pro",
+      "text": "Drug legalisation has become a popular policy  in many countries."
+    },
+    {
+      "type": "con",
+      "text": "Such a strategy may breed political fatigue , where voters are less responsive to criminal justice reform once they feel as though important changes have already been made."
+    },
+    {
+      "type": "pro",
+      "text": "Mass incarceration in the US has largely been caused by  a lingering commitment to the judicial priorities of the Founding Fathers and a reluctance to use other modes of punishment."
+    },
+    {
+      "type": "pro",
+      "text": "Historically, drug laws have been explicitly crafted as a means of oppressing minorities. They cannot be separated from that legacy."
+    },
+    {
+      "type": "pro",
+      "text": "The former US president Richard Nixon's War on Drugs was started  to target blacks and hippies."
+    },
+    {
+      "type": "pro",
+      "text": "The first drug laws  in the US were intended to discriminate against people of colour, including African-Americans and Mexican and Chinese migrants."
+    },
+    {
+      "type": "con",
+      "text": "The fact that drug prohibition has been used as a racist tool in the past does not mean that this will continue to be the case in the future."
+    },
+    {
+      "type": "con",
+      "text": "The tools used to fight drugs are intrinsically ones that control and discriminate against minorities. As long as there is a war on drugs, this subjugation will remain."
+    },
+    {
+      "type": "pro",
+      "text": "Drug policing intrinsically requires a significant amount of invasive policing and surveillance. Given this, it is hard to enforce drug laws against the most privileged in society."
+    },
+    {
+      "type": "pro",
+      "text": "It is largely impossible to know if a suspect possesses drugs without searching them . Police officers may be apprehensive to conduct these searches on those who may be able to complain about or sue them."
+    },
+    {
+      "type": "pro",
+      "text": "Communities with influence and money are often not seen as dangerous or crime-ridden even if drug use within them is rampant. This means that drug policing is concentrated  in poorer places."
+    },
+    {
+      "type": "pro",
+      "text": "Many of those who are involved in drug trafficking come from poverty . Criminalizing drugs, then, often means targetting those in poverty."
+    },
+    {
+      "type": "con",
+      "text": "Police should try to engage in discussion with the communities  they enter on how best to police drugs without causing societal harms, creating a more democratic form of policing."
+    },
+    {
+      "type": "con",
+      "text": "Community policing is often used as a justification to expand  police forces, which in the long-term leads to more drug arrests and surveillance."
+    },
+    {
+      "type": "pro",
+      "text": "Many places have invested more in sensitivity training  for the police, hoping to change the internal culture of police forces to make them less racist."
+    },
+    {
+      "type": "con",
+      "text": "Such training most often fails  to change the actions of police officers."
+    },
+    {
+      "type": "con",
+      "text": "Such harms could be avoided through decriminalisation rather than through full legalisation."
+    },
+    {
+      "type": "con",
+      "text": "Non-carceral drug punishment can be incredibly debilitating for people as well."
+    },
+    {
+      "type": "pro",
+      "text": "Even misdemeanor charges  on someone's permanent record can cause them great difficulties when trying to find jobs, housing and even loans."
+    },
+    {
+      "type": "pro",
+      "text": "Fines for the possession or sale of drugs in decriminalized systems can be between hundreds and thousands of dollars ."
+    },
+    {
+      "type": "con",
+      "text": "The average fine for drug possession is likely to have a more temporarily negative impact on an individual than long-term detention would."
+    },
+    {
+      "type": "pro",
+      "text": "Individuals may be issued a warrant  and face incarceration if they cannot pay fines or miss court dates relating to the possession or sale of drugs in a decriminalised context."
+    },
+    {
+      "type": "con",
+      "text": "'Defelonization ' is merely one possible part of complete decriminalisation. Other methods  to help people avoid fines and non-carceral punishments can also be used."
+    },
+    {
+      "type": "pro",
+      "text": "Decriminalisation would likely lead to police targeting poor or minority communities to a much lesser extent."
+    },
+    {
+      "type": "pro",
+      "text": "88%  of marijuana-related arrests in the US between 2001 and 2010 were simply for possession, with people of colour accounting for a disproportionately high number  of such arrests. Under decriminalisation, many of these people would not be arrested."
+    },
+    {
+      "type": "con",
+      "text": "Under decriminalisation, there often still exist restrictions and thus arrests surrounding the public use and trade of drugs. These mean that problematic policing practices can still continue."
+    },
+    {
+      "type": "pro",
+      "text": "When the penalties for drug-related offenses decrease, there is often less of an administrative burden on police for arresting people, meaning they are more likely to do it (p. 3 )."
+    },
+    {
+      "type": "pro",
+      "text": "In the 1970s when New York and California partially decriminalized drugs, they found the number of drug-possession arrests actually increased as police officers took advantage of legal loopholes (p. 2 )."
+    },
+    {
+      "type": "pro",
+      "text": "In many countries, there exist limits on publicly consuming alcohol . Even under full legalisation, it is likely that similar restrictions will be applied to drugs."
+    },
+    {
+      "type": "con",
+      "text": "Public display laws are typically not enforced as heavily when the substance being consumed is legal."
+    },
+    {
+      "type": "pro",
+      "text": "If drinkers can find ways to hide their public alcohol use , they are typically not bothered by police. A similar norm may emerge for drug use."
+    },
+    {
+      "type": "con",
+      "text": "Given the stigma surrounding drugs and the racism  that often informs their policing, it is likely that police will enforce these rules more strictly."
+    },
+    {
+      "type": "pro",
+      "text": "In several US states that have decriminalised or legalised marijuana, it is still illegal  to use it publicly."
+    },
+    {
+      "type": "pro",
+      "text": "Drug-dealing is still a criminal offense  under decriminalisation, so police will likely still heavily monitor, and make arrests in, areas where they suspect it is happening."
+    },
+    {
+      "type": "con",
+      "text": "It may become easier for dealers to circumvent or else abide by persisting laws under decriminalisation, as there will be clear limits on how much one is allowed to possess without facing consequences."
+    },
+    {
+      "type": "pro",
+      "text": "Many decriminalisation proposals, including the law passed by New York in 2021 , still treat possession of large quantities of drugs as felonies."
+    },
+    {
+      "type": "pro",
+      "text": "Given that countries such as the US  have dedicated drug-specific law enforcement agencies, it is likely that any illegal drug-dealing will continue to be met with exaggerated force under decriminalisation."
+    },
+    {
+      "type": "con",
+      "text": "Given that problematic law enforcement is currently such a focal issue  in the discussion of drug legalisation, if police continue to abuse their power, further measures may be taken to stop this."
+    },
+    {
+      "type": "pro",
+      "text": "Police reforms are already popular and being proposed around the world , meaning that there will be significant attention paid to potential continued abuses of power under decriminalisation."
+    },
+    {
+      "type": "con",
+      "text": "If police abuse and arrests do not diminish under decriminalisation, it may lead to more support for a return to prohibition. As such, sustainable drug policy reform should legalise all drugs."
+    },
+    {
+      "type": "con",
+      "text": "Even if police action continues, fewer people will be arrested overall and more of those who do face legal actions will have to face less severe consequences."
+    },
+    {
+      "type": "pro",
+      "text": "Under decriminalisation, there would be less need for police officers to monitor street-level drug interactions , which may alleviate a source of great tension between the police and communities."
+    },
+    {
+      "type": "pro",
+      "text": "Such police practices have led to mistrust and enmity between police officers and youth  in minority communities (p. 5 )."
+    },
+    {
+      "type": "con",
+      "text": "If it becomes harder to justify street-level policing, this may motivate police to use even more invasive methods  to find evidence of illegal drug-dealing."
+    },
+    {
+      "type": "pro",
+      "text": "Most proposals for decriminalisation replace criminal penalties with civil ones that often require users to seek treatment  or refer them to support services, which may not automatically happen in a context of complete legalisation. Decriminalisation may thus be more effective than legalisation at reducing problematic drug use."
+    },
+    {
+      "type": "con",
+      "text": "Many states would be unable to fund treatment services under a decriminalisation model, given they would not have additional tax revenue from legalised drug commerce."
+    },
+    {
+      "type": "con",
+      "text": "Governments could strike deals with privately-owned facilities, allowing those found in possession of or dealing drugs to access high-quality treatment without the need for significant additional state funding."
+    },
+    {
+      "type": "con",
+      "text": "Decriminalisation is unlikely to stop many forms of structural discrimination against drug users."
+    },
+    {
+      "type": "pro",
+      "text": "In countries where individuals must rely on private health coverage, insurers often create barriers  to avoid covering drug-related treatments when they are decriminalised."
+    },
+    {
+      "type": "con",
+      "text": "While structural discrimination against drug users may still exist under decriminalisation, it will be easier for activists to raise awareness of this phenomenon in a context where drug use is not criminally chargeable."
+    },
+    {
+      "type": "pro",
+      "text": "When drug use is decriminalised, drug users may feel more comfortable and confident speaking out about the ways in which the stigma they face has been institutionalised."
+    },
+    {
+      "type": "con",
+      "text": "Under decriminalisation, drug use will likely still be seen as 'taboo' and illegal, meaning drug users will still face prejudice and discrimination. Only under legalisation would this not be the case."
+    },
+    {
+      "type": "con",
+      "text": "Given the existing stigma , fully legalising drugs may cause backlash, making it harder to address other issues surrounding stigma. Decriminalisation may be a useful incremental step."
+    },
+    {
+      "type": "pro",
+      "text": "Legalisation may be seen by many as 'too quick' of a change and a large challenge to the status quo (p. 6 ). This may make it harder to combat stigma."
+    },
+    {
+      "type": "pro",
+      "text": "It is easier for those refusing services  to drug users to justify their actions by claiming that users are still engaging in illegal behavior."
+    },
+    {
+      "type": "pro",
+      "text": "Decriminalisation may not prevent people from seeing drug users as 'criminals', because their acts will still be illegal."
+    },
+    {
+      "type": "pro",
+      "text": "The international War on Drugs has led to rich countries, such as the US, inflicting severe harm  on less powerful nations and their citizens."
+    },
+    {
+      "type": "pro",
+      "text": "The US-fuelled War on Drugs has had a devastating and deadly impact on Latin American countries (p. 7 )."
+    },
+    {
+      "type": "con",
+      "text": "The US government has given Colombia millions of dollars annually in aid as part of its international anti-drug strategy, with a focus placed on assisting those living in regions particularly affected by drugs (p. 1 )."
+    },
+    {
+      "type": "pro",
+      "text": "The War on Drugs has worsened conditions in Mexico, causing thousands of deaths ."
+    },
+    {
+      "type": "con",
+      "text": "Legalising drugs would simply lead to another form of Western global control, wherein governments and large corporations begin to take ownership of foreign land for drug production."
+    },
+    {
+      "type": "con",
+      "text": "Legalisation could help end  the drug wars in countries such as Mexico, eliminating the need for US interventions."
+    },
+    {
+      "type": "pro",
+      "text": "Legalisation could lead to middle- and low-level employees of drug cartels moving to legal work, if allowed, given the greater safety and security associated with the latter. This could hollow out cartels."
+    },
+    {
+      "type": "con",
+      "text": "The replacement of drug cartels with legal companies in areas like South America may simply further entrench these countries' roles as drug suppliers for affluent nations."
+    },
+    {
+      "type": "pro",
+      "text": "Legalisation may lead to a rush for Western corporations to take ownership of the fields where drug crops are grown, giving them increased power over many communities around the world."
+    },
+    {
+      "type": "pro",
+      "text": "In other industries, such as the oil industry, large multinational companies have bribed  powerful actors so as to be able to continue profiting from exploitative activities, fuelling corruption and human rights violations."
+    },
+    {
+      "type": "pro",
+      "text": "This may similarly destabilize areas in South America where drug fields are currently being run by cartels."
+    },
+    {
+      "type": "con",
+      "text": "Many drugs do not rely on such fields. Amphetamines can be produced in laboratories  and plants like marijuana can be grown indoors  in a variety of environments."
+    },
+    {
+      "type": "pro",
+      "text": "The War on Drugs has often been used as a pretext for the US to gain control over policymaking  in other countries, often through corruption and violence."
+    },
+    {
+      "type": "pro",
+      "text": "The US used drug-eradication strategies to prop up violent military forces  in the fight against drug production in the Andes."
+    },
+    {
+      "type": "con",
+      "text": "The most egregious acts committed by the US in the War on Drugs were part of their broader Cold War foreign policy. Those strategies are much less prominent today."
+    },
+    {
+      "type": "pro",
+      "text": "The US used anti-drug rhetoric to justify support for violent insurgent groups in Colombia  attempting to attack left-wing insurgents, especially during the 1980s."
+    },
+    {
+      "type": "pro",
+      "text": "The US used drug crimes as a justification to depose leaders who challenged them, most notably Panamanian leader Manuel Noriega ."
+    },
+    {
+      "type": "con",
+      "text": "The US continues today to support and implement policies that impoverish communities elsewhere and that cause violence , often committed by government forces."
+    },
+    {
+      "type": "con",
+      "text": "The legalisation of drugs would not likely stop the over-policing  of affected communities in countries like the US."
+    },
+    {
+      "type": "pro",
+      "text": "Crime and gang activity may initially continue in many areas after legalisation if there is a delay in the drug market shift, so police are likely to continue their current behavior."
+    },
+    {
+      "type": "con",
+      "text": "While it may not happen immediately, eventually the reduced need to police these areas will become apparent to police as more people buy drugs legally and criminal activity decreases."
+    },
+    {
+      "type": "pro",
+      "text": "Stubborn crime rates may lead to increased public support for more aggressive policing if some start to believe that the 'treating crime as a disease ' approach is not working."
+    },
+    {
+      "type": "pro",
+      "text": "Legalisation will not change many of the structural reasons for which excessive policing occurs in certain areas."
+    },
+    {
+      "type": "con",
+      "text": "No type of drug reform will be able to stop racist and aggressive policing. Drug legalisation would simply remove one pernicious avenue through which it is justified."
+    },
+    {
+      "type": "pro",
+      "text": "Local governments sometimes raise funds from fines , giving police an incentive to target vulnerable communities, who are unlikely to be able to appeal them. This will not change with legalisation."
+    },
+    {
+      "type": "pro",
+      "text": "What police define as 'dangerous' or 'gang' behavior is often subjective and influenced by implicit racism ."
+    },
+    {
+      "type": "con",
+      "text": "Legalisation would increase overall drug use."
+    },
+    {
+      "type": "pro",
+      "text": "Many people currently avoid using drugs primarily because they are illegal. If legalised, many of them may start."
+    },
+    {
+      "type": "con",
+      "text": "More people may start to use drugs if they are kept illegal, as their illegality gives them 'cool' and 'forbidden fruit ' status."
+    },
+    {
+      "type": "con",
+      "text": "Drug use would likely become more enticing to a wider demographic if companies were able to create marketing campaigns for drugs as they do for legal products such as cigarettes, alcohol, and fast food."
+    },
+    {
+      "type": "pro",
+      "text": "Private companies have a history of funding advertisements encouraging the use of products, such as tobacco , among young people."
+    },
+    {
+      "type": "con",
+      "text": "In a number of countries , the advertisement of cigarettes, alcohol, and fast food  is - or will soon be - restricted. The same model could be adopted for legalised drugs."
+    },
+    {
+      "type": "con",
+      "text": "Contemporary legalization proposals and campaigns typically or in many cases  do not  include such restrictions  with at least one health organization calling for such ."
+    },
+    {
+      "type": "con",
+      "text": "For those who use drugs as a means to rebel against the status quo, doing what corporations advertise would be seen as unattractive."
+    },
+    {
+      "type": "pro",
+      "text": "Alcohol advertisements have increased the number of young people who drink (p. 11 ). If advertising successfully promotes alcohol consumption, there is reason to believe it will do so for drugs, too."
+    },
+    {
+      "type": "con",
+      "text": "Corporations are often seen as disconnected and inauthentic  when they try to appeal to young people through 'trendy' advertising. Therefore, such marketing may not succeed."
+    },
+    {
+      "type": "con",
+      "text": "Many corporations are seen as 'cool' . If drug companies can market themselves in such a way, they should be able to stimulate demand even among skeptical users."
+    },
+    {
+      "type": "pro",
+      "text": "Without dealers whose flashy lifestyles  may look appealing to naive young people, drugs would lose some of their appeal."
+    },
+    {
+      "type": "con",
+      "text": "The forbidden fruit effect only applies to a small subset of all drug users; many users take drugs  for reasons unrelated to the allure of prohibited or dangerous substances."
+    },
+    {
+      "type": "pro",
+      "text": "The bandwagon effect  is another form of cognitive bias that means there could be many more new drug users if drugs are legalised, because their use will be popularised and normalised."
+    },
+    {
+      "type": "pro",
+      "text": "Where marijuana use has been legalised, smoking games  have grown in popularity, indicating that drug use for fun potentially becomes much more commonplace and normalised under legalisation."
+    },
+    {
+      "type": "pro",
+      "text": "Many young people start using drugs as a means of breaking the law. They will no longer have this motivation when drugs are legal."
+    },
+    {
+      "type": "con",
+      "text": "If drugs are legalised, young people who purposefully seek to break the law will simply take up other, potentially more dangerous illegal activities."
+    },
+    {
+      "type": "pro",
+      "text": "Some children engage in other illegal activities  such as shoplifting, dangerous driving, or vandalism as a way of rebelling and testing limits. Without illegal drugs, instances of these other risky behaviors may increase."
+    },
+    {
+      "type": "con",
+      "text": "While these activities are certainly dangerous, few among them carry health risks as grave as those associated with excessive drug use."
+    },
+    {
+      "type": "con",
+      "text": "Such activities may have risks which are as dangerous as drug-taking: young people may be arrested, spend time with criminals or engage in physical violence."
+    },
+    {
+      "type": "con",
+      "text": "Given that drug use will still be illegal for underage people, it will still be attractive to young people who seek to break the law."
+    },
+    {
+      "type": "pro",
+      "text": "Many young people purposefully break the law as a way to rebel and take risks ."
+    },
+    {
+      "type": "pro",
+      "text": "Legalising drugs may lead to many feeling as though drugs do not represent a significant danger and are therefore safe to consume."
+    },
+    {
+      "type": "con",
+      "text": "With educational campaigns, informative product packaging, and other awareness-raising policies, governments can make the negative effects of drugs clear and discourage excessive use even if they are legalised."
+    },
+    {
+      "type": "con",
+      "text": "People often do not trust official advice regarding drugs due to persistent and historical government misinformation."
+    },
+    {
+      "type": "pro",
+      "text": "The US government has previously supported  the claim that marijuana use causes individuals to rape, murder, or commit suicide."
+    },
+    {
+      "type": "con",
+      "text": "Trust in official advice may increase if the public were to see governments reverse their outdated approaches to drugs."
+    },
+    {
+      "type": "con",
+      "text": "Government signals are effective  at communicating information, especially to those who otherwise may not care or think too much about issues like drug legalisation."
+    },
+    {
+      "type": "pro",
+      "text": "Information about the content of legalised drugs would be more accurate and easier to find, helping people make more informed and safer choices."
+    },
+    {
+      "type": "pro",
+      "text": "Increased education and negative advertisements have helped to decrease  the number of tobacco smokers."
+    },
+    {
+      "type": "pro",
+      "text": "In the context of legalisation, education about drug use could become universally mandatory, just as patients being counselled on the effects of any new medications, treatments, or procedures is mandatory in healthcare settings ."
+    },
+    {
+      "type": "pro",
+      "text": "Many countries have mandated public health warning labels for all alcohol  and tobacco advertising and products."
+    },
+    {
+      "type": "pro",
+      "text": "The World Health Organization Framework Convention on Tobacco Control (WHO FCTC ), a supranational agreement that is legally binding to 181 ratifying countries, lays out universal standards on stating the dangers of tobacco in advertising and products."
+    },
+    {
+      "type": "con",
+      "text": "At present, the UK only has a system of self-regulation  with regards to health warning labels on alcohol-containing products."
+    },
+    {
+      "type": "con",
+      "text": "Whether young people choose to use drugs is often influenced most by their family , peers , and the media  they consume."
+    },
+    {
+      "type": "con",
+      "text": "If their government has banned drugs, this may be enough to make young people more skeptical of the safety of drugs even if their surrounding social sphere promotes drug use."
+    },
+    {
+      "type": "pro",
+      "text": "Young people are more likely to consume drugs if their friends and families  do so."
+    },
+    {
+      "type": "con",
+      "text": "The idea that illegal drugs are not necessarily more harmful than legal substances may in fact be a more accurate impression than the one given by current drugs classification systems."
+    },
+    {
+      "type": "pro",
+      "text": "In a multi-criteria analysis of a range of recreational drugs, alcohol and tobacco were given higher scores for physical and psychological damage done to the user than many other currently illegal drugs (p. 1562 )."
+    },
+    {
+      "type": "pro",
+      "text": "In an expert assessment  of the physical, psychological, and social harm caused by various recreational substances in the UK, it was found that alcohol and tobacco had harm ratings similar to drugs in the Class A and Class B categories of illicit substances respectively."
+    },
+    {
+      "type": "con",
+      "text": "Crack cocaine, heroin and methamphetamine are all more dangerous  to the user than alcohol, and these substances as well as cocaine, amphetamine and GHB are all more harmful to users than tobacco."
+    },
+    {
+      "type": "con",
+      "text": "Partially replacing  alcohol consumption with certain previously illegal drugs could be healthier and less dangerous for many people."
+    },
+    {
+      "type": "pro",
+      "text": "There is good evidence  that the health risks of marijuana are less than those of alcohol."
+    },
+    {
+      "type": "con",
+      "text": "Legal drugs may lead to more users mixing alcohol with other drugs, which would endanger their health  to a greater extent."
+    },
+    {
+      "type": "pro",
+      "text": "When legal, drug use may be seen as a normal activity that most people take part in."
+    },
+    {
+      "type": "pro",
+      "text": "Excessive consumption of alcohol, a legal substance, is now normalised  and even expected  in many cultures, even if  it was historically prohibited. If drugs are legalised, a similar cultural shift may occur."
+    },
+    {
+      "type": "pro",
+      "text": "While many people currently consume drugs, their use is often not very visible  since they must hide it from others. The increased visibility of drug consumption with legalisation may normalise drug use."
+    },
+    {
+      "type": "con",
+      "text": "Even when drugs are illegal, drug use is very widespread, especially within certain demographics . The use of drugs is thus already normalised."
+    },
+    {
+      "type": "pro",
+      "text": "If legalised, drug use may become more prominent in media and television, normalising it further. This may make users less reticent to experiment with them."
+    },
+    {
+      "type": "pro",
+      "text": "A UK study  found that people tend to see legal substances and illegal drugs that carry less severe penalties as less harmful than illegal drugs with higher penalties. This suggests a correlation between perception of substance-related harms and their legal status."
+    },
+    {
+      "type": "pro",
+      "text": "The legal repercussions of taking illegal drugs may deter many from using drugs."
+    },
+    {
+      "type": "con",
+      "text": "Several studies have found no relation between police enforcement of drug bans and overall levels of drug consumption in the general population."
+    },
+    {
+      "type": "pro",
+      "text": "While the US' drug law enforcement budget has risen by nearly 50%  since 2002, drug use since 2000 has been largely constant or decreasing  only slightly."
+    },
+    {
+      "type": "pro",
+      "text": "The UK House of Commons Committee on Science and Technology found no evidence  to support the deterrent effect of making drugs more or less illegal through differing classifications."
+    },
+    {
+      "type": "pro",
+      "text": "Singapore, along with other Southeast Asian countries, has successfully used strict drug prohibition laws to keep levels of drug use extremely low ."
+    },
+    {
+      "type": "con",
+      "text": "Despite such strict laws, the drug trade remains rampant  in many parts of Southeast Asia. Indeed, drug smuggling has gotten worse  in Singapore."
+    },
+    {
+      "type": "pro",
+      "text": "Those found using drugs in Singapore can face prison time. Those found selling drugs can even face the death penalty . These punishments act as immense deterrents, preventing people from committing such crimes."
+    },
+    {
+      "type": "con",
+      "text": "Among intravenous drug users (IDUs), studies have found that law enforcement has no effect  on drug use."
+    },
+    {
+      "type": "con",
+      "text": "The enforcement of drug bans rarely focuses on individuals using drugs recreationally. They tend to focus more on drug dealing and producing."
+    },
+    {
+      "type": "pro",
+      "text": "In the UK , police forces have stopped closely enforcing drug laws against casual marijuana users."
+    },
+    {
+      "type": "con",
+      "text": "There is often an incentive for police departments to focus on street-level possession and users, meaning that many who use drugs recreationally will be targetted."
+    },
+    {
+      "type": "pro",
+      "text": "Such arrests are easy to make and allow police forces to increase arrest numbers, which can often be politically beneficial  for police leaders and politicians."
+    },
+    {
+      "type": "pro",
+      "text": "Cracking down on large-scale, organised drug gangs can often be more expensive and more difficult  for police, leading them to focus more on the smaller-scale, more easily targetable cases of drug use or dealership."
+    },
+    {
+      "type": "con",
+      "text": "There exists great backlash  against the overpolicing of drug crimes, leading many police departments to shift their focus away from arresting users."
+    },
+    {
+      "type": "pro",
+      "text": "Drug crime is mostly fueled by drug gangs. This makes gangs the primary focus  of anti-drug policing."
+    },
+    {
+      "type": "pro",
+      "text": "Punishments for drug possession can often include fines and imprisonment ."
+    },
+    {
+      "type": "con",
+      "text": "First-time offences for possession are often quite lenient: in the UK, those discovered may be offered 'community resolutions '."
+    },
+    {
+      "type": "con",
+      "text": "Elsewhere, drug possession offences often remain on one's record , meaning there can be long-term costs of one-time drug use, including difficulties finding jobs."
+    },
+    {
+      "type": "pro",
+      "text": "If those convicted successfully complete their community resolutions, they can even have their drug arrest expunged from their record."
+    },
+    {
+      "type": "pro",
+      "text": "In the UK, drug possession can warrant punishments of up to seven years  in prison."
+    },
+    {
+      "type": "pro",
+      "text": "In US states with three strikes rules , illegal drug possession convictions can eventually lead to individuals facing life in prison."
+    },
+    {
+      "type": "pro",
+      "text": "Drug legalisation is likely to reduce the price of drugs."
+    },
+    {
+      "type": "pro",
+      "text": "A 2014 study  indicated that substances such as cocaine would be as much as ten times cheaper if legalised, which drug policy experts predict would at least triple the rates of hard substance misuse."
+    },
+    {
+      "type": "con",
+      "text": "In the event of drug legalisation, taxes  on legalised substances are often proposed. These would likely deter excessive or widespread drug use in the population."
+    },
+    {
+      "type": "con",
+      "text": "High prices of legalised drugs may push consumers back into the black market, where they can find cheaper drugs."
+    },
+    {
+      "type": "con",
+      "text": "As long as taxes do not make the net prices of legal drugs surpass those of the black market, legal ones will not necessarily be more expensive."
+    },
+    {
+      "type": "pro",
+      "text": "In some US states where marijuana is legal, there are still large marijuana black markets  due to regulations that increase the cost of legal marijuana."
+    },
+    {
+      "type": "pro",
+      "text": "High prices  may reduce the volume consumed by regular users, as they cannot afford to buy large quantities."
+    },
+    {
+      "type": "pro",
+      "text": "High prices  may discourage new users from trying drugs in the first place."
+    },
+    {
+      "type": "pro",
+      "text": "Sin taxes on currently legal substances such as alcohol and tobacco have been found to reduce  their consumption."
+    },
+    {
+      "type": "pro",
+      "text": "Since the legalisation of marijuana in some US states, its wholesale price has declined  every year."
+    },
+    {
+      "type": "pro",
+      "text": "Breaking the law imposes specific costs on sellers which do not apply to legal businesses."
+    },
+    {
+      "type": "pro",
+      "text": "The threat of being caught by law enforcement may discourage black market businesses from investing in productivity-increasing, immovable capital like expensive technology or machinery used in the production of drugs."
+    },
+    {
+      "type": "con",
+      "text": "Black market products are often cheaper because sellers do not have to abide by legal regulations and restrictions."
+    },
+    {
+      "type": "con",
+      "text": "Even if criminals were able to offer drugs at lower prices, people will likely still prefer to buy legal drugs."
+    },
+    {
+      "type": "con",
+      "text": "Cheaper black market alcohol  is highly popular and accounts for a substantial amount of total alcohol trade in many lower-income countries in Central and Latin America and Africa, despite alcohol being a legally purchasable substance in such countries."
+    },
+    {
+      "type": "pro",
+      "text": "People will likely not want to risk criminal punishment for buying illegal drugs when legal alternatives exist."
+    },
+    {
+      "type": "pro",
+      "text": "Buying drugs illegally is generally more inconvenient and logistically harder than buying them legally would be."
+    },
+    {
+      "type": "pro",
+      "text": "If convenience and chain stores that sell drugs become widespread, drugs can be ordered or bought at any time; in contrast, illegal dealers - who must necessarily remain hard to find - may be less reliable or readily available."
+    },
+    {
+      "type": "con",
+      "text": "Illegal drug dealers often operate as part of large geographical networks, meaning even customers living in very remote areas  or heavily monitored academic institutions  can get drugs easily delivered to, and dealt from, their doorstep."
+    },
+    {
+      "type": "con",
+      "text": "Most people begin trying drugs due to friends . This means that they already have connections allowing them to easily obtain drugs."
+    },
+    {
+      "type": "pro",
+      "text": "Currently, illegal producers keep costs down by using cheap substitute ingredients  to produce their drugs since they are not subject to any centralized form of quality control."
+    },
+    {
+      "type": "con",
+      "text": "If illegal drug producers use ingredients that are too cheap or dangerous, consumers will choose to buy from better dealers, incentivizing them to keep their quality relatively high."
+    },
+    {
+      "type": "pro",
+      "text": "Illegal businesses do not need to provide minimum wages or decent conditions for workers like legal businesses do. That means the cost of labor is lower for illegal drug businesses."
+    },
+    {
+      "type": "con",
+      "text": "Legal businesses often underpay and exploit  their workers, especially in low-income countries where most current drug production happens."
+    },
+    {
+      "type": "pro",
+      "text": "Worker exploitation in the drug trade is widespread ."
+    },
+    {
+      "type": "con",
+      "text": "Large corporations often have some say  in determining what regulations are created. It is likely that a balance will be reached to ensure the cost of regulations are not excessive."
+    },
+    {
+      "type": "pro",
+      "text": "Transporting drugs is more expensive for illegal dealers, as they incur additional costs attempting to evade law enforcement ."
+    },
+    {
+      "type": "pro",
+      "text": "Legal producers do not have to worry about having their supply taken by the police, and thus do not have to invest in measures, like increased security , to preempt such losses."
+    },
+    {
+      "type": "con",
+      "text": "Drug smugglers often use the same transportation methods as normal producers, particularly using cargo ships  where crews are unaware of the presence of drugs."
+    },
+    {
+      "type": "con",
+      "text": "Drug legalisation will likely produce highly inefficient corporate oligopolies, which will lead to higher prices."
+    },
+    {
+      "type": "pro",
+      "text": "Since Afghanistan accounts for more than two-thirds  of opium production, and cocaine production is concentrated in Latin America, large-scale access to these areas would be crucial to securing long-term profits as a legal recreational drugs provider. Only the largest international firms would be likely able to access such regions in this way."
+    },
+    {
+      "type": "con",
+      "text": "Governments can take measures to avoid oligopolistic practices. For example, many legalisation proposals  see nationalised drug stores as an attractive solution."
+    },
+    {
+      "type": "con",
+      "text": "Some research indicates that the markets of legalised substances such as alcohol are varied and not wholly oligopolistic ."
+    },
+    {
+      "type": "pro",
+      "text": "This has been the case in the beer industry, wherein the largest firms enjoy economies of scale  in production, leaving smaller businesses increasingly unable to compete."
+    },
+    {
+      "type": "con",
+      "text": "Illegal drug prices are steadily falling  on their own, meaning it is unlikely that legalisation will make drugs significantly cheaper than illegal alternatives."
+    },
+    {
+      "type": "con",
+      "text": "Even if illegal drug prices are falling, when drugs are illegal, sellers are able to artificially keep prices high."
+    },
+    {
+      "type": "pro",
+      "text": "Dealers can engage in price discrimination , where they charge clients whom they know to be wealthier a larger amount of money for the same amount of illegal drugs."
+    },
+    {
+      "type": "con",
+      "text": "The artificial increasing of prices by certain sellers simply encourages other dealers to offer lower prices so as to increase their market share."
+    },
+    {
+      "type": "con",
+      "text": "When drugs are illegal, it is harder for consumers to compare the prices of different sellers, creating less incentive for sellers to outcompete each other and lower their prices."
+    },
+    {
+      "type": "pro",
+      "text": "When drugs are illegal, dealers are unable to publicly market any changes in their prices."
+    },
+    {
+      "type": "pro",
+      "text": "There exists no easy or centralized place where users can compare the price and quality of different dealers' products when drugs are illegal."
+    },
+    {
+      "type": "con",
+      "text": "Online resources  have made it much easier for drug dealers to signal changes in price."
+    },
+    {
+      "type": "pro",
+      "text": "This would create a 'race to the bottom ' where companies repeatedly lower their product prices to keep them cheaper than those of rivals, so as to increase demand for their products."
+    },
+    {
+      "type": "pro",
+      "text": "Local dealers sometimes collectively engage in 'price-gouging '."
+    },
+    {
+      "type": "pro",
+      "text": "Over time, drug dealers have gotten better  at manufacturing and transporting drugs, decreasing their overall costs and allowing them to reduce prices."
+    },
+    {
+      "type": "con",
+      "text": "In many places where drugs have been legalised, their consumption has not increased."
+    },
+    {
+      "type": "con",
+      "text": "Following legalisation, Canada experienced shortages of cannabis , suggesting that legalisation had caused new individuals to begin using the drug."
+    },
+    {
+      "type": "con",
+      "text": "The shortages in Canada were the result of slow processing and packaging , rather than a dramatic increase in demand."
+    },
+    {
+      "type": "pro",
+      "text": "After legalisation, many stores were hit with unexpected demand  which quickly depleted their marijuana inventory."
+    },
+    {
+      "type": "pro",
+      "text": "Marijuana use in the Netherlands has not increased  following decriminalisation, and cannabis consumption is lower than that in countries with stricter rules, like the UK."
+    },
+    {
+      "type": "con",
+      "text": "In a 2018 UK poll, 26% of 18–24 year olds who had never previously tried cannabis stated that they would definitely or probably try it if it were legalised (p. 3 )."
+    },
+    {
+      "type": "pro",
+      "text": "In some cases, drug legalisation has actually lead to decreases in drug use."
+    },
+    {
+      "type": "pro",
+      "text": "Following decriminalisation, after a short period of increased consumption, drug use in Portugal fell below pre-decriminalisation levels ."
+    },
+    {
+      "type": "pro",
+      "text": "In the US state of Colorado, there has been a drop  in teen drug use following the legalisation of marijuana."
+    },
+    {
+      "type": "con",
+      "text": "In Colorado, youth marijuana use has been steadily increasing  since 2017."
+    },
+    {
+      "type": "con",
+      "text": "In the US, reductions in marijuana use among teens were seen across the country  in 2016, both in states which had legalised marijuana and in those who had not."
+    },
+    {
+      "type": "pro",
+      "text": "If legal, drugs will likely be easier for individuals to access, which may lead to more people trying them."
+    },
+    {
+      "type": "con",
+      "text": "There is no correlation between the availability of drugs and their frequency of use."
+    },
+    {
+      "type": "pro",
+      "text": "Substance abuse increased during the COVID-19  pandemic despite it being harder to access drugs during periods of lockdown. This indicates that psychological stress, rather than ease of access, is a primary determinant of frequent drug (mis)use."
+    },
+    {
+      "type": "con",
+      "text": "The current American opioid crisis, in which hundreds of thousands of people have become addicted  to and overdosed  on opioids, has been caused by easy access to certain opioids due to their legality."
+    },
+    {
+      "type": "con",
+      "text": "Many blame the current opioid crisis in the US on the irresponsible and criminal behavior of large pharmaceutical companies ."
+    },
+    {
+      "type": "pro",
+      "text": "Throughout the opioid crisis, pharmaceutical companies have heavily marketed their opioids as being medical necessities  to treat pain, and have paid doctors  to over-prescribe them."
+    },
+    {
+      "type": "con",
+      "text": "Many people rely on, and get addicted to, opioid medication primarily because they cannot afford  other forms of legal pain management, and not just because opioids are legal."
+    },
+    {
+      "type": "pro",
+      "text": "Since opioids like fentanyl can be obtained legally  with a prescription in the US, it has become much easier for individuals to access them, and consequently develop an addiction or overdose."
+    },
+    {
+      "type": "con",
+      "text": "Fentanyl-caused overdoses are usually the result of particularly potent, illegally-produced  analogues  of fentanyl mixed with other substances. Full legalisation of all forms of fentanyl would regulate and restrict the production of these harmful analogues."
+    },
+    {
+      "type": "pro",
+      "text": "Many of those who are addicted to opioids in the US initially began using them medicinally to deal with legitimate chronic pain  and health issues. That these individuals could access opioids easily and legally would have played a significant role in their choice to medicate with them."
+    },
+    {
+      "type": "con",
+      "text": "Many people have supported their addiction by buying illegal drugs  once their prescriptions have ended, indicating that accessibility is not the most significant barrier to addiction."
+    },
+    {
+      "type": "con",
+      "text": "Accessibility may play a significant role in preventing new, first-time addictions: 80%  of current US heroin users were misusing legal, prescription opioids before transitioning to heroin."
+    },
+    {
+      "type": "con",
+      "text": "Recent research concludes that the first opioid used by one-third  of all patients commencing treatment for opioid use disorder is heroin."
+    },
+    {
+      "type": "pro",
+      "text": "Other countries, where access to opioids is more controlled , have not experienced such crises."
+    },
+    {
+      "type": "pro",
+      "text": "Countries in Europe have far fewer cases of opioid-related addiction because opioids are far harder  to access, indicating a relationship between accessibility and addiction."
+    },
+    {
+      "type": "pro",
+      "text": "Legalising drugs will likely make it a lot easier for young people to get access to them, which may increase drug use among this demographic."
+    },
+    {
+      "type": "con",
+      "text": "Surveys of young people indicate that it is already very easy for them to access illegal drugs, suggesting that legal status does not significantly affect access for this demographic."
+    },
+    {
+      "type": "pro",
+      "text": "A 2018 UK poll  found that teenagers find it easier to acquire marijuana - an illegal substance - than alcohol."
+    },
+    {
+      "type": "pro",
+      "text": "According to a 2020 poll , approximately 20% of people aged 16-19 in the UK had smoked cannabis in the 12 months prior and 59% of them considered it easy to buy illegal drugs. This indicates that young people have little difficulty accessing drugs regardless of their legal status."
+    },
+    {
+      "type": "pro",
+      "text": "Once legalised, the only barrier to prevent minors from obtaining and using drugs would be age-related restrictions on their purchase. Current evidence suggests that this is an ineffective obstacle to underage access."
+    },
+    {
+      "type": "con",
+      "text": "There still appears to be a significant difference in alcohol consumption between adult and underage drinkers: in the US, the adult drinking rate is 59% and 47%  in men and women respectively, compared to an underage rate of 29% ."
+    },
+    {
+      "type": "pro",
+      "text": "Underage people will easily be able to use fake IDs to buy legalised drugs, as they often do to buy currently legal substances that have age-related restrictions."
+    },
+    {
+      "type": "con",
+      "text": "This will likely become less common with the invention and use of computerized ID systems ."
+    },
+    {
+      "type": "pro",
+      "text": "A study at a US university found that almost two-thirds  of the underage students asked had used a fake ID at least once to obtain alcohol."
+    },
+    {
+      "type": "con",
+      "text": "Liquor store owners and door staff at pubs, bars, and nightclubs report that they are highly adept  at identifying fraudulent identification."
+    },
+    {
+      "type": "con",
+      "text": "It is easier for governments to prevent the sale of legal substances to underage people than it is to prevent the sale of illegal substances."
+    },
+    {
+      "type": "pro",
+      "text": "The penalties for selling legal products with age restrictions to underage people are often significant , so legal sellers will likely be deterred from doing it."
+    },
+    {
+      "type": "con",
+      "text": "It is relatively easy for police to currently find illegal drug dealers that form part of a drug network, as these can be highly conspicuous . Legal, independent businesses selling these to young people could be harder to spot."
+    },
+    {
+      "type": "pro",
+      "text": "A large proportion of underage people who smoke or drink report that they are given tobacco and alcohol by of-age  friends or family members , or pay them to buy these substances on their behalf."
+    },
+    {
+      "type": "pro",
+      "text": "Underage drinking and smoking is highly common, while illegal drug use among minors is less common."
+    },
+    {
+      "type": "con",
+      "text": ""
+    },
+    {
+      "type": "pro",
+      "text": "Statistics indicate that underage drinking is relatively commonplace in the US and UK, while illegal drug-taking among this demographic is not."
+    },
+    {
+      "type": "pro",
+      "text": "A study  found that underage drinking accounted for 17.5% of total US expenditure on alcohol consumption in 2001, with 47% of all 12- to 20-year-olds admitting to being current drinkers."
+    },
+    {
+      "type": "pro",
+      "text": "A 2014 UK report  found that 38% of 11- to 15-year-old pupils surveyed had tried alcohol, but only 15% had taken drugs."
+    },
+    {
+      "type": "pro",
+      "text": "Underage smoking is incredibly common in the US  and UK , despite only adults being legally permitted to purchase tobacco in both countries."
+    },
+    {
+      "type": "con",
+      "text": "When recreational marijuana was legalised in Colorado, the usage rate  among teens and children stayed the same."
+    },
+    {
+      "type": "pro",
+      "text": "It has been shown  that when school-aged children perceive their access to illicit substances as being easy, they are more likely to use such substances."
+    },
+    {
+      "type": "con",
+      "text": "It is already easy for many people to access drugs."
+    },
+    {
+      "type": "pro",
+      "text": "People  can buy drugs  on the street easily from street-level dealers or gangs."
+    },
+    {
+      "type": "pro",
+      "text": "Using the dark web  is an easy way for people to buy illegal drugs."
+    },
+    {
+      "type": "con",
+      "text": ""
+    },
+    {
+      "type": "con",
+      "text": "Increased drug use does not necessarily correlate to problematic drug use."
+    },
+    {
+      "type": "pro",
+      "text": "It is social stigma  that perpetuates problematic drug use. If that stigma were diminished, increased drug use would not lead to increased problematic drug use."
+    },
+    {
+      "type": "con",
+      "text": "Legalising drugs will not necessarily destigmatise them."
+    },
+    {
+      "type": "pro",
+      "text": "Drug users have often been portrayed as 'dirty', morally corrupt and unstable in media for a long time. That image will likely remain after legalisation."
+    },
+    {
+      "type": "pro",
+      "text": "Large-scale anti-drug advertising has often leaned on the idea that drug use leads to extreme volatility and violence ."
+    },
+    {
+      "type": "con",
+      "text": "There is likely to be a more visible countermessage to this image as businesses seek to market their drugs as safe and not harmful. Over time, this portrayal will thus fade away."
+    },
+    {
+      "type": "pro",
+      "text": "Common terms like 'junkie' and 'crackhead' dehumanize and otherize drug users, while ubiquitous references to former users as 'clean' imply that those who still have substance use disorders are 'dirty' (p. 2 )."
+    },
+    {
+      "type": "con",
+      "text": "If drug use becomes more normalised due to legalisation, it is likely that prejudice will slowly fade away."
+    },
+    {
+      "type": "con",
+      "text": "Stigma against drug use is often caused by the impulsive and dangerous actions of some drug users. This will likely persist regardless of legalisation."
+    },
+    {
+      "type": "pro",
+      "text": "Even if people see only a few people being violent or troublesome while taking drugs, confirmation bias  means the prejudice will likely remain. The chances of this happening are higher if drug use becomes more visible due to legalisation."
+    },
+    {
+      "type": "con",
+      "text": "Anti-social behavior has many causes (pp. 23-24 ), not all of which are villified and stigmatised in general. If normalised, drug use may be treated similarly."
+    },
+    {
+      "type": "pro",
+      "text": "When they are no longer confessing to committing crimes, more public figures will likely be transparent about their own drug use, providing a counter-image to harmful stereotypes."
+    },
+    {
+      "type": "pro",
+      "text": "Drugs are used in a variety of ways by many different people. Seeing that diversity may dispel many of the discriminatory views that people hold."
+    },
+    {
+      "type": "pro",
+      "text": ""
+    },
+    {
+      "type": "pro",
+      "text": "It is likely that, with more visibility, skeptical people will be confronted with more cases of non-harmful drug use which, over time, may change their minds."
+    },
+    {
+      "type": "con",
+      "text": "Often, stigma against drugs associated with poor or minority communities is more entrenched because it intersects with other discriminatory stigmas. This multilayered stigma is less likely to go away with drug legalisation."
+    },
+    {
+      "type": "pro",
+      "text": "Drug epidemics among white, suburban individuals in the United States are often treated with more sympathy and less aggression  than equivalent ones in African-American communities."
+    },
+    {
+      "type": "pro",
+      "text": "Since cocaine is often associated with white and rich individuals  in the US and UK, it faces relatively little stigma. Crack, a similar drug, has instead been used to demonize  minorities."
+    },
+    {
+      "type": "con",
+      "text": "Stigma surrounding drug use is often fuelled by its association with criminal activity (pp. 1-2 ). Legalising drugs will remove that association."
+    },
+    {
+      "type": "pro",
+      "text": "Since drugs are illegal, the shaming and discrimination of users is widely accepted (p. 5 )."
+    },
+    {
+      "type": "con",
+      "text": "Given that drug-shaming is so widespread, eradicating it would require an equally widespread cultural shift that is unlikely to be achieved through legalisation alone."
+    },
+    {
+      "type": "con",
+      "text": "Alcohol-dependent people face extreme prejudice  even though alcohol is a legal drug."
+    },
+    {
+      "type": "con",
+      "text": "Due to the intrinsic features of many illicit drugs, they often increase the likelihood of criminality and risky behavior in the consumer while they are intoxicated."
+    },
+    {
+      "type": "pro",
+      "text": "Hallucinogenic drugs can give individuals false perceptions of reality , which may induce physically violent behaviour."
+    },
+    {
+      "type": "pro",
+      "text": "PCP , an anaesthetic drug that causes hallucinations, can trigger extreme violence  in those who use it."
+    },
+    {
+      "type": "pro",
+      "text": "There have been rare cases of serious self-harm  and harm to others  by people who were under the influence of LSD and had no known psychiatric conditions."
+    },
+    {
+      "type": "pro",
+      "text": "One study into the effects of psilocybin found that 10.7%  of its users had put themselves or others at risk of physical harm while on a bad trip."
+    },
+    {
+      "type": "con",
+      "text": "A long-term study into the effects of psychedelic drugs found that those who had taken them at least once were less likely  to have committed violent crime or theft in the last year than those who had never taken them."
+    },
+    {
+      "type": "con",
+      "text": "It is possible that this correlation is caused by the innate personality traits of those most likely to use psychedelic drugs, rather than by changes to personality while under the influence of those drugs."
+    },
+    {
+      "type": "pro",
+      "text": "In a study investigating the innate personality traits of those who consume recreational drugs, it was found that hallucinogens were the only category of drugs whose consumption was not  more likely in those with higher emotional instability and neuroticism."
+    },
+    {
+      "type": "con",
+      "text": "A study  found that university students were more likely to use hallucinogens if they scored more highly in risk-taking, negative urgency, and emotional dysregulation. This suggests that users of these drugs possess innate personality traits that make their committing crimes more likely."
+    },
+    {
+      "type": "pro",
+      "text": "Psychedelic drugs have been associated with reduced domestic violence  committed by men, because they increase the user's ability to manage negative emotions."
+    },
+    {
+      "type": "con",
+      "text": "Some drugs, like MDMA, make people exhibit more prosocial and empathetic behaviour , and thus may make users less likely to become violent while under the influence."
+    },
+    {
+      "type": "pro",
+      "text": "Cocaine addiction causes higher impulsivity , meaning users are more likely to make bad or irrational decisions."
+    },
+    {
+      "type": "pro",
+      "text": "Studies have suggested a link between drug use and risky sexual behavior , causing an increased risk of HIV and other sexually transmitted infections."
+    },
+    {
+      "type": "con",
+      "text": "Some research suggests that some people are predisposed to committing crimes . As such, when drugs are illegal, the two are likely to remain correlated."
+    },
+    {
+      "type": "pro",
+      "text": "Stigma often makes drug users feel socially isolated, motivating anti-social behavior."
+    },
+    {
+      "type": "pro",
+      "text": "Stigma surrounding drug use often impacts the mental health of users  in way that makes them less likely to seek treatments and more likely to withdraw from those close to them."
+    },
+    {
+      "type": "pro",
+      "text": "If drug users face stigma and bullying, they have fewer options  for seeking help or finding jobs. Therefore, they are more likely to be impoverished and engage in criminal behavior."
+    },
+    {
+      "type": "con",
+      "text": "Governments can take actions to reduce the impacts of drug stigma without legalising drugs."
+    },
+    {
+      "type": "pro",
+      "text": "Government campaigns could debunk the harmful stereotyping of drug users. Such campaigns  are often effective when used to teach young students."
+    },
+    {
+      "type": "con",
+      "text": "Many companies are highly reluctant to hire  those with a criminal record. As such, programs to help illegal drug users reintegrate may only be adopted by a small number of employers."
+    },
+    {
+      "type": "con",
+      "text": ""
+    },
+    {
+      "type": "pro",
+      "text": "Many drugs are used responsibly by most users."
+    },
+    {
+      "type": "con",
+      "text": "Studies show that criminality rates among adults  and young people  who use drugs are higher than for those who do not."
+    },
+    {
+      "type": "pro",
+      "text": "The majority  of young individuals consuming illegal substances lead fulfilling and successful lives, indicating that they do not consume drugs to a debilitating extent."
+    },
+    {
+      "type": "pro",
+      "text": "Most drug users  have good life prospects and support networks, which act as barriers to problematic drug use."
+    },
+    {
+      "type": "con",
+      "text": "Legalising drugs may lead to greater use among demographics who are less likely to use them responsibly."
+    },
+    {
+      "type": "pro",
+      "text": "Peer pressure to drink alcohol among youths often leads to irresponsible and excessive  drinking. Drug legalisation may cause similar effects with more dangerous substances."
+    },
+    {
+      "type": "con",
+      "text": "Much of contemporary anti-drug rhetoric and education focuses on abstinence. When more people are likely to take drugs, that education may focus more on being responsible  with them."
+    },
+    {
+      "type": "pro",
+      "text": "An increasing number of drug users microdose , a trend which - unlike many patterns of excessive or problematic drugtaking – reportedly brings a vast array of short- and long-term benefits."
+    },
+    {
+      "type": "con",
+      "text": "A study  on the effects of microdosing showed inconclusive results, indicating that participants experienced temporary psychological benefits, but increased neuroticism."
+    },
+    {
+      "type": "pro",
+      "text": "Mothers  have reported that taking small doses of psychedelic drugs helps them juggle work, parenting, and their social lives."
+    },
+    {
+      "type": "con",
+      "text": "Many everyday tasks become dangerous if individuals are under the influence of drugs. Increased drug use would lead to more of these dangers."
+    },
+    {
+      "type": "con",
+      "text": "Context-specific laws on drug use already exist for legal drugs, such as alcohol , in most countries."
+    },
+    {
+      "type": "pro",
+      "text": "Those caught drunk driving  can lose their license and may even face jail time if they hurt or kill someone."
+    },
+    {
+      "type": "pro",
+      "text": "Carrying out dangerous actions while under the influence of drugs, like operating heavy machinery, can be criminalised instead."
+    },
+    {
+      "type": "pro",
+      "text": "More drug use may lead to more people driving and operating machinery under the influence of drugs."
+    },
+    {
+      "type": "pro",
+      "text": "Legalising marijuana has led to an increase in the number of highway accidents in Washington, Oregon, and Colorado ."
+    },
+    {
+      "type": "con",
+      "text": "Legalisation would encourage the implementation of a broader scope of impairment detection devices , motivating more people to avoid driving while under the influence."
+    },
+    {
+      "type": "con",
+      "text": "Many legal, over-the-counter and prescription drugs list drowsiness  as a side-effect, and clearly warn users not to operate heavy machinery or vehicles while taking them."
+    },
+    {
+      "type": "con",
+      "text": "Driving under the influence of cannabis is less dangerous  than doing so with alcohol."
+    },
+    {
+      "type": "pro",
+      "text": "If drugs were legalised, the drug trade would be less able to fuel serious crime."
+    },
+    {
+      "type": "con",
+      "text": "There can exist a correlation  between an individual's illicit drug use and their likelihood of committing certain crimes. Thus, while legalisation may lead to reduced crime associated with the sourcing and sale of drugs, it may increase crime associated with actual drug use in communities."
+    },
+    {
+      "type": "con",
+      "text": "People are more likely  to break the law after having broken it previously. Keeping drugs illegal could therefore make people who use illegal drugs more likely to break the law in other, potentially more serious ways."
+    },
+    {
+      "type": "pro",
+      "text": "When drugs are illegal, otherwise law-abiding citizens must necessarily engage in law-breaking activity to acquire drugs. If they do so without getting caught and thus come to see this to be a minor infraction, it may act as a gateway crime  to more serious offences."
+    },
+    {
+      "type": "pro",
+      "text": "Illegal drugs can be used to unlawfully intoxicate non-consenting people and thus facilitate serious abuse."
+    },
+    {
+      "type": "pro",
+      "text": "Many sex trafficking victims are coerced  into the trafficking system via highly addictive illegal drugs such as heroin."
+    },
+    {
+      "type": "pro",
+      "text": "Some drugs - hypnotics and barbiturates in particular - are used maliciously as date-rape drugs . The illegal status of these drugs may help to control this phenomenon."
+    },
+    {
+      "type": "con",
+      "text": "Legal substances are frequently used to commit date rape."
+    },
+    {
+      "type": "pro",
+      "text": "Alcohol, a legal drug which is available to and consumed by a large proportion of society, is often used  to facilitate sexual assaults."
+    },
+    {
+      "type": "pro",
+      "text": "Most date rape drugs - including Rohypnol , GHB , and ketamine  - are accessible through legal channels."
+    },
+    {
+      "type": "pro",
+      "text": "Benzodiazepines are readily available  on prescription  in most countries for common complaints like insomnia, muscle spasms, and anxiety."
+    },
+    {
+      "type": "con",
+      "text": "Legal methods of acquiring such drugs can be made traceable, making it possible to track offenders  without costly and unpredictable undercover operations."
+    },
+    {
+      "type": "con",
+      "text": "If someone is willing to commit a crime as serious as date-rape, the illegal status of the drug they use to do so is highly unlikely to act as a deterrent."
+    },
+    {
+      "type": "pro",
+      "text": "Currently, obtaining such drugs is risky, restricted, and requires effort . Even if they are already available, making them legally available may increase the number of rape incidents."
+    },
+    {
+      "type": "con",
+      "text": "Legalising drugs does not imply that one may use them on others without permission. It is already illegal to give someone else a narcotic they were not prescribed."
+    },
+    {
+      "type": "con",
+      "text": "It is insufficient to say that \"nonconsensual drugging is already illegal\" when detection of this particular crime can be so difficult."
+    },
+    {
+      "type": "pro",
+      "text": "GHB, a drug commonly used to facilitate date rape, only remains detectable in urine, saliva, or blood for a matter of hours , and most standard drug tests do not test for it."
+    },
+    {
+      "type": "con",
+      "text": "Producers and distributors are not able to control how consumers use their products. Therefore, legalising the sale and possession of drugs would allow for this kind of abuse to increase easily despite abuse remaining illegal."
+    },
+    {
+      "type": "con",
+      "text": "Legal substances are equally capable of facilitating abuse, so keeping drugs illegal may have little mitigating effect."
+    },
+    {
+      "type": "pro",
+      "text": ""
+    },
+    {
+      "type": "pro",
+      "text": "Ricin , a highly poisonous substance that has allegedly been used as a warfare agent by militaries and terrorist organisations alike, is created from castor beans."
+    },
+    {
+      "type": "pro",
+      "text": "Scopolamine is a legal substance that can be purchased over the counter  or obtained with a prescription in many countries. If given in excess, it could be used to incapacitate or kill  victims."
+    },
+    {
+      "type": "con",
+      "text": "Drugs tend to be lower quality and less pure when illegal. Thus, drugs intended to kill or incapacitate victims could have an even higher efficacy rate if kept illegal."
+    },
+    {
+      "type": "pro",
+      "text": "Illegal drug contents are unregulated. Legalisation would allow for drugs to be regulated by the state and sold directly to the consumer, increasing their quality and safety."
+    },
+    {
+      "type": "pro",
+      "text": "State governments would be able to regulate and ban any harmful ingredients used in the creation of different drugs, as is currently often done with food products ."
+    },
+    {
+      "type": "con",
+      "text": "The substances that legal corporations produce could be more dangerous than what illegal dealers sell."
+    },
+    {
+      "type": "con",
+      "text": "Legalisation will stimulate fair competition amongst drug suppliers to offer the purest drugs."
+    },
+    {
+      "type": "pro",
+      "text": "As legal companies must be transparent regarding ingredients, consumers will be able to directly compare the quality of different drugs, and will likely opt against buying from companies known for using cutting agents."
+    },
+    {
+      "type": "con",
+      "text": "If drug companies decide that it is cheaper to not sell entirely pure products, that may become the norm within the industry."
+    },
+    {
+      "type": "con",
+      "text": "Companies who do sell pure drugs may be able to make more money marketing their products as 'luxury' or 'high end'. This would ensure the presence of highly pure drugs in the legal market."
+    },
+    {
+      "type": "pro",
+      "text": "Just as with illegal dealers, there will be a financial incentive for corporations to mix their drugs with other substances to increase their profitability."
+    },
+    {
+      "type": "pro",
+      "text": "Cigarettes are filled with dangerous substances  which are legal, like tar. It is likely that drug companies will seek to do the same."
+    },
+    {
+      "type": "con",
+      "text": "The most common cutting agents used by illegal dealers, such as laundry detergent , may cause severe and immediate health impacts. The substances added by companies who legally produce drugs will likely be less dangerous."
+    },
+    {
+      "type": "pro",
+      "text": "Independent illegal dealers use the cutting agents that they can find the most cheaply and easily . Large corporations will not have the same limitations when procuring cutting agents."
+    },
+    {
+      "type": "pro",
+      "text": "Evidence regarding the harmful substances used by legal corporations may be suppressed or hidden, making it even harder for consumers to understand what they are consuming."
+    },
+    {
+      "type": "con",
+      "text": "There will be greater scrutiny of legal corporations who are public and well-known, especially compared to drug dealers, who are numerous in number and hidden."
+    },
+    {
+      "type": "pro",
+      "text": "Tobacco companies historically have suppressed health information  about their products. It is likely that such companies would continue this practice with other drugs if they were legalised."
+    },
+    {
+      "type": "pro",
+      "text": "If legalised, all drugs would be accurately measured and described, as sellers would be legally obliged to follow standardised packaging and labelling requirements . This would allow people to make better-informed, safer decisions surrounding consumption."
+    },
+    {
+      "type": "pro",
+      "text": "False advertising could also be regulated by governments, making it unlikely that individuals will consume drugs containing dangerous substances that users are unaware of."
+    },
+    {
+      "type": "con",
+      "text": "There is an incentive for dealers not to lie about their products even when illegal: if they lie, they may lose present and future customers."
+    },
+    {
+      "type": "pro",
+      "text": "Businesses who lose the trust of current customers often lose more business over time as customers may share  their negative opinions on social media."
+    },
+    {
+      "type": "con",
+      "text": "Companies will likely find harmful ways to get around drug regulations."
+    },
+    {
+      "type": "pro",
+      "text": "Companies often look for and exploit loopholes in safety regulations. Tobacco companies  do it frequently."
+    },
+    {
+      "type": "con",
+      "text": "This is a risk with all health and safety regulations. It simply means that the government has a responsibility to crack down on companies who act in violation of the regulations."
+    },
+    {
+      "type": "pro",
+      "text": "Corporate lobbying  could allow companies that sell addictive substances to ensure that eventual state regulations are not restrictive."
+    },
+    {
+      "type": "con",
+      "text": "Legalising drugs would likely spur greater public awareness of the ways that drugs can be used for abusive purposes."
+    },
+    {
+      "type": "pro",
+      "text": "Greater public discussion around date-rape, for example, would likely lead to better public recognition of the symptoms of date rape drug use in victims, as well as the consequences for the perpetrator. This would likely have preventative effects."
+    },
+    {
+      "type": "con",
+      "text": "It would be better and safer to address the underlying social issues that lead to drug-assisted abuse before potentially easing access to drugs which facilitate such abuse."
+    },
+    {
+      "type": "pro",
+      "text": ""
+    },
+    {
+      "type": "pro",
+      "text": ""
+    },
+    {
+      "type": "con",
+      "text": "Alcohol  is responsible for far more violent crime than any illicit drugs."
+    },
+    {
+      "type": "pro",
+      "text": "Research suggests that two-thirds  of all domestic violence incidents happen while the perpetrator is under the influence of alcohol."
+    },
+    {
+      "type": "pro",
+      "text": "A study  concluded that alcohol consumption was involved in 47% of homicides in Australia over a six-year period."
+    },
+    {
+      "type": "con",
+      "text": "Alcohol's legal status is arguably what makes  its consumption so widespread  and dangerous. This is thus not an argument to legalise drugs, but to prohibit alcohol as well as currently illegal drugs."
+    },
+    {
+      "type": "pro",
+      "text": "The legalisation of drugs would deprive criminal organisations and gangs of a substantial source of their income."
+    },
+    {
+      "type": "con",
+      "text": "If drugs were legalised, large, well-established and legal companies would likely take over their sale and obtain their revenues. These companies could be just as dangerous as criminal ones."
+    },
+    {
+      "type": "con",
+      "text": "Established companies would be strictly controlled by governments, regulatory institutions and consumers."
+    },
+    {
+      "type": "con",
+      "text": ""
+    },
+    {
+      "type": "pro",
+      "text": "If established companies behaved inappropriately with regards to the selling of drugs, people would be able to report this  without fear of facing consequences for having tried to buy drugs."
+    },
+    {
+      "type": "pro",
+      "text": "If legal manufacturers produced dangerously low-quality drugs, affected users could take legal action against the manufacturers."
+    },
+    {
+      "type": "con",
+      "text": "Established entities selling drugs would likely not engage in gun battles on the streets over \"turf \"."
+    },
+    {
+      "type": "pro",
+      "text": "Legalising all drugs would create a large new market which could be exploited by resourceful drugs companies synthesizing new, highly addictive substances."
+    },
+    {
+      "type": "pro",
+      "text": "Tobacco companies have been accused  of manipulating their nicotine products to make them more addictive."
+    },
+    {
+      "type": "con",
+      "text": "As was the case with cigarettes, once the harms of drugs become apparent, consumption will fall."
+    },
+    {
+      "type": "pro",
+      "text": "This may happen more quickly with drugs, given that the worst effects of smoking tend to only surface in the long term , so they are easily dismissed  by smokers. By contrast, many of the harmful effects of drugs occur in the short term."
+    },
+    {
+      "type": "pro",
+      "text": ""
+    },
+    {
+      "type": "con",
+      "text": "As has happened with cigarettes, many people may get addicted before the harms of new substances are well-known."
+    },
+    {
+      "type": "con",
+      "text": "The tobacco industry made combined generated profits of $35 billion  in 2016, despite the harms of cigarettes being well-known."
+    },
+    {
+      "type": "con",
+      "text": "Unlike sellers on the black market, corporations would have a financial incentive not to fuel customer addiction to their drug products."
+    },
+    {
+      "type": "con",
+      "text": "All drugs causing a pleasurable response affect the Ventral-Tegmental Area , a dopamine pathway in the brain which creates pleasure but causes addiction. Any such drug will likely attract more customers than less addictive drugs, so would be more financially lucrative for companies to produce."
+    },
+    {
+      "type": "pro",
+      "text": "Food companies, who have similar incentives, intentionally make their products more addictive  to maintain demand, profits and a loyal customer base despite sugar taxes."
+    },
+    {
+      "type": "pro",
+      "text": "One of the biggest opioid producers, Purdue, has faced severe financial penalties  due to its role in getting people addicted to its opioids."
+    },
+    {
+      "type": "pro",
+      "text": "Companies would likely build a bad reputation if there were higher addiction rates among their customers, which would deter new customers."
+    },
+    {
+      "type": "pro",
+      "text": ""
+    },
+    {
+      "type": "con",
+      "text": "While new customers may be deterred by high addiction rates, existing customers would be more likely to repeatedly purchase from a company that sells the exact substances they are addicted to."
+    },
+    {
+      "type": "con",
+      "text": "Pharmaceutical companies can make immense short-term  profits making addictive drugs. Even if they face financial consequences later, it may still be more lucrative overall to make more addictive products."
+    },
+    {
+      "type": "con",
+      "text": "When illegal businesses traffic drugs, it is not only these businesses that make a profit: drugs provide massive black market income for otherwise violent insurgent  and terrorist organizations, like ISIS ."
+    },
+    {
+      "type": "pro",
+      "text": ""
+    },
+    {
+      "type": "con",
+      "text": "If drugs were legalised in some countries but not others, criminal organizations could continue generating income by smuggling drugs from countries where they had been legalised to countries where they were still illegal."
+    },
+    {
+      "type": "con",
+      "text": "This could still lead to dramatic reductions in the power of cartels, as they would no longer need to control large amounts of land for illegally farming and manufacturing  drugs if production were happening in countries where drugs had been legalised."
+    },
+    {
+      "type": "pro",
+      "text": "Particularly between poorer countries, and in areas like Central America , it is often difficult to monitor and control movements across borders, meaning that drug smuggling will remain rampant."
+    },
+    {
+      "type": "pro",
+      "text": "The legalisation of alcohol after Prohibition in the US greatly decreased  the ability of gangs to make money from alcohol sales."
+    },
+    {
+      "type": "pro",
+      "text": "Around half  of the total income of criminal organisations comes from illicit drug trafficking. Without this, they would lose significant power."
+    },
+    {
+      "type": "pro",
+      "text": "With less income, these cartels will have less money to bribe politicians  and police officers, which would make corruption within these institutions less likely."
+    },
+    {
+      "type": "pro",
+      "text": "A study of 13 US law enforcement agencies found that many police officers had engaged in some form of drug-related corruption, such as accepting bribes from drug traffickers (pp. 88-90 )."
+    },
+    {
+      "type": "con",
+      "text": "Drug-related corruption in law enforcement agencies can sometimes occur with the goal of incriminating known, harmful drug traffickers who have evaded the law (pp. 90-91 ). In such cases, corruption may help bring down cartels."
+    },
+    {
+      "type": "pro",
+      "text": "After legalisation, cartels may be less able to afford the large, well-armed and -trained forces  they use to exert their power and engage in violence."
+    },
+    {
+      "type": "pro",
+      "text": "In Myanmar , militant factions of ethnic groups use drug trafficking to finance weaponry and wage war against rival ethnic groups. With fewer drug profits, they will likely lose that ability."
+    },
+    {
+      "type": "con",
+      "text": "If cartels force legal drug companies to buy their drug-farming land, the former may enjoy an influx of money that can be used to invest in other lucrative opportunities. Thus, their criminal behaviour and power may persist regardless."
+    },
+    {
+      "type": "con",
+      "text": "There will still be a black market demand for drugs in places where they are legalised. Thus, criminals can continue to generate drug-related income regardless."
+    },
+    {
+      "type": "con",
+      "text": "Despite alcohol often being very expensive  due to heavy taxation, black markets for it are still much rarer in places where it is legally sold."
+    },
+    {
+      "type": "pro",
+      "text": "Black market alcohol consumption makes up a small portion of total alcohol consumption in many European countries who use sin taxes  on alcohol (p. 11 )."
+    },
+    {
+      "type": "con",
+      "text": ""
+    },
+    {
+      "type": "pro",
+      "text": "Where age restrictions exist, buying illegal drugs will likely be easier than procuring fake IDs for young people."
+    },
+    {
+      "type": "pro",
+      "text": ""
+    },
+    {
+      "type": "con",
+      "text": ""
+    },
+    {
+      "type": "pro",
+      "text": ""
+    },
+    {
+      "type": "pro",
+      "text": "The sale of drugs with potentially fatal or otherwise highly dangerous effects is likely to stay banned even if drugs are legalised, so there will remain a black market demand for these substances (p. 1-2 )."
+    },
+    {
+      "type": "pro",
+      "text": "Legalization of drugs would have significant economic benefits for the state and its citizens, rather than criminal gangs."
+    },
+    {
+      "type": "pro",
+      "text": "Drug legalisation would improve national economies and government finances, allowing for more opportunities and investments for all."
+    },
+    {
+      "type": "pro",
+      "text": "The drug industry, like the alcohol and tobacco ones, can be taxed to generate revenue. Some estimates of tax revenue from marijuana legalisation in the US reach $28 billion ."
+    },
+    {
+      "type": "pro",
+      "text": "In Colorado, between 2014 and 2017, over $500 million  in government revenue was raised by taxes and fees on marijuana sales."
+    },
+    {
+      "type": "con",
+      "text": "Estimates of tax income from legalisation may be exaggerated."
+    },
+    {
+      "type": "pro",
+      "text": "In California's first year of legalised and regulated cannabis sales, it only made around one third  of the tax revenue previously predicted by analysts."
+    },
+    {
+      "type": "con",
+      "text": "The UK made nearly 10 billion pounds  from cigarette VAT from 2020 to 2021. This is an indication that taxes on drugs can raise significant funds."
+    },
+    {
+      "type": "pro",
+      "text": "The costs of managing the harms caused by alcohol outweigh the amount of tax revenue its sale brings in (p. 10 ). This shows that a large amount of new tax revenue from legalised substances does not necessarily translate to a net increase in state funds."
+    },
+    {
+      "type": "pro",
+      "text": "Drug prohibition consumes a considerable portion of public spending."
+    },
+    {
+      "type": "pro",
+      "text": ""
+    },
+    {
+      "type": "pro",
+      "text": "The 2019 budget of the US Drug Enforcement Administration (DEA) was $3.136 billion , a figure that has risen annually since 2017."
+    },
+    {
+      "type": "pro",
+      "text": "It is estimated that the US government spends a total of $47 billion  annually on drug prohibition."
+    },
+    {
+      "type": "pro",
+      "text": "Dumped waste  from the illegal drug trade is very expensive to clean up, as well as being environmentally harmful."
+    },
+    {
+      "type": "con",
+      "text": "Historically, US public spending on drug prohibition and law enforcement has increased at a significantly slower rate  than funding for drug treatment programmes, meaning it is consuming a smaller percentage of overall spending over time."
+    },
+    {
+      "type": "con",
+      "text": "In 2021, nearly half of the requested budget for US federal drug control spending  went to the treatment of substance use disorders, rather than to enforce the prevention of illicit drug trade and use."
+    },
+    {
+      "type": "con",
+      "text": "A significant proportion of US drug-related spending going towards harm reduction does not negate the fact that another sizeable proportion does still go to drug law enforcement  and incarceration (p. 2 ). If drugs were legalised, 100% of this money could be funnelled into harm reduction instead."
+    },
+    {
+      "type": "pro",
+      "text": "If drugs were legalised, fewer productive  people would be in jail."
+    },
+    {
+      "type": "pro",
+      "text": "In the US, incarceration reduces former inmates' earnings by 40%  on average, limiting their future contributions to the economy."
+    },
+    {
+      "type": "con",
+      "text": "In the case of drug dealers and suppliers, it is likely that - were they not incarcerated - they would still be working as dealers and suppliers, rather than elsewhere in the workforce."
+    },
+    {
+      "type": "pro",
+      "text": "Anecdotally, many  dealers say they carry out illicit drug-dealing full-time ."
+    },
+    {
+      "type": "con",
+      "text": "Many drug dealers often have other, legitimate jobs ."
+    },
+    {
+      "type": "pro",
+      "text": "Researchers  have theorised that many drug dealers may also have a legitimate other job because there is not a consistent enough demand for drugs throughout the week, necessitating a second income."
+    },
+    {
+      "type": "con",
+      "text": "If drugs were legalised, working as a full-time dealer or supplier would be much more financially productive for the national economy."
+    },
+    {
+      "type": "pro",
+      "text": "A report  on drug dealers in Washington found that those who made the most money from dealing also earned the most in legitimate jobs, suggesting that the most prolific illicit drug dealers were also the most productive for the formal economy."
+    },
+    {
+      "type": "con",
+      "text": "Poorer countries would struggle to fund harm reduction, drug treatment, and drug education programmes even if they legalised drugs."
+    },
+    {
+      "type": "pro",
+      "text": "A 2014 WHO report  assessing 152 countries found that only 50% had adequate supplies of methadone needed to treat opioid dependency, with only 37% providing postgraduate training programmes in treatment of substance use disorders."
+    },
+    {
+      "type": "pro",
+      "text": "Many poorer countries may not be able to afford such investment as they are unable to enforce tax compliance ."
+    },
+    {
+      "type": "con",
+      "text": "As these countries get richer and their institutions more effective, they will be more able to fund them."
+    },
+    {
+      "type": "con",
+      "text": "It is not clear that increased government revenue from legalised drugs would actually lead to more support for those most in need."
+    },
+    {
+      "type": "pro",
+      "text": "Governments often do immoral and unpopular  things with the money they receive."
+    },
+    {
+      "type": "con",
+      "text": "Many of the arguments currently surrounding drug legalisation emphasize the potential benefits of the new tax income  for communities. Legalisation will therefore likely be accompanied by strong pressure to invest in opportunities and services that cater to community needs."
+    },
+    {
+      "type": "con",
+      "text": "Many governments often fail to represent  the interests of their citizens. It is likely that their preferences regarding the uses of drug tax income will not be adopted."
+    },
+    {
+      "type": "pro",
+      "text": "There are proposals to use legalised drug tax income for both targetted  and more general  community investments, all of which would benefit the underprivileged."
+    },
+    {
+      "type": "pro",
+      "text": "Many of the areas that are over-policed are also habitually underfunded  by governments. It is unlikely that drug legalisation will change these governments' spending priorities."
+    },
+    {
+      "type": "con",
+      "text": "Drug legalisation is not necessary for governments to funnel more money into harm reduction and other social programmes, which could equally combat socioeconomic deprivation."
+    },
+    {
+      "type": "pro",
+      "text": "Redistributive policies  aim to tax certain wealthier demographics more heavily and use this revenue for positive community investment."
+    },
+    {
+      "type": "pro",
+      "text": "Legalisation would create jobs, which would likely improve employment rates. This would prevent people from turning to crime in order to generate income."
+    },
+    {
+      "type": "con",
+      "text": "The legalisation of drugs may create a drugs market that competes with the alcohol industry, jeopardising jobs in the latter."
+    },
+    {
+      "type": "con",
+      "text": "Drugs are already easily accessible, and the alcohol industry is nonetheless highly successful."
+    },
+    {
+      "type": "pro",
+      "text": "According to the Institute of Alcohol Studies, there are 770,000 jobs  in the UK's alcohol industry."
+    },
+    {
+      "type": "pro",
+      "text": "The global market for alcohoic beverages  was worth $1.49 trillion in 2020, and is predicted to reach $2.2 trillion by 2025."
+    },
+    {
+      "type": "pro",
+      "text": "The number of jobs in US beer, wine, and liquor stores  grew at an average of 1.6% per year between 2016 and 2021, and is expected to continue to rise beyond this."
+    },
+    {
+      "type": "con",
+      "text": "If the legalisation of drugs makes them cheaper than alcohol, people might be financially motivated to begin consuming only drugs."
+    },
+    {
+      "type": "con",
+      "text": "In a behavioural study conducted on misusers of both alcohol and illicit drugs, results indicated that which drugs users choose to use is not  a decision solely influenced by economic considerations."
+    },
+    {
+      "type": "con",
+      "text": "Studies  indicate that alcohol consumption is common among drug misusers, suggesting that consumption of one often accompanies the other."
+    },
+    {
+      "type": "pro",
+      "text": "Studies indicate that cannabis could be a substitute for alcohol if legalised for recreational use."
+    },
+    {
+      "type": "pro",
+      "text": "Analysis of alcohol sales in Oregon between 2016 and 2017 indicate that alcohol sales grew more  in areas without legal recreational marijuana stores."
+    },
+    {
+      "type": "pro",
+      "text": "An analysis of 39 studies on the relationship between alcohol and cannabis use found that 16 studies supported the theory that cannabis use substituted  alcohol consumption, while only 10 concluded that they could be complementary."
+    },
+    {
+      "type": "pro",
+      "text": "A 10-year study  found that monthly alcohol sales dipped by 15% in US counties when medical marijuana was legalised."
+    },
+    {
+      "type": "con",
+      "text": "The sensations felt when consuming marijuana and alcohol are very different. As such, they are not interchangeable, meaning that people may use both."
+    },
+    {
+      "type": "con",
+      "text": "Many people see marijuana as being safer  than alcohol, so may make the switch even if the sensations felt are different."
+    },
+    {
+      "type": "pro",
+      "text": "Many find marijuana  to be more relaxing and calming , and alcohol more energising and stimulating ."
+    },
+    {
+      "type": "con",
+      "text": "Many find that alcohol can make users sad or stressed . For those looking to avoid both these undesirable side effects and complete sobriety, marijuana could be a suitable and attractive alternative."
+    },
+    {
+      "type": "pro",
+      "text": "Drug legalisation is likely to create jobs in drug treatment and support centres."
+    },
+    {
+      "type": "pro",
+      "text": "Many existing plans  to move towards drug legalisation come with proposals to increase funding to therapy and rehabilitation programs."
+    },
+    {
+      "type": "pro",
+      "text": "Redirecting the funds used for incarcerating drug users to provide support and treatment for lower-income drug users already happens in Portugal ."
+    },
+    {
+      "type": "pro",
+      "text": "The legal cannabis industry  in the US currently supports 321,000 full-time jobs and creates jobs at a faster rate than any other US industry."
+    },
+    {
+      "type": "pro",
+      "text": "If the overall demand for drugs increases, there would be more profitable opportunities for farmers and chemists to grow and produce drugs."
+    },
+    {
+      "type": "pro",
+      "text": "Research shows that there is a positive correlation  between a region's unemployment rate and the amount of property crimes reported in the area."
+    },
+    {
+      "type": "pro",
+      "text": "Drug trafficking, fuelled by demand for illegal drugs , is the root cause of much violence  and murder committed by criminal organisations, which has the most devastating effect on communities."
+    },
+    {
+      "type": "con",
+      "text": "The number of total deaths  caused by the biological changes that drugs induce is far more significant than the number of deaths caused by their illegal trafficking . This implies that legalising these substances could lead to far more deaths than keeping them illegal would."
+    },
+    {
+      "type": "pro",
+      "text": "Hundreds of thousands  of people die per year while under the influence of illicit drugs, and from 2012-15, 37% of all homicides were committed while the perpetrator was intoxicated (p. 90 )."
+    },
+    {
+      "type": "pro",
+      "text": "Criminal organisations often use violence and cruelty as a means of improving their profitability and growing their business."
+    },
+    {
+      "type": "con",
+      "text": "Violence between cartels has already erupted over highly profitable, non-drug products, especially avocados . This will likely continue regardless of legalisation."
+    },
+    {
+      "type": "pro",
+      "text": "Illegal drug traffickers have reportedly killed  indigenous people living on popular trafficking routes along the Peru-Brazil border."
+    },
+    {
+      "type": "pro",
+      "text": "Drug trafficking can lead to the violent exploitation  of children ."
+    },
+    {
+      "type": "con",
+      "text": "With drugs legalised, cartels may have an incentive to use greater violence to sustain profits, for example, by blocking the supply of legal drugs in certain communities."
+    },
+    {
+      "type": "pro",
+      "text": "'Drug wars' between rival organisations often lead to many deaths."
+    },
+    {
+      "type": "pro",
+      "text": "Drug gangs often fight each other to gain control  of specific important shipping routes and land."
+    },
+    {
+      "type": "pro",
+      "text": "Rival drug-gang shoot-outs often kill many  gang members and civilians alike."
+    },
+    {
+      "type": "con",
+      "text": "Violence between criminal rivals may increase with the legalisation of drugs, as gangs may use more violence against each other to compete for dwindling power and profits."
+    },
+    {
+      "type": "pro",
+      "text": "Increased violence between gangs tends to be predicted  by experts wherever there is reduced demand for illegal drugs."
+    },
+    {
+      "type": "con",
+      "text": "There has been a significant decrease  in Drug-Trafficking Organisation (DTO) related violent crimes in several US border states that have partially legalised marijuana. This suggests that where demand for illegal drugs decreases, DTO activity also decreases."
+    },
+    {
+      "type": "con",
+      "text": "Violence tends to increase  when cartels gain more power, as they have more resources to expend on conflict. As their power diminishes, violence should go down."
+    },
+    {
+      "type": "pro",
+      "text": "Studies suggest that homicide rates have increased  during periods of drug and alcohol prohibition throughout US history due to black market vendors employing violence to resolve commercial rivalries or disputes."
+    },
+    {
+      "type": "con",
+      "text": "Pablo Escobar severely increased the violence carried out by his cartel once he became a wanted criminal  hunted by the police, so as to try to intimidate politicians."
+    },
+    {
+      "type": "pro",
+      "text": "When cartels are failing, they may see it as more worthwhile to negotiate peacefully with the government or other cartels to avoid engaging in fights they are likely to lose."
+    },
+    {
+      "type": "con",
+      "text": "There is often an incentive for criminal organisations to reduce needless violence  and help build legitimacy in communities where they operate."
+    },
+    {
+      "type": "pro",
+      "text": "Such legitimacy allows cartels to gain the consent of locals who may otherwise rebel against them or cooperate with law enforcement."
+    },
+    {
+      "type": "con",
+      "text": "When cartels are failing, that legitimacy is a luxury that criminal organizations cannot afford, meaning the costs of engaging in violence are lower. Legalisation will likely breed violence then."
+    },
+    {
+      "type": "con",
+      "text": "Many criminal organisations are involved in other, non-drug-related industries and thus have multiple sources of income. Changes to the drug trade as a result of legalisation are therefore unlikely to decimate their power."
+    },
+    {
+      "type": "pro",
+      "text": "Many Central and South American trafficking groups have successfully expanded into other businesses, like gold-mining , oil  or arms  smuggling."
+    },
+    {
+      "type": "pro",
+      "text": "The mafia in the US has multiple lucrative  business  lines , so could still likely fuel serious crime even without drug revenue."
+    },
+    {
+      "type": "con",
+      "text": "Despite their attempts at diversification, most drug cartels still make most of their fortune  from drugs."
+    },
+    {
+      "type": "pro",
+      "text": "In their other ventures , cartels often have to work with legal businesses in their supply lines. Legal companies may be wary of doing business with drug gangs and thus prefer other vendors."
+    },
+    {
+      "type": "con",
+      "text": "Resource extraction, particularly the selling of iron ore, was the 'principle source of income ' for the Knights Templar drug cartel in Mexico."
+    },
+    {
+      "type": "pro",
+      "text": "Using drugs can be an important and positive experience for individuals and communities."
+    },
+    {
+      "type": "con",
+      "text": "Some drugs  can impair one's ability to make moral, rational, and autonomous judgements."
+    },
+    {
+      "type": "con",
+      "text": "Many different experiences, substances, and lifestyles can impact one's ability to make rational and moral judgements, so this is not a valid reason to ban drug use."
+    },
+    {
+      "type": "pro",
+      "text": "Some argue that many forms of entertainment, TV shows, advertisements, and political campaigns affect rational and moral thinking (p. 202 )."
+    },
+    {
+      "type": "pro",
+      "text": "Sleep deprivation  negatively affects moral judgment and decision-making."
+    },
+    {
+      "type": "pro",
+      "text": "The decision-making abilities of people who are chronically stressed are significantly altered ."
+    },
+    {
+      "type": "pro",
+      "text": "Alcohol can affect  one's judgement, yet it is widely accepted in many Western countries."
+    },
+    {
+      "type": "pro",
+      "text": "Alcohol impairs  the functioning of the pre-frontal cortex, without which the brain's capacity for cognitive reasoning and judgement is greatly reduced."
+    },
+    {
+      "type": "con",
+      "text": "Research suggests that when people consume alcohol, they retain the same  moral standards they have when sober."
+    },
+    {
+      "type": "con",
+      "text": "The experience of being high will cause greater changes  to one's thoughts and rationality than other factors usually can."
+    },
+    {
+      "type": "con",
+      "text": "High individuals  often know the difference between right and wrong and can understand when they are hurting others."
+    },
+    {
+      "type": "con",
+      "text": "Regular users of cocaine and methamphetamine have difficulty  distinguishing right from wrong and evaluating others' emotions, reducing their ability to make moral decisions."
+    },
+    {
+      "type": "pro",
+      "text": "Addictive drugs increasingly reduce one's ability to do without them regardless  of whether there is a genuine desire to stop. Such drugs therefore inhibit personal freedom."
+    },
+    {
+      "type": "pro",
+      "text": "Our freedom is more important than any one set of enjoyable experiences or substances. Even if drugs can be fun, their effect on one's freedom means they must not be consumed."
+    },
+    {
+      "type": "con",
+      "text": "So long as people can take drugs without becoming dependent on them, they experience no significant loss of freedom."
+    },
+    {
+      "type": "con",
+      "text": "If illicit drug users are not able to stop of their own volition, then it is immoral to punish them for drug use."
+    },
+    {
+      "type": "con",
+      "text": "Individuals routinely take many decisions which partially remove their autonomy. It would be arbitrary to only ban drugs for this reason."
+    },
+    {
+      "type": "pro",
+      "text": "Entering into certain professions, especially demanding ones like medicine or the military, prevent individuals  from making moral or autonomous decisions. As such, this is an insufficient reason to ban drugs."
+    },
+    {
+      "type": "con",
+      "text": "In these cases, one is still able to continue acting morally and rationally, even if there are limits on what one can do. As such, the impact of drugs is different."
+    },
+    {
+      "type": "pro",
+      "text": "Those who habitually use marijuana are often worse at decision-making and are less responsive  to the potential negative effects of their actions."
+    },
+    {
+      "type": "pro",
+      "text": "Taking drugs can be a pleasurable experience."
+    },
+    {
+      "type": "pro",
+      "text": "Drugs can alter and intensify  thoughts, feelings, and perceptions, allowing users to experience states of consciousness they would not otherwise have access to. This can bring about noticeable health benefits ."
+    },
+    {
+      "type": "con",
+      "text": "'Bad trips ' on psychedelic drugs are frequent and can be incredibly unpleasant."
+    },
+    {
+      "type": "con",
+      "text": "There are ways that people consuming psychedelics can support themselves or be supported  through a bad trip, which can make the experience of having one much less traumatic."
+    },
+    {
+      "type": "pro",
+      "text": "Drug-friendly events, which would be allowed to go ahead with legalisation, could reduce the occurrence of 'bad trips' while using drugs."
+    },
+    {
+      "type": "pro",
+      "text": "Human hallucinogen researchers state that providing a safe physical environment and interpersonal support  are some of the most effective ways to mitigate bad trips, which are heavily influenced  by the user's surroundings."
+    },
+    {
+      "type": "con",
+      "text": "Bad trips may also  occur as a result of mixing substances, consuming an excessive amount of hallucinogen, or existing psychiatric conditions. It is thus unlikely that providing drug-friendly environments would reduce their prevalence."
+    },
+    {
+      "type": "pro",
+      "text": "Bad trips  can cause extreme paranoia, mood swings and frightening hallucinations."
+    },
+    {
+      "type": "con",
+      "text": "Bad trips can be avoided  if users have more information regarding what is likely to cause them. This may happen by pairing education with legislation."
+    },
+    {
+      "type": "pro",
+      "text": ""
+    },
+    {
+      "type": "pro",
+      "text": "Psychedelics are often used for one-off, recreational, and spiritual  experiences."
+    },
+    {
+      "type": "con",
+      "text": "While enjoyable, these experiences are not important or necessary for a good life. It is, therefore, not particularly harmful for people to be denied them."
+    },
+    {
+      "type": "pro",
+      "text": "Several forms of marijuana  can be extremely effective ways to relax and deal with temporary stress."
+    },
+    {
+      "type": "pro",
+      "text": "Many currently illegal drugs make substantial positive contributions to different communities and human culture as a whole."
+    },
+    {
+      "type": "pro",
+      "text": "Creativity can be stimulated through the use of drugs."
+    },
+    {
+      "type": "pro",
+      "text": "Drugs can alter the mental state  of artists, allowing them to think in new ways and be less beholden to existing artistic conventions."
+    },
+    {
+      "type": "con",
+      "text": "Many prolific artists have died from drug overdoses, causing great losses to human art and the wider cultures it contributes to."
+    },
+    {
+      "type": "pro",
+      "text": "The \"27 club \" refers to a number of famous and influential artists who died at the age of 27. Many of them died from drug overdoses."
+    },
+    {
+      "type": "pro",
+      "text": "Hallucinogens, such as LSD and magic mushrooms, have been used to create many great artworks."
+    },
+    {
+      "type": "con",
+      "text": "It is hard to determine whether the drugs actually allowed these artists to make these pieces of art. Sober  people can be and have been great artists."
+    },
+    {
+      "type": "pro",
+      "text": "LSD was a significant part of 1960s rock and roll culture and was taken by Jimi Hendrix , The Doors , and The Beatles ."
+    },
+    {
+      "type": "pro",
+      "text": "Many poets have made works of art under the influence of drugs. The romantic poets used opium, and the Beat poets used hallucinogens ."
+    },
+    {
+      "type": "con",
+      "text": "Drugs are not necessary for creativity, which can be boosted by a multitude  of legal alternatives such as walking, meditation, and visually stimulating environments."
+    },
+    {
+      "type": "pro",
+      "text": "In some cultures, the consumption of certain drugs forms part of important religious and spiritual practices."
+    },
+    {
+      "type": "con",
+      "text": "Most major religions oppose drug use."
+    },
+    {
+      "type": "pro",
+      "text": "The Catholic Church not only opposes drug use due to its dangers, but also claims that it can be sinful  in some cases."
+    },
+    {
+      "type": "pro",
+      "text": "The Pope  has come out against drug legalization, and did so in South America, where there exist deeper cultural legacies of drug use."
+    },
+    {
+      "type": "con",
+      "text": "The question of drug legalisation remains an open debate  among Christians."
+    },
+    {
+      "type": "con",
+      "text": "Christian and Rastafarian leaders have supported the decriminalisation  of marijuana in Jamaica, and have justified it on religious terms."
+    },
+    {
+      "type": "pro",
+      "text": "Drugs and alcohol are strictly forbidden  by Islam."
+    },
+    {
+      "type": "con",
+      "text": "Some Jewish scholars have argued that the use of some drugs, especially marijuana, can easily be justified  by their religious principles."
+    },
+    {
+      "type": "pro",
+      "text": "Marijuana is considered sacred  in religions such as Rastafarianism ."
+    },
+    {
+      "type": "pro",
+      "text": "Coca  leaf, from which cocaine is made, has a deep religious and cultural history all over South America, particularly in Peru . It is used medically and was seen as a vessel to communicate with the Gods."
+    },
+    {
+      "type": "pro",
+      "text": "The Peruvian government has recognised ayahuasca  as being integral to the cultural identity of the Amazon peoples due to its use in rituals of spiritual enlightenment ."
+    },
+    {
+      "type": "con",
+      "text": "This point is often exaggerated: many communities consume the plants from which illicit drugs are produced, but not the illicit drugs themselves."
+    },
+    {
+      "type": "pro",
+      "text": "While the coca plant  is used to make cocaine, the way the plant has been consumed historically in Latin America induces effects more akin to caffeine than cocaine."
+    },
+    {
+      "type": "con",
+      "text": "It is possible and likely easier for communities to connect with each other and build their culture without the use of drugs."
+    },
+    {
+      "type": "con",
+      "text": "The unique effects of drugs on the human mind can allow for forms of bonding that are often not possible otherwise."
+    },
+    {
+      "type": "pro",
+      "text": "So-called 'party drugs' are often used by young people in social contexts to have fun together and develop social bonds  with each other, by making individuals more excited and less irritable."
+    },
+    {
+      "type": "con",
+      "text": "Drugs tend to accentuate certain parts of one's personality in a way that may not represent their true character. As such, the bonds made on drugs may be fleeting or short-lived."
+    },
+    {
+      "type": "con",
+      "text": "The friendships made through drug use are made exclusively through fun experiences, without the adversity  that often cements sober friendships. Therefore, they are likely to be less meaningful."
+    },
+    {
+      "type": "con",
+      "text": "Cocaine can make users more selfish , making it harder for them to form connections even when in otherwise ideal social situations."
+    },
+    {
+      "type": "pro",
+      "text": "The use of drugs like marijuana can lower inhibitions, making people more forthcoming  in social interactions."
+    },
+    {
+      "type": "pro",
+      "text": "People can feel incredibly emotionally connected  to one another through an intense shared experience of getting high."
+    },
+    {
+      "type": "pro",
+      "text": "Societies where drug use is widespread may develop long-term social problems."
+    },
+    {
+      "type": "con",
+      "text": "Legalisation could foster greater public discussion of the social problems caused by drugs, which could help resolve them."
+    },
+    {
+      "type": "pro",
+      "text": ""
+    },
+    {
+      "type": "pro",
+      "text": "Many societies currently have open discussions regarding inappropriate and problematic uses  of alcohol, which can help pinpoint effective mitigating strategies."
+    },
+    {
+      "type": "con",
+      "text": "If problematic behavior is spurred on by the collective cultural use of certain drugs, it may be difficult to reduce it in the future."
+    },
+    {
+      "type": "pro",
+      "text": "Many people are protective of their culture and so may not respond well  to calls for certain cultural habits or traditions to change."
+    },
+    {
+      "type": "pro",
+      "text": "The use of substances like drugs and alcohol can fuel socially and culturally harmful behavior within communities."
+    },
+    {
+      "type": "pro",
+      "text": "Several Native American communities  feel that substance misuse degrades their traditional tribal identity."
+    },
+    {
+      "type": "con",
+      "text": "Native American and East Asian cultural oppositions to alcohol and drugs may be primarily caused by the colonial manner  in which the drugs were introduced in their countries, rather than by the socially degrading effects of substance misuse."
+    },
+    {
+      "type": "pro",
+      "text": "Cultures which celebrate habitual alcohol use often see higher rates of normalised dysfunctional behavior and interpersonal violence  that is harder to do away with. Legalised drug use may have similar effects."
+    },
+    {
+      "type": "con",
+      "text": "Establishing strong norms against violent and anti-social behavior, independent of drugs, is the best way to ensure drugs do not fuel such behavior."
+    },
+    {
+      "type": "pro",
+      "text": "The consumption of drugs and alcohol is not an excuse  for immoral behavior. Building awareness and acceptance of this fact is what will determine how responsibly individuals use substances."
+    },
+    {
+      "type": "con",
+      "text": "Most societies do not have robust enough norms to prevent drug use from contributing to social ills."
+    },
+    {
+      "type": "pro",
+      "text": "In many contemporary societies, violence committed by men is often normalised , meaning drug use may cause an increase in impulsive male violence."
+    },
+    {
+      "type": "pro",
+      "text": "Drugs can reduce an individual's productivity. If use is widespread in a community, that community as a whole may become less productive and innovative."
+    },
+    {
+      "type": "con",
+      "text": "People most often use recreational substances during their leisure time , when they would not be especially productive or innovative anyway."
+    },
+    {
+      "type": "pro",
+      "text": "The after-effects  of consuming some drugs can last days and make it harder for people to work effectively."
+    },
+    {
+      "type": "pro",
+      "text": "Drugs have often been an important  part of countercultures around the world."
+    },
+    {
+      "type": "con",
+      "text": "Drug legalisation may harm the countercultural potential of drugs, as they may no longer be seen as rebellious or socially challenging."
+    },
+    {
+      "type": "con",
+      "text": "Much of the countercultural appeal of drugs came from the ability drugs gave users to think in new ways and experiment with new ideas."
+    },
+    {
+      "type": "pro",
+      "text": "In the 1960s, psychedelic drug  use was championed as a way to enable experimentation that challenged and changed  the norms of American society."
+    },
+    {
+      "type": "con",
+      "text": "Drugs should remain banned because they are detrimental to the health of those who use them."
+    },
+    {
+      "type": "pro",
+      "text": "Increased access to drugs through legalisation may increase incidences of addiction, which has highly negative consequences for addicts, their loved ones, and wider society."
+    },
+    {
+      "type": "pro",
+      "text": "Addictions can lead to highly negative outcomes for children  and other loved ones."
+    },
+    {
+      "type": "pro",
+      "text": "Children who have drug abusing parents  often suffer abuse or neglect as a result."
+    },
+    {
+      "type": "pro",
+      "text": "The loved ones of drug addicts endure significant psychological stress ."
+    },
+    {
+      "type": "pro",
+      "text": "Children living with one or more parent with substance use disorders (SUDs) are more likely  to struggle socially and academically, suffer from mental and behavioural disorders, and develop SUDs themselves."
+    },
+    {
+      "type": "con",
+      "text": "Someone being addicted to a multitude of legal activities such as video gaming  can lead to similar physical and emotional turmoil for their loved ones, yet these activities are not banned."
+    },
+    {
+      "type": "con",
+      "text": "Legalising drugs will help reduce incidences of addiction and substance abuse among drug users."
+    },
+    {
+      "type": "pro",
+      "text": "Stigma often deters users and their families from being transparent and seeking support in cases of drug abuse (p. 2 ). Drug legalisation would likely mitigate this."
+    },
+    {
+      "type": "con",
+      "text": "Professional addiction treatment is usually expensive  for individuals. This will remain true regardless of legalisation."
+    },
+    {
+      "type": "con",
+      "text": "If drugs were legalised, addiction support services could be funded by the additional tax revenue from drug commerce and the budget currently used to enforce drug prohibition."
+    },
+    {
+      "type": "pro",
+      "text": ""
+    },
+    {
+      "type": "con",
+      "text": "There will likely be little pressure on governments to continually direct new tax revenue into addiction support services."
+    },
+    {
+      "type": "con",
+      "text": "While there is no guarantee that new tax revenue from legalised drugs would go towards government-funded support services, this is far more likely to be the case than if revenue from illegal drugs continued going to gangs or drug cartels."
+    },
+    {
+      "type": "pro",
+      "text": "Given the stigma that drug users face, it is unlikely that prospective candidates for therapies and treatments will want to campaign on these issues. This may facilitate governmental oversight."
+    },
+    {
+      "type": "pro",
+      "text": "Issues of public spending often get little public attention . Thus, if governments divert drug tax money into places other than drug support services, this will likely go unnoticed and unchallenged."
+    },
+    {
+      "type": "con",
+      "text": "In the US, there is now consistent  public support  for non-carceral responses to illicit drug use."
+    },
+    {
+      "type": "con",
+      "text": "Heroin-assisted treatment can be very successful  without costing huge amounts of money."
+    },
+    {
+      "type": "pro",
+      "text": "Effective rehabilitation centers often need a lot of space  to house those recovering, and thus must invest a lot in their buildings."
+    },
+    {
+      "type": "pro",
+      "text": "Professional rehabilitation staff often need many years of training  and therefore require high salaries."
+    },
+    {
+      "type": "pro",
+      "text": "Some drug users who require advice and treatment for drug-related conditions avoid taking action  due to previous experiences where they faced negative attitudes from healthcare providers."
+    },
+    {
+      "type": "con",
+      "text": "Treatment and preventative measures are the most effective tools to combat addiction. Both of these can be implemented without legalising drugs."
+    },
+    {
+      "type": "con",
+      "text": "The safest and most effective  addiction treatments usually involve patients gradually reducing their drug usage over time. Under prohibition, however, completely and suddenly ceasing all drug use is the only legal option."
+    },
+    {
+      "type": "con",
+      "text": "Methadone clinics  allow those suffering from addiction to slowly reduce their drug usage and are completely legal."
+    },
+    {
+      "type": "pro",
+      "text": "Preventative measures, particularly targetting children , can be highly effective at preventing addictions before they start."
+    },
+    {
+      "type": "pro",
+      "text": "Government regulation can make it more difficult for consumers to buy large amounts of drugs, making it harder to sustain an addiction."
+    },
+    {
+      "type": "pro",
+      "text": "Regulations could ensure that each user is given a safe dose of the drug they are purchasing, decreasing the likelihood of overdoses."
+    },
+    {
+      "type": "pro",
+      "text": "In Sweden, a government-owned chain of liquor stores  is the only legally-permitted seller of beverages containing more than 3.5% alcohol, and prohibits discounts for bulk buys. A similar model could work for drugs."
+    },
+    {
+      "type": "pro",
+      "text": "In the UK, there are restrictions on how many  over-the-counter painkillers can be bought in a single transaction. These rules could be extended to other drug purchases."
+    },
+    {
+      "type": "pro",
+      "text": "The restrictions on paracetamol in the UK have led to a marked reduction  in paracetamol-related overdose deaths."
+    },
+    {
+      "type": "con",
+      "text": "Fatal drug overdoses tend to be caused by consuming several different drugs  within the same time period. Thus, regulating sales of individual drugs may not necessarily lead to a reduction in fatal overdoses."
+    },
+    {
+      "type": "con",
+      "text": "If an individual is already addicted, that would indicate they already have regular access to the drug regardless of its legal status, and so could simply resort to sourcing it illegally if legal access were limited."
+    },
+    {
+      "type": "con",
+      "text": ""
+    },
+    {
+      "type": "pro",
+      "text": ""
+    },
+    {
+      "type": "pro",
+      "text": "Many currently illegal drugs are highly addictive , which can have extremely harmful effects on the health of the user."
+    },
+    {
+      "type": "con",
+      "text": "Legalisation would likely improve the quality of healthcare for those needing treatment for drug addiction."
+    },
+    {
+      "type": "pro",
+      "text": "Healthcare professionals are often unaware of patients' exact drug consumption due to both patient reluctance  to disclose illegal activity and the non-standardisation of illegal substances."
+    },
+    {
+      "type": "con",
+      "text": "A higher number of drug users will likely put even more strain  on healthcare services, so the time and care quality afforded to each patient may decrease."
+    },
+    {
+      "type": "pro",
+      "text": "A 2016 study found that $1.45 trillion is lost annually in the US  on health spending and social harm from drugs."
+    },
+    {
+      "type": "con",
+      "text": ""
+    },
+    {
+      "type": "con",
+      "text": "Other lifestyle choices, such as poor diet , create arguably much greater burdens on public health systems."
+    },
+    {
+      "type": "pro",
+      "text": "Attendances to emergency departments for Acute Alcohol Intoxication (AAI) represent a significant proportion  of total attendances in many countries. If drugs were legalised, it follows that a similar phenomenon would occur."
+    },
+    {
+      "type": "pro",
+      "text": "Studies have shown that health professionals are often not given proper training  to be able to effectively care for and advise those who use illicit substances. Such training might be more common if drugs were legalised."
+    },
+    {
+      "type": "pro",
+      "text": "All clinical workers in the NHS are trained to offer brief advice  to any patient who uses legal substances - tobacco and alcohol - in excess. This has been shown to reduce problematic consumption and would likely be offered for drugs if they are legalised."
+    },
+    {
+      "type": "con",
+      "text": "Given that public health budgets are often too small , it is likely that, even with legalisation, health organizations may still opt not to invest in new training."
+    },
+    {
+      "type": "pro",
+      "text": "The stigmatisation of currently illegal drugs means that many healthcare professionals hold negative attitudes towards those who use them, which has a negative impact  on patients and their treatment outcomes."
+    },
+    {
+      "type": "con",
+      "text": "There are discriminatory attitudes in healthcare against those who use legal harmful substances, as well, suggesting that this issue would not be eliminated by legalisation."
+    },
+    {
+      "type": "pro",
+      "text": "54% of doctors participating in an online survey  in 2012 believed that the UK's National Health Service (NHS) should be allowed to refuse non-emergency treatment for tobacco smokers."
+    },
+    {
+      "type": "pro",
+      "text": "European research indicates that healthcare professionals have lower regard for patients who use drugs and alcohol compared to other patient groups (p. 132 ), suggesting a prejudice against substance users in general, regardless of the legal status of the substances they use."
+    },
+    {
+      "type": "con",
+      "text": "This is an argument for better training for healthcare professionals so that they do not hold discriminatory attitudes towards any users of any substance, rather than an argument to keep certain substances illegal."
+    },
+    {
+      "type": "pro",
+      "text": "Research shows that doctors are more likely to make diagnostic errors when they already hold a negative view of a patient (p. 133 )."
+    },
+    {
+      "type": "pro",
+      "text": ""
+    },
+    {
+      "type": "pro",
+      "text": "Many drug users have recounted severe difficulties in accessing pain relief due to the pre-judgemental attitudes  of clinicians."
+    },
+    {
+      "type": "con",
+      "text": "The most significant barriers to good quality healthcare for illicit drug users are unlikely to be resolved by legalisation."
+    },
+    {
+      "type": "pro",
+      "text": "For those requiring care for legal and illegal substance misuse alike, financial and logistical difficulties  represent significant barriers to good quality healthcare."
+    },
+    {
+      "type": "pro",
+      "text": ""
+    },
+    {
+      "type": "con",
+      "text": "Financial and redistributive concerns plague all facets of global healthcare . While legalisation may not increase access to quality healthcare for all drug users, it will do so for a greater number than at present."
+    },
+    {
+      "type": "pro",
+      "text": "Chronic cocaine use causes multiple damaging health effects  and tolerance increases with use, which can lead to increasingly dangerous excessive use and associated health risks."
+    },
+    {
+      "type": "pro",
+      "text": "Those who are addicted to drugs are more likely  to face cancer, heart problems and strokes."
+    },
+    {
+      "type": "pro",
+      "text": "Long-term heroin use can lead to a multitude of serious health problems , including liver, kidney, and lung disease, infections of the heart lining and valves, and mental disorders."
+    },
+    {
+      "type": "pro",
+      "text": ""
+    },
+    {
+      "type": "con",
+      "text": "Addiction tends to be more causally related to the mental health , family, and social life of the individual, rather than their access to drugs."
+    },
+    {
+      "type": "con",
+      "text": "Policies that diminish such causes of drug addiction can be adopted while also keeping drugs illegal and less easily accessible."
+    },
+    {
+      "type": "pro",
+      "text": ""
+    },
+    {
+      "type": "pro",
+      "text": "Mental heath and addiction support services  are underfunded  all over the world. Investing more in such services could make a far more significant difference to addiction rates than legalisation."
+    },
+    {
+      "type": "pro",
+      "text": "Rat studies  in the 1970s indicate that, if provided with favourable social surroundings, people are far less likely to get addicted to drugs than when in isolation, even when access to addictive drugs remains the same in both scenarios."
+    },
+    {
+      "type": "con",
+      "text": "More recent rat studies aiming to replicate those of the 1970s have produced conflicting  results. Thus, these rat studies do not provide reliable evidence that social environment is the most significant determinant of addiction."
+    },
+    {
+      "type": "pro",
+      "text": "More recent studies support these findings, as they suggest a strong correlation between substance abuse and social deprivation (p. 11-12 )."
+    },
+    {
+      "type": "con",
+      "text": "Often, those who are impoverished tend to face addiction problems more severely. Access, by contrast, is a less significant determinant."
+    },
+    {
+      "type": "con",
+      "text": "Besides facing financial adversity, impoverished people are also more exposed to illegal drug activity in their immediate living environment (p. 327 ). This would suggest that accessibility may still be a contributing factor to addiction rates in impoverished communities."
+    },
+    {
+      "type": "pro",
+      "text": "Impoverished people are less able to afford rehabilitation services , meaning they are less likely to recover from addiction."
+    },
+    {
+      "type": "pro",
+      "text": "There is a strong link between unemployment  and increased drug misuse. Providing better financial and job-seeking support for those who fall into this category may thus be a better way to combat addiction than banning drugs."
+    },
+    {
+      "type": "con",
+      "text": "Psychedelics , as well as MDMA and cannabis, usually do not cause addiction ."
+    },
+    {
+      "type": "con",
+      "text": "These non-addictive drugs may act as a gateway  to taking more addictive drugs."
+    },
+    {
+      "type": "pro",
+      "text": "Some argue that taking non-addictive drugs, such as LSD, makes the transition to other, addictive substances appear less daunting ."
+    },
+    {
+      "type": "con",
+      "text": "The gateway drug theory has been repeatedly debunked ."
+    },
+    {
+      "type": "pro",
+      "text": "Some studies indicate that young people who regularly use cannabis are more likely  to develop opioid use disorders."
+    },
+    {
+      "type": "con",
+      "text": "It is possible  to get addicted to drugs like cannabis."
+    },
+    {
+      "type": "pro",
+      "text": ""
+    },
+    {
+      "type": "con",
+      "text": "Many illegal drugs have valuable medicinal properties that could be beneficial to the health of those who use them."
+    },
+    {
+      "type": "con",
+      "text": "The increased use of such substances for medicinal purposes could increase incidences of unchecked self-medication, which could be harmful."
+    },
+    {
+      "type": "con",
+      "text": "Self-medication allows people to manage their own pain without the administrative difficulties and delays associated with accessing doctors or relying on prescriptions."
+    },
+    {
+      "type": "pro",
+      "text": "For example, people would legally be able to grow their own  cannabis."
+    },
+    {
+      "type": "pro",
+      "text": "Improperly using these substances as analgesics  could delay investigations into the root cause of a patient's pain, delaying proper treatment of potentially serious diseases."
+    },
+    {
+      "type": "pro",
+      "text": "Certain drugs, particularly hallucinogenic ones, may be able to successfully treat mental health conditions."
+    },
+    {
+      "type": "pro",
+      "text": "Psilocybin has been recognized by the FDA as a 'breakthrough therapy'  for treating depression, especially depression related to a terminal illness."
+    },
+    {
+      "type": "pro",
+      "text": "A study has found LSD-assisted psychotherapy  to be an effective treatment for anxiety."
+    },
+    {
+      "type": "pro",
+      "text": "Early clinical trials have shown MDMA  to be a potentially effective  medication for patients with treatment-resistant post-traumatic stress disorder (PTSD)."
+    },
+    {
+      "type": "con",
+      "text": "Treating patients with hallucinogenic drugs could have dangerous results  if the patients are already taking other medication for mental illnesses."
+    },
+    {
+      "type": "con",
+      "text": "Doctors have a duty to check that the different medications taken by their patients do not harmfully interact. Under legalisation, this would extend to previously illicit substances, too."
+    },
+    {
+      "type": "con",
+      "text": "Drugs can be legalised for medicinal purposes  while not being legalised for recreational ones."
+    },
+    {
+      "type": "pro",
+      "text": "It is easy to dangerously overdose on many currently illegal drugs. Legalisation may increase the number of overdoses."
+    },
+    {
+      "type": "pro",
+      "text": "MDMA can increase body temperature to the extent that it causes organ failure . This is exacerbated by warm environments such as nightclubs and bars, where it is more likely to be consumed in larger doses."
+    },
+    {
+      "type": "pro",
+      "text": "An overdose of heroin is usually fatal without medical help; during 2016 , almost 15,500 people died from drug overdoses involving heroin in the United States."
+    },
+    {
+      "type": "pro",
+      "text": "Suicide rates may increase as suicide by drug overdose may be a more accessible option."
+    },
+    {
+      "type": "pro",
+      "text": "Drug consumption frequently corresponds with suicide attempts ."
+    },
+    {
+      "type": "con",
+      "text": "Without available drugs, other means  will be used by those who wish to attempt suicide."
+    },
+    {
+      "type": "con",
+      "text": "In Portugal , where drugs were decriminalized in 2001, overdose rates have dropped to three a year per one million citizens."
+    },
+    {
+      "type": "pro",
+      "text": "Many injectable drugs are made by crushing pills to dissolve in a liquid. Since pills are designed to be swallowed and thus released gradually, taking them in IV form carries a high risk of accidental overdose ."
+    },
+    {
+      "type": "con",
+      "text": ""
+    },
+    {
+      "type": "con",
+      "text": "It was found that legalising medical marijuana significantly decreased  the number of fatal opiate-related overdoses in 13 US states."
+    },
+    {
+      "type": "con",
+      "text": "Legalisation could fuel the creation of more hygienic supervised injection sites , reducing the health risks associated with injecting illegal drugs."
+    },
+    {
+      "type": "con",
+      "text": "Incidences of used injecting equipment being left in public spaces may still increase if injected drug use increases overall, creating increased health risks to the wider community."
+    },
+    {
+      "type": "con",
+      "text": "If legalised, users would not have the same incentive to quickly rid themselves of the evidence of their drug possession."
+    },
+    {
+      "type": "pro",
+      "text": "Under prohibition, any paraphernalia related to drug use is evidence  of a crime and could be used by police as a justification to search individuals for drugs in their possession."
+    },
+    {
+      "type": "con",
+      "text": "Littering  is rarely caused by such an incentive. Rather it is often caused by laziness or a lack of available trashcans. As such, it is likely that littering of needles will continue and increase."
+    },
+    {
+      "type": "pro",
+      "text": "Users may feel more comfortable using drugs in public if they no longer fear legal repercussions, leading to a greater proportion of those who inject drugs doing so in public spaces. This increases the likelihood of injecting equipment being discarded in public spaces."
+    },
+    {
+      "type": "con",
+      "text": "If legalised, users could be required to carry safe containers for syringes, or else the government could erect safe needle disposal units in public spaces."
+    },
+    {
+      "type": "pro",
+      "text": "Littering is already very common . If drug use is normalised, these new forms of littering will likely proliferate."
+    },
+    {
+      "type": "pro",
+      "text": "The sharing of needles or equipment for injected drug consumption significantly increases  the risk of transmitting Hepatitis B, Hepatitis C, and HIV."
+    },
+    {
+      "type": "pro",
+      "text": "A 15-year study in Vancouver showed that sharing needles, and incidences of associated HIV and Hepatitis C infections, significantly declined  with harm reduction measures, including the opening of a supervised injection site."
+    },
+    {
+      "type": "con",
+      "text": "The sharing of needles often continues despite the existence of injection sites."
+    },
+    {
+      "type": "pro",
+      "text": "Despite injecting drug users being increasingly likely to use supervised injection sites in the US, a significant proportion  of them still report recently sharing needles."
+    },
+    {
+      "type": "con",
+      "text": "It will likely take time for needle-sharing to significantly reduce, as users need to build trust with the new sites. While it may not be immediate, eventually the sharing of needles will drop."
+    },
+    {
+      "type": "pro",
+      "text": "In shooting galleries, drug users may form connections with clinical staff , making it easier for them to begin pursuing addiction treatment."
+    },
+    {
+      "type": "con",
+      "text": "Supervised injection sites only remove one of the many serious health risks associated with injecting drugs for non-medicinal purposes."
+    },
+    {
+      "type": "pro",
+      "text": "Regularly injecting intravenous drugs significantly increases the risk of developing chronic venous insufficiency ."
+    },
+    {
+      "type": "con",
+      "text": "Studies suggest that it is the bodily site of injection , rather than IV drug use per se, that most heavily influences the user's risk of CVDs. At supervised injection sites, staff could advise and educate users on the safest places to inject, removing this harm."
+    },
+    {
+      "type": "con",
+      "text": "While supervised injection sites do not remove all health risks for injectable-drug users, injection-related diseases  such as HIV arguably represent the most significant health problem among injectable-drug users. Thus, the existence of such sites would remove a proportionately large category of health risks for these users."
+    },
+    {
+      "type": "pro",
+      "text": "Regardless of whether injecting equipment is hygienic, injecting-drug users are still at high risk of accidental overdose."
+    },
+    {
+      "type": "pro",
+      "text": ""
+    },
+    {
+      "type": "con",
+      "text": "Supervised injection sites can be stocked with antidotes  and can recruit medically-trained staff who are aware of the visible symptoms  of drug overdose, significantly reducing  the risk of fatal overdoses."
+    },
+    {
+      "type": "con",
+      "text": "Health problems associated with illegal drugs are often the result of dangerous, poor-quality drugs. These drugs would become less common with legalisation."
+    },
+    {
+      "type": "con",
+      "text": "The legalisation of cigarettes and alcohol did not stop the proliferation of illicit and poor quality cheaper versions of both."
+    },
+    {
+      "type": "pro",
+      "text": "A sizeable percentage of all tobacco products consumed in the UK are still illegally  made, obtained, or sold."
+    },
+    {
+      "type": "con",
+      "text": "The evidence provided in this claim refers to the importing of cheaper, legal cigarettes from the rest of Europe to the UK. The difference in the quality of the smuggled cigarettes is likely minimal."
+    },
+    {
+      "type": "con",
+      "text": ""
+    },
+    {
+      "type": "pro",
+      "text": "Illicit and informally produced alcohol makes up somewhere between 33-40% of all alcohol consumed by people in Europe (p. 2 )."
+    },
+    {
+      "type": "pro",
+      "text": "'Moonshine' remains popular across the US and carries significant health problems ."
+    },
+    {
+      "type": "con",
+      "text": "Moonshine has a particular geographical and social history  in many parts of the US, hence its continued popularity. This will often not be the case for illicit drugs."
+    },
+    {
+      "type": "pro",
+      "text": "When drugs are illegal, price hikes as a result of government crackdowns on illegal drug imports can drive impoverished addicts to create lethal home-made versions ."
+    },
+    {
+      "type": "pro",
+      "text": ""
+    },
+    {
+      "type": "pro",
+      "text": "Highly dangerous 'designer'  drugs posing  as known substances are common as a way of circumventing laws surrounding the chemicals that make up known illegal drugs."
+    },
+    {
+      "type": "con",
+      "text": "Increasing the quality of drugs will not have a significant effect on their health risks."
+    },
+    {
+      "type": "pro",
+      "text": "Many long-term effects of many currently illegal drugs are not fully understood. It is thus possible that these drugs are highly harmful to long-term health."
+    },
+    {
+      "type": "pro",
+      "text": "There exists little research regarding the long-term effects of many hallucinogens."
+    },
+    {
+      "type": "pro",
+      "text": "The long-term effects of salvia  are still yet to be studied ."
+    },
+    {
+      "type": "pro",
+      "text": "Due to this lack of research, there is no scientific consensus  on the long-term effects of MDMA use."
+    },
+    {
+      "type": "con",
+      "text": "Albert Hofmann , the creator of LSD, took LSD for decades without any health implications."
+    },
+    {
+      "type": "con",
+      "text": "Legalising drugs would facilitate valuable scientific and medical research about them."
+    },
+    {
+      "type": "pro",
+      "text": "Many illegal drugs such as MDMA, LSD, cannabis, and psilocybin are classed as 'Schedule 1 ' by the UN, meaning it is highly difficult to receive government approval and funding to legally conduct research on them (p. 31 ). Legalisation would remove this obstacle."
+    },
+    {
+      "type": "con",
+      "text": "There often exist structurally similar compounds which are legal that can be researched in lieu of the illegal drug."
+    },
+    {
+      "type": "pro",
+      "text": "Legal prescription opioids , such as oxycodone (Oxycontin), hydrocodone (Vicodin) and fentanyl, can be researched as alternatives to heroin."
+    },
+    {
+      "type": "pro",
+      "text": "Cannabis-derived approved drugs containing half-synthetic THC or CBD can be researched  as an alternative to cannabis."
+    },
+    {
+      "type": "con",
+      "text": "Compounds related to illegal drugs may ultimately be banned as well if they are used as substitutes in research, as they would become increasingly associated with the illegal, stigmatised drug they are replacing."
+    },
+    {
+      "type": "pro",
+      "text": "There is much controversy over the use of CBD oil  (and products containing it) in the UK, simply due to its association with marijuana."
+    },
+    {
+      "type": "con",
+      "text": "There is no guarantee that a similar compound will always exist for all drugs."
+    },
+    {
+      "type": "con",
+      "text": "Similar legal compounds may act in different ways than the original drug would. The only way to know if the related compound acts similarly is by doing the research that was banned in the first place."
+    },
+    {
+      "type": "pro",
+      "text": "In the United States and the United Kingdom, research on Schedule I drugs is excluded from official research funding ."
+    },
+    {
+      "type": "con",
+      "text": "The DEA  in the US recently streamlined  the application process for carrying out research on Schedule I substances to make it easier for scientists to study them. This happened without drug legalisation."
+    },
+    {
+      "type": "pro",
+      "text": "A Home Office licence  is required to legally possess Schedule 1 drugs for research in the UK."
+    },
+    {
+      "type": "pro",
+      "text": "Legalising drugs would reduce the sampling bias  inherent in current research surrounding illegal drug use."
+    },
+    {
+      "type": "pro",
+      "text": "Those who already take illegal recreational drugs  are most likely to be selected as participants for studies researching their effects, since their participation raises fewer logistical issues: they are more likely to be comfortable with many of the substances, drug-taking techniques, and side-effects that they may experience in such a trial."
+    },
+    {
+      "type": "con",
+      "text": ""
+    },
+    {
+      "type": "pro",
+      "text": "All legal medicines must  be tested in multiple clinical trials and reviewed by independent bodies to rule out side effects or safety concerns. Most currently illegal drugs have not undergone such rigorous testing."
+    },
+    {
+      "type": "pro",
+      "text": "Legalising the use of drugs whose side effects are not fully understood has led to public health disasters such as the one caused by Thalidomide  in the 1960s."
+    },
+    {
+      "type": "con",
+      "text": "Without the added harms from unknown mixing agents and their potential interactions, people will be more informed about the exact risks they are taking when using drugs."
+    },
+    {
+      "type": "pro",
+      "text": "Many currently illegal drugs can cause severe long-term psychological harm to users."
+    },
+    {
+      "type": "pro",
+      "text": "Many regular heroin users develop long-term mental  disorders  such as insomnia, depression and antisocial personality disorder."
+    },
+    {
+      "type": "pro",
+      "text": "Studies suggest there may be a causative link  between regular consumption of high-potency cannabis and the onset of psychosis ."
+    },
+    {
+      "type": "con",
+      "text": "While cannabis consumption may contribute to the onset of psychotic illness, it is unlikely to cause psychosis in an individual, independent  of other risk factors."
+    },
+    {
+      "type": "pro",
+      "text": "LSD might induce schizophrenia , as well as immediate or delayed psychosis ."
+    },
+    {
+      "type": "con",
+      "text": "Caffeine addiction can also cause long-term psychological harms  to users and yet it is not banned."
+    },
+    {
+      "type": "con",
+      "text": "Most of these harms only occur in cases of extreme and excessive drug use. All drugs should not be banned just to avoid these rare harms."
+    },
+    {
+      "type": "con",
+      "text": "Many illegal drugs are less harmful to one's health than other legally purchasable goods such as alcohol, tobacco, or fast food (p. 1558 )."
+    },
+    {
+      "type": "con",
+      "text": "This is an argument in favour of banning tobacco, alcohol, and fast food, rather than an argument to legalise all harmful substances."
+    },
+    {
+      "type": "pro",
+      "text": ""
+    },
+    {
+      "type": "con",
+      "text": "Though fast food is legally purchasable, many countries have placed restrictions  on its advertising and marketing so as to deter excessive consumption."
+    },
+    {
+      "type": "pro",
+      "text": "Multiple studies have found a link between traditional fast food and a range of health risks  including obesity , which is associated  with many of the leading causes of death worldwide."
+    },
+    {
+      "type": "con",
+      "text": "While regular, long-term consumption of fast-food may have harmful effects on health, there is little to no risk of such effects with occasional  consumption."
+    },
+    {
+      "type": "con",
+      "text": "Unlike other unhealthy substances, some illicit drugs carry serious immediate health risks with one-time use."
+    },
+    {
+      "type": "pro",
+      "text": "Acute cocaine use  can result in delirium, hyperthermia, hypertension, and arrhythmia, which can be fatal."
+    },
+    {
+      "type": "pro",
+      "text": "The immediate effects  of consuming heroin can include nausea, vomiting, severe itching, drowsiness, and severely slowed heart function and breathing, sometimes to a life-threatening extent."
+    },
+    {
+      "type": "con",
+      "text": "Such immediate reactions are rare and can be the result of allergies , rather than some inherently dangerous feature of the drug itself."
+    },
+    {
+      "type": "pro",
+      "text": "Governments have a duty to protect their citizens from harmful, unhealthy activities, even if this means restricting citizens' freedom of choice. Given the potential health risks associated with drug taking, they should be banned."
+    },
+    {
+      "type": "con",
+      "text": "The human right to personal autonomy (p. 77 ) should include the freedom to take drugs."
+    },
+    {
+      "type": "con",
+      "text": "Drug taking often violates the principles of informed and meaningful consent, violating personal freedom."
+    },
+    {
+      "type": "con",
+      "text": "There are ample easily accessible resources and educational opportunities that keep citizens informed about drug use."
+    },
+    {
+      "type": "pro",
+      "text": "There are many free resources provided by charities  and healthcare services  to ensure the public can stay comprehensively informed about the effects and risks of drug-taking."
+    },
+    {
+      "type": "pro",
+      "text": "In Holland, there is an educational YouTube channel  designed to disseminate accurate information surrounding recreational drugs, including how to use them safely and what to do if an overdose is suspected."
+    },
+    {
+      "type": "con",
+      "text": "Education and information might not be universally delivered or comprehensive enough to ensure fully informed drug use."
+    },
+    {
+      "type": "pro",
+      "text": "Although education and information on the harmful side-effects of smoking  has been around for decades, millions of people still smoke."
+    },
+    {
+      "type": "con",
+      "text": ""
+    },
+    {
+      "type": "pro",
+      "text": "Many schools  provide some drug education, meaning students are generally informed of the dangers of drug-taking, -dealing, and spending time with drug users."
+    },
+    {
+      "type": "pro",
+      "text": ""
+    },
+    {
+      "type": "pro",
+      "text": "Drug use may have a negative impact on non-users who did not consent to being affected by the potential harms of drugs."
+    },
+    {
+      "type": "pro",
+      "text": ""
+    },
+    {
+      "type": "pro",
+      "text": "In countries  where a significant part of the population relies on public health services, the treatment of health issues caused by drug abuse could create an unfair economic burden on taxpayers."
+    },
+    {
+      "type": "con",
+      "text": "Healthcare-related economic burdens are not so much caused by individual choices, but by underfunding  and dysfunction within public healthcare systems."
+    },
+    {
+      "type": "pro",
+      "text": "If the overall costs of administering healthcare go up, it may lead to non-drug users making higher contribution payments or losing some guaranteed insurance benefits."
+    },
+    {
+      "type": "con",
+      "text": "Smoking  tobacco around others means that non-consenting people suffer harm, yet tobacco is legal."
+    },
+    {
+      "type": "con",
+      "text": "In the UK, there are bans  on smoking in and around enclosed public spaces so as to minimise the harmful effects of smoking on non-smokers."
+    },
+    {
+      "type": "pro",
+      "text": "Secondhand smoke can be particularly harmful for children , who may develop asthma or infections as a result."
+    },
+    {
+      "type": "pro",
+      "text": "People can develop lung problems and even cancer  from secondhand smoke."
+    },
+    {
+      "type": "con",
+      "text": "Studies indicate that second-hand exposure to freebase cocaine (crack) smoke, by contrast, is unlikely  to have harmful effects."
+    },
+    {
+      "type": "con",
+      "text": "There is significant support to ban smoking ."
+    },
+    {
+      "type": "con",
+      "text": "Plenty of human actions will have potentially negative impacts on others. It does not follow that states ought to ban those actions."
+    },
+    {
+      "type": "con",
+      "text": "According to the Harm Principle , the actions of individuals can be curtailed when they infringe upon the rights of others. Insofar as drug use has the potential to harm others, it must be banned."
+    },
+    {
+      "type": "pro",
+      "text": "Driving can have harmful  and potentially fatal consequences for many non-drivers, yet driving is still legal."
+    },
+    {
+      "type": "pro",
+      "text": "Certain forms of low-wage work may damage the health of workers and make it harder  for them to take care of their families. Yet, these are accepted despite the harms they incur to others."
+    },
+    {
+      "type": "con",
+      "text": ""
+    },
+    {
+      "type": "pro",
+      "text": "According to Human Rights Watch , subjecting people to disproportionate criminal sanctions for the personal use of drugs \"infringes on their autonomy\"."
+    },
+    {
+      "type": "con",
+      "text": "Under legalisation, employers worried about lowered productivity may excessively monitor employees to ensure they are not using drugs, which would infringe on the personal freedom of workers."
+    },
+    {
+      "type": "pro",
+      "text": "If we legalise all drugs, people would likely face a greater number of mandatory drug tests  from their employers."
+    },
+    {
+      "type": "con",
+      "text": "Most employers do not regularly  check their employees for alcohol consumption."
+    },
+    {
+      "type": "pro",
+      "text": "Likewise, bosses may force employees to disclose drug use."
+    },
+    {
+      "type": "con",
+      "text": "Bosses will likely not waste time and money on routinely monitoring the drug use of all their employees. It is easier and cheaper to reserve tests and surveillance exclusively for cases where they have good reason to suspect an employee is intoxicated while at work."
+    },
+    {
+      "type": "con",
+      "text": "If drug use is legalised, employees will be able to take legal action if their rights are being infringed upon by drug monitoring."
+    },
+    {
+      "type": "con",
+      "text": ""
+    },
+    {
+      "type": "con",
+      "text": "Since the choice of whether or not to consume drugs is a relatively inconsequential one, it matters very little to citizens' overall personal autonomy if they are denied this choice."
+    },
+    {
+      "type": "pro",
+      "text": "People can already change their mental states with alcohol or even without substances , so the option of legally consuming a greater array of mind-altering drugs would not represent a significant expansion on the current legal activities available."
+    },
+    {
+      "type": "con",
+      "text": "Free choice is not important just because it allows important decisions to be made autonomously. It is important precisely because only individuals are able to decide what choices are important to them."
+    },
+    {
+      "type": "con",
+      "text": "Free choice can never be absolute  as one's freedom must always be tempered by the needs of others and the community. As such, relatively unimportant choices are the preferable freedoms to limit."
+    },
+    {
+      "type": "pro",
+      "text": "Governments frequently put restrictions on actions that may cause citizens to harm themselves or others."
+    },
+    {
+      "type": "pro",
+      "text": ""
+    },
+    {
+      "type": "pro",
+      "text": "Most states ban speech that can cause immediate harms or incite violence  so as to protect other citizens."
+    },
+    {
+      "type": "con",
+      "text": "Most governments actually do allow their citizens to do a wide variety of potentially dangerous activities, from extreme sports  to drinking alcohol and driving cars, which can lead to death or injury."
+    },
+    {
+      "type": "con",
+      "text": "The fact that governments do frequently restrict the actions of their citizens does not make this justified."
+    },
+    {
+      "type": "pro",
+      "text": "Many countries ban  or heavily restrict  personal ownership of guns and other weapons."
+    },
+    {
+      "type": "pro",
+      "text": "States are meant to be moral arbiters (p. 710 ) who determine whether certain behaviors are acceptable or not. Given the dangers of drugs, states must declare them unacceptable."
+    },
+    {
+      "type": "con",
+      "text": "Democratic  states are meant to aggregate and represent the views of their citizens. Thus, if the public favours legalisation of drugs, the laws their state enshrines should reflect that preference."
+    },
+    {
+      "type": "con",
+      "text": "Support for legalising stronger drugs than marijuana is actually quite low, even in the US ."
+    },
+    {
+      "type": "con",
+      "text": "In places like Oregon , where general drug decriminalisation has been put to a vote, it has often won, indicating that people are happy to decriminalise more drugs than just marijuana."
+    },
+    {
+      "type": "pro",
+      "text": "In many parts of Asia , where there exist strict anti-drug laws, there is little support for decriminalisation or legalisation of any sort."
+    },
+    {
+      "type": "pro",
+      "text": "In many countries, large numbers of voters support the legalisation of marijuana, particularly in the US  and UK ."
+    },
+    {
+      "type": "con",
+      "text": "Even if many people support drug use and legalisation, insofar as it is so potentially dangerous, states are justified in usurping that democratic will to protect the interests of their citizens."
+    },
+    {
+      "type": "pro",
+      "text": "According to utilitarian accounts , the primary purpose of a state is to prevent harm coming to its citizens. As such, it is a state's purpose to determine what actions cause harm and stop them."
+    },
+    {
+      "type": "con",
+      "text": "State power is always potentially corrosive to the rights of individuals. Therefore, governments should, in most cases, allow citizens to determine their own best interests for themselves (2.1 )."
+    },
+    {
+      "type": "con",
+      "text": "This rule would allow an unreasonably small number of cases where states are allowed to intervene in the affairs of citizens. Most people accept that states can adopt moral stances and prevent certain dangerous actions."
+    },
+    {
+      "type": "pro",
+      "text": "State intervention is often justified in cases where individuals do not use reason effectively . Insofar as individuals consume drugs despite the harms, drug policy can be considered such an area."
+    },
+    {
+      "type": "con",
+      "text": "While this does suggest that states would be justified in adopting a moralising, anti-drug stance and producing corresponding propaganda, it does not follow that they should ban drugs altogether."
+    },
+    {
+      "type": "con",
+      "text": "Criminalisation has not protected citizens from drugs."
+    },
+    {
+      "type": "con",
+      "text": "While the War on Drugs has failed, there exist other proposals for 'smart'  drug prohibition which may work better. As such, the historical record is insufficient to declare that criminalisation has failed."
+    },
+    {
+      "type": "pro",
+      "text": "According to the Global Commission on Drug Policy , the War on Drugs has been a failure."
+    }
+  ]
+}
