@@ -1,0 +1,14 @@
+There are 2 agents who believe in con
+There are 10 agents who believe in pro
+There are 8 agents who are neutral 
+
+Iteration 1: o
+Iteration 2: u
+Iteration 3: t
+Iteration 4: p
+Iteration 5: u
+Iteration 6: t
+Iteration 7: 1
+Iteration 8: 0
+Iteration 9: 0
+Iteration 10: 0

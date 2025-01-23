@@ -1,18 +1,11 @@
-Traceback (most recent call last):
-  File "/home/junkais/test/small_sim.py", line 12, in <module>
-    from helpers.model import *
-  File "/home/junkais/test/helpers/model.py", line 2, in <module>
-    import openai
-ModuleNotFoundError: No module named 'openai'
-Traceback (most recent call last):
-  File "/home/junkais/test/small_sim.py", line 12, in <module>
-    from helpers.model import *
-  File "/home/junkais/test/helpers/model.py", line 2, in <module>
-    import openai
-ModuleNotFoundError: No module named 'openai'
-Traceback (most recent call last):
-  File "/home/junkais/test/small_sim.py", line 12, in <module>
-    from helpers.model import *
-  File "/home/junkais/test/helpers/model.py", line 2, in <module>
-    import openai
-ModuleNotFoundError: No module named 'openai'
+/home/junkais/miniconda3/envs/main/lib/python3.12/site-packages/transformers/utils/hub.py:128: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+GIF created: output1000/output.gif
+Plot saved as output1000/lines.png
+Plot saved as output1000/means.png
+Plot saved as output1000/variances.png
+Plot saved as output1000/means_off.png
+Elapsed time: 124.48508667945862 seconds
+/home/junkais/miniconda3/envs/main/lib/python3.12/site-packages/transformers/utils/hub.py:128: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+slurmstepd: error: *** JOB 3947187 ON babel-6-21 CANCELLED AT 2025-01-23T13:18:02 ***

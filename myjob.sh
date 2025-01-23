@@ -18,7 +18,7 @@ mkdir -p $TMPDIR
 #mkdir "output"
 
 
-#python small_sim.py  --folder "output1" --epsilon 1 --num_conversations 150 --args_length 3
+python small_sim.py  --folder "output1000" --epsilon 1 --num_conversations 5 --args_length 3
 #python small_sim.py  --folder "output2" --epsilon 1 --num_conversations 150 --args_length 5
 #python small_sim.py  --folder "output3" --epsilon 1 --num_conversations 150 --args_length 8
 
@@ -66,9 +66,9 @@ mkdir -p $TMPDIR
 
 #python small_sim.py  --folder "output103" --epsilon 1 --agents 100 --num_conversations 2000 --args_length 8 --topic temp
 
-python small_sim.py  --folder "output104" --epsilon 0.05 --num_conversations 500 --args_length 8 --topic temp
-python small_sim.py  --folder "output105" --epsilon 0.1 --num_conversations 500 --args_length 8 --topic temp
-python small_sim.py  --folder "output106" --epsilon 0.2 --num_conversations 500 --args_length 8 --topic temp
+#python small_sim.py  --folder "output104" --epsilon 0.05 --num_conversations 500 --args_length 8 --topic temp
+#python small_sim.py  --folder "output105" --epsilon 0.1 --num_conversations 500 --args_length 8 --topic temp
+#python small_sim.py  --folder "output106" --epsilon 0.2 --num_conversations 500 --args_length 8 --topic temp
 
 
 
