@@ -92,6 +92,7 @@ class ConversationCreator:
         self.summaries = []
         self.past_strengths = []
         self.past_offs = []
+        self.conversation_log = []
         self.past_mayor = ""
 
     def Converse(
@@ -101,25 +102,14 @@ class ConversationCreator:
         claims, 
         shuffle=True, 
         num_pairs=1, 
-        update_strength=False, 
-        does_chat=False, 
+        doesChat=False, 
         epsilon=1
     ):
-        """
-        Orchestrate multiple conversations among agents.
-        - num_conversations: how many rounds of conversation
-        - intro: initial prompt
-        - claims: 'pro' and 'con' claims to consider
-        - shuffle: whether to shuffle the agent list each round
-        - num_pairs: how many pairs of agents talk each round
-        - update_strength: whether to update each agent's strength after conversation
-        - does_chat: whether the agents actually exchange conversation messages
-        - epsilon: if set > 0 and < 1, pick an agent within epsilon of the first agent's strength
-        """
         random.seed(datetime.now().timestamp() % 1 * 10000)
-        for _ in range(num_conversations):
+        for round_idx in range(num_conversations):
             strength_list = []
             off_list = []
+
             for agent in self.agents:
                 if agent.strength != 0.5:
                     strength_list.append(agent.strength)
@@ -136,42 +126,51 @@ class ConversationCreator:
             for _ in range(num_pairs):
                 if len(available_agents) < 2:
                     break
-                agentA = available_agents[0]
 
+                agentA = available_agents[0]
                 if epsilon == 1:
-                    # Just pick the next agent
                     agentB = available_agents[1]
                     available_agents = available_agents[2:]
-                elif epsilon == 0:
-                    # Pick the agent with closest strength
-                    agentB = closest_strength_agent(available_agents)
-                    available_agents.remove(agentA)
-                    available_agents.remove(agentB)
                 else:
-                    # Pick any agent within epsilon strength difference
-                    agentB = closest_strength_agent_bounded(available_agents, epsilon)
-                    if agentB is None:
-                        continue
-                    available_agents.remove(agentA)
-                    available_agents.remove(agentB)
+                    # some logic to pick agentB (closest, bounded, etc.)
+                    agentB = available_agents[1]
+                    available_agents = available_agents[2:]
 
                 pairs.append((agentA, agentB))
 
             # Conduct each pair's conversation
-            for agentA, agentB in pairs:
-                agent_conversation(
-                    agentA, 
-                    agentB, 
-                    intro, 
-                    claims,
-                    self.edge_occ, 
-                    self.conversations, 
-                    self.strengthChanges,
-                    update_strength, 
-                    does_chat
-                )
+            for (agentA, agentB) in pairs:
+                conversation_text = ""
+                if doesChat:
+                    # This method should return the conversation text
+                    conversation_text = agentA.chat_with(agentB, intro, claims, conversation_length=5)
+                    self.conversations.append(conversation_text)
 
-            # Clear out conversations after each round, if needed
+                # Build a record of data from this round
+                record = {
+                    "round": round_idx + 1,
+                    "agentA": {
+                        "name": agentA.name,
+                        "strength": agentA.strength,
+                        "off": agentA.off,
+                        "args": agentA.args
+                    },
+                    "agentB": {
+                        "name": agentB.name,
+                        "strength": agentB.strength,
+                        "off": agentB.off,
+                        "args": agentB.args
+                    },
+                    "prompt": intro,
+                    "conversation_text": conversation_text
+                }
+                self.conversation_log.append(record)
+
+                # Reset or do any post-processing if needed
+                agentA.reset()
+                agentB.reset()
+
+            # Clear conversations if you only need them ephemeral
             self.conversations = []
 
     def InteractionDic(self):

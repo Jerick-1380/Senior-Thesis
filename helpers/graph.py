@@ -7,6 +7,8 @@ import networkx as nx
 import matplotlib.cm as cm
 import matplotlib.colors as mcolors
 import imageio
+import json
+import csv
 
 def strengthToColor(strength):
     """
@@ -180,6 +182,91 @@ class Writer:
             file.write(f"There are {mid} agents who are neutral \n\n")
             for i, row in enumerate(self.matrix):
                 file.write(f"Iteration {i+1}: {row}\n")
+                
+    def write_csv_log(self, conversations, filename="simulation_log.csv"):
+        """
+        Write a structured CSV log of each conversation step.
+        
+        Args:
+            conversations (list): A list of conversation records. Each record
+                could be a dict like:
+                {
+                    "round": int,
+                    "agentA": {"name": ..., "strength": ..., "off": ..., "args": [...]},
+                    "agentB": {"name": ..., "strength": ..., "off": ..., "args": [...]},
+                    "prompt": "...",
+                    "conversation_text": "... (optional)"
+                    ...
+                }
+            filename (str): The name of the CSV file to create.
+        """
+        csv_path = os.path.join(self.output_folder, filename)
+        
+        # Define column headers; adapt them to your actual conversation data
+        fieldnames = [
+            "round",
+            "agentA_name",
+            "agentA_strength",
+            "agentA_off",
+            "agentA_args",
+            "agentB_name",
+            "agentB_strength",
+            "agentB_off",
+            "agentB_args",
+            "prompt"
+        ]
+
+        # If you also store the raw conversation text or other metadata,
+        # you can add them to 'fieldnames' above.
+
+        with open(csv_path, mode="w", newline='', encoding="utf-8") as csvfile:
+            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+            writer.writeheader()
+
+            for record in conversations:
+                row = {
+                    "round": record.get("round"),
+                    "agentA_name": record["agentA"]["name"],
+                    "agentA_strength": record["agentA"].get("strength", ""),
+                    "agentA_off": record["agentA"].get("off", ""),
+                    "agentA_args": record["agentA"].get("args", ""),
+                    "agentB_name": record["agentB"]["name"],
+                    "agentB_strength": record["agentB"].get("strength", ""),
+                    "agentB_off": record["agentB"].get("off", ""),
+                    "agentB_args": record["agentB"].get("args", ""),
+                    "prompt": record.get("prompt", "")
+                }
+                writer.writerow(row)
+
+        print(f"CSV log written to {csv_path}")
+
+    def write_conversation_summaries_json(self, conversations, filename="conversation_summaries.json"):
+        """
+        Write detailed conversation summaries to a JSON file.
+
+        Args:
+            conversations (list): A list of conversation summaries. Each item
+                might contain:
+                {
+                    "round": int,
+                    "agentA_name": str,
+                    "agentB_name": str,
+                    "initial_prompt": str,
+                    "final_strengths": (float, float),
+                    "key_exchanges": [ ... ],
+                    ...
+                }
+            filename (str): The name of the JSON file to create.
+        """
+        json_path = os.path.join(self.output_folder, filename)
+
+        # Each element in 'conversations' can be any custom structure you want
+        # as long as it's JSON-serializable.
+
+        with open(json_path, 'w', encoding='utf-8') as jsonfile:
+            json.dump(conversations, jsonfile, indent=2, ensure_ascii=False)
+
+        print(f"JSON summaries written to {json_path}")
 
 class Grapher:
     """

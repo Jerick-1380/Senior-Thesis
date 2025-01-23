@@ -102,24 +102,15 @@ if __name__ == "__main__":
         else:
             # Create a regular Agent
             random.seed(time.time() % 1 * 10000)
-            sampled_args = np.random.choice(data['initial_posts'], 100)
+            num_pro = args_length // 2
+            num_con = args_length - num_pro
+            pros = [item['text'] for item in data['initial_posts'] if item['type'] == 'pro']
+            cons = [item['text'] for item in data['initial_posts'] if item['type'] == 'con']
 
-            # We split the desired number of arguments into pro/con
-            half_pro = args_length / 2
-            half_con = args_length - half_pro
-            args_pro = []
-            args_con = []
+            selected_pros = random.sample(pros, num_pro)
+            selected_cons = random.sample(cons, num_con)
 
-            # Gather enough pro/con arguments
-            for argument_data in sampled_args:
-                if argument_data['type'] == 'pro' and len(args_pro) < half_pro:
-                    args_pro.append(argument_data['text'])
-                if argument_data['type'] == 'con' and len(args_con) < half_con:
-                    args_con.append(argument_data['text'])
-                if len(args_pro) + len(args_con) >= args_length:
-                    break
-
-            init_args = args_pro + args_con
+            init_args = selected_pros + selected_cons
             random.shuffle(init_args)
 
             agents.append(
@@ -147,8 +138,7 @@ if __name__ == "__main__":
         claims=data['claims'],
         shuffle=True,
         num_pairs=num_pairs,
-        update_strength=True,
-        does_chat=True,
+        doesChat=True,
         epsilon=args.epsilon
     )
 
@@ -173,6 +163,13 @@ if __name__ == "__main__":
 
     # Write final description after simulation
     final_writer.output_desc()
+    final_writer.write_csv_log(
+        conversations=conversation_creator.conversation_log, 
+    )
+
+    final_writer.write_conversation_summaries_json(
+        conversations=conversation_creator.conversation_log,
+    )
 
     # Print elapsed time
     print(f"Elapsed time: {elapsed_time} seconds", flush=True)
