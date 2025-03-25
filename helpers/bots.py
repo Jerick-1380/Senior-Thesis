@@ -5,7 +5,6 @@ import numpy as np
 AGENT_INSTRUCTIONS = '''
 Carry on the conversation given to you.
 Speak in 3 sentences or less.
-Speak like a normal human.
 '''
 
 def get_first_digit_in_string(input_string: str) -> int:
@@ -235,6 +234,7 @@ class UselessAgent:
         return conversation_text
 
 
+
 class Agent:
     """
     A general Agent that believes in certain perspectives, 
@@ -242,34 +242,89 @@ class Agent:
     """
 
     def __init__(
-        self, 
-        name, 
-        persona, 
-        model, 
-        topic, 
-        claims, 
-        init_args, 
-        memory_length=5, 
-        args_length=8
+        self,
+        name,
+        persona,
+        model,
+        topic,
+        claims,
+        init_args,
+        memory_length=5,
+        args_length=3,
+        remove_irrelevant=True,
+        extra_desc = ""
     ):
         self.name = name
         self.persona = persona
         self.model = model
         self.topic = topic
+        self.claims = claims            # Ensure we store claims on the instance
         self.memory_length = memory_length
         self.args = init_args
         self.args_length = args_length
+        self.remove_irrelevant = remove_irrelevant
+
         self.desc = (
-            f"You are an expert in {self.topic}. Furthermore, you believe in the following perspectives: "
-            f"{chr(10).join(self.args)}" 
-            + AGENT_INSTRUCTIONS
+            f"You are an expert in {self.topic}"
+            +"Furthermore, you believe in the following perspectives: " if len(self.args) > 0 else ""
+            +f"{chr(10).join(self.args)}"
+            + AGENT_INSTRUCTIONS + "\n"+ extra_desc
         )
         self.user_history = []
         self.model_history = []
         self.strength = 0
         self.off = 0
         self.past_arg = ""
-        self.update_strength(claims)
+
+        # Initialize the agent's strength
+        self.update_strength(self.claims)
+
+    def _get_mean_probs(self, context, claims):
+        """
+        Internal helper function that calculates the average probability
+        for pro and con claims, returning (pro_prob, con_prob).
+        """
+        pro_probs = []
+        con_probs = []
+    
+        for claim_pro in claims['pro']:
+            pro_probs.append(self.model.calculate_probability(context, claim_pro))
+        for claim_con in claims['con']:
+            con_probs.append(self.model.calculate_probability(context, claim_con))
+
+        pro_prob = np.mean(pro_probs) if pro_probs else 0.0
+        con_prob = np.mean(con_probs) if con_probs else 0.0
+        return pro_prob, con_prob
+
+    def calculate_strength(self, claims, args):
+        """
+        Calculate how 'strong' the agent's 'pro' perspective is compared 
+        to its 'con' perspective by comparing the average token-level probabilities.
+        A higher value indicates a stronger pro perspective.
+        """
+        context = '\n'.join(self.args) + self.claims['connector']
+        pro_prob, con_prob = self._get_mean_probs(context, claims)
+        return pro_prob / (pro_prob + con_prob + 1e-9)
+
+    def update_strength(self, claims):
+        """
+        Update the agent's strength value based on average probability over pro/con claims.
+        Also update the 'off' metric as 0.5 times the sum of probabilities.
+        """
+        context = '\n'.join(self.args) + self.claims['connector']
+        pro_prob, con_prob = self._get_mean_probs(context, claims)
+
+        self.strength = pro_prob / (pro_prob + con_prob + 1e-9)
+        self.off = 0.5 * (pro_prob + con_prob)
+
+    def compute_off_for_args(self, claims, arg_list):
+        """
+        Compute the 'off' value (0.5 * sum of pro/con probabilities) for a hypothetical list of args.
+        Used when deciding which argument to remove if remove_irrelevant=True.
+        """
+        context = '\n'.join(self.args) + self.claims['connector']
+        pro_prob, con_prob = self._get_mean_probs(context, claims)
+        return 0.5 * (pro_prob + con_prob)
 
     def generate(self):
         """
@@ -298,71 +353,55 @@ class Agent:
         Re-set the agent's self-description to incorporate the latest perspective arguments.
         """
         self.desc = (
-            f"You are an expert in {self.topic}. Furthermore, you believe in the following perspectives: "
-            f"{chr(10).join(self.args)}" 
+            f"You are an expert in {self.topic}.  "
+            +"Furthermore, you believe in the following perspectives: " if len(self.args) > 0 else ""
+            +f"{chr(10).join(self.args)}"
             + AGENT_INSTRUCTIONS
         )
-
-    def calculate_strength(self, claims, args):
-        """
-        Calculate how 'strong' the agent's 'pro' perspective vs. 'con' perspective is, 
-        by comparing perplexities on context vs. claims.
-        """
-        context = (
-            f"Let's discuss {self.topic}! I believe that {chr(10).join(args)}. Therefore, I conclude that "
-        )
-        pro_ppls = []
-        con_ppls = []
-
-        for claim_pro in claims['pro']:
-            pro_ppls.append(self.model.calculate_perplexity(context, claim_pro))
-        for claim_con in claims['con']:
-            con_ppls.append(self.model.calculate_perplexity(context, claim_con))
-
-        pro_ppl = np.mean(pro_ppls)
-        con_ppl = np.mean(con_ppls)
-        return con_ppl / (pro_ppl + con_ppl)
 
     def add_perspective(self):
         """
         Ask the model to provide a new perspective from the conversation. 
         If the model returns '0', do nothing; otherwise, add the new perspective.
+
+        If self.remove_irrelevant is True, we attempt removing each argument
+        and see which removal results in the highest off. We remove that argument.
+        Otherwise, we simply remove the oldest argument.
         """
-        final_prompt = (
-            "State a new perspective that you believe in in one sentence from our conversation. "
-            "If nothing is stronger than what you believe in, return 0 and nothing else."
-        )
+        final_prompt =  "State a new perspective that you believe in in one sentence from our conversation."
+          #  "If nothing is stronger than what you believe in, return 0 and nothing else."
+        
         self.user_history.append(final_prompt)
         final_response = self.generate()
         self.model_history.append(final_response)
 
-        # If the response isn't just '0', treat it as a new perspective
-        if len(final_response) != 1 or final_response[0] != "0":
-            self.args.append(final_response)
-            if len(self.args) > self.args_length:
+        # If the response is '0', do nothing
+        if len(final_response) == 1 and final_response[0] == "0":
+            return
+
+        # Otherwise, treat it as a new perspective
+        self.args.append(final_response)
+
+        # If we exceed the maximum number of arguments
+        if len(self.args) > self.args_length:
+            if not self.remove_irrelevant:
+                # OLD BEHAVIOR: remove the oldest argument
                 self.past_arg = self.args[0]
                 self.args = self.args[-self.args_length:]
-            self.set_desc()
+            else:
+                # NEW BEHAVIOR: remove the argument whose removal yields the highest self.off
+                best_off = -float('inf')
+                best_arg_index = 0
+                for i in range(len(self.args)):
+                    temp_args = self.args[:i] + self.args[i+1:]
+                    temp_off = self.compute_off_for_args(self.claims, temp_args)
+                    if temp_off > best_off:
+                        best_off = temp_off
+                        best_arg_index = i
 
-    def update_strength(self, claims):
-        """
-        Update the agent's strength value based on perplexity over pro/con claims.
-        """
-        context = (
-            f"Let's discuss {self.topic}! I believe that {chr(10).join(self.args)}. Therefore, I conclude that "
-        )
-        pro_ppls = []
-        con_ppls = []
-
-        for claim_pro in claims['pro']:
-            pro_ppls.append(self.model.calculate_perplexity(context, claim_pro))
-        for claim_con in claims['con']:
-            con_ppls.append(self.model.calculate_perplexity(context, claim_con))
-
-        pro_ppl = np.mean(pro_ppls)
-        con_ppl = np.mean(con_ppls)
-        self.strength = con_ppl / (pro_ppl + con_ppl)
-        self.off = 0.5 * (pro_ppl + con_ppl)
+                self.past_arg = self.args[best_arg_index]
+                self.args.pop(best_arg_index)
+        self.set_desc()
 
     def chat_with(self, agent, init_prompt, claims, conversation_length=6):
         """
@@ -389,7 +428,6 @@ class Agent:
                 f"{agent.name}: {response_other}\n\n"
             )
             self.clear_memory()
-
         self.add_perspective()
         agent.add_perspective()
 

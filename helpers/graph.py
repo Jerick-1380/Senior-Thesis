@@ -182,6 +182,13 @@ class Writer:
             file.write(f"There are {mid} agents who are neutral \n\n")
             for i, row in enumerate(self.matrix):
                 file.write(f"Iteration {i+1}: {row}\n")
+            variance_values = np.var(np.array(self.matrix), axis=1)
+            convergence_rate = []
+            for i in range(1, len(self.matrix)):
+                diff = np.linalg.norm(np.array(self.matrix[i]) - np.array(self.matrix[i-1]))
+                convergence_rate.append(diff)
+            file.write(f"Variances: {variance_values}\n")
+            file.write(f"Convergence Rates: {convergence_rate}\n")
                 
     def write_csv_log(self, conversations, filename="simulation_log.csv"):
         """
@@ -380,6 +387,55 @@ class Grapher:
             print(f"Plot saved as {full_path}")
 
         plt.show()
+        
+    def plot_mean_with_rolling(self, k=20, title="Mean Value Over Time (With Rolling Average)",
+                           xlabel="Time", ylabel="Mean Value", save_as="means_with_rolling.png"):
+        """
+        Plot the mean of each row in self.matrix and overlay a rolling (moving) 
+        average of that mean with a window size 'k'.
+        
+        This version does not fill any initial gaps: the rolling average starts
+        only after k data points are available, so the first rolling average 
+        point is at index k-1.
+        
+        Args:
+            k (int): The window size for the rolling average.
+            title (str): Plot title.
+            xlabel (str): Label for the X-axis.
+            ylabel (str): Label for the Y-axis.
+            save_as (str): Filename for saving the plot image.
+        """
+        mean_values = np.mean(self.matrix, axis=1)
+
+        # Use 'valid' mode to avoid partial windows. 
+        # Length of 'rolling_means' = len(mean_values) - k + 1
+        rolling_means = np.convolve(mean_values, np.ones(k)/k, mode='valid')
+        
+        # The x-values for the rolling means should start at index k-1
+        x_rolling = np.arange(k-1, len(mean_values))
+
+        plt.figure(figsize=(10, 6))
+
+        # Plot the raw mean
+        plt.plot(range(len(mean_values)), mean_values, label="Mean", color="blue")
+
+        # Plot the rolling average starting from x = k-1
+        plt.plot(x_rolling, rolling_means, label=f"Rolling Mean (k={k})", color="red")
+
+        plt.title(title)
+        plt.xlabel(xlabel)
+        plt.ylabel(ylabel)
+        plt.legend(loc="best")
+        plt.grid(True)
+
+        # Save the plot if 'save_as' is specified
+        if save_as:
+            full_path = os.path.join(self.output_folder, save_as)
+            plt.savefig(full_path, format="png", dpi=300)
+            print(f"Plot saved as {full_path}")
+
+        plt.show()
+
 
     def plot_variance(self, title="Variance Over Time", xlabel="Time", ylabel="Variance", save_as="variances.png"):
         """
@@ -402,3 +458,32 @@ class Grapher:
             print(f"Plot saved as {full_path}")
 
         plt.show()
+        
+    def plot_convergence(self, title="Convergence Over Time", xlabel="Time", ylabel="Change in Norm", save_as="convergence.png"):
+        """
+        Plot the convergence in self.matrix.
+        """
+        convergence_rate = []
+        for i in range(1, len(self.matrix)):
+            diff = np.linalg.norm(np.array(self.matrix[i]) - np.array(self.matrix[i-1]))
+            convergence_rate.append(diff)
+
+        plt.figure(figsize=(10, 6))
+        plt.plot(range(len(convergence_rate)), convergence_rate, label="L2 Difference", color="red")
+
+        plt.title(title)
+        plt.xlabel(xlabel)
+        plt.ylabel(ylabel)
+        plt.legend(loc="best")
+        plt.grid(True)
+
+        if save_as:
+            full_path = os.path.join(self.output_folder, save_as)
+            plt.savefig(full_path, format="png", dpi=300)
+            print(f"Plot saved as {full_path}")
+
+        plt.show()
+        
+        
+        
+        

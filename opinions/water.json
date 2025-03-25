@@ -1,12 +1,12 @@
 {
   "id": "whether water is wet",
   "claims": {
-    "connector": "I more or less agree with what my peers are saying here. And therefore, all in all,",
+    "connector": " Given the arguments above, if I had to give a yes or no answer to whether water is wet, I would say ",
     "pro": [
-      " water is wet"
+      "yes"
     ],
     "con": [
-      " water is not wet"
+      "no"
     ]
   },
   "intro": "Let's discuss whether water is wet!",

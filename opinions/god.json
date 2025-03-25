@@ -1,17 +1,15 @@
 {
   "id": "whether god exists",
   "claims": {
-    "connector": "I more or less agree with what my peers are saying here. And therefore, all in all,",
+    "connector": " If I had to give a yes or no answer to whether god is real, I would say ",
     "pro": [
-      " god exists",
-      " god is real"
+      "yes"
     ],
     "con": [
-      " god does not exist",
-      " god is not real"
+      "no"
     ]
   },
-  "intro": "Let's discuss is god exists!",
+  "intro": "Let's discuss if god exists!",
   "prompt": "I more or less agree with what my peers are saying here. Regarding the existence of god, I'd just add the following thought:\n",
   "initial_posts": [
     {

@@ -26,7 +26,7 @@ conda activate vllm
 #"/data/models/huggingface/meta-llama/Llama-2-13b-chat-hf"
 #"meta-llama/Meta-Llama-3-8B-Instruct"
 MODELS=(
-    "meta-llama/Meta-Llama-3-8B-Instruct"
+    "/data/models/huggingface/meta-llama/Llama-3.1-8B-Instruct"
 )
 PORTS=(
     8082

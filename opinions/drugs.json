@@ -1,14 +1,12 @@
 {
     "id": "legalization of drugs",
     "claims": {
-        "connector": "I more or less agree with what my peers are saying here. And therefore, all in all,",
+        "connector": " If I had to give a yes or no answer to whether we should legalize drugs, I would say,",
         "pro": [
-            " legalization of drugs is a good idea",
-            " all drugs should be legal"
+            "yes"
         ],
         "con": [
-            " legalization of drugs is a bad idea",
-            " all drugs should be illegal"
+            "no"
         ]
     },
     "intro": "Let's discuss legalization of drugs!",

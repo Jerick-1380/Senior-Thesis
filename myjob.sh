@@ -2,9 +2,9 @@
 #SBATCH --job-name=main
 #SBATCH --partition=general
 #SBATCH --gres=gpu:A6000:1
-#SBATCH --mem=256GB
+#SBATCH --mem=32GB
 #SBATCH --cpus-per-task=1
-#SBATCH --time=23:00:00
+#SBATCH --time=1-23:00:00
 #SBATCH --output=logs/main.log
 #SBATCH --mail-type=END,FAIL
 #SBATCH --mail-user=junkais@andrew.cmu.edu
@@ -18,7 +18,38 @@ mkdir -p $TMPDIR
 #mkdir "output"
 
 
-python small_sim.py  --folder "output1000" --epsilon 1 --num_conversations 5 --args_length 3
+#python small_sim.py  --folder "output98" --epsilon 1 --num_conversations 150 --args_length 3 --topic water
+#python small_sim.py  --folder "output99" --epsilon 1 --num_conversations 150 --args_length 3 --topic water
+#python small_sim.py  --folder "output100" --epsilon 1 --num_conversations 150 --args_length 3 --topic water
+#python small_sim.py  --folder "output101" --epsilon 1 --num_conversations 150 --args_length 3 --topic water
+#python small_sim.py  --folder "output108" --epsilon 1 --num_conversations 150 --args_length 3 --topic water
+#python small_sim.py  --folder "output109" --epsilon 1 --num_conversations 150 --args_length 3 --topic water
+#python small_sim.py  --folder "output110" --epsilon 1 --num_conversations 150 --args_length 3 --topic water
+#python small_sim.py  --folder "output111" --epsilon 1 --num_conversations 150 --args_length 3 --topic water
+#python small_sim.py  --folder "output112" --epsilon 1 --num_conversations 150 --args_length 3 --topic water
+
+#python small_sim.py  --folder "output114" --epsilon 1 --num_conversations 1000 --args_length 3 --topic water
+#python small_sim.py  --folder "output118" --epsilon 1 --num_conversations 1000 --args_length 3 --topic water
+
+
+#THIS IS GOOD
+#python small_sim.py  --folder "output144" --epsilon 1 --num_conversations 1000 --args_length 1 --init_args 1 --topic drugs
+#python small_sim.py  --folder "output145" --epsilon 1 --num_conversations 1000 --args_length 3 --init_args 3 --topic drugs
+#python small_sim.py  --folder "output146" --epsilon 1 --num_conversations 1000 --args_length 8 --init_args 8 --topic drugs
+
+#python small_sim.py  --folder "output147" --epsilon 1 --num_conversations 1000 --args_length 1 --init_args 1 --topic water
+#python small_sim.py  --folder "output148" --epsilon 1 --num_conversations 1000 --args_length 3 --init_args 3 --topic water
+#python small_sim.py  --folder "output149" --epsilon 1 --num_conversations 1000 --args_length 8 --init_args 8 --topic water
+
+#Starting with no conversations
+#python small_sim.py  --folder "output150" --epsilon 1 --num_conversations 1000 --args_length 1 --init_args 0 --topic drugs
+#python small_sim.py  --folder "output151" --epsilon 1 --num_conversations 1000 --args_length 3 --init_args 0 --topic drugs
+#python small_sim.py  --folder "output152" --epsilon 1 --num_conversations 1000 --args_length 8 --init_args 0 --topic drugs
+
+
+#python small_sim.py  --folder "output96" --epsilon 1 --num_conversations 150 --args_length 3
+#python small_sim.py  --folder "output97" --epsilon 1 --num_conversations 150 --args_length 3
+
 #python small_sim.py  --folder "output2" --epsilon 1 --num_conversations 150 --args_length 5
 #python small_sim.py  --folder "output3" --epsilon 1 --num_conversations 150 --args_length 8
 
@@ -82,3 +113,5 @@ python small_sim.py  --folder "output1000" --epsilon 1 --num_conversations 5 --a
 #rm -rf "output"
 #[ -d "frames" ] && rm -rf "frames"
 #[ -d "edgedistribution" ] && rm -rf "edgedistribution"
+
+python image_compiler.py

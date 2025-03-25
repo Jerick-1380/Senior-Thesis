@@ -15,7 +15,7 @@ import json
 from tqdm import tqdm
 
 # Local imports from 'helpers' directory
-from helpers.model import Llama
+from helpers.model import Llama, Llama3_1
 from helpers.graph import Grapher, Writer
 from helpers.bots import UselessAgent, Agent
 from helpers.data import ALL_NAMES, PERSONAS
@@ -46,6 +46,10 @@ def parse_args():
                         help="Number of agent pairs to converse each round.")
     parser.add_argument('--num_useless', type=int, default=0,
                         help="Number of agents to designate as 'UselessAgent' types.")
+    parser.add_argument('--init_args', type=int, default=0,
+                        help="How many arguments to start with")
+    parser.add_argument('--initial_condition', type=str, default="random",
+                    help="Type of initial opinion condition: none, random, structured, extreme, moderate")
 
     return parser.parse_args()
 
@@ -59,9 +63,11 @@ if __name__ == "__main__":
     topic = args.topic
     num_conversations = args.num_conversations
     num_pairs = args.num_pairs
-    host_model = "http://babel-1-31:8082/v1"
+    host_model = "http://babel-1-23:8082/v1"
     args_length = args.args_length
     num_agents = args.agents
+    init_args = args.init_args
+    initial_condition = args.initial_condition
 
     # Start timing the simulation
     start_time = time.time()
@@ -73,17 +79,18 @@ if __name__ == "__main__":
 
     # Initialize a primary language model
     basic_model = Llama(
-        dir="meta-llama/Meta-Llama-3-8B-Instruct",
+        dir="/data/models/huggingface/meta-llama/Llama-3.1-8B-Instruct",
         api_base=host_model,
-        version=3,
+        version=31,
         temperature=args.temperature
     )
-
+    
     # Load topic-specific data (claims, introduction, etc.) from JSON
     with open(f'opinions/{topic}.json', 'r') as f:
         data = json.load(f)
 
     # Create agents, some as UselessAgent if specified
+
     for idx, name in enumerate(names):
         if idx < args.num_useless:
             # Create a UselessAgent
@@ -101,34 +108,105 @@ if __name__ == "__main__":
             )
         else:
             # Create a regular Agent
-            random.seed(time.time() % 1 * 10000)
-            num_pro = args_length // 2
-            num_con = args_length - num_pro
-            pros = [item['text'] for item in data['initial_posts'] if item['type'] == 'pro']
-            cons = [item['text'] for item in data['initial_posts'] if item['type'] == 'con']
-
-            selected_pros = random.sample(pros, num_pro)
-            selected_cons = random.sample(cons, num_con)
-
-            init_args = selected_pros + selected_cons
-            random.shuffle(init_args)
-
-            agents.append(
-                Agent(
+            if initial_condition == "random":
+                random.seed(time.time() % 1 * 10000)
+                arguments = [item['text'] for item in data['initial_posts']]
+                init_args_list = random.sample(arguments, init_args)
+                random.shuffle(init_args_list)
+                new_agent = Agent(
                     name=name,
                     persona=personas[idx],
                     model=basic_model,
                     topic=data['id'],
                     claims=data['claims'],
-                    init_args=init_args,
+                    init_args=init_args_list,
                     memory_length=5,
-                    args_length=args_length
+                    args_length=args_length,
+                    remove_irrelevant=True,
+                    extra_desc=""
                 )
-            )
+            elif initial_condition == "none":
+                new_agent = Agent(
+                    name=name,
+                    persona=personas[idx],
+                    model=basic_model,
+                    topic=data['id'],
+                    claims=data['claims'],
+                    init_args=[],
+                    memory_length=5,
+                    args_length=args_length,
+                    remove_irrelevant=True,
+                    extra_desc=""
+                )
+            elif initial_condition == "moderate":
+                # Loop until the created agent has strength in [0.4, 0.6]
+                while True:
+                    arguments = [item['text'] for item in data['initial_posts']]
+                    init_args_list = random.sample(arguments, init_args)
+                    random.shuffle(init_args_list)
+                    temp_agent = Agent(
+                        name=name,
+                        persona=personas[idx],
+                        model=basic_model,
+                        topic=data['id'],
+                        claims=data['claims'],
+                        init_args=init_args_list,
+                        memory_length=5,
+                        args_length=args_length,
+                        remove_irrelevant=True,
+                        extra_desc=""
+                    )
+                    if 0.4 <= temp_agent.strength <= 0.6:
+                        new_agent = temp_agent
+                        break
+            elif initial_condition == "extreme":
+                # Determine half of the agents (based on their index among regular agents)
+                num_regular = len(names) - args.num_useless
+                if (idx - args.num_useless) < num_regular / 2:
+                    # First half: force strength < 0.2 (more negative)
+                    while True:
+                        arguments = [item['text'] for item in data['initial_posts']]
+                        init_args_list = random.sample(arguments, init_args)
+                        random.shuffle(init_args_list)
+                        temp_agent = Agent(
+                            name=name,
+                            persona=personas[idx],
+                            model=basic_model,
+                            topic=data['id'],
+                            claims=data['claims'],
+                            init_args=init_args_list,
+                            memory_length=5,
+                            args_length=args_length,
+                            remove_irrelevant=True,
+                            extra_desc=""
+                        )
+                        if temp_agent.strength < 0.2:
+                            new_agent = temp_agent
+                            break
+                else:
+                    # Second half: force strength > 0.8 (more positive)
+                    while True:
+                        arguments = [item['text'] for item in data['initial_posts']]
+                        init_args_list = random.sample(arguments, init_args)
+                        random.shuffle(init_args_list)
+                        temp_agent = Agent(
+                            name=name,
+                            persona=personas[idx],
+                            model=basic_model,
+                            topic=data['id'],
+                            claims=data['claims'],
+                            init_args=init_args_list,
+                            memory_length=5,
+                            args_length=args_length,
+                            remove_irrelevant=True,
+                            extra_desc=""
+                        )
+                        if temp_agent.strength > 0.8:
+                            new_agent = temp_agent
+                            break
+            # Append the newly created Agent
+            agents.append(new_agent)
 
-    # Write initial description of the agents
-    initial_writer = Writer(agents, args.folder)
-    initial_writer.output_desc("init_desc.txt")
 
     # Create a conversation controller and run the simulation
     conversation_creator = ConversationCreator(agents)
@@ -141,6 +219,15 @@ if __name__ == "__main__":
         doesChat=True,
         epsilon=args.epsilon
     )
+    
+    #print("Running group discussion among all agents...")
+    #conversation_creator.GroupConverse(
+    #    k = 5,
+     #   num_conversations=num_conversations,
+     #   init_prompt=data['intro'],
+     #   claims=data['claims'],
+     #   conversation_length=6  # You can adjust the number of turns here.
+    #)
 
     # Measure total elapsed time
     end_time = time.time()
@@ -152,10 +239,12 @@ if __name__ == "__main__":
     final_writer = Writer(agents, conversation_creator.past_strengths, args.folder)
 
     # Generate and save visual outputs
-    strength_grapher.create_gif()
+    #strength_grapher.create_gif()
     strength_grapher.plot_lines(num=5)
     strength_grapher.plot_mean()
+    strength_grapher.plot_mean_with_rolling()
     strength_grapher.plot_variance()
+    strength_grapher.plot_convergence()
 
     # Plot offsets over time
     off_grapher = Grapher(conversation_creator.past_offs, args.folder)
@@ -172,4 +261,6 @@ if __name__ == "__main__":
     )
 
     # Print elapsed time
+    for agent in agents:
+        print(f"{'\n'.join(agent.args)}")
     print(f"Elapsed time: {elapsed_time} seconds", flush=True)

@@ -78,6 +78,71 @@ def agent_conversation(
 
     agentA.reset()
     agentB.reset()
+    
+    
+def group_conversation(agents, init_prompt, claims, conversation_length=6, num_participants=None):
+    """
+    Conduct a group conversation among a random subset of agents.
+    
+    The conversation begins with an initial prompt. The function randomly selects a specified
+    number of agents (num_participants) from the provided agent list. Then, in a round-robin
+    fashion, each selected agent takes a turn generating a response based on the conversation
+    so far. After each turn, every participating agent’s user history is updated with the new
+    utterance so that everyone “hears” it. Finally, each agent updates its perspective based
+    on the conversation.
+    
+    Args:
+        agents (list): A list of Agent objects.
+        init_prompt (str): The conversation starter.
+        claims (dict): The claims used for updating strengths.
+        conversation_length (int): Total number of turns (utterances) in the discussion.
+        num_participants (int, optional): The number of agents to randomly select from the full list.
+                                          If None or greater than len(agents), all agents are used.
+        
+    Returns:
+        str: A transcript of the group discussion.
+    """
+    # Determine which agents will participate
+    if num_participants is None or num_participants > len(agents):
+        chosen_agents = agents.copy()
+    else:
+        chosen_agents = random.sample(agents, num_participants)
+    
+    conversation_text = ""
+    num_chosen = len(chosen_agents)
+
+    # Reset history for each participating agent and give everyone the initial prompt
+    for agent in chosen_agents:
+        agent.reset()
+        agent.user_history.append(init_prompt)
+    current_prompt = init_prompt
+
+    # Cycle through the chosen agents in round-robin order
+    for turn in range(conversation_length):
+        current_agent = chosen_agents[turn % num_chosen]
+        # Ensure the current agent sees the current prompt (if not already there)
+        current_agent.user_history.append(current_prompt)
+        response = current_agent.generate()
+        current_agent.model_history.append(response)
+
+        # Append the response to the transcript
+        conversation_text += f"{current_agent.name}: {response}\n"
+
+        # Update every agent’s history so that everyone “hears” this utterance
+        for agent in chosen_agents:
+            agent.user_history.append(response)
+        current_prompt = response
+
+        # Optionally clear memories to maintain only the most recent context
+        for agent in chosen_agents:
+            agent.clear_memory()
+
+    # After the discussion, update each agent's perspective based on the conversation.
+    for agent in chosen_agents:
+        agent.add_perspective()
+        agent.update_strength(claims)
+
+    return conversation_text
 
 class ConversationCreator:
     """
@@ -110,6 +175,7 @@ class ConversationCreator:
             strength_list = []
             off_list = []
 
+            # Collect current strengths and offsets
             for agent in self.agents:
                 if agent.strength != 0.5:
                     strength_list.append(agent.strength)
@@ -131,10 +197,12 @@ class ConversationCreator:
                 if epsilon == 1:
                     agentB = available_agents[1]
                     available_agents = available_agents[2:]
+                elif(epsilon == 0):
+                    agentB = closest_strength_agent(available_agents)
+                    available_agents.remove(agentB)
                 else:
-                    # some logic to pick agentB (closest, bounded, etc.)
-                    agentB = available_agents[1]
-                    available_agents = available_agents[2:]
+                    agentB = closest_strength_agent_bounded(available_agents,epsilon)
+                    available_agents.remove(agentB)
 
                 pairs.append((agentA, agentB))
 
@@ -172,6 +240,41 @@ class ConversationCreator:
 
             # Clear conversations if you only need them ephemeral
             self.conversations = []
+            
+            
+    def GroupConverse(self, k, num_conversations, init_prompt, claims, conversation_length=6):
+        """
+        Conduct a group discussion among all agents in self.agents.
+        The conversation begins with init_prompt and proceeds in a round-robin fashion.
+        At each turn, the current agent generates a response which is added to a shared conversation.
+        After the discussion, each agent updates its perspective.
+        """
+        for round_idx in range(num_conversations):
+            # Conduct the group conversation
+            conversation_text = group_conversation(self.agents, init_prompt, claims, conversation_length, k)
+            
+            # After the conversation, collect the strengths and offsets just like in Converse
+            strength_list = []
+            off_list = []
+            for agent in self.agents:
+                if agent.strength != 0.5:
+                    strength_list.append(agent.strength)
+                    off_list.append(agent.off)
+            
+            # Store them so you can track changes over time
+            self.past_strengths.append(strength_list)
+            self.past_offs.append(off_list)
+
+            # Build a record of the group conversation
+            record = {
+                "round": len(self.conversation_log) + 1,
+                "agents": [agent.name for agent in self.agents],
+                "prompt": init_prompt,
+                "conversation_text": conversation_text,
+                "strength_list": strength_list,
+                "off_list": off_list
+            }
+            self.conversation_log.append(record)
 
     def InteractionDic(self):
         """
