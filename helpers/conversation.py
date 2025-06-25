@@ -1,12 +1,11 @@
-import networkx as nx
-import matplotlib.pyplot as plt
-import imageio
 import os
 import numpy as np
 import random
 import threading
 import re
 from datetime import datetime
+from helpers.bots import batch_add_perspectives
+import asyncio
 
 def add_newline_after_sentence(paragraph: str) -> str:
     """
@@ -57,27 +56,6 @@ def variance(agents):
     """
     strengths = [agent.strength for agent in agents]
     return np.var(strengths)
-
-def agent_conversation(
-    agentA, 
-    agentB, 
-    intro, 
-    claims,
-    edge_occ, 
-    conversations, 
-    strength_changes,
-    update_strength=True, 
-    does_chat=True
-):
-    """
-    Perform a conversation between two agents and store the result in the provided lists and dictionaries.
-    """
-    if does_chat:
-        conversation_text = agentA.chat_with(agentB, intro, claims, conversation_length=5)
-        conversations.append(conversation_text)
-
-    agentA.reset()
-    agentB.reset()
     
     
 def group_conversation(agents, init_prompt, claims, conversation_length=6, num_participants=None):
@@ -160,7 +138,7 @@ class ConversationCreator:
         self.conversation_log = []
         self.past_mayor = ""
 
-    def Converse(
+    async def Converse(
         self, 
         num_conversations, 
         intro, 
@@ -168,19 +146,58 @@ class ConversationCreator:
         shuffle=True, 
         num_pairs=1, 
         doesChat=False, 
-        epsilon=1
+        epsilon=1,
+        conversation_length=2  # add conversation_length parameter
     ):
         random.seed(datetime.now().timestamp() % 1 * 10000)
+        strength_list = []
+        off_list = []
+        pre_convo_records = []
+
+        agents_copy = self.agents.copy()
+        if len(agents_copy) % 2 == 1:
+            agents_copy = agents_copy[:-1]  # Make even number of agents for pairing
+
+        for i in range(0, len(agents_copy), 2):
+            agentA = agents_copy[i]
+            agentB = agents_copy[i+1]
+
+            pre_convo_records.append({
+                "round": 0,
+                "agentA": {
+                    "name": agentA.name,
+                    "strength": agentA.strength,
+                    "off": agentA.off,
+                    "args": agentA.args.copy()
+                },
+                "agentB": {
+                    "name": agentB.name,
+                    "strength": agentB.strength,
+                    "off": agentB.off,
+                    "args": agentB.args.copy()
+                },
+                "prompt": None,
+                "conversation_text": None
+            })
+
+            if agentA.strength != 0.5:
+                strength_list.append(agentA.strength)
+                off_list.append(agentA.off)
+            if agentB.strength != 0.5:
+                strength_list.append(agentB.strength)
+                off_list.append(agentB.off)
+
+        self.conversation_log.extend(pre_convo_records)
+        self.past_strengths.append(strength_list)
+        self.past_offs.append(off_list)
+        
         for round_idx in range(num_conversations):
             strength_list = []
             off_list = []
-
-            # Collect current strengths and offsets
             for agent in self.agents:
                 if agent.strength != 0.5:
                     strength_list.append(agent.strength)
                     off_list.append(agent.off)
-
             self.past_strengths.append(strength_list)
             self.past_offs.append(off_list)
 
@@ -192,55 +209,89 @@ class ConversationCreator:
             for _ in range(num_pairs):
                 if len(available_agents) < 2:
                     break
-
                 agentA = available_agents[0]
                 if epsilon == 1:
                     agentB = available_agents[1]
                     available_agents = available_agents[2:]
-                elif(epsilon == 0):
+                elif epsilon == 0:
                     agentB = closest_strength_agent(available_agents)
                     available_agents.remove(agentB)
                 else:
-                    agentB = closest_strength_agent_bounded(available_agents,epsilon)
+                    agentB = closest_strength_agent_bounded(available_agents, epsilon)
                     available_agents.remove(agentB)
-
                 pairs.append((agentA, agentB))
 
-            # Conduct each pair's conversation
-            for (agentA, agentB) in pairs:
-                conversation_text = ""
-                if doesChat:
-                    # This method should return the conversation text
-                    conversation_text = agentA.chat_with(agentB, intro, claims, conversation_length=5)
-                    self.conversations.append(conversation_text)
+            # Initialize conversation transcripts for each pair
+            conversation_texts = ["" for _ in range(len(pairs))]
+            # Initialize each agent's conversation with the intro (only for the first agent's turn)
+            for agentA, agentB in pairs:
+                if not agentA.user_history or agentA.user_history[-1] != intro:
+                    agentA.user_history.append(intro)
+                if not agentB.user_history or agentB.user_history[-1] != intro:
+                    agentB.user_history.append(intro)
 
-                # Build a record of data from this round
+            # Loop over the number of conversation turns
+            for turn in range(conversation_length):
+                # Batch generation for Agent A's turn
+                batch_data_A = []
+                for agentA, agentB in pairs:
+                    # Agent A generates a response based on its current history
+                    batch_data_A.append((agentA.desc, agentA.user_history, agentA.model_history))
+                responses_A = await self.agents[0].model.generate_batch(batch_data_A)
+                for idx, (agentA, agentB) in enumerate(pairs):
+                    response_A = responses_A[idx]
+                    conversation_texts[idx] += f"{agentA.name}: {response_A}\n"
+                    # Update histories: Agent A's response becomes part of its model history,
+                    # and Agent B hears it (added to its user history)
+                    agentA.model_history.append(response_A)
+                    agentB.user_history.append(response_A)
+                
+                # Batch generation for Agent B's turn
+                batch_data_B = []
+                for agentA, agentB in pairs:
+                    batch_data_B.append((agentB.desc, agentB.user_history, agentB.model_history))
+                responses_B = await self.agents[0].model.generate_batch(batch_data_B)
+                for idx, (agentA, agentB) in enumerate(pairs):
+                    response_B = responses_B[idx]
+                    conversation_texts[idx] += f"{agentB.name}: {response_B}\n"
+                    agentB.model_history.append(response_B)
+                    agentA.user_history.append(response_B)
+
+            # After conversation_length turns, update perspectives and strengths
+            agents_to_update = []
+            for agentA, agentB in pairs:
+                agents_to_update.append(agentA)
+                agents_to_update.append(agentB)
+
+            # Batch add perspectives for all agents.
+            await batch_add_perspectives(agents_to_update)
+
+            # Then update strengths concurrently.
+            await asyncio.gather(*[agent.update_strength(claims) for agent in agents_to_update])
+
+            # Record the full conversation transcript along with updated strengths,
+            # and then reset the agents' conversation histories.
+            for idx, (agentA, agentB) in enumerate(pairs):
                 record = {
                     "round": round_idx + 1,
                     "agentA": {
                         "name": agentA.name,
                         "strength": agentA.strength,
                         "off": agentA.off,
-                        "args": agentA.args
+                        "args": agentA.args.copy()
                     },
                     "agentB": {
                         "name": agentB.name,
                         "strength": agentB.strength,
                         "off": agentB.off,
-                        "args": agentB.args
+                        "args": agentB.args.copy()
                     },
                     "prompt": intro,
-                    "conversation_text": conversation_text
+                    "conversation_text": conversation_texts[idx]
                 }
                 self.conversation_log.append(record)
-
-                # Reset or do any post-processing if needed
                 agentA.reset()
                 agentB.reset()
-
-            # Clear conversations if you only need them ephemeral
-            self.conversations = []
-            
             
     def GroupConverse(self, k, num_conversations, init_prompt, claims, conversation_length=6):
         """

@@ -1,0 +1,444 @@
+{
+  "id": "whether water is wet",
+  "claims": {
+    "connector": " Given the arguments above, if I had to give a yes or no answer to whether water is wet, I would say ",
+    "pro": [
+      "yes"
+    ],
+    "con": [
+      "no"
+    ]
+  },
+  "intro": "Let's discuss whether water is wet!",
+  "prompt": "I more or less agree with what my peers are saying here. Regarding whether water is wet, I'd just add the following thought:\n",
+  "initial_posts": [
+    {
+      "type": "pro",
+      "text": "Water is wet.\n\n  Wet is an emergent property that describes the characteristics of a collection of water molecules."
+    },
+    {
+      "type": "con",
+      "text": "If a single, isolated water molecule is not wet, then water itself cannot be wet."
+    },
+    {
+      "type": "con",
+      "text": "Even if a single molecule of water is not wet, the water in a cup of water can be wet because each molecule of water in the cup is in contact with other water molecules."
+    },
+    {
+      "type": "con",
+      "text": "The parent claim commits the fallacy of division ; a part of a whole can lack properties of the whole."
+    },
+    {
+      "type": "pro",
+      "text": "Water does not behave as a liquid or until there are at least six molecules clustered together ."
+    },
+    {
+      "type": "pro",
+      "text": "To say \"water is wet\" implies that all water is wet. A single water molecule qualifies as \"water,\" so if it cannot be wet, then \"water\" cannot be considered wet. It would be more accurate to say \"some water is wet.\""
+    },
+    {
+      "type": "con",
+      "text": "Pure water (H20) does not exist on Earth. Earth's water contains dissolved solids and gases. Wetness is not a property of water but rather the effect of something being dissolved in it."
+    },
+    {
+      "type": "con",
+      "text": "Pure water can be made in a laboratory, and it's still wet."
+    },
+    {
+      "type": "pro",
+      "text": "When something is dissolved in water, the water is in contact with a non-water substance, which is wet because of such contact."
+    },
+    {
+      "type": "pro",
+      "text": "One can describe any liquid that shares such properties with water as wet."
+    },
+    {
+      "type": "pro",
+      "text": "If other substances very similar to water can be considered wet, then water should not be removed from this category."
+    },
+    {
+      "type": "pro",
+      "text": "No liquids are dry , so therefore they must be wet."
+    },
+    {
+      "type": "con",
+      "text": "Fluorinated ketone , used as a fire suppressant, is also known as \"dry water\" and is not wet."
+    },
+    {
+      "type": "con",
+      "text": "Strong tetrahedral hydrogen bonding  and the qualities of such bonds are unique to water molecules."
+    },
+    {
+      "type": "con",
+      "text": "Wetness is not dependent upon the way that water molecules bond  to one another, but rather to the way that water molecules interact with non-water molecules."
+    },
+    {
+      "type": "pro",
+      "text": "Tetrahedral hydrogen bonding gives water its unique properties, such as expanding upon freezing, but does not necessarily make water wet."
+    },
+    {
+      "type": "pro",
+      "text": "Water has specific physical properties which we collectively refer to as wetness."
+    },
+    {
+      "type": "pro",
+      "text": "The viscosity and cooling properties of water and its respective ease of evaporation are elements of wetness."
+    },
+    {
+      "type": "pro",
+      "text": "Wetness is dependent on the adhesive and cohesive  properties of liquids, including water."
+    },
+    {
+      "type": "pro",
+      "text": "Wetness describes how water sticks to both itself and the surface of solids  that it touches."
+    },
+    {
+      "type": "con",
+      "text": "Since the balance between the cohesive and adhesive forces  of water can change depending on its temperature, its ability to be wet is non-absolute."
+    },
+    {
+      "type": "con",
+      "text": "These properties require interaction to be revealed."
+    },
+    {
+      "type": "con",
+      "text": "Ice is a collection of water molecules , and at low temperatures, it is not wet ."
+    },
+    {
+      "type": "con",
+      "text": "Anything that can be wet can also be dry. Since water cannot be dry, it cannot be wet."
+    },
+    {
+      "type": "con",
+      "text": "Dry ice  can only be dry (i.e., solid or gaseous state), never wet (i.e., liquid state)."
+    },
+    {
+      "type": "con",
+      "text": "Dry ice is not water, but frozen carbon dioxide  (CO2), and it does exist as a liquid under the correct conditions ."
+    },
+    {
+      "type": "pro",
+      "text": "Under normal conditions, dry ice sublimates directly from a solid to a gas as it warms. Its inability to melt (and thereby become wet) does not prevent it from being dry."
+    },
+    {
+      "type": "con",
+      "text": "The assumption that everything wet can also be dry is flawed. Some properties are mutually exclusive; for example, the negative charge of an electron doesn't imply that it is sometimes positive."
+    },
+    {
+      "type": "pro",
+      "text": "If water cannot be dry, then it must be wet."
+    },
+    {
+      "type": "con",
+      "text": "Wetness exists on a spectrum; things that are wet can be \"barely wet,\" \"wet,\" or \"very wet,\" yet this cannot apply to water."
+    },
+    {
+      "type": "pro",
+      "text": "Aristotelian metaphysics  predicates the properties of a substance via contraries. From this perspective, it is meaningless to predicate the wetness of water if one cannot predicate the dryness of it."
+    },
+    {
+      "type": "pro",
+      "text": "A wet towel only exists as such in reference to a dry towel, yet this same distinction cannot be made with water."
+    },
+    {
+      "type": "con",
+      "text": "Aristotelian metaphysics also distinguishes between the accidental and essential properties  of a substance. It could be that wetness is essential to water."
+    },
+    {
+      "type": "pro",
+      "text": "Something can only become what it is from its opposite. Thus, water could only become wet from a prior state of dryness."
+    },
+    {
+      "type": "con",
+      "text": "Wet and dry are not opposite states but rather represent directions on a scale describing the amount of water that is present in a particular place."
+    },
+    {
+      "type": "pro",
+      "text": "Wetness is determined by the previously dry state of any object that becomes wet via contact with water. Wetness cannot exist without such modification of a prior state."
+    },
+    {
+      "type": "con",
+      "text": "Circles are round, and are not thought to have ever been unround, which would seem to contradict this."
+    },
+    {
+      "type": "con",
+      "text": "Wetness is a property of experience rather than of water itself."
+    },
+    {
+      "type": "pro",
+      "text": "Wetness describes the sensation of tactile interaction with water."
+    },
+    {
+      "type": "pro",
+      "text": "Water feeling wet when we touch it does not mean that water itself is wet, as this sensation also requires an organism with the senses necessary to experience it. Therefore, the water cannot be considered wet in absolute terms."
+    },
+    {
+      "type": "pro",
+      "text": "We know what water feels like when we drink it and when we touch it. The word we use to describe that sensation is wet."
+    },
+    {
+      "type": "con",
+      "text": "Humans do not have direct sensory receptors  for wetness, and instead rely on a combination of related sensory cues to identify wetness."
+    },
+    {
+      "type": "con",
+      "text": "The sensations of temperature, pressure, and stickiness that define wetness are based on the tactile experience of water, rather than inherent properties of the water itself."
+    },
+    {
+      "type": "pro",
+      "text": "Since wetness cannot be defined as a distinct sensory experience, it must be a property of water itself."
+    },
+    {
+      "type": "con",
+      "text": "Inanimate objects that are in contact with water are considered wet despite their absence of awareness or sensation."
+    },
+    {
+      "type": "con",
+      "text": "Water remains wet even when we are not in contact with it."
+    },
+    {
+      "type": "pro",
+      "text": "We can use scientific tools to measure and record the properties of water without direct human interaction; its properties remain the same."
+    },
+    {
+      "type": "con",
+      "text": "We can't know this for sure, since any instrument that we could use to test this would act as a surrogate for human interaction, and this still constitutes experience."
+    },
+    {
+      "type": "con",
+      "text": "The experience of wetness requires water or a comparable liquid."
+    },
+    {
+      "type": "con",
+      "text": "Water can be a necessary cause of wetness without being a sufficient cause . A substance apart from water is also a necessary condition of wetness."
+    },
+    {
+      "type": "pro",
+      "text": "Wetness cannot exist in the absence of water or similar liquids, yet it continues to exist in the absence of a consciousness capable of experiencing it."
+    },
+    {
+      "type": "pro",
+      "text": "Wetness  is a property that allows liquid to adhere to the surface of a solid."
+    },
+    {
+      "type": "pro",
+      "text": "Although wetness corresponds to structures in physical space, such as water, it exists as an experience independent of these structures."
+    },
+    {
+      "type": "con",
+      "text": "Since our consciousness of anything relies upon sensory interaction, water itself is equally an experience independent of physical structure."
+    },
+    {
+      "type": "con",
+      "text": "Water itself is not \"wet\" but rather expressing a property  making surfaces wet while not being wet itself"
+    },
+    {
+      "type": "pro",
+      "text": "When we dream of touching water, we experience wetness independent of physical water."
+    },
+    {
+      "type": "pro",
+      "text": "This is an analytic a priori  truth (true by definition)."
+    },
+    {
+      "type": "pro",
+      "text": "The words \"water\" and \"wet\" both derive from the same etymological origin , indicating that the concepts are intimately related."
+    },
+    {
+      "type": "pro",
+      "text": "\"Wet\" and \"water\" were originally interchangeable , so \"water is wet\" would effectively translate to \"water is water.\" In the tactile context, \"water feels wet\" would translate to \"water feels like water.\""
+    },
+    {
+      "type": "con",
+      "text": "This represents a single linguistic example (English) and does not generalize to all languages."
+    },
+    {
+      "type": "pro",
+      "text": "If something is a liquid, it is wet. Water is a liquid. Therefore, water is wet."
+    },
+    {
+      "type": "pro",
+      "text": "\"Wet \" is defined as something that consists of, contains, is covered with, or is soaked with liquid. \"Water\" consists of liquid, and therefore instantiates  \"wetness.\""
+    },
+    {
+      "type": "con",
+      "text": "Not all liquids are wet; for example, molten metals are liquid but not wet."
+    },
+    {
+      "type": "con",
+      "text": "Our knowledge of water is a posteriori knowledge; the concepts of \"water\" and \"wet\" are distinct from water itself and are based on experience (p. 13 )."
+    },
+    {
+      "type": "con",
+      "text": "Water would still be wet without humans experiencing it as such."
+    },
+    {
+      "type": "pro",
+      "text": "If it were impossible for water to make anything wet (for example, if every single substance on earth was hydrophobic) then there would be no reason for language users to create the predicate \"wet,\" as it wouldn't describe any property of water."
+    },
+    {
+      "type": "con",
+      "text": "If a being had interacted with other wet things, but not water itself, this would be novel information and not a priori."
+    },
+    {
+      "type": "con",
+      "text": "Describing water as \"wet\" is a misuse only grounded in the fact that water or similar liquids can make other substances wet."
+    },
+    {
+      "type": "con",
+      "text": "Water or similar liquids are the only things that can make something wet precisely because they themselves are wet."
+    },
+    {
+      "type": "pro",
+      "text": "The word \"wet\" has multiple definitions. In the sentence \"water is wet,\" the word \"wet\" refers to the ability of water to make things wet ; whereas, the predicate \"wet\" in \"the shirt is wet\" uses a different definition ."
+    },
+    {
+      "type": "con",
+      "text": "Water is sometimes dry, so all water cannot be described as wet."
+    },
+    {
+      "type": "pro",
+      "text": "\"Dry water \" is a white powder that is 95% water mixed with 5% silica."
+    },
+    {
+      "type": "con",
+      "text": "Since dry water consists of water droplets coated in silica , the water inside a dry water particle remains wet, while the silica coating is dry."
+    },
+    {
+      "type": "pro",
+      "text": "Despite being predominantly composed of water, \"dry water\" does not have the properties commonly associated with wetness."
+    },
+    {
+      "type": "con",
+      "text": "Many things with high water content, such as carrots , do not feel particularly wet. This does not imply that water itself is not wet."
+    },
+    {
+      "type": "pro",
+      "text": "Ice and snow well below the freezing point are devoid of liquid water on their surface or pores and thus may be described as dry."
+    },
+    {
+      "type": "con",
+      "text": "If you touch ice, your hands will be wet, if you touch snow, your hands will be wet. Ice and snow are wet solids."
+    },
+    {
+      "type": "pro",
+      "text": "Ice does not display the properties of liquid water that constitute wetness, such as its stickiness and viscosity."
+    },
+    {
+      "type": "con",
+      "text": "The existence of a few exceptions does not mean that the general rule \"water is wet\" is inaccurate."
+    },
+    {
+      "type": "pro",
+      "text": "While there are some stones that are soft , stone is still defined as a hard substance ."
+    },
+    {
+      "type": "con",
+      "text": "A single exception to the statement \"water is wet\" logically requires that the statement be amended to \"some/most water is wet.\""
+    },
+    {
+      "type": "con",
+      "text": "Liquid form is explicit in most of the definitions of the water ; therefore, ice and snow are not water, but rather solid states of H2O."
+    },
+    {
+      "type": "con",
+      "text": "The word water  is interchangeable with the chemical compound H2O, and ice is a form of H2O."
+    },
+    {
+      "type": "pro",
+      "text": "Ice and snow are referred to as such for a reason; they are related to water but distinct from it."
+    },
+    {
+      "type": "pro",
+      "text": "Everything water touches becomes wet."
+    },
+    {
+      "type": "pro",
+      "text": "Anything that is covered or saturated by a liquid is considered wet ."
+    },
+    {
+      "type": "con",
+      "text": "Waterproof  materials and substances that come in contact with water do not become wet."
+    },
+    {
+      "type": "pro",
+      "text": "A shirt becomes wet only when it is in contact with water or another liquid; when all liquid is removed, the shirt can no longer be considered wet. Thus, the presence of water or other liquids is essential to the condition of wetness."
+    },
+    {
+      "type": "pro",
+      "text": "Being wet is a consequence of interaction with water, so water itself must also be wet in order to pass this characteristic on to anything else."
+    },
+    {
+      "type": "pro",
+      "text": "Water is characteristically wet in the same way that glass is characteristically brittle; both characteristics cannot be observed without an external force. Glass needs force exerted on it to reveal its brittleness, water must come into contact with something to reveal its wetness."
+    },
+    {
+      "type": "pro",
+      "text": "Water is wet in the same way that it is hot or cold and passes these properties along via physical contact."
+    },
+    {
+      "type": "con",
+      "text": "The diffusion of heat between water and another substance is an exchange of energy, whereas wetness is merely a question of contact."
+    },
+    {
+      "type": "con",
+      "text": "Interaction with water causes some substances to dissolve, yet we do not refer to water as dissolved."
+    },
+    {
+      "type": "con",
+      "text": "A substance that is dissolved in water has undergone a chemical reaction; this is different from physical contact."
+    },
+    {
+      "type": "con",
+      "text": "Something can generate a property in other things yet not possess that property itself."
+    },
+    {
+      "type": "pro",
+      "text": "Light itself is not hot, but the absorption of light generates heat."
+    },
+    {
+      "type": "con",
+      "text": "Pouring one volume of water into another does not make either one wet or wetter."
+    },
+    {
+      "type": "pro",
+      "text": "It is impossible to saturate  water with itself or to cover water with water."
+    },
+    {
+      "type": "con",
+      "text": "Water is saturated  with itself; individual water molecules are in contact with other water molecules, which in turn qualifies each water molecule as saturated by the water molecules which surround it."
+    },
+    {
+      "type": "pro",
+      "text": "Water is not considered saturated  until it contains the maximum dissolvable amount of a solute."
+    },
+    {
+      "type": "con",
+      "text": "As the proportion of water in a system increases, it is increasingly described as wet, using a scale of terms like moist, damp, wet, wetter, sopping wet, and dripping wet. This implies that the point of 100% wetness would be pure water."
+    },
+    {
+      "type": "con",
+      "text": "This demonstrates how the language used to describe a system changes as the proportion of water in a system increases, but it doesn't actually address whether water itself is wet outside of a system."
+    },
+    {
+      "type": "pro",
+      "text": "The term \"water\" does not refer exclusively to pure H2O, but rather to H2O with other compounds in solution. Increasing the proportion of water to other substances effectively makes water wetter."
+    },
+    {
+      "type": "con",
+      "text": "Water only has the capability to wet other things and is not wet in and of itself."
+    },
+    {
+      "type": "con",
+      "text": "Water is inherently wet ."
+    },
+    {
+      "type": "con",
+      "text": "All the properties of water  are still present when it is not in contact with anything else."
+    },
+    {
+      "type": "pro",
+      "text": "Wetness is a predicate that applies to substances different than water, that contain water molecules, or directly touch water."
+    }
+  ]
+}

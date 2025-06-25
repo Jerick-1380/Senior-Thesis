@@ -1,12 +1,10 @@
 import networkx as nx
 import matplotlib.pyplot as plt
-import imageio
-import os
-import numpy as np
-import networkx as nx
 import matplotlib.cm as cm
 import matplotlib.colors as mcolors
 import imageio
+import os
+import numpy as np
 import json
 import csv
 

@@ -1,0 +1,20 @@
+{
+    "id": "whether to drive a truck on a Friday morning if cows can start talking and I got an 85 on a physics exam",
+    "claims": {
+        "connector": " If I had to give a yes or no answer to whether I should drive a truck on a Friday morning if cows can start talking and I got an 85 on a physics exam, I would say,",
+        "pro": [
+            "yes"
+        ],
+        "con": [
+            "no"
+        ]
+    },
+    "intro": "Let's discuss whether to drive a truck on a Friday morning if cows can start talking and I got an 85 on a physics exam!",
+    "prompt": "I more or less agree with what my peers are saying here. Regarding whether to drive a truck on a Friday morning if cows can start talking and I got an 85 on a physics exam, I'd just add the following thought:\n",
+    "initial_posts": [
+        {
+            "type": "con",
+            "text": "Legalizing all drugs will be seen as a sign of the government/authority giving up on protecting people from the harm they could do, to themselves and others, through poorly selected drug use."
+        }
+    ]
+}

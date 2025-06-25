@@ -1,174 +1,127 @@
-import requests
 import openai
-from openai import OpenAI
+from openai import OpenAI, RateLimitError, APIError, AsyncOpenAI
 import backoff
 from helpers.prompt_template import PromptTemplate as PT
-import requests
 from vllm import LLM, SamplingParams
 import numpy as np
+import aiohttp
+import asyncio
+import time
+import aiolimiter
+from aiolimiter import AsyncLimiter
+
 
 class Llama:
-    """
-    A simple wrapper to interact with an HTTP-based API for a Llama model.
-    """
-
-    def __init__(self, dir, api_base, version=2, max_tokens=150, temperature=0.7):
-        self.dir = dir
-        self.api_base = api_base
+    def __init__(self, base_url: str, api_key: str, model: str,
+                 max_tokens: int = 75, temperature: float = 0.7):
+        self.client = OpenAI(base_url=base_url, api_key=api_key)
+        self.model = model
         self.max_tokens = max_tokens
         self.temperature = temperature
-        if version == 2:
-            self.tags = {
-                "system_prefix": " <s>[INST] <<SYS>>",
-                "system_suffix": "<</SYS>>",
-                "user_prefix": "",
-                "user_suffix": "[/INST]",
-                "model_prefix": "",
-                "model_suffix": "</s>\n <s>[INST]"
-            }
-        elif version == 31:
-            self.tags = {
-           "system_prefix": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n",
-            "system_suffix": "<|eot_id|>\n",
-            "user_prefix": "<|start_header_id|>user<|end_header_id|>\n",
-            "user_suffix": "<|eot_id|>\n",
-            "model_prefix": "<|start_header_id|>assistant<|end_header_id|>\n",
-            "model_suffix": "<|eot_id|>\n"
-             }
-        else:
-            self.tags = {
-                "system_prefix": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n",
-                "system_suffix": "<|eot_id|>\n",
-                "user_prefix": "<|start_header_id|>user<|end_header_id|>\n",
-                "user_suffix": "<|eot_id|>\n",
-                "model_prefix": "<|start_header_id|>assistant<|end_header_id|>\n",
-                "model_suffix": "<|eot_id|>\n"
-            }
-        self.session = requests.Session()
 
-    def generate(self, base_prompt, user_history, model_history):
-        """
-        Produce a completion from the model, based on a prompt built from the given 
-        base_prompt, user_history, and model_history.
-        """
-        prompt_object = PT(base_prompt, user_history, model_history, self.tags)
-        prompt = prompt_object.build_prompt()
+    async def generate(self, base_prompt: str, user_history: list, model_history: list) -> str:
+        messages = []
+        if base_prompt:
+            messages.append({"role": "system", "content": base_prompt})
+        for i in range(len(user_history)):
+            messages.append({"role": "user", "content": user_history[i]})
+            if i < len(model_history):
+                messages.append({"role": "assistant", "content": model_history[i]})
 
-        headers = {
-            "Content-Type": "application/json",
-            "Authorization": "DUMMY"
-        }
-        data = {
-            "model": self.dir,
-            "prompt": prompt + "<|start_header_id|>assistant<|end_header_id|>",
-            "max_tokens": self.max_tokens,
-            "temperature": self.temperature,
-            "n": 1,
-            "stop": ["<|eot_id|>"]
-        }
+        try:
+            response = await asyncio.to_thread(
+                self.client.chat.completions.create,
+                model=self.model,
+                messages=messages,
+                max_tokens=self.max_tokens,
+                temperature=self.temperature,
+                n=1
+            )
+            # <-- CHANGE HERE: use .content, not ["content"]
+            return response.choices[0].message.content.strip()
 
-        response = self.session.post(f"{self.api_base}/completions", headers=headers, json=data)
-        if response.status_code == 200:
-            return response.json()["choices"][0]["text"].strip()
-        else:
-            return f"Error: {response.status_code} - {response.text}"
+        except RateLimitError as e:
+            print("Rate limit exceeded:", e)
+            return ""
+        except APIError as e:
+            print("API error:", e)
+            return ""
+        except Exception as e:
+            print("Unexpected error:", e)
+            return ""
 
-    def get_probabilities(self, context, claim):
+    async def generate_batch(self, batch_data: list) -> list:
         """
-        Query the model for token-level probabilities on the next token(s) after context+claim.
+        Launch each generate() in its own task to keep parallelism.
         """
-        prompt = f"{context}{claim}"
-        headers = {
-            "Content-Type": "application/json",
-            "Authorization": "DUMMY"
-        }
-        data = {
-            "model": self.dir,
-            "prompt": prompt,
-            "max_tokens": 1,
-            "temperature": self.temperature,
-            "n": 1,
-            "logprobs": 20,
-            "echo": False
-        }
-        response = self.session.post(f"{self.api_base}/completions", headers=headers, json=data)
-        if response.status_code == 200:
-            response_json = response.json()
-            if 'choices' in response_json and len(response_json['choices']) > 0:
-                logprobs = response_json['choices'][0]['logprobs']
-                top_logprobs = logprobs['top_logprobs'][0]
-                word_probs = {
-                    token.strip(): np.exp(logprob) 
-                    for token, logprob in top_logprobs.items()
-                }
-                return word_probs
-            else:
-                return {}
-        else:
-            print(f"Error: {response.status_code} - {response.text}")
+        tasks = [
+            asyncio.create_task(self.generate(bp, uh, mh))
+            for (bp, uh, mh) in batch_data
+        ]
+        replies = await asyncio.gather(*tasks)
+        return replies
+
+    async def get_probabilities(self, context: str, claim: str) -> dict:
+        prompt_text = context + claim
+        try:
+            response = await asyncio.to_thread(
+                self.client.completions.create,
+                model=self.model,
+                prompt=prompt_text,
+                max_tokens=1,
+                temperature=self.temperature,
+                logprobs=20,
+                echo=False
+            )
+            top_logprobs = response.choices[0].logprobs.top_logprobs[0]
+            return {tok.strip(): float(np.exp(lp)) for tok, lp in top_logprobs.items()}
+        except Exception as e:
+            print("Error in get_probabilities:", e)
             return {}
 
-    def calculate_perplexity(self, context, claim):
+    async def get_probabilities_batch(self, batch_data: list) -> list:
+        tasks = [
+            asyncio.create_task(self.get_probabilities(ctx, clm))
+            for (ctx, clm) in batch_data
+        ]
+        return await asyncio.gather(*tasks)
+
+    async def calculate_perplexity(self, context: str, claim: str) -> float:
         words = claim.split()
         if not words:
-            return float('inf')
-        
-        total_log_prob = 0.0
+            return float("inf")
 
-        # For each word, compute its probability conditioned on all preceding words
+        total_logprob = 0.0
         for i in range(len(words)):
-            # partial_claim is empty for i=0, which handles single-word claims
-            partial_claim = " ".join(words[:i])
-            word_probs = self.get_probabilities(context, partial_claim)
-
-            if not word_probs:
-                print("Error in retrieving probabilities.")
+            partial = " ".join(words[:i])
+            probs = await self.get_probabilities(context, partial)
+            if not probs:
                 return float("inf")
-
             current_word = words[i]
-            word_prob = word_probs.get(current_word, min(word_probs.values()))  # fallback to avoid log(0)
-            total_log_prob += np.log(word_prob)
+            word_prob = probs.get(current_word, min(probs.values()))
+            total_logprob += np.log(word_prob)
+        return float(np.exp(-total_logprob / len(words)))
 
-        perplexity = np.exp(-total_log_prob / len(words))
-        return perplexity
-    
-    def calculate_probability(self, context, claim):
-        """
-        Compute the arithmetic mean probability of a claim given the context.
-        For each word in the claim, we query the model for the token probability 
-        (using get_probabilities) and return the average probability.
-        """
+    async def calculate_probability(self, context: str, claim: str) -> float:
         words = claim.split()
         if not words:
             return 0.0
-        
+
+        batch_data = [(context, " ".join(words[:i])) for i in range(len(words))]
+        results = await self.get_probabilities_batch(batch_data)
+
         total_prob = 0.0
-        count = 0
-        
-
-        for i in range(len(words)):
-            partial_claim = " ".join(words[:i])
-            word_probs = self.get_probabilities(context, partial_claim)
-            if not word_probs:
-                print("Error in retrieving probabilities.")
-                return 0.0
-
+        for i, probs in enumerate(results):
             current_word = words[i]
-            # Use the probability for the current word; fallback to the minimum value to avoid zero.
-            word_prob = sum(prob for word, prob in word_probs.items() if word.lower() == current_word.lower())
-            if word_prob == 0 and word_probs:
-                word_prob = min(word_probs.values())
+            word_prob = sum(p for tok, p in probs.items() if tok.lower() == current_word.lower())
+            if word_prob == 0 and probs:
+                word_prob = min(probs.values())
             total_prob += word_prob
-            count += 1
+        return total_prob / len(words)
 
-        mean_prob = total_prob / count if count > 0 else 0.0
-        return mean_prob
-    
-    def get_word_probability(self, context, word):
-        # Reuse get_probabilities with an empty claim to get probabilities for the next token.
-        word_probs = self.get_probabilities(context, "")
-        return word_probs.get(word, 0.0)
-
+    async def get_word_probability(self, context: str, word: str) -> float:
+        probs = await self.get_probabilities(context, "")
+        return probs.get(word, 0.0)
 
 class Llama3_1:
     """
@@ -281,105 +234,117 @@ class Llama3_1:
 
 class GPT4o:
     """
-    A simple wrapper around an OpenAI-like GPT-4 model.
+    A class to interact with OpenAI's GPT-4o model asynchronously.
     """
-    def __init__(self, max_tokens=150, temperature=0.7):
+
+    def __init__(self, max_tokens=150, temperature=0.7, api_key=None):
         self.max_tokens = max_tokens
         self.temperature = temperature
-        self.api_key = 'sk-Mwxs7Ru4v6BWdcmFszztGpKbfu7_K8Q7Oit9vCysmVT3BlbkFJ8ZH-3G_EbUHIH8csbDwHfp8y5pnE6rq9_qW-8qOdAA'
-        self.client = OpenAI(api_key=self.api_key)
+        self.api_key = api_key
+        self.client = AsyncOpenAI(api_key=self.api_key)
 
-    def generate(self, base_prompt, user_history, model_history):
+    async def generate(self, base_prompt, user_history, model_history):
         """
-        Generate a chat completion from the GPT-4 model using the new client.
-        The prompt is built from base_prompt, user_history, and model_history.
+        Generate a response based on the conversation history.
         """
         messages = [{"role": "system", "content": base_prompt}] if base_prompt else []
-        for i in range(len(model_history)):
-            messages.append({"role": "user", "content": user_history[i]})
-            messages.append({"role": "assistant", "content": model_history[i]})
+        for user_msg, model_msg in zip(user_history, model_history):
+            messages.append({"role": "user", "content": user_msg})
+            messages.append({"role": "assistant", "content": model_msg})
         messages.append({"role": "user", "content": user_history[-1]})
 
-        @backoff.on_exception(backoff.expo, self.client.RateLimitError)
-        def completions_with_backoff(**kwargs):
-            return self.client.chat.completions.create(**kwargs)
+        @backoff.on_exception(backoff.expo, Exception)
+        async def completions_with_backoff(**kwargs):
+            return await self.client.chat.completions.create(**kwargs)
 
-        chat_completion = completions_with_backoff(
+        response: ChatCompletion = await completions_with_backoff(
             messages=messages,
             model="gpt-4o-mini",
             temperature=self.temperature,
             max_tokens=self.max_tokens
         )
-        return chat_completion.choices[0].message.content
+        return response.choices[0].message.content.strip()
 
-    def get_probabilities(self, context, claim):
+    async def generate_batch(self, batch_data):
         """
-        Query the GPT model for token-level probabilities on the next token(s)
-        after the concatenated context and claim. Uses the text completions endpoint.
+        Generate responses for a batch of conversation histories.
+        """
+        tasks = [self.generate(base_prompt, user_history, model_history)
+                 for base_prompt, user_history, model_history in batch_data]
+        return await asyncio.gather(*tasks)
+
+    async def get_probabilities(self, context, claim):
+        """
+        Retrieve token probabilities for the next token after the given context and claim.
         """
         prompt = context + claim
-        try:
-            response = self.client.chat.completions.create(
-            model="gpt-4o-mini",
+
+        @backoff.on_exception(backoff.expo, Exception)
+        async def completions_with_backoff(**kwargs):
+            return await self.client.chat.completions.create(**kwargs)
+
+        response: ChatCompletion = await completions_with_backoff(
+            model="gpt-4o",
             messages=[{"role": "user", "content": prompt}],
             max_tokens=1,
             temperature=self.temperature,
-            n=1,
             logprobs=True,
-            top_logprobs = 20
-            )
-            top_logprobs = response.choices[0].logprobs.content[0].top_logprobs
-            word_probs = {
-                    logprob_entry.token.strip(): np.exp(logprob_entry.logprob)
-                    for logprob_entry in top_logprobs  # Iterate over multiple tokens
-                }
-            return word_probs
-        except Exception as e:
-            print(f"Error: {e}")
-            return {}
+            top_logprobs=20
+        )
 
-    def calculate_perplexity(self, context, claim):
+        top_logprobs = response.choices[0].logprobs.content[0].top_logprobs
+        word_probs = {
+            logprob_entry.token.strip(): np.exp(logprob_entry.logprob)
+            for logprob_entry in top_logprobs
+        }
+        return word_probs
+
+    async def get_probabilities_batch(self, batch_data):
         """
-        Calculate the perplexity of the claim given the context using token probabilities.
+        Retrieve token probabilities for a batch of contexts and claims.
+        """
+        tasks = [self.get_probabilities(context, claim) for context, claim in batch_data]
+        return await asyncio.gather(*tasks)
+
+    async def calculate_perplexity(self, context, claim):
+        """
+        Calculate the perplexity of the claim given the context.
         """
         words = claim.split()
         if not words:
             return float('inf')
-        
+
         total_log_prob = 0.0
         for i in range(len(words)):
             partial_claim = " ".join(words[:i])
-            word_probs = self.get_probabilities(context, partial_claim)
+            word_probs = await self.get_probabilities(context, partial_claim)
             if not word_probs:
                 print("Error in retrieving probabilities.")
                 return float("inf")
             current_word = words[i]
-            # Fallback to the minimum probability to avoid log(0)
             word_prob = word_probs.get(current_word, min(word_probs.values()))
             total_log_prob += np.log(word_prob)
         perplexity = np.exp(-total_log_prob / len(words))
         return perplexity
 
-    def calculate_probability(self, context, claim):
+    async def calculate_probability(self, context, claim):
         """
         Compute the arithmetic mean probability of a claim given the context.
-        For each word in the claim, we query the model for its token probability.
         """
         words = claim.split()
         if not words:
             return 0.0
-        
+
+        batch_data = [(context, " ".join(words[:i])) for i in range(len(words))]
+        results = await self.get_probabilities_batch(batch_data)
+
         total_prob = 0.0
         count = 0
-        for i in range(len(words)):
-            partial_claim = " ".join(words[:i])
-            word_probs = self.get_probabilities(context, partial_claim)
-            print(f"Context: {context}")
+        for i, word_probs in enumerate(results):
             if not word_probs:
                 print("Error in retrieving probabilities.")
                 return 0.0
             current_word = words[i]
-            # Sum probabilities for tokens matching the current word (ignoring case)
             word_prob = sum(prob for token, prob in word_probs.items() if token.lower() == current_word.lower())
             if word_prob == 0 and word_probs:
                 word_prob = min(word_probs.values())
@@ -388,9 +353,9 @@ class GPT4o:
         mean_prob = total_prob / count if count > 0 else 0.0
         return mean_prob
 
-    def get_word_probability(self, context, word):
+    async def get_word_probability(self, context, word):
         """
         Retrieve the probability of the specified word given the context.
         """
-        word_probs = self.get_probabilities(context, "")
+        word_probs = await self.get_probabilities(context, "")
         return word_probs.get(word, 0.0)

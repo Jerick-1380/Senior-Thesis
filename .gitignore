@@ -1,2 +1,101 @@
-logs/host_llama2_13b.err
-logs/host_llama2_13b.out
+# Environment variables and secrets
+.env
+.env.local
+.env.production
+.env.staging
+*.key
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Output directories (may contain sensitive simulation data)
+results/simulations/output*/
+results/simulations/old_output/
+results/analysis/argument_survival_results_*/
+results/visualizations/
+logs/
+temp_frames/
+frames/
+edgedistribution/
+
+# Model cache and data
+/data/
+*.tmp
+*.cache
+
+# SLURM logs
+*.out
+*.err
+slurm-*.out
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.log
+*.bak
+*.backup
+lim.tmp
+used.tmp
+
+# Generated images and plots
+*.png
+*.gif
+*.jpg
+*.jpeg
+
+# CSV and JSON output files (may contain sensitive data)
+detailed_argument_survival.csv
+opinion_scores.json
+survival_statistics.json
+argument_survival_data.json
+*results*.json
+master_past_strengths.json
+past_strengths_sim_*.json
+
+# Text output files
+combined_*.txt
+summary_results.txt

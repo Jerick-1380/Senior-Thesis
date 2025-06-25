@@ -1,0 +1,223 @@
+{
+  "id": "which candidate between Harris and Trump would win the 2024 election",
+  "claims": {
+    "connector": " Therefore, if I had to choose between Harris and Trump who would win the 2024 election, I would choose ",
+    "pro": [
+      "Trump"
+    ],
+    "con": [
+      "Harris"
+    ]
+  },
+  "intro": "Let's discuss between Trump and Harris who would win the 2024 election!",
+  "prompt": "I more or less agree with what my peers are saying here. Regarding who would win the 2024 election between Trump and Harris, I'd just add the following thought:\n",
+  "initial_posts": [
+    {
+      "text": "harris candidacy gives democrats a chance to pivot on gaza - foreign policy"
+    },
+    {
+      "text": "trump ramps up endorsement push ahead of iowa in show of strength and loyalty - cnn"
+    },
+    {
+      "text": "alliance vs. isolation: harris and trump\u2019s competing views on foreign policy - the new york times"
+    },
+    {
+      "text": "trump\u2019s order targeting social media sites, explained (published 2020) - the new york times"
+    },
+    {
+      "text": "house republicans pivot scrutiny from biden to harris - the new york times"
+    },
+    {
+      "text": "trump\u2019s tax plan could add to debt burden. harris\u2019s plan tracks biden\u2019s. - the new york times"
+    },
+    {
+      "text": "harris tells the business community: i\u2019m friendlier than biden - the new york times"
+    },
+    {
+      "text": "trump digs in on controversial comments as harris courts disenchanted republicans - pbs newshour"
+    },
+    {
+      "text": "president joe biden bows out of reelection campaign, harris vows to win nomination - iowa capital dispatch"
+    },
+    {
+      "text": "in report, house republicans claim biden committed impeachable offenses, but next steps unclear - cbs news"
+    },
+    {
+      "text": "how harris\u2019 vision for the economy is a twist on biden\u2019s - npr"
+    },
+    {
+      "text": "$3.4 trillion in individual tax cuts are expiring next year. biden and trump would handle it very differently - cnn"
+    },
+    {
+      "text": "fact-checking trump\u2019s claim that he has a 50-percent approval rating among latinos - pbs newshour"
+    },
+    {
+      "text": "with trump\u2019s backing, dan cox\u2019s gubernatorial bid gains national exposure - maryland matters"
+    },
+    {
+      "text": "harris rallies north carolina crowd after debate with trump - spectrum news ny1"
+    },
+    {
+      "text": "climate action dominated biden\u2019s first day. what could harris do? - e&e news"
+    },
+    {
+      "text": "\ud83c\udfdb\ufe0f health care: harris' policy goals - axios"
+    },
+    {
+      "text": "a look at harris\u2019 views on us policy toward china - voice of america english news"
+    },
+    {
+      "text": "how harris will distinguish her foreign policy from biden \u2014 and trump - npr"
+    },
+    {
+      "text": "trump issues orders banning tiktok and wechat from operating in 45 days if they are not sold by chinese parent companies - cnn"
+    },
+    {
+      "text": "harris to propose tenfold startup tax incentive increase she says will spur small business creation - the associated press"
+    },
+    {
+      "text": "pritzker praises biden after he ends reelection campaign, while johnson backs harris - wttw news"
+    },
+    {
+      "text": "harris promises labor reform in speech to teacher's union - axios"
+    },
+    {
+      "text": "harris unveils plan for 28% capital gains tax, softening biden's proposal for 40% rate - cnbc"
+    },
+    {
+      "text": "harris, trump campaign in swing states - pbs newshour"
+    },
+    {
+      "text": "harris says there\u2019s not much she\u2019d have done differently than biden over the last 4 years - cnn"
+    },
+    {
+      "text": "what the harris campaign is doing to try to win over more black men - npr"
+    },
+    {
+      "text": "cnn poll: trump\u2019s approval rating reaches new low as term ends - cnn"
+    },
+    {
+      "text": "biden-harris administration announces $125 million investment for large-scale water recycling projects - us department of the interior"
+    },
+    {
+      "text": "the white house wants you to know that harris was on the call - politico"
+    },
+    {
+      "text": "mark robinson won\u2019t appear at trump rally after report on online posts, sources tell ap - pbs newshour"
+    },
+    {
+      "text": "2. views of president-elect trump\u2019s plans and transition conduct - pew research center"
+    },
+    {
+      "text": "biden plans to step up government oversight of ai with new 'pressure tests' - npr"
+    },
+    {
+      "text": "on his first day, biden signs executive orders to reverse trump\u2019s policies - the washington post"
+    },
+    {
+      "text": "recap: trump, harris rallying across pa. in final day of 2024 campaign - nbc philadelphia"
+    },
+    {
+      "text": "trump sets records with pace of appointments, but that doesn't mean the transition is going smoothly - the associated press"
+    },
+    {
+      "text": "results of lawsuits regarding the 2020 elections - campaign legal center"
+    },
+    {
+      "text": "what we know about the suspected iranian cyber intrusion into trump\u2019s campaign - pbs newshour"
+    },
+    {
+      "text": "biden could roll back trump agenda with blitz of executive actions (published 2020) - the new york times"
+    },
+    {
+      "text": "harris holds campaign rally in phoenix as early voting gets underway in arizona - pbs newshour"
+    },
+    {
+      "text": "harris: i am \u2019prepared\u2019 to take executive action on guns - nbc news"
+    },
+    {
+      "text": "president trump impeached by the house in historic rebuke - npr"
+    },
+    {
+      "text": "vice president harris hosts israeli war cabinet member as the us pushes to get more aid into gaza - the associated press"
+    },
+    {
+      "text": "harris could shift health policy to the left - politico"
+    },
+    {
+      "text": "biden tasks harris with 'stemming the migration' on southern border - nbc news"
+    },
+    {
+      "text": "biden, harris to roll out new executive action on guns - politico"
+    },
+    {
+      "text": "harris thanks biden as she receives growing chorus of endorsements - abc news"
+    },
+    {
+      "text": "people of color make up nearly half of biden transition team - cnn"
+    },
+    {
+      "text": "harris announces record-breaking $310 million july fundraising haul - npr"
+    },
+    {
+      "text": "poll: presidential race hits a reset with harris vs. trump - npr"
+    },
+    {
+      "text": "harris recalibrates policy stances as she adjusts to role atop democratic ticket - cnn"
+    },
+    {
+      "text": "trump officials interfered with the 2020 census beyond cutting it short, email shows - npr"
+    },
+    {
+      "text": "harris rally: spike lee, 2 chainz, monica and others join vp in atlanta on saturday - fox 5 atlanta"
+    },
+    {
+      "text": "remarks by vice president joe biden introducing kamala harris as his vice presidential running mate in wilmington, delaware - the american presidency project"
+    },
+    {
+      "text": "how the impeachment process works (published 2019) - the new york times"
+    },
+    {
+      "text": "harris says trump's overseas tweets 'contrary to the best interests of our country' - nbc news"
+    },
+    {
+      "text": "biden ends his 2024 reelection bid and endorses harris as his replacement to lead the ticket - pbs newshour"
+    },
+    {
+      "text": "trump\u2019s \u2018secret\u2019 healthcare plan is a promise voters have heard before - the new york times"
+    },
+    {
+      "text": "quick timeline of trump-ukraine events that led to impeachment hearings - cnn"
+    },
+    {
+      "text": "democrats signal voting rights bills will top the agenda if harris wins - the washington post"
+    },
+    {
+      "text": "trump-harris debate: here are the biggest moments - time"
+    },
+    {
+      "text": "federal worker union shifts presidential endorsements to harris - government executive"
+    },
+    {
+      "text": "harris on foreign policy: her experience and where she stands - abc news"
+    },
+    {
+      "text": "why harris, trump should both accept gsa\u2019s help for transition planning - federal news network"
+    },
+    {
+      "text": "harris\u2019 visit to guatemala and mexico a mix of diplomacy and controversy - los angeles times"
+    },
+    {
+      "text": "the 2024 harris campaign policy proposals: budgetary, economic and distributional effects - penn wharton budget model"
+    },
+    {
+      "text": "the real problem with kamala harris\u2019 tax agenda - the dispatch"
+    },
+    {
+      "text": "harris proposes medicare benefits for home care, vision and hearing - the new york times"
+    },
+    {
+      "text": "the trump administration rolled back more than 100 environmental rules. here\u2019s the full list. (published 2021) - the new york times"
+    }
+  ]
+}
