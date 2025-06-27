@@ -131,7 +131,7 @@ The parallel prediction analysis system optimizes forecasting question analysis 
    ```bash
    python src/simulations/aggregate_analysis_results.py \
        --input-pattern "analysis_split_*.json" \
-       --results-dir "." \
+       --results-dir "scripts" \
        --output-file "final_prediction_analysis.json"
    ```
 

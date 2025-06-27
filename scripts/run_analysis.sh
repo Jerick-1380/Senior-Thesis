@@ -13,7 +13,10 @@ export MKL_SERVICE_FORCE_INTEL=1
 
 mkdir -p $TMPDIR
 
-python /home/junkais/test/src/simulations/prediction_analysis.py --baseline --basic --argument-based --adaptive-conv --extended-conv
+# Aggregate results from parallel analysis splits
+python /home/junkais/test/src/simulations/aggregate_analysis_results.py \
+    --input-pattern "analysis_split_*.json" \
+    --results-dir "/home/junkais/test/scripts"
 
 #python compare_simulation_stats.py --folder1 output7010 --folder2 output7009 --output temperature_filtered.txt
 #python aggregate_and_plot_stats.py --folder output7009

@@ -8,6 +8,8 @@ import argparse
 import statistics
 from datetime import datetime
 import os
+import matplotlib.pyplot as plt
+import numpy as np
 
 def parse_arguments():
     parser = argparse.ArgumentParser(description='Aggregate parallel prediction analysis results')
@@ -43,8 +45,13 @@ def aggregate_results(split_results):
     
     # Combine all individual question results
     all_results = []
+    round_data_list = []
+    
     for split_data in split_results:
         all_results.extend(split_data['results'])
+        # Collect round data if available
+        if 'round_data' in split_data:
+            round_data_list.append(split_data['round_data'])
     
     # Calculate combined Brier scores
     def collect_brier_scores(score_key):
@@ -69,6 +76,11 @@ def aggregate_results(split_results):
     
     # Calculate total time across all splits
     total_time_minutes = sum(split_data['total_time_minutes'] for split_data in split_results)
+    
+    # Aggregate round data if available
+    aggregated_round_data = None
+    if round_data_list:
+        aggregated_round_data = aggregate_round_data(round_data_list)
     
     # Use configuration from first split (should be identical across splits)
     first_split = split_results[0]
@@ -110,10 +122,79 @@ def aggregate_results(split_results):
             'argument': len(brier_argument),
             'conversational': len(brier_conversational),
             'extended': len(brier_extended)
-        }
+        },
+        'round_data': aggregated_round_data
     }
     
     return aggregated_result
+
+def aggregate_round_data(round_data_list):
+    """Aggregate round-by-round data from multiple splits."""
+    if not round_data_list:
+        return None
+    
+    # Calculate weighted average of mean Brier scores by round
+    total_questions = sum(data['num_questions'] for data in round_data_list)
+    num_rounds = round_data_list[0]['num_rounds']  # Should be same across splits
+    
+    # Weighted average by number of questions in each split
+    aggregated_mean_brier = []
+    for round_idx in range(num_rounds):
+        weighted_sum = 0
+        for data in round_data_list:
+            if round_idx < len(data['mean_brier_by_round']) and data['mean_brier_by_round'][round_idx] is not None:
+                weighted_sum += data['mean_brier_by_round'][round_idx] * data['num_questions']
+        
+        weighted_avg = weighted_sum / total_questions if total_questions > 0 else None
+        aggregated_mean_brier.append(weighted_avg)
+    
+    return {
+        'mean_brier_by_round': aggregated_mean_brier,
+        'total_questions': total_questions,
+        'num_rounds': num_rounds,
+        'num_splits': len(round_data_list)
+    }
+
+def create_brier_plot(round_data, filename: str):
+    """Create and save a plot of Brier scores over rounds."""
+    if not round_data or 'mean_brier_by_round' not in round_data:
+        return
+    
+    rounds = list(range(1, len(round_data['mean_brier_by_round']) + 1))
+    brier_scores = round_data['mean_brier_by_round']
+    
+    # Filter out None values
+    valid_data = [(r, s) for r, s in zip(rounds, brier_scores) if s is not None]
+    if not valid_data:
+        return
+    
+    rounds, brier_scores = zip(*valid_data)
+    
+    plt.figure(figsize=(10, 6))
+    plt.plot(rounds, brier_scores, 'b-', linewidth=2, marker='o', markersize=6)
+    plt.xlabel('Conversation Round')
+    plt.ylabel('Mean Brier Score')
+    plt.title(f'Brier Score Evolution During Extended Conversations\n({round_data["total_questions"]} questions across {round_data["num_splits"]} splits)')
+    plt.grid(True, alpha=0.3)
+    
+    # Add improvement annotation
+    if len(brier_scores) > 1:
+        improvement = brier_scores[0] - brier_scores[-1]
+        improvement_pct = (improvement / brier_scores[0]) * 100
+        plt.text(0.02, 0.98, f'Total Improvement: {improvement:.4f} ({improvement_pct:.1f}%)', 
+                transform=plt.gca().transAxes, verticalalignment='top',
+                bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.8))
+    
+    # Add final score annotation
+    plt.text(0.98, 0.02, f'Final Brier Score: {brier_scores[-1]:.4f}', 
+            transform=plt.gca().transAxes, verticalalignment='bottom', horizontalalignment='right',
+            bbox=dict(boxstyle='round', facecolor='lightblue', alpha=0.8))
+    
+    plt.tight_layout()
+    plt.savefig(filename, dpi=300, bbox_inches='tight')
+    plt.close()
+    
+    return filename
 
 def print_aggregated_summary(aggregated_result):
     """Print summary of aggregated results."""
@@ -354,6 +435,21 @@ def main():
     # Save detailed text summary and CSV files
     summary_txt, results_csv = save_detailed_summary_to_txt(aggregated_result, args.results_dir)
     
+    # Generate Brier score plot if round data is available
+    plot_filename = None
+    if aggregated_result.get('round_data') is not None:
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        plot_filename = f"brier_evolution_plot_{timestamp}.png"
+        plot_path = os.path.join(args.results_dir, plot_filename)
+        
+        try:
+            created_plot = create_brier_plot(aggregated_result['round_data'], plot_path)
+            if created_plot:
+                print(f"\n📊 Brier score evolution plot generated!")
+        except Exception as e:
+            print(f"\n⚠️  Warning: Could not generate plot: {e}")
+            plot_filename = None
+    
     # Save aggregated results
     if args.output_file is None:
         # Auto-generate filename
@@ -368,6 +464,8 @@ def main():
     print(f"   📄 Summary report: {os.path.basename(summary_txt)}")
     print(f"   📊 Detailed CSV: {os.path.basename(results_csv)}")
     print(f"   🗂️  JSON data: {os.path.basename(output_path)}")
+    if plot_filename:
+        print(f"   📈 Brier plot: {plot_filename}")
     print(f"\n📊 Total questions processed: {aggregated_result['total_questions']}")
     print(f"⏱️  Total time: {aggregated_result['total_time_minutes']:.1f} minutes")
 

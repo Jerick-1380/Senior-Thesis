@@ -47,9 +47,11 @@ Once all splits complete:
 cd /home/junkais/test
 python src/simulations/aggregate_analysis_results.py \
     --input-pattern "analysis_split_*.json" \
-    --results-dir "." \
+    --results-dir "scripts" \
     --output-file "final_prediction_analysis.json"
 ```
+
+**Note**: Results are saved in the `scripts/` directory where the parallel jobs run, so the aggregation script needs to point to that location.
 
 ## Configuration
 

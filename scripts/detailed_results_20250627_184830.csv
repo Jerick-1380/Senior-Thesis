@@ -1,0 +1,967 @@
+question,resolution,date_begin,date_resolve_at,baseline_strength,baseline_brier,conversational_strength,conversational_brier
+"Will Dwayne Johnson win the 2024 US Presidential Election?",0,2021-12-28,2025-01-21,0.018,0.00032399999999999996,0.5,0.25
+"Will Pete Buttigieg be the 2024 Democratic nominee?",0,2021-12-30,2024-08-06,0.046,0.002116,0.5,0.25
+"Will Donald Trump be the Republican nominee for president in 2024?",1,2021-12-30,2024-07-16,0.319,0.4637610000000001,0.5,0.25
+"Will Ukraine be an official member of NATO by 2025?",0,2022-01-14,2025-01-04,0.097,0.009409,0.5,0.25
+"Will the value of Bitcoin pass 100k USD by the end of 2024?",1,2022-01-12,2024-12-06,0.15,0.7224999999999999,0.5,0.25
+"Will Donald Trump win the 2024 US Presidential Election?",1,2022-01-14,2024-11-06,0.216,0.6146560000000001,0.5,0.25
+"If Kamala Harris becomes the Democratic nominee, will she win the 2024 election?",0,2022-01-15,2024-11-06,0.38,0.1444,0.5,0.25
+"Will Joe Biden win the 2024 US Presidential Election?",0,2022-01-14,2024-07-21,0.444,0.197136,0.5,0.25
+"Will Biden be the 2024 Democratic Nominee?",0,2022-01-17,2024-07-21,0.672,0.45158400000000004,0.5,0.25
+"Will Sweden be an official member of NATO by 2025?",1,2022-01-14,2024-03-08,0.84,0.02560000000000001,0.5,0.25
+"Will at least 10 world cities have a generally available self-driving taxi service by 2025?",1,2022-02-13,2024-12-31,0.516,0.234256,0.5,0.25
+"Will a Democrat win the White House in 2024?",0,2022-02-14,2024-11-06,0.565,0.3192249999999999,0.5,0.25
+"Will Joe Biden resign in his first term?",0,2022-03-05,2025-01-20,0.02,0.0004,0.5,0.25
+"Will either Joe Biden or Donald Trump be elected President in 2024?",1,2022-03-06,2024-11-06,0.576,0.17977600000000005,0.5,0.25
+"Will Sweden join NATO before 2024?",0,2022-03-05,2024-01-01,0.568,0.32262399999999997,0.5,0.25
+"Will ""World War 3"" have begun by 2025?",0,2022-04-17,2025-01-11,0.133,0.017689000000000003,0.5,0.25
+"This question will resolve positively on the 1st of January, 2025",1,2022-04-08,2025-01-02,0.989,0.00012100000000000022,0.5,0.25
+"Will Jimmy Carter become a centenarian?",1,2022-04-18,2024-10-01,0.118,0.7779240000000001,0.5,0.25
+"This question will resolve positively on the 1st of January, 2024",1,2022-04-08,2024-01-01,0.993,4.9000000000000087e-05,0.5,0.25
+"Will the next Pope be a Black man?",0,2022-05-04,2025-05-08,0.105,0.011024999999999998,0.5,0.25
+"Will people care about prediction markets by 2025?",0,2022-05-10,2025-01-03,0.204,0.04161599999999999,0.5,0.25
+"Will China invade Taiwan by the end of 2024?",0,2022-05-09,2025-01-01,0.067,0.004489000000000001,0.5,0.25
+"Will Donald Trump be the Republican presidential nominee for 2024?",1,2022-05-25,2024-07-22,0.43,0.3249000000000001,0.5,0.25
+"Will Joe Biden get impeached in his first term?",0,2022-06-15,2025-01-20,0.141,0.019880999999999996,0.5,0.25
+"Will Ukraine regain control of its pre-2014 territory (including Crimea and Donbas) by 2025?",0,2022-06-06,2024-12-31,0.078,0.006084,0.5,0.25
+"Will Bitcoin reach $10k before it reaches $100k?",0,2022-06-17,2024-12-05,0.55,0.30250000000000005,0.5,0.25
+"If Trump is elected President in 2024, will he have won the popular vote?",1,2022-06-06,2024-11-06,0.311,0.47472100000000006,0.5,0.25
+"Will Ron DeSantis be the 2024 Republican presidential nominee?",0,2022-06-28,2024-01-22,0.483,0.233289,0.5,0.25
+"Will Elon Musk step down from being Tesla CEO before 2024?",0,2022-06-04,2024-01-01,0.276,0.07617600000000001,0.5,0.25
+"Will Biden complete his term?",1,2022-07-21,2025-01-20,0.933,0.004488999999999993,0.5,0.25
+"Will there be a robust third party movement in America that impacts the 2024 Presidential race?",0,2022-07-28,2024-11-14,0.159,0.025281,0.5,0.25
+"Will Gavin Newsom run for president in 2024?",0,2022-07-26,2024-08-25,0.087,0.007568999999999999,0.5,0.25
+"Will Manifold average >10k Daily Active Users before January 2024?",0,2022-07-11,2024-01-01,0.436,0.190096,0.5,0.25
+"Will a Democrat win the 2024 US presidential election?",0,2022-08-24,2024-11-06,0.618,0.381924,0.5,0.25
+"What is the Risk Free Interest Rate on Manifold Markets until Election Day 2024?",0,2022-08-01,2024-11-06,0.015,0.000225,0.5,0.25
+"Will Liz Cheney run for president in 2024?",0,2022-08-17,2024-06-01,0.173,0.029928999999999997,0.5,0.25
+"Will Mark Cuban run for president in 2024?",0,2022-08-15,2024-01-18,0.076,0.005776,0.5,0.25
+"Will Glenn Youngkin run for president in 2024?",0,2022-08-17,2024-01-14,0.464,0.21529600000000002,0.5,0.25
+"Were any of the COVID-19 vaccines designed to cause infertility, contain microchips, or have any other secret effects?",0,2022-08-06,2024-01-01,0.046,0.002116,0.5,0.25
+"Will the Liberal Party form the next Canadian government?",1,2022-09-11,2025-04-29,0.309,0.4774810000000001,0.5,0.25
+"Will a Galactic Federation reveal itself to humanity by the end of 2024?",0,2022-09-15,2025-01-16,0.025,0.0006250000000000001,0.5,0.25
+"Will vegan pizza be commonly available at one of the big four pizza chains in the US by the end of 2024?",0,2022-09-20,2025-01-01,0.411,0.168921,0.5,0.25
+"Will an AI be able to speedrun any popular video game faster than the human WR by the end of 2024?",0,2022-09-24,2025-01-01,0.28,0.07840000000000001,0.5,0.25
+"Will the first attempt to catch a starship booster with Mechazilla result in the booster exploding",0,2022-09-15,2024-10-17,0.219,0.047961,0.5,0.25
+"Will Biden and Trump be the next presidential nominees of their parties?",0,2022-09-22,2024-08-08,0.656,0.43033600000000005,0.5,0.25
+"Will Joe Biden WIN the 2024 Presidential election for Democrats?",0,2022-09-09,2024-07-21,0.537,0.28836900000000004,0.5,0.25
+"Will Mickey Mouse enter the public domain on Jan 1st, 2024?",1,2022-09-14,2024-01-01,0.945,0.0030250000000000055,0.5,0.25
+"Will Vladimir Putin die in any way by 2024?",0,2022-09-18,2024-01-01,0.12,0.0144,0.5,0.25
+"Will a nuclear weapon be detonated while Biden is President?",0,2022-10-16,2025-02-13,0.277,0.07672900000000002,0.5,0.25
+"Will the government of the Islamic Republic of Iran fall by the end of 2024?",0,2022-10-01,2025-01-23,0.063,0.003969,0.5,0.25
+"Will Marijuana be removed from Schedule I of the US Controlled Substance Act by the end of Biden's current term?",0,2022-10-21,2025-01-20,0.57,0.32489999999999997,0.5,0.25
+"Will Kamala Harris be the Democratic Nominee for President in 2024?",1,2022-10-21,2024-08-06,0.081,0.8445610000000001,0.5,0.25
+"Will Gavin Newsom be the Democratic Nominee for President in 2024?",0,2022-10-21,2024-08-06,0.083,0.006889000000000001,0.5,0.25
+"Will the 2024 presidential race be Joe Biden vs Donald Trump?",0,2022-10-21,2024-07-21,0.733,0.537289,0.5,0.25
+"Will Bitcoin’s price reach all-time high by the end of 2024?",1,2022-10-21,2024-03-07,0.375,0.390625,0.5,0.25
+"Will more than 20 organizations publicly train large language models by 2024?",0,2022-10-16,2024-01-09,0.022,0.00048399999999999995,0.5,0.25
+"Will there be realistic AI generated video with dialogue by 2024?",0,2022-10-06,2024-01-08,0.059,0.0034809999999999997,0.5,0.25
+"Will it be possible for AI to generate reasonably good video ads by (start of) 2024?",0,2022-10-06,2024-01-08,0.186,0.034596,0.5,0.25
+"In the 2024 US election, will Manifold beat 538 on accuracy?",1,2022-11-22,2025-05-13,0.529,0.22184099999999998,0.5,0.25
+"Will Biden be impeached by 2025?",0,2022-11-02,2025-01-21,0.131,0.017161000000000003,0.5,0.25
+"Will the Russia-Ukraine war end during 2024?",0,2022-11-11,2025-01-01,0.235,0.055224999999999996,0.5,0.25
+"Will Dwayne Johnson win the 2024 US Presidential Election?",0,2021-12-28,2025-01-21,0.018,0.00032399999999999996,0.5,0.25
+"Will Pete Buttigieg be the 2024 Democratic nominee?",0,2021-12-30,2024-08-06,0.046,0.002116,0.5,0.25
+"Will Donald Trump be the Republican nominee for president in 2024?",1,2021-12-30,2024-07-16,0.319,0.4637610000000001,0.5,0.25
+"Will Ukraine be an official member of NATO by 2025?",0,2022-01-14,2025-01-04,0.097,0.009409,0.5,0.25
+"Will the value of Bitcoin pass 100k USD by the end of 2024?",1,2022-01-12,2024-12-06,0.15,0.7224999999999999,0.5,0.25
+"Will Donald Trump win the 2024 US Presidential Election?",1,2022-01-14,2024-11-06,0.216,0.6146560000000001,0.5,0.25
+"If Kamala Harris becomes the Democratic nominee, will she win the 2024 election?",0,2022-01-15,2024-11-06,0.38,0.1444,0.5,0.25
+"Will Joe Biden win the 2024 US Presidential Election?",0,2022-01-14,2024-07-21,0.444,0.197136,0.5,0.25
+"Will Biden be the 2024 Democratic Nominee?",0,2022-01-17,2024-07-21,0.672,0.45158400000000004,0.5,0.25
+"Will Sweden be an official member of NATO by 2025?",1,2022-01-14,2024-03-08,0.84,0.02560000000000001,0.5,0.25
+"Will at least 10 world cities have a generally available self-driving taxi service by 2025?",1,2022-02-13,2024-12-31,0.516,0.234256,0.5,0.25
+"Will a Democrat win the White House in 2024?",0,2022-02-14,2024-11-06,0.565,0.3192249999999999,0.5,0.25
+"Will Joe Biden resign in his first term?",0,2022-03-05,2025-01-20,0.02,0.0004,0.5,0.25
+"Will either Joe Biden or Donald Trump be elected President in 2024?",1,2022-03-06,2024-11-06,0.576,0.17977600000000005,0.5,0.25
+"Will Sweden join NATO before 2024?",0,2022-03-05,2024-01-01,0.568,0.32262399999999997,0.5,0.25
+"Will ""World War 3"" have begun by 2025?",0,2022-04-17,2025-01-11,0.133,0.017689000000000003,0.5,0.25
+"This question will resolve positively on the 1st of January, 2025",1,2022-04-08,2025-01-02,0.989,0.00012100000000000022,0.5,0.25
+"Will Jimmy Carter become a centenarian?",1,2022-04-18,2024-10-01,0.118,0.7779240000000001,0.5,0.25
+"This question will resolve positively on the 1st of January, 2024",1,2022-04-08,2024-01-01,0.993,4.9000000000000087e-05,0.5,0.25
+"Will the next Pope be a Black man?",0,2022-05-04,2025-05-08,0.105,0.011024999999999998,0.5,0.25
+"Will people care about prediction markets by 2025?",0,2022-05-10,2025-01-03,0.204,0.04161599999999999,0.5,0.25
+"Will China invade Taiwan by the end of 2024?",0,2022-05-09,2025-01-01,0.067,0.004489000000000001,0.5,0.25
+"Will Donald Trump be the Republican presidential nominee for 2024?",1,2022-05-25,2024-07-22,0.43,0.3249000000000001,0.5,0.25
+"Will Joe Biden get impeached in his first term?",0,2022-06-15,2025-01-20,0.141,0.019880999999999996,0.5,0.25
+"Will Ukraine regain control of its pre-2014 territory (including Crimea and Donbas) by 2025?",0,2022-06-06,2024-12-31,0.078,0.006084,0.5,0.25
+"Will Bitcoin reach $10k before it reaches $100k?",0,2022-06-17,2024-12-05,0.55,0.30250000000000005,0.5,0.25
+"If Trump is elected President in 2024, will he have won the popular vote?",1,2022-06-06,2024-11-06,0.311,0.47472100000000006,0.5,0.25
+"Will Ron DeSantis be the 2024 Republican presidential nominee?",0,2022-06-28,2024-01-22,0.483,0.233289,0.5,0.25
+"Will Elon Musk step down from being Tesla CEO before 2024?",0,2022-06-04,2024-01-01,0.276,0.07617600000000001,0.5,0.25
+"Will Biden complete his term?",1,2022-07-21,2025-01-20,0.933,0.004488999999999993,0.5,0.25
+"Will there be a robust third party movement in America that impacts the 2024 Presidential race?",0,2022-07-28,2024-11-14,0.159,0.025281,0.5,0.25
+"Will Gavin Newsom run for president in 2024?",0,2022-07-26,2024-08-25,0.087,0.007568999999999999,0.5,0.25
+"Will Manifold average >10k Daily Active Users before January 2024?",0,2022-07-11,2024-01-01,0.436,0.190096,0.5,0.25
+"Will a Democrat win the 2024 US presidential election?",0,2022-08-24,2024-11-06,0.618,0.381924,0.5,0.25
+"What is the Risk Free Interest Rate on Manifold Markets until Election Day 2024?",0,2022-08-01,2024-11-06,0.015,0.000225,0.5,0.25
+"Will Liz Cheney run for president in 2024?",0,2022-08-17,2024-06-01,0.173,0.029928999999999997,0.5,0.25
+"Will Mark Cuban run for president in 2024?",0,2022-08-15,2024-01-18,0.076,0.005776,0.5,0.25
+"Will Glenn Youngkin run for president in 2024?",0,2022-08-17,2024-01-14,0.464,0.21529600000000002,0.5,0.25
+"Were any of the COVID-19 vaccines designed to cause infertility, contain microchips, or have any other secret effects?",0,2022-08-06,2024-01-01,0.046,0.002116,0.5,0.25
+"Will the Liberal Party form the next Canadian government?",1,2022-09-11,2025-04-29,0.309,0.4774810000000001,0.5,0.25
+"Will a Galactic Federation reveal itself to humanity by the end of 2024?",0,2022-09-15,2025-01-16,0.025,0.0006250000000000001,0.5,0.25
+"Will vegan pizza be commonly available at one of the big four pizza chains in the US by the end of 2024?",0,2022-09-20,2025-01-01,0.411,0.168921,0.5,0.25
+"Will an AI be able to speedrun any popular video game faster than the human WR by the end of 2024?",0,2022-09-24,2025-01-01,0.28,0.07840000000000001,0.5,0.25
+"Will the first attempt to catch a starship booster with Mechazilla result in the booster exploding",0,2022-09-15,2024-10-17,0.219,0.047961,0.5,0.25
+"Will Biden and Trump be the next presidential nominees of their parties?",0,2022-09-22,2024-08-08,0.656,0.43033600000000005,0.5,0.25
+"Will Joe Biden WIN the 2024 Presidential election for Democrats?",0,2022-09-09,2024-07-21,0.537,0.28836900000000004,0.5,0.25
+"Will Mickey Mouse enter the public domain on Jan 1st, 2024?",1,2022-09-14,2024-01-01,0.945,0.0030250000000000055,0.5,0.25
+"Will Vladimir Putin die in any way by 2024?",0,2022-09-18,2024-01-01,0.12,0.0144,0.5,0.25
+"Will a nuclear weapon be detonated while Biden is President?",0,2022-10-16,2025-02-13,0.277,0.07672900000000002,0.5,0.25
+"Will the government of the Islamic Republic of Iran fall by the end of 2024?",0,2022-10-01,2025-01-23,0.063,0.003969,0.5,0.25
+"Will Marijuana be removed from Schedule I of the US Controlled Substance Act by the end of Biden's current term?",0,2022-10-21,2025-01-20,0.57,0.32489999999999997,0.5,0.25
+"Will Kamala Harris be the Democratic Nominee for President in 2024?",1,2022-10-21,2024-08-06,0.081,0.8445610000000001,0.5,0.25
+"Will Gavin Newsom be the Democratic Nominee for President in 2024?",0,2022-10-21,2024-08-06,0.083,0.006889000000000001,0.5,0.25
+"Will the 2024 presidential race be Joe Biden vs Donald Trump?",0,2022-10-21,2024-07-21,0.733,0.537289,0.5,0.25
+"Will Bitcoin’s price reach all-time high by the end of 2024?",1,2022-10-21,2024-03-07,0.375,0.390625,0.5,0.25
+"Will more than 20 organizations publicly train large language models by 2024?",0,2022-10-16,2024-01-09,0.022,0.00048399999999999995,0.5,0.25
+"Will there be realistic AI generated video with dialogue by 2024?",0,2022-10-06,2024-01-08,0.059,0.0034809999999999997,0.5,0.25
+"Will it be possible for AI to generate reasonably good video ads by (start of) 2024?",0,2022-10-06,2024-01-08,0.186,0.034596,0.5,0.25
+"In the 2024 US election, will Manifold beat 538 on accuracy?",1,2022-11-22,2025-05-13,0.529,0.22184099999999998,0.5,0.25
+"Will Biden be impeached by 2025?",0,2022-11-02,2025-01-21,0.131,0.017161000000000003,0.5,0.25
+"Will the Russia-Ukraine war end during 2024?",0,2022-11-11,2025-01-01,0.235,0.055224999999999996,0.5,0.25
+"Will Manifold announce they intend to shut down before 2025?",0,2022-11-29,2025-01-01,0.071,0.0050409999999999995,0.5,0.25
+"Will OpenAI suggest GPT-4 is AGI?",0,2022-11-23,2025-01-01,0.045,0.002025,0.5,0.25
+"Will China invade Taiwan in 2024?",0,2022-11-19,2025-01-01,0.062,0.0038439999999999998,0.5,0.25
+"Will substantial evidence emerge by 2025 that the FTX Future Fund team had strong suspicions of fraudulent activities at FTX before November 2022?",0,2022-11-12,2024-12-31,0.024,0.000576,0.5,0.25
+"Will Mitch McConnell stop being Senate Republican Leader by the next presidential inauguration (20 Jan 2025)?",1,2022-11-30,2024-11-13,0.691,0.09548100000000004,0.5,0.25
+"Will Ron DeSantis be elected US President in 2024?",0,2022-11-09,2024-11-06,0.034,0.0011560000000000001,0.5,0.25
+"Will Donald Trump claim election fraud against opponents in the 2024 Republican Party presidential primaries",0,2022-11-10,2024-11-04,0.505,0.255025,0.5,0.25
+"Will Elon Musk endorse Donald Trump for 2024 presidency?",1,2022-11-18,2024-07-13,0.162,0.702244,0.5,0.25
+"Will Sir Keir Starmer (Labour Party) be the UK's next prime minister?",1,2022-11-15,2024-07-05,0.83,0.028900000000000012,0.5,0.25
+"Will AAPL hit $200 before hitting $100?",1,2022-11-05,2024-06-11,0.945,0.0030250000000000055,0.5,0.25
+"Will Bibi Netanyahu be invited to address the 118th US Congress?",1,2022-11-02,2024-05-31,0.393,0.36844899999999997,0.5,0.25
+"Will Destiny and Melina finalize their divorce legally in 2024?",1,2022-11-08,2024-01-25,0.378,0.386884,0.5,0.25
+"Will there be realistic  AI generated video from natural language descriptions by the start of 2024?",0,2022-11-17,2024-01-08,0.106,0.011236,0.5,0.25
+"Will Hasan And Destiny Talk On Stream Before 2024?",0,2022-11-11,2024-01-01,0.03,0.0009,0.5,0.25
+"Will Destiny talk to Ethan Klein publicly before 2024?",0,2022-11-18,2024-01-01,0.053,0.002809,0.5,0.25
+"Will Destiny go back on The Lex Fridman Podcast before 2024?",0,2022-11-12,2024-01-01,0.945,0.893025,0.5,0.25
+"Will Vladimir Putin appear on the Lex Fridman podcast?",0,2022-11-12,2024-01-01,0.023,0.000529,0.5,0.25
+"Will Twitter go bankrupt before 2024?",0,2022-11-10,2024-01-01,0.055,0.003025,0.5,0.25
+"Will Ukraine sever the land bridge between Crimea and Russia before 2024?",0,2022-11-25,2024-01-01,0.372,0.138384,0.5,0.25
+"By the end of 2024 will there be a mostly AI generated game with $1 million or more in revenue?",0,2022-12-07,2025-06-05,0.146,0.021315999999999998,0.5,0.25
+"Will Donald Trump ever be president again?",1,2022-12-08,2025-04-05,0.409,0.34928099999999995,0.5,0.25
+"Will Joe Biden Publicly Refer to a Specific AI Model While President?",0,2022-12-28,2025-01-31,0.687,0.4719690000000001,0.5,0.25
+"Will an AI win a gold medal on the IOI (competitive programming contest) before 2025?",0,2022-12-06,2025-01-01,0.129,0.016641,0.5,0.25
+"Will Hunter Biden be pardoned by his father at any point in his father's current term?",1,2022-12-06,2024-12-01,0.084,0.839056,0.5,0.25
+"Will a democrat win the 2024 presidential election in Michigan?",0,2022-12-11,2024-12-01,0.737,0.543169,0.5,0.25
+"Will a Democrat win the 2024 US Senate election in Texas?",0,2022-12-12,2024-11-06,0.174,0.030275999999999997,0.5,0.25
+"Will a Democrat win the 2024 US Senate election in Montana?",0,2022-12-10,2024-11-06,0.36,0.1296,0.5,0.25
+"Will a democrat win the 2024 presidential election in Georgia?",0,2022-12-11,2024-11-06,0.627,0.393129,0.5,0.25
+"Will Donald Trump win the 2024 presidential election?",1,2022-12-07,2024-11-06,0.196,0.6464160000000001,0.5,0.25
+"Will Ted Cruz win the 2024 US Senate election in Texas?",1,2022-12-25,2024-11-06,0.767,0.05428899999999999,0.5,0.25
+"Has Tesla been grossly misrepresenting the range of it's semi truck?",0,2022-12-17,2024-08-11,0.71,0.5041,0.5,0.25
+"Will Joe Biden face a primary challenge in 2024?",0,2022-12-21,2024-06-19,0.214,0.045795999999999996,0.5,0.25
+"Does SBF get a sentence of 20 years or more?",1,2022-12-28,2024-03-28,0.832,0.028224000000000013,0.5,0.25
+"Does SBF get a sentence of 50 years or more?",0,2022-12-12,2024-03-28,0.271,0.073441,0.5,0.25
+"Will Sam Bankman-Fried receive a prison sentence of over 44 years?",0,2022-12-26,2024-03-28,0.542,0.293764,0.5,0.25
+"Will a Neuralink device be implanted in a human brain by the end of 2024?",1,2022-12-01,2024-03-20,0.672,0.10758399999999997,0.5,0.25
+"Will president Biden “mint the coin” at any point during his administration?",0,2023-01-08,2025-02-07,0.018,0.00032399999999999996,0.5,0.25
+"Will Germany legalize Cannabis before 2025?",1,2023-01-03,2025-02-01,0.862,0.019044000000000002,0.5,0.25
+"Will the Doomsday Clock advance toward midnight in/by January 2025?",1,2023-01-22,2025-01-28,0.771,0.052440999999999995,0.5,0.25
+"Will TikTok be banned in the United States for the majority of the population by the end of 2024?",0,2023-01-26,2025-01-04,0.094,0.008836,0.5,0.25
+"Will Aella be romantically or sexually involved with Destiny by the end of 2024?",0,2023-01-01,2025-01-02,0.287,0.08236899999999998,0.5,0.25
+"Will YouTube Music be discontinued before 2025?",0,2023-01-10,2025-01-02,0.195,0.038025,0.5,0.25
+"Will Ukraine regain control over Crimea before the end of 2024?",0,2023-01-07,2025-01-01,0.16,0.0256,0.5,0.25
+"Will Google still be the most popular search engine at the end of 2024?",1,2023-01-29,2025-01-01,0.937,0.003968999999999993,0.5,0.25
+"Will the Ukraine war end by 2025?",0,2023-01-16,2025-01-01,0.283,0.08008899999999998,0.5,0.25
+"Will the winner of the electoral college also win the popular vote in 2024?",1,2023-01-29,2024-11-07,0.759,0.058080999999999994,0.5,0.25
+"Will Scott Alexander endorse a presidential candidate in 2024?",0,2023-01-04,2024-11-07,0.468,0.21902400000000002,0.5,0.25
+"Will a Democrat win the US 2024 presidential election?",0,2023-01-21,2024-11-06,0.593,0.351649,0.5,0.25
+"Will Republicans take the majority in the US Senate in 2024?",1,2023-01-05,2024-11-06,0.813,0.03496900000000002,0.5,0.25
+"Will AI be a major topic during the 2024 presidential debates in the United States? (please read criteria)",0,2023-01-23,2024-11-04,0.471,0.22184099999999998,0.5,0.25
+"Will the proposed TikTok ban pass in the Senate?",1,2023-01-08,2024-04-23,0.167,0.693889,0.5,0.25
+"Is GPT-4 a mixture of experts?",1,2023-01-06,2024-03-19,0.922,0.006083999999999993,0.5,0.25
+"Will the TikTok ban pass the House?",1,2023-01-08,2024-03-13,0.358,0.41216400000000003,0.5,0.25
+"Will the Doomsday Clock advance toward midnight in/by January 2024",0,2023-01-21,2024-01-23,0.698,0.4872039999999999,0.5,0.25
+"Will YouTube Music be discontinued before 2024?",0,2023-01-10,2024-01-02,0.014,0.00019600000000000002,0.5,0.25
+"Will Manifold Markets have a Wikipedia page this year?",0,2023-01-31,2024-01-02,0.729,0.5314409999999999,0.5,0.25
+"Will the Russia-Ukraine war end by 2024?",0,2023-01-23,2024-01-01,0.022,0.00048399999999999995,0.5,0.25
+"Will Saudi Arabia abandon (or vastly scale back) the NEOM linear city project by 2028?",1,2023-02-18,2025-05-30,0.538,0.21344399999999997,0.5,0.25
+"By 2025, will at least one song in the Billboard Hot 100 have been primarily AI-generated?",0,2023-02-07,2025-02-13,0.508,0.258064,0.5,0.25
+"Will we have end to end AI generated anime series by the end of 2024?",0,2023-02-27,2025-02-04,0.31,0.0961,0.5,0.25
+"Will language models or similar natural language processing technologies, such as ChatGPT, be integrated into dialogue trees for NPCs in triple-A games by the end of 2024",0,2023-02-22,2025-01-20,0.154,0.023716,0.5,0.25
+"Will Manifold announce they intend to shut down before 2025?",0,2022-11-29,2025-01-01,0.071,0.0050409999999999995,0.5,0.25
+"Will OpenAI suggest GPT-4 is AGI?",0,2022-11-23,2025-01-01,0.045,0.002025,0.5,0.25
+"Will China invade Taiwan in 2024?",0,2022-11-19,2025-01-01,0.062,0.0038439999999999998,0.5,0.25
+"Will substantial evidence emerge by 2025 that the FTX Future Fund team had strong suspicions of fraudulent activities at FTX before November 2022?",0,2022-11-12,2024-12-31,0.024,0.000576,0.5,0.25
+"Will Mitch McConnell stop being Senate Republican Leader by the next presidential inauguration (20 Jan 2025)?",1,2022-11-30,2024-11-13,0.691,0.09548100000000004,0.5,0.25
+"Will Ron DeSantis be elected US President in 2024?",0,2022-11-09,2024-11-06,0.034,0.0011560000000000001,0.5,0.25
+"Will Donald Trump claim election fraud against opponents in the 2024 Republican Party presidential primaries",0,2022-11-10,2024-11-04,0.505,0.255025,0.5,0.25
+"Will Elon Musk endorse Donald Trump for 2024 presidency?",1,2022-11-18,2024-07-13,0.162,0.702244,0.5,0.25
+"Will Sir Keir Starmer (Labour Party) be the UK's next prime minister?",1,2022-11-15,2024-07-05,0.83,0.028900000000000012,0.5,0.25
+"Will AAPL hit $200 before hitting $100?",1,2022-11-05,2024-06-11,0.945,0.0030250000000000055,0.5,0.25
+"Will Bibi Netanyahu be invited to address the 118th US Congress?",1,2022-11-02,2024-05-31,0.393,0.36844899999999997,0.5,0.25
+"Will Destiny and Melina finalize their divorce legally in 2024?",1,2022-11-08,2024-01-25,0.378,0.386884,0.5,0.25
+"Will there be realistic  AI generated video from natural language descriptions by the start of 2024?",0,2022-11-17,2024-01-08,0.106,0.011236,0.5,0.25
+"Will Hasan And Destiny Talk On Stream Before 2024?",0,2022-11-11,2024-01-01,0.03,0.0009,0.5,0.25
+"Will Destiny talk to Ethan Klein publicly before 2024?",0,2022-11-18,2024-01-01,0.053,0.002809,0.5,0.25
+"Will Destiny go back on The Lex Fridman Podcast before 2024?",0,2022-11-12,2024-01-01,0.945,0.893025,0.5,0.25
+"Will Vladimir Putin appear on the Lex Fridman podcast?",0,2022-11-12,2024-01-01,0.023,0.000529,0.5,0.25
+"Will Twitter go bankrupt before 2024?",0,2022-11-10,2024-01-01,0.055,0.003025,0.5,0.25
+"Will Ukraine sever the land bridge between Crimea and Russia before 2024?",0,2022-11-25,2024-01-01,0.372,0.138384,0.5,0.25
+"By the end of 2024 will there be a mostly AI generated game with $1 million or more in revenue?",0,2022-12-07,2025-06-05,0.146,0.021315999999999998,0.5,0.25
+"Will Donald Trump ever be president again?",1,2022-12-08,2025-04-05,0.409,0.34928099999999995,0.5,0.25
+"Will Joe Biden Publicly Refer to a Specific AI Model While President?",0,2022-12-28,2025-01-31,0.687,0.4719690000000001,0.5,0.25
+"Will an AI win a gold medal on the IOI (competitive programming contest) before 2025?",0,2022-12-06,2025-01-01,0.129,0.016641,0.5,0.25
+"Will Hunter Biden be pardoned by his father at any point in his father's current term?",1,2022-12-06,2024-12-01,0.084,0.839056,0.5,0.25
+"Will a democrat win the 2024 presidential election in Michigan?",0,2022-12-11,2024-12-01,0.737,0.543169,0.5,0.25
+"Will a Democrat win the 2024 US Senate election in Texas?",0,2022-12-12,2024-11-06,0.174,0.030275999999999997,0.5,0.25
+"Will a Democrat win the 2024 US Senate election in Montana?",0,2022-12-10,2024-11-06,0.36,0.1296,0.5,0.25
+"Will a democrat win the 2024 presidential election in Georgia?",0,2022-12-11,2024-11-06,0.627,0.393129,0.5,0.25
+"Will Donald Trump win the 2024 presidential election?",1,2022-12-07,2024-11-06,0.196,0.6464160000000001,0.5,0.25
+"Will Ted Cruz win the 2024 US Senate election in Texas?",1,2022-12-25,2024-11-06,0.767,0.05428899999999999,0.5,0.25
+"Has Tesla been grossly misrepresenting the range of it's semi truck?",0,2022-12-17,2024-08-11,0.71,0.5041,0.5,0.25
+"Will Joe Biden face a primary challenge in 2024?",0,2022-12-21,2024-06-19,0.214,0.045795999999999996,0.5,0.25
+"Does SBF get a sentence of 20 years or more?",1,2022-12-28,2024-03-28,0.832,0.028224000000000013,0.5,0.25
+"Does SBF get a sentence of 50 years or more?",0,2022-12-12,2024-03-28,0.271,0.073441,0.5,0.25
+"Will Sam Bankman-Fried receive a prison sentence of over 44 years?",0,2022-12-26,2024-03-28,0.542,0.293764,0.5,0.25
+"Will a Neuralink device be implanted in a human brain by the end of 2024?",1,2022-12-01,2024-03-20,0.672,0.10758399999999997,0.5,0.25
+"Will president Biden “mint the coin” at any point during his administration?",0,2023-01-08,2025-02-07,0.018,0.00032399999999999996,0.5,0.25
+"Will Germany legalize Cannabis before 2025?",1,2023-01-03,2025-02-01,0.862,0.019044000000000002,0.5,0.25
+"Will the Doomsday Clock advance toward midnight in/by January 2025?",1,2023-01-22,2025-01-28,0.771,0.052440999999999995,0.5,0.25
+"Will TikTok be banned in the United States for the majority of the population by the end of 2024?",0,2023-01-26,2025-01-04,0.094,0.008836,0.5,0.25
+"Will Aella be romantically or sexually involved with Destiny by the end of 2024?",0,2023-01-01,2025-01-02,0.287,0.08236899999999998,0.5,0.25
+"Will YouTube Music be discontinued before 2025?",0,2023-01-10,2025-01-02,0.195,0.038025,0.5,0.25
+"Will Ukraine regain control over Crimea before the end of 2024?",0,2023-01-07,2025-01-01,0.16,0.0256,0.5,0.25
+"Will Google still be the most popular search engine at the end of 2024?",1,2023-01-29,2025-01-01,0.937,0.003968999999999993,0.5,0.25
+"Will the Ukraine war end by 2025?",0,2023-01-16,2025-01-01,0.283,0.08008899999999998,0.5,0.25
+"Will the winner of the electoral college also win the popular vote in 2024?",1,2023-01-29,2024-11-07,0.759,0.058080999999999994,0.5,0.25
+"Will Scott Alexander endorse a presidential candidate in 2024?",0,2023-01-04,2024-11-07,0.468,0.21902400000000002,0.5,0.25
+"Will a Democrat win the US 2024 presidential election?",0,2023-01-21,2024-11-06,0.593,0.351649,0.5,0.25
+"Will Republicans take the majority in the US Senate in 2024?",1,2023-01-05,2024-11-06,0.813,0.03496900000000002,0.5,0.25
+"Will AI be a major topic during the 2024 presidential debates in the United States? (please read criteria)",0,2023-01-23,2024-11-04,0.471,0.22184099999999998,0.5,0.25
+"Will the proposed TikTok ban pass in the Senate?",1,2023-01-08,2024-04-23,0.167,0.693889,0.5,0.25
+"Is GPT-4 a mixture of experts?",1,2023-01-06,2024-03-19,0.922,0.006083999999999993,0.5,0.25
+"Will the TikTok ban pass the House?",1,2023-01-08,2024-03-13,0.358,0.41216400000000003,0.5,0.25
+"Will the Doomsday Clock advance toward midnight in/by January 2024",0,2023-01-21,2024-01-23,0.698,0.4872039999999999,0.5,0.25
+"Will YouTube Music be discontinued before 2024?",0,2023-01-10,2024-01-02,0.014,0.00019600000000000002,0.5,0.25
+"Will Manifold Markets have a Wikipedia page this year?",0,2023-01-31,2024-01-02,0.729,0.5314409999999999,0.5,0.25
+"Will the Russia-Ukraine war end by 2024?",0,2023-01-23,2024-01-01,0.022,0.00048399999999999995,0.5,0.25
+"Will Saudi Arabia abandon (or vastly scale back) the NEOM linear city project by 2028?",1,2023-02-18,2025-05-30,0.538,0.21344399999999997,0.5,0.25
+"By 2025, will at least one song in the Billboard Hot 100 have been primarily AI-generated?",0,2023-02-07,2025-02-13,0.508,0.258064,0.5,0.25
+"Will we have end to end AI generated anime series by the end of 2024?",0,2023-02-27,2025-02-04,0.31,0.0961,0.5,0.25
+"Will language models or similar natural language processing technologies, such as ChatGPT, be integrated into dialogue trees for NPCs in triple-A games by the end of 2024",0,2023-02-22,2025-01-20,0.154,0.023716,0.5,0.25
+"Will Joe Biden openly convert to EA by the end of his current term",0,2023-02-11,2025-01-20,0.034,0.0011560000000000001,0.5,0.25
+"Will all living current and past presidents attend Jimmy Carter's funeral?",1,2023-02-18,2025-01-09,0.128,0.760384,0.5,0.25
+"Are we about to hit another AI winter?",0,2023-02-16,2025-01-03,0.126,0.015876,0.5,0.25
+"Will Google search default to a chatbot like interface by end of 2024?",0,2023-02-06,2025-01-02,0.263,0.06916900000000001,0.5,0.25
+"Will I be able to order a self-driving taxi without a steering wheel by end of 2024?",0,2023-02-21,2025-01-02,0.219,0.047961,0.5,0.25
+"Will CGP Grey make a video that references prediction markets before the end of 2024?",0,2023-02-07,2025-01-02,0.28,0.07840000000000001,0.5,0.25
+"Will Binance collapse before the end of 2024?",0,2023-02-01,2025-01-01,0.212,0.044944,0.5,0.25
+"Will there be a new major longtermist funder before the end of 2024?",0,2023-02-01,2025-01-01,0.342,0.11696400000000001,0.5,0.25
+"Will Vladimir Putin be the President of Russia at the end of 2024?",1,2023-02-28,2024-12-31,0.9,0.009999999999999995,0.5,0.25
+"Now that Joe Biden has begun running for the 2024 Democratic Nomination, will he be the nominee?",0,2023-02-21,2024-08-20,0.85,0.7224999999999999,0.5,0.25
+"Will Joe Biden forget what he was saying during an election debate before 2025?",1,2023-02-10,2024-07-21,0.805,0.03802499999999998,0.5,0.25
+"Will Ron DeSantis win at least one state in the Republican primaries?",0,2023-02-14,2024-06-14,0.383,0.146689,0.5,0.25
+"Will someone other than Joe Biden win at least one state in the 2024 Democratic Primary?",0,2023-02-14,2024-06-05,0.302,0.091204,0.5,0.25
+"Will GPT-4 have over 1 trillion parameters?",1,2023-02-04,2024-03-19,0.558,0.19536399999999995,0.5,0.25
+"Will I manage to do a one-arm pull up by end of February 2024",0,2023-02-09,2024-02-29,0.378,0.142884,0.5,0.25
+"Will an accredited US college or university have taught a course on prompt-engineering for credit before 2024?",0,2023-02-26,2024-02-05,0.034,0.0011560000000000001,0.5,0.25
+"Will the groundhog see its shadow on Groundhog's Day 2024?",0,2023-02-02,2024-02-02,0.83,0.6889,0.5,0.25
+"Will Destiny talk with MrGirl by the end of the year?",0,2023-02-09,2024-01-02,0.028,0.0007840000000000001,0.5,0.25
+"Will Destiny become friends with Keffals?",0,2023-02-18,2024-01-01,0.2,0.04000000000000001,0.5,0.25
+"Will there be an anti-AI terrorist incident before 2024?",0,2023-02-26,2024-01-01,0.02,0.0004,0.5,0.25
+"Will I get a girlfriend this year?",0,2023-02-02,2024-01-01,0.058,0.0033640000000000002,0.5,0.25
+"Will Google send Bard to the graveyard before 2024?",0,2023-02-09,2024-01-01,0.014,0.00019600000000000002,0.5,0.25
+"Will there be significant social unrest, protests, riots, etc. over the results of the 2024 presidential election?",0,2023-03-17,2025-02-18,0.662,0.438244,0.5,0.25
+"Will Trump do time?",0,2023-03-20,2025-02-01,0.36,0.1296,0.5,0.25
+"Will AI spread through malware before 2025?",0,2023-03-17,2025-01-06,0.225,0.050625,0.5,0.25
+"Will an AI get a perfect SAT score before 2025?",0,2023-03-17,2025-01-06,0.834,0.695556,0.5,0.25
+"By 2025, will Google be in a winning position in the ""AI war"" against Microsoft?",0,2023-03-21,2025-01-06,0.449,0.201601,0.5,0.25
+"Will there ever be more Google search volume about AI Alignment than about Light Pollution, for any day before EOY 2024?",0,2023-03-06,2025-01-05,0.264,0.06969600000000001,0.5,0.25
+"Will Kurzgesagt release a video specifically about the AI Alignment Problem before the end of 2024?",0,2023-03-06,2025-01-05,0.773,0.597529,0.5,0.25
+"Will CGP Grey make a video about prediction markets before the end of 2024?",0,2023-03-28,2025-01-01,0.16,0.0256,0.5,0.25
+"Will OpenAI + an AI alignment organization announce a major breakthrough in AI alignment? (2024)",0,2023-03-26,2025-01-01,0.587,0.34456899999999996,0.5,0.25
+"Will GPT-5 be released before 2025?",0,2023-03-17,2025-01-01,0.549,0.30140100000000003,0.5,0.25
+"GPT-5 by 2025?",0,2023-03-09,2025-01-01,0.742,0.5505639999999999,0.5,0.25
+"Will Nintendo release a successor to their Switch console before the end of 2024?",0,2023-03-04,2024-12-31,0.811,0.6577210000000001,0.5,0.25
+"Recession in 2024?",0,2023-03-27,2024-12-19,0.442,0.195364,0.5,0.25
+"Will the Democrats win a majority in the House of Representatives in the 2024 elections?",0,2023-03-18,2024-11-15,0.643,0.413449,0.5,0.25
+"Will $TSLA close above $300 per share by December 30 2025?",1,2023-03-14,2024-11-08,0.852,0.021904000000000007,0.5,0.25
+"Will the Democrats win the 2024 US Presidential election?",0,2023-03-11,2024-11-06,0.574,0.32947599999999994,0.5,0.25
+"Will Joe Biden literally run in 2024?",1,2023-03-31,2024-10-26,0.543,0.20884899999999995,0.5,0.25
+"Will the United States of America win the most Gold medals at the 2024 Summer Olympics in Paris?",1,2023-03-13,2024-08-11,0.816,0.03385600000000002,0.5,0.25
+"Will Nintendo release a successor to their Switch console before the end of June, 2024?",0,2023-03-04,2024-07-02,0.194,0.037636,0.5,0.25
+"Will GPT-5 be released before July 2024?",0,2023-03-17,2024-07-01,0.135,0.018225,0.5,0.25
+"Will Donald Trump be convicted of any crime by the end of 2024?",1,2023-03-18,2024-05-31,0.758,0.058564,0.5,0.25
+"Will Donald Trump be the 2024 Republican nominee for president?",1,2023-03-19,2024-03-13,0.708,0.08526400000000002,0.5,0.25
+"Will anyone other than Trump or DeSantis win a state in the 2024 Republican primaries?",1,2023-03-20,2024-03-06,0.554,0.19891599999999995,0.5,0.25
+"Will the Vesuvius Challenge grand prize be claimed?",1,2023-03-15,2024-02-05,0.689,0.09672100000000003,0.5,0.25
+"Will a GPT4-equivalent model be able to run on consumer hardware before 2024?",0,2023-03-29,2024-01-06,0.055,0.003025,0.5,0.25
+"Will there be a million dollar mistake publicly blamed on ChatGPT before 2024?",0,2023-03-04,2024-01-03,0.032,0.001024,0.5,0.25
+"Will Destiny sue Lav?",0,2023-03-29,2024-01-01,0.486,0.236196,0.5,0.25
+"Will Donald Trump insult Ron DeSantis' wife?",0,2023-03-22,2024-01-01,0.069,0.0047610000000000005,0.5,0.25
+"Will Sam Altman be the CEO of OpenAI on January 1st 2024?",1,2023-03-03,2024-01-01,0.765,0.055224999999999996,0.5,0.25
+"Will any top AI lab commit to a moratorium on giant AI experiments before 2024?",0,2023-03-28,2024-01-01,0.042,0.0017640000000000002,0.5,0.25
+"Will Donald Trump call Ron DeSantis a pedophile or homosexual as the temperature rises between them?",0,2023-03-22,2024-01-01,0.03,0.0009,0.5,0.25
+"Will bitcoin be over $100k on April 5, 2025?",0,2023-04-04,2025-04-06,0.383,0.146689,0.5,0.25
+"Will there be a OpenAI LLM known as GPT-4.5? by 2033",1,2023-04-02,2025-02-12,0.734,0.07075600000000001,0.5,0.25
+"Will Vladimir Putin step foot in Ukraine by the end of 2024?",0,2023-04-30,2025-01-21,0.731,0.534361,0.5,0.25
+"Will Joe Biden say the word “peanut” while giving Jimmy Carter’s Eulogy?",0,2023-04-03,2025-01-11,0.762,0.580644,0.5,0.25
+"Will Google have a better LLM than OpenAI by 2025?",0,2023-04-01,2025-01-02,0.332,0.11022400000000002,0.5,0.25
+"Will the five most valuable members of the S&P 500 be more than 21% of the index's value in 2025?",1,2023-04-30,2025-01-02,0.714,0.08179600000000002,0.5,0.25
+"Will AI be able to solve confusing but elementary geometric reasoning problems in 2024?",0,2023-04-16,2025-01-01,0.566,0.3203559999999999,0.5,0.25
+"Will Twitter still exist as ""Twitter""? (2024)",0,2023-04-02,2025-01-01,0.206,0.042435999999999995,0.5,0.25
+"Will Joe Biden openly convert to EA by the end of his current term",0,2023-02-11,2025-01-20,0.034,0.0011560000000000001,0.5,0.25
+"Will all living current and past presidents attend Jimmy Carter's funeral?",1,2023-02-18,2025-01-09,0.128,0.760384,0.5,0.25
+"Are we about to hit another AI winter?",0,2023-02-16,2025-01-03,0.126,0.015876,0.5,0.25
+"Will Google search default to a chatbot like interface by end of 2024?",0,2023-02-06,2025-01-02,0.263,0.06916900000000001,0.5,0.25
+"Will I be able to order a self-driving taxi without a steering wheel by end of 2024?",0,2023-02-21,2025-01-02,0.219,0.047961,0.5,0.25
+"Will CGP Grey make a video that references prediction markets before the end of 2024?",0,2023-02-07,2025-01-02,0.28,0.07840000000000001,0.5,0.25
+"Will Binance collapse before the end of 2024?",0,2023-02-01,2025-01-01,0.212,0.044944,0.5,0.25
+"Will there be a new major longtermist funder before the end of 2024?",0,2023-02-01,2025-01-01,0.342,0.11696400000000001,0.5,0.25
+"Will Vladimir Putin be the President of Russia at the end of 2024?",1,2023-02-28,2024-12-31,0.9,0.009999999999999995,0.5,0.25
+"Now that Joe Biden has begun running for the 2024 Democratic Nomination, will he be the nominee?",0,2023-02-21,2024-08-20,0.85,0.7224999999999999,0.5,0.25
+"Will Joe Biden forget what he was saying during an election debate before 2025?",1,2023-02-10,2024-07-21,0.805,0.03802499999999998,0.5,0.25
+"Will Ron DeSantis win at least one state in the Republican primaries?",0,2023-02-14,2024-06-14,0.383,0.146689,0.5,0.25
+"Will someone other than Joe Biden win at least one state in the 2024 Democratic Primary?",0,2023-02-14,2024-06-05,0.302,0.091204,0.5,0.25
+"Will GPT-4 have over 1 trillion parameters?",1,2023-02-04,2024-03-19,0.558,0.19536399999999995,0.5,0.25
+"Will I manage to do a one-arm pull up by end of February 2024",0,2023-02-09,2024-02-29,0.378,0.142884,0.5,0.25
+"Will an accredited US college or university have taught a course on prompt-engineering for credit before 2024?",0,2023-02-26,2024-02-05,0.034,0.0011560000000000001,0.5,0.25
+"Will the groundhog see its shadow on Groundhog's Day 2024?",0,2023-02-02,2024-02-02,0.83,0.6889,0.5,0.25
+"Will Destiny talk with MrGirl by the end of the year?",0,2023-02-09,2024-01-02,0.028,0.0007840000000000001,0.5,0.25
+"Will Destiny become friends with Keffals?",0,2023-02-18,2024-01-01,0.2,0.04000000000000001,0.5,0.25
+"Will there be an anti-AI terrorist incident before 2024?",0,2023-02-26,2024-01-01,0.02,0.0004,0.5,0.25
+"Will I get a girlfriend this year?",0,2023-02-02,2024-01-01,0.058,0.0033640000000000002,0.5,0.25
+"Will Google send Bard to the graveyard before 2024?",0,2023-02-09,2024-01-01,0.014,0.00019600000000000002,0.5,0.25
+"Will there be significant social unrest, protests, riots, etc. over the results of the 2024 presidential election?",0,2023-03-17,2025-02-18,0.662,0.438244,0.5,0.25
+"Will Trump do time?",0,2023-03-20,2025-02-01,0.36,0.1296,0.5,0.25
+"Will AI spread through malware before 2025?",0,2023-03-17,2025-01-06,0.225,0.050625,0.5,0.25
+"Will an AI get a perfect SAT score before 2025?",0,2023-03-17,2025-01-06,0.834,0.695556,0.5,0.25
+"By 2025, will Google be in a winning position in the ""AI war"" against Microsoft?",0,2023-03-21,2025-01-06,0.449,0.201601,0.5,0.25
+"Will there ever be more Google search volume about AI Alignment than about Light Pollution, for any day before EOY 2024?",0,2023-03-06,2025-01-05,0.264,0.06969600000000001,0.5,0.25
+"Will Kurzgesagt release a video specifically about the AI Alignment Problem before the end of 2024?",0,2023-03-06,2025-01-05,0.773,0.597529,0.5,0.25
+"Will CGP Grey make a video about prediction markets before the end of 2024?",0,2023-03-28,2025-01-01,0.16,0.0256,0.5,0.25
+"Will OpenAI + an AI alignment organization announce a major breakthrough in AI alignment? (2024)",0,2023-03-26,2025-01-01,0.587,0.34456899999999996,0.5,0.25
+"Will GPT-5 be released before 2025?",0,2023-03-17,2025-01-01,0.549,0.30140100000000003,0.5,0.25
+"GPT-5 by 2025?",0,2023-03-09,2025-01-01,0.742,0.5505639999999999,0.5,0.25
+"Will Nintendo release a successor to their Switch console before the end of 2024?",0,2023-03-04,2024-12-31,0.811,0.6577210000000001,0.5,0.25
+"Recession in 2024?",0,2023-03-27,2024-12-19,0.442,0.195364,0.5,0.25
+"Will the Democrats win a majority in the House of Representatives in the 2024 elections?",0,2023-03-18,2024-11-15,0.643,0.413449,0.5,0.25
+"Will $TSLA close above $300 per share by December 30 2025?",1,2023-03-14,2024-11-08,0.852,0.021904000000000007,0.5,0.25
+"Will the Democrats win the 2024 US Presidential election?",0,2023-03-11,2024-11-06,0.574,0.32947599999999994,0.5,0.25
+"Will Joe Biden literally run in 2024?",1,2023-03-31,2024-10-26,0.543,0.20884899999999995,0.5,0.25
+"Will the United States of America win the most Gold medals at the 2024 Summer Olympics in Paris?",1,2023-03-13,2024-08-11,0.816,0.03385600000000002,0.5,0.25
+"Will Nintendo release a successor to their Switch console before the end of June, 2024?",0,2023-03-04,2024-07-02,0.194,0.037636,0.5,0.25
+"Will GPT-5 be released before July 2024?",0,2023-03-17,2024-07-01,0.135,0.018225,0.5,0.25
+"Will Donald Trump be convicted of any crime by the end of 2024?",1,2023-03-18,2024-05-31,0.758,0.058564,0.5,0.25
+"Will Donald Trump be the 2024 Republican nominee for president?",1,2023-03-19,2024-03-13,0.708,0.08526400000000002,0.5,0.25
+"Will anyone other than Trump or DeSantis win a state in the 2024 Republican primaries?",1,2023-03-20,2024-03-06,0.554,0.19891599999999995,0.5,0.25
+"Will the Vesuvius Challenge grand prize be claimed?",1,2023-03-15,2024-02-05,0.689,0.09672100000000003,0.5,0.25
+"Will a GPT4-equivalent model be able to run on consumer hardware before 2024?",0,2023-03-29,2024-01-06,0.055,0.003025,0.5,0.25
+"Will there be a million dollar mistake publicly blamed on ChatGPT before 2024?",0,2023-03-04,2024-01-03,0.032,0.001024,0.5,0.25
+"Will Destiny sue Lav?",0,2023-03-29,2024-01-01,0.486,0.236196,0.5,0.25
+"Will Donald Trump insult Ron DeSantis' wife?",0,2023-03-22,2024-01-01,0.069,0.0047610000000000005,0.5,0.25
+"Will Sam Altman be the CEO of OpenAI on January 1st 2024?",1,2023-03-03,2024-01-01,0.765,0.055224999999999996,0.5,0.25
+"Will any top AI lab commit to a moratorium on giant AI experiments before 2024?",0,2023-03-28,2024-01-01,0.042,0.0017640000000000002,0.5,0.25
+"Will Donald Trump call Ron DeSantis a pedophile or homosexual as the temperature rises between them?",0,2023-03-22,2024-01-01,0.03,0.0009,0.5,0.25
+"Will bitcoin be over $100k on April 5, 2025?",0,2023-04-04,2025-04-06,0.383,0.146689,0.5,0.25
+"Will there be a OpenAI LLM known as GPT-4.5? by 2033",1,2023-04-02,2025-02-12,0.734,0.07075600000000001,0.5,0.25
+"Will Vladimir Putin step foot in Ukraine by the end of 2024?",0,2023-04-30,2025-01-21,0.731,0.534361,0.5,0.25
+"Will Joe Biden say the word “peanut” while giving Jimmy Carter’s Eulogy?",0,2023-04-03,2025-01-11,0.762,0.580644,0.5,0.25
+"Will Google have a better LLM than OpenAI by 2025?",0,2023-04-01,2025-01-02,0.332,0.11022400000000002,0.5,0.25
+"Will the five most valuable members of the S&P 500 be more than 21% of the index's value in 2025?",1,2023-04-30,2025-01-02,0.714,0.08179600000000002,0.5,0.25
+"Will AI be able to solve confusing but elementary geometric reasoning problems in 2024?",0,2023-04-16,2025-01-01,0.566,0.3203559999999999,0.5,0.25
+"Will Twitter still exist as ""Twitter""? (2024)",0,2023-04-02,2025-01-01,0.206,0.042435999999999995,0.5,0.25
+"Will a nuclear weapon be detonated in 2024?",0,2023-04-05,2025-01-01,0.205,0.04202499999999999,0.5,0.25
+"Will AI be a major topic during the 2024 presidential debates in the United States?",0,2023-04-20,2024-11-13,0.425,0.18062499999999998,0.5,0.25
+"Will Donald Trump win the 2024 US presidential election?",1,2023-04-27,2024-11-07,0.4,0.36,0.5,0.25
+"Will the democratic party win the 2024 U.S. presidential election?",0,2023-04-27,2024-11-07,0.579,0.33524099999999996,0.5,0.25
+"Will Destiny's Podcast last 20 episodes?",1,2023-04-10,2024-10-02,0.691,0.09548100000000004,0.5,0.25
+"Will Robert F. Kennedy Jr. be the Democratic Party nominee for the 2024 U.S. presidential election?",0,2023-04-07,2024-08-06,0.005,2.5e-05,0.5,0.25
+"Will Joe Biden win the 2024 US presidential election?",0,2023-04-27,2024-07-22,0.586,0.343396,0.5,0.25
+"Will Joe Biden be reelected in 2024?",0,2023-04-16,2024-07-22,0.532,0.28302400000000005,0.5,0.25
+"Will Biden be the 2024 Democratic Nominee?",0,2023-04-22,2024-07-21,0.825,0.6806249999999999,0.5,0.25
+"There will be an open source LLM approximately as good or better than GPT4 before 2025",1,2023-04-01,2024-07-18,0.72,0.07840000000000001,0.5,0.25
+"Will Vivek Ramaswamy be the Republican party's vice presidential nominee in 2024?",0,2023-04-04,2024-07-15,0.122,0.014884,0.5,0.25
+"Will Rishi Sunak be replaced as Prime Minister of the United Kingdom before 1st October 2024? [10,000 Mana subsidy]",1,2023-04-17,2024-07-05,0.628,0.138384,0.5,0.25
+"Will a UK General Election be held during Q2 2024?",0,2023-04-05,2024-05-22,0.472,0.22278399999999998,0.5,0.25
+"Will Vivek Ramaswamy suspend his presidential campaign before the first Republican presidential primary votes are cast?",0,2023-04-03,2024-01-15,0.134,0.017956000000000003,0.5,0.25
+"Will Apple launch a new IPad this year?",0,2023-04-14,2024-01-01,0.36,0.1296,0.5,0.25
+"Will Apple sell more than 500k Vision Pro headsets before January 20th, 2025?",0,2023-05-20,2025-01-26,0.336,0.11289600000000001,0.5,0.25
+"Will Tesla have a ChatGPT moment in self-driving cars by 2024 year-end?",0,2023-05-22,2025-01-04,0.277,0.07672900000000002,0.5,0.25
+"Will Linda Yaccarino still be the CEO of Twitter by the end of 2024?",1,2023-05-12,2025-01-01,0.456,0.29593600000000003,0.5,0.25
+"Will Xi Jinping visit the White House by the end of 2024?",0,2023-05-09,2024-12-31,0.232,0.053824000000000004,0.5,0.25
+"Will AI wipe out humanity before the year 2025?",0,2023-05-09,2024-12-31,0.013,0.000169,0.5,0.25
+"Will there be an AI language model that strongly surpasses ChatGPT and other OpenAI models before the end of 2024?",0,2023-05-01,2024-12-31,0.489,0.239121,0.5,0.25
+"Will Trump win 2024 elections?",1,2023-05-08,2024-11-06,0.398,0.36240399999999995,0.5,0.25
+"Will  Mike Pence endorse Trump?",0,2023-05-18,2024-11-06,0.252,0.063504,0.5,0.25
+"Will the straw hats lose in the egghead arc like Kid and Law?",0,2023-05-08,2024-08-03,0.171,0.029241000000000003,0.5,0.25
+"Will Linda Yaccarino be the CEO of Twitter on July 1, 2024?",1,2023-05-25,2024-07-01,0.651,0.12180099999999998,0.5,0.25
+"Will  Nikki Haley endorse Trump?",1,2023-05-18,2024-05-22,0.651,0.12180099999999998,0.5,0.25
+"Will Gemini be widely considered better than GPT-4?",0,2023-05-12,2024-03-05,0.372,0.138384,0.5,0.25
+"Will Ukraine receive F-16s by the end of Jan 2024?",0,2023-05-20,2024-01-31,0.791,0.625681,0.5,0.25
+"Will 'The Super Mario Bros. Movie' get nominated for an Oscar in any category at the 96th Academy Awards?",0,2023-05-02,2024-01-23,0.475,0.225625,0.5,0.25
+"Will Oppenheimer gross more than $1 billion within the first six months of its release?",0,2023-05-17,2024-01-21,0.073,0.0053289999999999995,0.5,0.25
+"Will Qorantos Grow As a Streamer this year?",0,2023-05-06,2024-01-02,0.019,0.000361,0.5,0.25
+"Will I be convinced the spirit of Moore's Law is dead as of January 1, 2024?",1,2023-05-19,2024-01-01,0.873,0.016129,0.5,0.25
+"Will an AI system be known to have resisted shutdown before 2024?",0,2023-05-31,2024-01-01,0.3,0.09,0.5,0.25
+"Will Jimmy Carter be alive on January 1st, 2024",1,2023-05-02,2024-01-01,0.452,0.30030400000000007,0.5,0.25
+"Is Saint Figarland Garling the father of Shanks?",1,2023-06-12,2025-04-06,0.753,0.061009,0.5,0.25
+"Will the radical right AfD get more votes than the social democrats in Germany's next federal election?",1,2023-06-09,2025-02-24,0.315,0.46922500000000006,0.5,0.25
+"Will Harvard Admit a Class that is More than 35% Asian by 2028?",1,2023-06-29,2025-02-15,0.639,0.130321,0.5,0.25
+"Will Ukraine sever the land bridge between Crimea and Russia before 2025?",0,2023-06-13,2025-01-18,0.581,0.33756099999999994,0.5,0.25
+"Will GPT-4's parameter count be known by end of 2024?",0,2023-06-03,2025-01-10,0.48,0.2304,0.5,0.25
+"Will there be a very reliable way of reading human thoughts by the end of 2024?🧠🕵️",0,2023-06-18,2025-01-01,0.186,0.034596,0.5,0.25
+"Will more than 100,000 voters decide the 2024 election?",1,2023-06-17,2024-12-16,0.7,0.09000000000000002,0.5,0.25
+"Will Trump be convicted in federal court on any charge before the 2024 general election?",0,2023-06-08,2024-11-05,0.614,0.376996,0.5,0.25
+"Will at least one person on board the Titan submersible be awarded a Darwin award?",0,2023-06-22,2024-09-30,0.149,0.022201,0.5,0.25
+"Will China win the most gold medals at the 2024 Summer Olympics in Paris?",0,2023-06-29,2024-08-11,0.396,0.156816,0.5,0.25
+"Will franky get any upgrades in Egg head??",0,2023-06-21,2024-08-03,0.304,0.092416,0.5,0.25
+"Will the UFO retrieval program claims by whistleblower David Grusch be viewed as accurate in June of 2024?",0,2023-06-06,2024-07-25,0.063,0.003969,0.5,0.25
+"Will Joe Biden drop out of the Presidential race before the election?",1,2023-06-21,2024-07-22,0.235,0.585225,0.5,0.25
+"Will Donald Trump be admitted to a hospital for any reason by the end of 2024?",1,2023-06-28,2024-07-13,0.363,0.405769,0.5,0.25
+"Do you think Imu will be revealed as a male?",1,2023-06-04,2024-06-25,0.647,0.12460899999999998,0.5,0.25
+"Will the next State of the Union address mention UFOs?",0,2023-06-11,2024-03-09,0.099,0.009801,0.5,0.25
+"Will Donald Trump lose a single state in the 2024 Republican primaries?",1,2023-06-06,2024-03-05,0.633,0.134689,0.5,0.25
+"Will Elon Musk and Mark Zuckerberg officialy announce they're having a fight by January 2024?",0,2023-06-21,2024-02-01,0.646,0.417316,0.5,0.25
+"Will there be a version of Apple Vision Pro that costs more than $3499 by the time we can order one?",1,2023-06-06,2024-01-19,0.525,0.225625,0.5,0.25
+"Will Vivek Ramaswamy be one of the top three candidates in the 2024 Iowa Republican caucuses?",0,2023-06-12,2024-01-16,0.165,0.027225000000000003,0.5,0.25
+"kizaru loses a fight during egghead",1,2023-06-02,2024-01-15,0.457,0.2948489999999999,0.5,0.25
+"Will there be another mutiny in Russia before 2024?",0,2023-06-25,2024-01-01,0.024,0.000576,0.5,0.25
+"Will claims of a ""retrieved craft of non-human origin"" be confirmed by the US government by the end of the year?",0,2023-06-05,2024-01-01,0.03,0.0009,0.5,0.25
+"Will the right wing party AfD (Alternative für Deutschland) in Germany be above 20% in surveys at the end of the year?",1,2023-06-30,2024-01-01,0.927,0.0053289999999999935,0.5,0.25
+"Will the 2024 election have higher turnout than 2020?",0,2023-07-23,2025-03-14,0.315,0.09922500000000001,0.5,0.25
+"Will xAI AI be a Major AI Lab by 2025?",0,2023-07-15,2025-02-09,0.529,0.279841,0.5,0.25
+"Will Nintendo's next console be backwards-compatible with most Nintendo Switch games?",1,2023-07-31,2025-01-16,0.732,0.07182400000000001,0.5,0.25
+"Will a nuclear weapon be detonated in 2024?",0,2023-04-05,2025-01-01,0.205,0.04202499999999999,0.5,0.25
+"Will AI be a major topic during the 2024 presidential debates in the United States?",0,2023-04-20,2024-11-13,0.425,0.18062499999999998,0.5,0.25
+"Will Donald Trump win the 2024 US presidential election?",1,2023-04-27,2024-11-07,0.4,0.36,0.5,0.25
+"Will the democratic party win the 2024 U.S. presidential election?",0,2023-04-27,2024-11-07,0.579,0.33524099999999996,0.5,0.25
+"Will Destiny's Podcast last 20 episodes?",1,2023-04-10,2024-10-02,0.691,0.09548100000000004,0.5,0.25
+"Will Robert F. Kennedy Jr. be the Democratic Party nominee for the 2024 U.S. presidential election?",0,2023-04-07,2024-08-06,0.005,2.5e-05,0.5,0.25
+"Will Joe Biden win the 2024 US presidential election?",0,2023-04-27,2024-07-22,0.586,0.343396,0.5,0.25
+"Will Joe Biden be reelected in 2024?",0,2023-04-16,2024-07-22,0.532,0.28302400000000005,0.5,0.25
+"Will Biden be the 2024 Democratic Nominee?",0,2023-04-22,2024-07-21,0.825,0.6806249999999999,0.5,0.25
+"There will be an open source LLM approximately as good or better than GPT4 before 2025",1,2023-04-01,2024-07-18,0.72,0.07840000000000001,0.5,0.25
+"Will Vivek Ramaswamy be the Republican party's vice presidential nominee in 2024?",0,2023-04-04,2024-07-15,0.122,0.014884,0.5,0.25
+"Will Rishi Sunak be replaced as Prime Minister of the United Kingdom before 1st October 2024? [10,000 Mana subsidy]",1,2023-04-17,2024-07-05,0.628,0.138384,0.5,0.25
+"Will a UK General Election be held during Q2 2024?",0,2023-04-05,2024-05-22,0.472,0.22278399999999998,0.5,0.25
+"Will Vivek Ramaswamy suspend his presidential campaign before the first Republican presidential primary votes are cast?",0,2023-04-03,2024-01-15,0.134,0.017956000000000003,0.5,0.25
+"Will Apple launch a new IPad this year?",0,2023-04-14,2024-01-01,0.36,0.1296,0.5,0.25
+"Will Apple sell more than 500k Vision Pro headsets before January 20th, 2025?",0,2023-05-20,2025-01-26,0.336,0.11289600000000001,0.5,0.25
+"Will Tesla have a ChatGPT moment in self-driving cars by 2024 year-end?",0,2023-05-22,2025-01-04,0.277,0.07672900000000002,0.5,0.25
+"Will Linda Yaccarino still be the CEO of Twitter by the end of 2024?",1,2023-05-12,2025-01-01,0.456,0.29593600000000003,0.5,0.25
+"Will Xi Jinping visit the White House by the end of 2024?",0,2023-05-09,2024-12-31,0.232,0.053824000000000004,0.5,0.25
+"Will AI wipe out humanity before the year 2025?",0,2023-05-09,2024-12-31,0.013,0.000169,0.5,0.25
+"Will there be an AI language model that strongly surpasses ChatGPT and other OpenAI models before the end of 2024?",0,2023-05-01,2024-12-31,0.489,0.239121,0.5,0.25
+"Will Trump win 2024 elections?",1,2023-05-08,2024-11-06,0.398,0.36240399999999995,0.5,0.25
+"Will  Mike Pence endorse Trump?",0,2023-05-18,2024-11-06,0.252,0.063504,0.5,0.25
+"Will the straw hats lose in the egghead arc like Kid and Law?",0,2023-05-08,2024-08-03,0.171,0.029241000000000003,0.5,0.25
+"Will Linda Yaccarino be the CEO of Twitter on July 1, 2024?",1,2023-05-25,2024-07-01,0.651,0.12180099999999998,0.5,0.25
+"Will  Nikki Haley endorse Trump?",1,2023-05-18,2024-05-22,0.651,0.12180099999999998,0.5,0.25
+"Will Gemini be widely considered better than GPT-4?",0,2023-05-12,2024-03-05,0.372,0.138384,0.5,0.25
+"Will Ukraine receive F-16s by the end of Jan 2024?",0,2023-05-20,2024-01-31,0.791,0.625681,0.5,0.25
+"Will 'The Super Mario Bros. Movie' get nominated for an Oscar in any category at the 96th Academy Awards?",0,2023-05-02,2024-01-23,0.475,0.225625,0.5,0.25
+"Will Oppenheimer gross more than $1 billion within the first six months of its release?",0,2023-05-17,2024-01-21,0.073,0.0053289999999999995,0.5,0.25
+"Will Qorantos Grow As a Streamer this year?",0,2023-05-06,2024-01-02,0.019,0.000361,0.5,0.25
+"Will I be convinced the spirit of Moore's Law is dead as of January 1, 2024?",1,2023-05-19,2024-01-01,0.873,0.016129,0.5,0.25
+"Will an AI system be known to have resisted shutdown before 2024?",0,2023-05-31,2024-01-01,0.3,0.09,0.5,0.25
+"Will Jimmy Carter be alive on January 1st, 2024",1,2023-05-02,2024-01-01,0.452,0.30030400000000007,0.5,0.25
+"Is Saint Figarland Garling the father of Shanks?",1,2023-06-12,2025-04-06,0.753,0.061009,0.5,0.25
+"Will the radical right AfD get more votes than the social democrats in Germany's next federal election?",1,2023-06-09,2025-02-24,0.315,0.46922500000000006,0.5,0.25
+"Will Harvard Admit a Class that is More than 35% Asian by 2028?",1,2023-06-29,2025-02-15,0.639,0.130321,0.5,0.25
+"Will Ukraine sever the land bridge between Crimea and Russia before 2025?",0,2023-06-13,2025-01-18,0.581,0.33756099999999994,0.5,0.25
+"Will GPT-4's parameter count be known by end of 2024?",0,2023-06-03,2025-01-10,0.48,0.2304,0.5,0.25
+"Will there be a very reliable way of reading human thoughts by the end of 2024?🧠🕵️",0,2023-06-18,2025-01-01,0.186,0.034596,0.5,0.25
+"Will more than 100,000 voters decide the 2024 election?",1,2023-06-17,2024-12-16,0.7,0.09000000000000002,0.5,0.25
+"Will Trump be convicted in federal court on any charge before the 2024 general election?",0,2023-06-08,2024-11-05,0.614,0.376996,0.5,0.25
+"Will at least one person on board the Titan submersible be awarded a Darwin award?",0,2023-06-22,2024-09-30,0.149,0.022201,0.5,0.25
+"Will China win the most gold medals at the 2024 Summer Olympics in Paris?",0,2023-06-29,2024-08-11,0.396,0.156816,0.5,0.25
+"Will franky get any upgrades in Egg head??",0,2023-06-21,2024-08-03,0.304,0.092416,0.5,0.25
+"Will the UFO retrieval program claims by whistleblower David Grusch be viewed as accurate in June of 2024?",0,2023-06-06,2024-07-25,0.063,0.003969,0.5,0.25
+"Will Joe Biden drop out of the Presidential race before the election?",1,2023-06-21,2024-07-22,0.235,0.585225,0.5,0.25
+"Will Donald Trump be admitted to a hospital for any reason by the end of 2024?",1,2023-06-28,2024-07-13,0.363,0.405769,0.5,0.25
+"Do you think Imu will be revealed as a male?",1,2023-06-04,2024-06-25,0.647,0.12460899999999998,0.5,0.25
+"Will the next State of the Union address mention UFOs?",0,2023-06-11,2024-03-09,0.099,0.009801,0.5,0.25
+"Will Donald Trump lose a single state in the 2024 Republican primaries?",1,2023-06-06,2024-03-05,0.633,0.134689,0.5,0.25
+"Will Elon Musk and Mark Zuckerberg officialy announce they're having a fight by January 2024?",0,2023-06-21,2024-02-01,0.646,0.417316,0.5,0.25
+"Will there be a version of Apple Vision Pro that costs more than $3499 by the time we can order one?",1,2023-06-06,2024-01-19,0.525,0.225625,0.5,0.25
+"Will Vivek Ramaswamy be one of the top three candidates in the 2024 Iowa Republican caucuses?",0,2023-06-12,2024-01-16,0.165,0.027225000000000003,0.5,0.25
+"kizaru loses a fight during egghead",1,2023-06-02,2024-01-15,0.457,0.2948489999999999,0.5,0.25
+"Will there be another mutiny in Russia before 2024?",0,2023-06-25,2024-01-01,0.024,0.000576,0.5,0.25
+"Will claims of a ""retrieved craft of non-human origin"" be confirmed by the US government by the end of the year?",0,2023-06-05,2024-01-01,0.03,0.0009,0.5,0.25
+"Will the right wing party AfD (Alternative für Deutschland) in Germany be above 20% in surveys at the end of the year?",1,2023-06-30,2024-01-01,0.927,0.0053289999999999935,0.5,0.25
+"Will the 2024 election have higher turnout than 2020?",0,2023-07-23,2025-03-14,0.315,0.09922500000000001,0.5,0.25
+"Will xAI AI be a Major AI Lab by 2025?",0,2023-07-15,2025-02-09,0.529,0.279841,0.5,0.25
+"Will Nintendo's next console be backwards-compatible with most Nintendo Switch games?",1,2023-07-31,2025-01-16,0.732,0.07182400000000001,0.5,0.25
+"Will 2024 be the hottest year on record?",1,2023-07-06,2025-01-11,0.556,0.19713599999999995,0.5,0.25
+"Will the room-temperature superconductor results of Lee et. al be reproduced by the end of 2024?",0,2023-07-25,2025-01-02,0.149,0.022201,0.5,0.25
+"Will the LK-99 room temp, ambient pressure superconductivity pre-print replicate before 2025?",0,2023-07-25,2025-01-01,0.253,0.064009,0.5,0.25
+"Instant deepfakes of anyone (doing anything) before the end of 2024?",0,2023-07-09,2025-01-01,0.408,0.16646399999999997,0.5,0.25
+"Will Threads have more daily active users than Twitter by the end of 2024?",0,2023-07-04,2025-01-01,0.202,0.04080400000000001,0.5,0.25
+"Will the US reschedule cannabis by the end of 2024?",0,2023-07-31,2025-01-01,0.403,0.16240900000000003,0.5,0.25
+"Will Martin Shkreli join Manifold before 2025?",0,2023-07-06,2025-01-01,0.491,0.241081,0.5,0.25
+"Will Netanyahu remain Israel's PM until the end of 2024?",1,2023-07-24,2024-12-31,0.407,0.351649,0.5,0.25
+"Will Rational Animations' video about Manifold Markets reach 200k views by the end of 2024?",0,2023-07-15,2024-12-31,0.319,0.101761,0.5,0.25
+"Will Vladimir Putin be alive on December 21st, 2024?",1,2023-07-14,2024-12-22,0.94,0.0036000000000000064,0.5,0.25
+"Will President Biden pardon Hunter Biden?",1,2023-07-27,2024-12-01,0.08,0.8464,0.5,0.25
+"Will any candidate get a majority of the popular vote in 2024?",0,2023-07-14,2024-12-01,0.608,0.369664,0.5,0.25
+"Will a single third party candidate receive 2% or more of the popular vote in the 2024 US presidential election?",0,2023-07-02,2024-11-23,0.657,0.43164900000000006,0.5,0.25
+"If Trump is elected President in 2024, will he win the popular vote?",1,2023-07-18,2024-11-06,0.303,0.4858090000000001,0.5,0.25
+"Will Saturn die at Egghead?",1,2023-07-20,2024-09-04,0.293,0.4998490000000001,0.5,0.25
+"Will Vivek Ramaswamy be on the GOP ticket in 2024?",0,2023-07-22,2024-07-15,0.117,0.013689000000000002,0.5,0.25
+"Will RFK Jr. end up running as an Independent in 2024?",1,2023-07-28,2024-07-02,0.906,0.008835999999999995,0.5,0.25
+"Will Mrbeast’s main channel be the most subscribed YouTube channel on June 1st 2024?",0,2023-07-28,2024-06-12,0.25,0.0625,0.5,0.25
+"Will Ukraine get F-16 fighters early 2024?",0,2023-07-28,2024-06-03,0.888,0.788544,0.5,0.25
+"Will Superalignment succeed, according to Eliezer Yudkowsky?",0,2023-07-07,2024-05-20,0.065,0.0042250000000000005,0.5,0.25
+"Will Superalignment succeed? (self assessment)",0,2023-07-05,2024-05-19,0.169,0.028561000000000003,0.5,0.25
+"Will OpenAI's Superalignment project produce a significant breakthrough in alignment research before 2027?",0,2023-07-05,2024-05-17,0.765,0.585225,0.5,0.25
+"Will Peter Miller win the  ""Rootclaim Challenge"" debate  with Saar Wilf on the origins of COVID-19?",1,2023-07-02,2024-02-17,0.348,0.42510400000000004,0.5,0.25
+"Is the room temperature superconductor paper legit?",0,2023-07-25,2024-01-01,0.27,0.0729,0.5,0.25
+"Will DeSantis fall to third place in Republican primary polling this year?",0,2023-07-26,2024-01-01,0.802,0.6432040000000001,0.5,0.25
+"Will GPT-5 launch before 1 January 2025?",0,2023-08-02,2025-01-06,0.684,0.46785600000000005,0.5,0.25
+"Will Saudi Arabia and Israel establish diplomatic relations before 2025?",0,2023-08-09,2025-01-04,0.391,0.15288100000000002,0.5,0.25
+"Will Ukrainian forces attempt to retake Crimea in 2024?",0,2023-08-26,2025-01-04,0.365,0.13322499999999998,0.5,0.25
+"Will a room-temperature superconductor with a similar-but-different composition to LK-99 be discovered by 2025?",0,2023-08-02,2025-01-04,0.028,0.0007840000000000001,0.5,0.25
+"Will bitcoin price be greater than $100,000 USD on Jan 1 2025",0,2023-08-08,2025-01-02,0.258,0.066564,0.5,0.25
+"Will Congestion Pricing in NYC be enforced by the end of 2024?",0,2023-08-05,2025-01-01,0.644,0.41473600000000005,0.5,0.25
+"Will Logan Paul call off his engagement with his fiancé Nina Agdal by end of 2024?",0,2023-08-24,2025-01-01,0.235,0.055224999999999996,0.5,0.25
+"Will Sam Altman be the CEO of OpenAI at the end of 2024?",1,2023-08-30,2025-01-01,0.135,0.748225,0.5,0.25
+"Will Julian Assange be extradited to the US by the end of 2024?",0,2023-08-14,2025-01-01,0.54,0.2916,0.5,0.25
+"Will Robert F. Kennedy Jr. be the next elected President of the United States?",0,2023-08-04,2024-11-14,0.019,0.000361,0.5,0.25
+"Will ChatGPT be mentioned in the 2024 US presidential debates?",0,2023-08-03,2024-11-09,0.649,0.42120100000000005,0.5,0.25
+"Will Trump lose the 2024 popular vote by at least 10M votes?",0,2023-08-27,2024-11-06,0.36,0.1296,0.5,0.25
+"Will Trump go on the Joe Rogan podcast before the 2024 Election",1,2023-08-24,2024-10-25,0.254,0.556516,0.5,0.25
+"Will Lex Fridman interview Donald Trump before the general elections in November 2024?",1,2023-08-02,2024-09-04,0.242,0.574564,0.5,0.25
+"Will @realDonaldTrump tweet in 2024?",1,2023-08-09,2024-08-13,0.845,0.024025000000000008,0.5,0.25
+"Will the price for ChatGPT Plus still be USD $20/month on Aug 12th 2024?",1,2023-08-12,2024-08-12,0.404,0.355216,0.5,0.25
+"Will the 400B+ open source Llama 3 model rank higher than GPT-4-Turbo-2024-04-09 on the lmsys leaderboard?",1,2023-08-28,2024-08-06,0.381,0.383161,0.5,0.25
+"Will Google Search include a chatbot at end of April 2024?",0,2023-08-27,2024-05-03,0.47,0.22089999999999999,0.5,0.25
+"Will Google Search include a chatbot at end of March 2024?",0,2023-08-01,2024-04-01,0.37,0.1369,0.5,0.25
+"Will Dune 2 world wide box office be higher than Dune 1?",1,2023-08-03,2024-03-19,0.842,0.02496400000000001,0.5,0.25
+"Will Oppenheimer Win the Oscars for Best Picture, Best Actor (Cillian Murphy) and Best Director (Christopher Nolan)?",1,2023-08-02,2024-03-10,0.243,0.573049,0.5,0.25
+"Will any state disqualify Trump from the 2024 primaries?",0,2023-08-28,2024-03-08,0.229,0.052441,0.5,0.25
+"Will any state use the 14th Amendment to successfully disqualify a US presidential candidate [Trump] in 2024?",0,2023-08-13,2024-03-06,0.283,0.08008899999999998,0.5,0.25
+"Will Google Search include a chatbot at end of January 2024?",0,2023-08-01,2024-02-01,0.196,0.038416000000000006,0.5,0.25
+"Will Mira's main GPT-4 Sudoku market resolve YES?",0,2023-08-06,2024-01-17,0.325,0.10562500000000001,0.5,0.25
+"Will Trump harshly criticize Vivek Ramaswamy before Nov. 2024 election?",1,2023-08-27,2024-01-15,0.409,0.34928099999999995,0.5,0.25
+"Will DeSantis be the #2 polling candidate nationally the day before the Iowa caucuses?",1,2023-08-25,2024-01-15,0.352,0.419904,0.5,0.25
+"Will GPT-4 fine-tuning be available by EOY?",0,2023-08-23,2024-01-10,0.074,0.005475999999999999,0.5,0.25
+"Will the Ukrainian Air Force operate F-16s before 2024?",0,2023-08-15,2024-01-05,0.134,0.017956000000000003,0.5,0.25
+"Will Sam Altman have a significant PR blunder before the beginning of 2024?",0,2023-08-17,2024-01-05,0.679,0.4610410000000001,0.5,0.25
+"[50M subsidy ] Will the PMC Wagner stop existing before 2024?",0,2023-08-23,2024-01-01,0.331,0.109561,0.5,0.25
+"Will twitter.com start redirecting to x.com before 2024?",0,2023-08-04,2024-01-01,0.025,0.0006250000000000001,0.5,0.25
+"Will there be a high-credibility spurious replication of LK-99 room temp superconductors before 2024?",0,2023-08-02,2024-01-01,0.014,0.00019600000000000002,0.5,0.25
+"Will there be a government shut down this year?",0,2023-08-09,2024-01-01,0.93,0.8649000000000001,0.5,0.25
+"Will Sweden join Nato before 2024?",0,2023-08-07,2024-01-01,0.732,0.535824,0.5,0.25
+"Will APL Materials publish the research on LK-99 ?",0,2023-08-08,2024-01-01,0.431,0.18576099999999998,0.5,0.25
+"Will 2024 be the hottest year on record?",1,2023-07-06,2025-01-11,0.556,0.19713599999999995,0.5,0.25
+"Will the room-temperature superconductor results of Lee et. al be reproduced by the end of 2024?",0,2023-07-25,2025-01-02,0.149,0.022201,0.5,0.25
+"Will the LK-99 room temp, ambient pressure superconductivity pre-print replicate before 2025?",0,2023-07-25,2025-01-01,0.253,0.064009,0.5,0.25
+"Instant deepfakes of anyone (doing anything) before the end of 2024?",0,2023-07-09,2025-01-01,0.408,0.16646399999999997,0.5,0.25
+"Will Threads have more daily active users than Twitter by the end of 2024?",0,2023-07-04,2025-01-01,0.202,0.04080400000000001,0.5,0.25
+"Will the US reschedule cannabis by the end of 2024?",0,2023-07-31,2025-01-01,0.403,0.16240900000000003,0.5,0.25
+"Will Martin Shkreli join Manifold before 2025?",0,2023-07-06,2025-01-01,0.491,0.241081,0.5,0.25
+"Will Netanyahu remain Israel's PM until the end of 2024?",1,2023-07-24,2024-12-31,0.407,0.351649,0.5,0.25
+"Will Rational Animations' video about Manifold Markets reach 200k views by the end of 2024?",0,2023-07-15,2024-12-31,0.319,0.101761,0.5,0.25
+"Will Vladimir Putin be alive on December 21st, 2024?",1,2023-07-14,2024-12-22,0.94,0.0036000000000000064,0.5,0.25
+"Will President Biden pardon Hunter Biden?",1,2023-07-27,2024-12-01,0.08,0.8464,0.5,0.25
+"Will any candidate get a majority of the popular vote in 2024?",0,2023-07-14,2024-12-01,0.608,0.369664,0.5,0.25
+"Will a single third party candidate receive 2% or more of the popular vote in the 2024 US presidential election?",0,2023-07-02,2024-11-23,0.657,0.43164900000000006,0.5,0.25
+"If Trump is elected President in 2024, will he win the popular vote?",1,2023-07-18,2024-11-06,0.303,0.4858090000000001,0.5,0.25
+"Will Saturn die at Egghead?",1,2023-07-20,2024-09-04,0.293,0.4998490000000001,0.5,0.25
+"Will Vivek Ramaswamy be on the GOP ticket in 2024?",0,2023-07-22,2024-07-15,0.117,0.013689000000000002,0.5,0.25
+"Will RFK Jr. end up running as an Independent in 2024?",1,2023-07-28,2024-07-02,0.906,0.008835999999999995,0.5,0.25
+"Will Mrbeast’s main channel be the most subscribed YouTube channel on June 1st 2024?",0,2023-07-28,2024-06-12,0.25,0.0625,0.5,0.25
+"Will Ukraine get F-16 fighters early 2024?",0,2023-07-28,2024-06-03,0.888,0.788544,0.5,0.25
+"Will Superalignment succeed, according to Eliezer Yudkowsky?",0,2023-07-07,2024-05-20,0.065,0.0042250000000000005,0.5,0.25
+"Will Superalignment succeed? (self assessment)",0,2023-07-05,2024-05-19,0.169,0.028561000000000003,0.5,0.25
+"Will OpenAI's Superalignment project produce a significant breakthrough in alignment research before 2027?",0,2023-07-05,2024-05-17,0.765,0.585225,0.5,0.25
+"Will Peter Miller win the  ""Rootclaim Challenge"" debate  with Saar Wilf on the origins of COVID-19?",1,2023-07-02,2024-02-17,0.348,0.42510400000000004,0.5,0.25
+"Is the room temperature superconductor paper legit?",0,2023-07-25,2024-01-01,0.27,0.0729,0.5,0.25
+"Will DeSantis fall to third place in Republican primary polling this year?",0,2023-07-26,2024-01-01,0.802,0.6432040000000001,0.5,0.25
+"Will GPT-5 launch before 1 January 2025?",0,2023-08-02,2025-01-06,0.684,0.46785600000000005,0.5,0.25
+"Will Saudi Arabia and Israel establish diplomatic relations before 2025?",0,2023-08-09,2025-01-04,0.391,0.15288100000000002,0.5,0.25
+"Will Ukrainian forces attempt to retake Crimea in 2024?",0,2023-08-26,2025-01-04,0.365,0.13322499999999998,0.5,0.25
+"Will a room-temperature superconductor with a similar-but-different composition to LK-99 be discovered by 2025?",0,2023-08-02,2025-01-04,0.028,0.0007840000000000001,0.5,0.25
+"Will bitcoin price be greater than $100,000 USD on Jan 1 2025",0,2023-08-08,2025-01-02,0.258,0.066564,0.5,0.25
+"Will Congestion Pricing in NYC be enforced by the end of 2024?",0,2023-08-05,2025-01-01,0.644,0.41473600000000005,0.5,0.25
+"Will Logan Paul call off his engagement with his fiancé Nina Agdal by end of 2024?",0,2023-08-24,2025-01-01,0.235,0.055224999999999996,0.5,0.25
+"Will Sam Altman be the CEO of OpenAI at the end of 2024?",1,2023-08-30,2025-01-01,0.135,0.748225,0.5,0.25
+"Will Julian Assange be extradited to the US by the end of 2024?",0,2023-08-14,2025-01-01,0.54,0.2916,0.5,0.25
+"Will Robert F. Kennedy Jr. be the next elected President of the United States?",0,2023-08-04,2024-11-14,0.019,0.000361,0.5,0.25
+"Will ChatGPT be mentioned in the 2024 US presidential debates?",0,2023-08-03,2024-11-09,0.649,0.42120100000000005,0.5,0.25
+"Will Trump lose the 2024 popular vote by at least 10M votes?",0,2023-08-27,2024-11-06,0.36,0.1296,0.5,0.25
+"Will Trump go on the Joe Rogan podcast before the 2024 Election",1,2023-08-24,2024-10-25,0.254,0.556516,0.5,0.25
+"Will Lex Fridman interview Donald Trump before the general elections in November 2024?",1,2023-08-02,2024-09-04,0.242,0.574564,0.5,0.25
+"Will @realDonaldTrump tweet in 2024?",1,2023-08-09,2024-08-13,0.845,0.024025000000000008,0.5,0.25
+"Will the price for ChatGPT Plus still be USD $20/month on Aug 12th 2024?",1,2023-08-12,2024-08-12,0.404,0.355216,0.5,0.25
+"Will the 400B+ open source Llama 3 model rank higher than GPT-4-Turbo-2024-04-09 on the lmsys leaderboard?",1,2023-08-28,2024-08-06,0.381,0.383161,0.5,0.25
+"Will Google Search include a chatbot at end of April 2024?",0,2023-08-27,2024-05-03,0.47,0.22089999999999999,0.5,0.25
+"Will Google Search include a chatbot at end of March 2024?",0,2023-08-01,2024-04-01,0.37,0.1369,0.5,0.25
+"Will Dune 2 world wide box office be higher than Dune 1?",1,2023-08-03,2024-03-19,0.842,0.02496400000000001,0.5,0.25
+"Will Oppenheimer Win the Oscars for Best Picture, Best Actor (Cillian Murphy) and Best Director (Christopher Nolan)?",1,2023-08-02,2024-03-10,0.243,0.573049,0.5,0.25
+"Will any state disqualify Trump from the 2024 primaries?",0,2023-08-28,2024-03-08,0.229,0.052441,0.5,0.25
+"Will any state use the 14th Amendment to successfully disqualify a US presidential candidate [Trump] in 2024?",0,2023-08-13,2024-03-06,0.283,0.08008899999999998,0.5,0.25
+"Will Google Search include a chatbot at end of January 2024?",0,2023-08-01,2024-02-01,0.196,0.038416000000000006,0.5,0.25
+"Will Mira's main GPT-4 Sudoku market resolve YES?",0,2023-08-06,2024-01-17,0.325,0.10562500000000001,0.5,0.25
+"Will Trump harshly criticize Vivek Ramaswamy before Nov. 2024 election?",1,2023-08-27,2024-01-15,0.409,0.34928099999999995,0.5,0.25
+"Will DeSantis be the #2 polling candidate nationally the day before the Iowa caucuses?",1,2023-08-25,2024-01-15,0.352,0.419904,0.5,0.25
+"Will GPT-4 fine-tuning be available by EOY?",0,2023-08-23,2024-01-10,0.074,0.005475999999999999,0.5,0.25
+"Will the Ukrainian Air Force operate F-16s before 2024?",0,2023-08-15,2024-01-05,0.134,0.017956000000000003,0.5,0.25
+"Will Sam Altman have a significant PR blunder before the beginning of 2024?",0,2023-08-17,2024-01-05,0.679,0.4610410000000001,0.5,0.25
+"[50M subsidy ] Will the PMC Wagner stop existing before 2024?",0,2023-08-23,2024-01-01,0.331,0.109561,0.5,0.25
+"Will twitter.com start redirecting to x.com before 2024?",0,2023-08-04,2024-01-01,0.025,0.0006250000000000001,0.5,0.25
+"Will there be a high-credibility spurious replication of LK-99 room temp superconductors before 2024?",0,2023-08-02,2024-01-01,0.014,0.00019600000000000002,0.5,0.25
+"Will there be a government shut down this year?",0,2023-08-09,2024-01-01,0.93,0.8649000000000001,0.5,0.25
+"Will Sweden join Nato before 2024?",0,2023-08-07,2024-01-01,0.732,0.535824,0.5,0.25
+"Will APL Materials publish the research on LK-99 ?",0,2023-08-08,2024-01-01,0.431,0.18576099999999998,0.5,0.25
+"Will Jimmy Carter live until the end of this year?",1,2023-08-19,2024-01-01,0.686,0.09859599999999996,0.5,0.25
+"Will the Conservative Party of Canada form a Majority Government after the 45th Canadian Federal Election?",0,2023-09-07,2025-04-29,0.67,0.4489000000000001,0.5,0.25
+"Will India be renamed to Bharat by 2025?",0,2023-09-05,2025-02-01,0.214,0.045795999999999996,0.5,0.25
+"Will AI replace over 50 million jobs by end of 2024?",0,2023-09-15,2025-02-01,0.114,0.012996,0.5,0.25
+"Will the 2024 US Presidential election happen normally?",1,2023-09-05,2025-01-21,0.77,0.05289999999999999,0.5,0.25
+"Will a large scale Alignment Project like The Omega Protocol be funded before 2025?",0,2023-09-12,2025-01-14,0.211,0.044521,0.5,0.25
+"Will weed be rescheduled by the end of 2024?",0,2023-09-09,2025-01-06,0.545,0.29702500000000004,0.5,0.25
+"Will marijuana be rescheduled by the US federal government by the end of 2024?",0,2023-09-03,2025-01-01,0.517,0.267289,0.5,0.25
+"Will there be peace talks between Russia and Ukraine in 2024?",0,2023-09-05,2025-01-01,0.569,0.32376099999999997,0.5,0.25
+"Will Taylor Swift be the most streamed artist in 2024?",1,2023-09-02,2024-12-05,0.72,0.07840000000000001,0.5,0.25
+"Will Joe Biden pardon or commute the sentence of Hunter Biden?",1,2023-09-07,2024-12-02,0.135,0.748225,0.5,0.25
+"Will Robert F. Kennedy Jr. win more than 5% of the popular vote in the 2024 US presidential election?",0,2023-09-29,2024-11-12,0.099,0.009801,0.5,0.25
+"Will ANY 2020 red states/districts flip blue in 2024?",0,2023-09-05,2024-11-06,0.684,0.46785600000000005,0.5,0.25
+"Will Joe Biden be re-elected in 2024?",0,2023-09-06,2024-11-06,0.479,0.22944099999999998,0.5,0.25
+"Will Donald Trump win the Presidential Election of the United States of America in 2024? ",1,2023-09-05,2024-11-06,0.379,0.385641,0.5,0.25
+"Will @firstuserhere coauthor a NeurIPS or ICML conference publication before end of 2024? (10,000 Mana subsidy)",0,2023-09-03,2024-10-01,0.471,0.22184099999999998,0.5,0.25
+"Will Google have the best LLM by EOY 2024?",1,2023-09-05,2024-08-01,0.414,0.3433960000000001,0.5,0.25
+"GPT4 or better model available for download by EOY 2024?",1,2023-09-15,2024-07-22,0.612,0.150544,0.5,0.25
+"Will the Labour Party win a landslide victory in the next UK general election? [100 seat majority]",1,2023-09-19,2024-07-08,0.629,0.13764099999999999,0.5,0.25
+"Will Man City make it to the semifinals in the 23/24 UEFA Champions League",0,2023-09-20,2024-05-12,0.761,0.579121,0.5,0.25
+"Do more men think about the Roman Empire daily than women?",0,2023-09-17,2024-04-01,0.765,0.585225,0.5,0.25
+"Will Twitter/X start charging *everyone* to use the platform by the end of March 2024?",0,2023-09-18,2024-04-01,0.067,0.004489000000000001,0.5,0.25
+"Will I get into Columbia University?",0,2023-09-02,2024-03-28,0.131,0.017161000000000003,0.5,0.25
+"Will Intuitive Machines' IM-1 mission successfully land on the moon?",0,2023-09-10,2024-03-01,0.407,0.165649,0.5,0.25
+"Will the San Francisco 49ers win the Super Bowl?",0,2023-09-27,2024-02-12,0.261,0.068121,0.5,0.25
+"Will any AI model generate image of correct QWERTY keyboard consistently, to a prompt, by the end of 2024?",1,2023-09-23,2024-01-03,0.628,0.138384,0.5,0.25
+"Will Destiny appear on jubilee again before 2024?",0,2023-09-20,2024-01-01,0.059,0.0034809999999999997,0.5,0.25
+"Will Israel commit war crimes by cutting off food/water, electricity, and fuel to the Gaza Strip?",1,2023-10-09,2025-06-02,0.481,0.269361,0.5,0.25
+"Will Manifold be more accurate than Polymarket in forecasting the 2024 election?",0,2023-10-26,2025-04-19,0.52,0.27040000000000003,0.5,0.25
+"Will human narration for audiobooks become mostly unnecessary before 2026?",1,2023-10-15,2025-03-20,0.351,0.42120100000000005,0.5,0.25
+"Will Sarah Wagenknecht's BSW be part of the next German federal parliament?",0,2023-10-23,2025-02-24,0.476,0.22657599999999997,0.5,0.25
+"Will manifold markets still have >2000 daily active users in 2025?",0,2023-10-23,2025-01-31,0.919,0.8445610000000001,0.5,0.25
+"Will Guyana and Venezuela have a military conflict by the end of 2024? [Ṁ1,000 subsidy]",0,2023-10-24,2025-01-15,0.155,0.024025,0.5,0.25
+"Will Nicolas Maduro be President of Venezuela on 10 January 2025?",1,2023-10-18,2025-01-11,0.775,0.05062499999999999,0.5,0.25
+"Will a single shooting incident kill at least 20 people in the US during 2024?",0,2023-10-05,2025-01-07,0.53,0.28090000000000004,0.5,0.25
+"Will Gaza be de facto controlled by Israel at the end of 2024?",0,2023-10-16,2025-01-06,0.332,0.11022400000000002,0.5,0.25
+"Will a state-based conflict between Israel and Iran cause at least 1,000 deaths before 2025?",0,2023-10-09,2025-01-06,0.247,0.061009,0.5,0.25
+"Will Benjamin Netanyahu (Bibi) be the prime minister of Israel at the end of 2024",1,2023-10-15,2025-01-01,0.392,0.369664,0.5,0.25
+"Will Humane sell 10k AI Pins before 2025?",1,2023-10-02,2025-01-01,0.5,0.25,0.5,0.25
+"Will Trump spend any time in jail by the end of 2024?",0,2023-10-26,2025-01-01,0.218,0.047524,0.5,0.25
+"Will the US ""vibecession"" continue through all of 2024?",1,2023-10-29,2025-01-01,0.409,0.34928099999999995,0.5,0.25
+"Will Apple Inc. have the highest market cap at the end of 2024?",1,2023-10-27,2024-12-31,0.743,0.066049,0.5,0.25
+"Coup in Iran, Egypt, Syria, Jordan or Lebanon before 2025",1,2023-10-20,2024-12-10,0.295,0.4970250000000001,0.5,0.25
+"Will Bitcoin exceed 100,000 USD In 2024?",1,2023-10-15,2024-12-05,0.348,0.42510400000000004,0.5,0.25
+"Will either Joe Biden or Donald Trump die before the 2024 Presidential election?",0,2023-10-10,2024-11-05,0.162,0.026244,0.5,0.25
+"Will China be competitive in the LLM race compared to OpenAI, Anthropic, and Google by end of 2024?",1,2023-10-13,2024-10-16,0.307,0.4802490000000001,0.5,0.25
+"Will Hezbollah directly engage in combat operations against Israel?",1,2023-10-07,2024-10-03,0.605,0.15602500000000002,0.5,0.25
+"Will Destiny get unbanned from Twitch before October 2024?",0,2023-10-02,2024-10-01,0.509,0.259081,0.5,0.25
+"Will Hezbollah leader Hassan Nasrallah die before 2025?",1,2023-10-30,2024-09-28,0.363,0.405769,0.5,0.25
+"Will Robert F. Kennedy Jr. drop out of the Presidential race before November 1, 2024.",1,2023-10-12,2024-08-29,0.457,0.2948489999999999,0.5,0.25
+"Mohammed Deif (Hamas military commander) killed or captured by Israeli forces by end of 2024?",1,2023-10-30,2024-08-01,0.602,0.15840400000000002,0.5,0.25
+"Will Rep. Dean Phillips win at least one state in the 2024 Democratic primaries?",0,2023-10-21,2024-07-22,0.101,0.010201000000000002,0.5,0.25
+"Will Joe Biden be the 2024 Democratic party nominee for President?",0,2023-10-08,2024-07-21,0.857,0.734449,0.5,0.25
+"Will Casey Newton begin dating an AI before June of 2024",0,2023-10-14,2024-06-02,0.201,0.040401000000000006,0.5,0.25
+"Will a ""lifetime smoking ban"" become law in the UK before the next General Election?",0,2023-10-09,2024-05-31,0.429,0.18404099999999998,0.5,0.25
+"Will we get hallucination rates down to human-expert levels by May 2024?",0,2023-10-22,2024-05-02,0.136,0.018496000000000002,0.5,0.25
+"Trump has broken a gag order twice. Will he do it again in same Manhattan court?",0,2023-10-26,2024-05-01,0.886,0.784996,0.5,0.25
+"Is the proof of P != NP by Ke Xu and Guangyan Zhou valid?",0,2023-10-18,2024-04-15,0.029,0.0008410000000000001,0.5,0.25
+"Will Linda Yaccarino be the CEO of X on April 13, 2024?",1,2023-10-11,2024-04-14,0.649,0.12320099999999999,0.5,0.25
+"Will Jimmy Carter survive the Winter?",1,2023-10-02,2024-03-19,0.681,0.10176099999999996,0.5,0.25
+"Will Vladimir Putin win Russia's 2024 presidential election with 80% or more of the vote?",1,2023-10-09,2024-03-18,0.65,0.12249999999999998,0.5,0.25
+"Will Jimmy Carter live until the end of this year?",1,2023-08-19,2024-01-01,0.686,0.09859599999999996,0.5,0.25
+"Will the Conservative Party of Canada form a Majority Government after the 45th Canadian Federal Election?",0,2023-09-07,2025-04-29,0.67,0.4489000000000001,0.5,0.25
+"Will India be renamed to Bharat by 2025?",0,2023-09-05,2025-02-01,0.214,0.045795999999999996,0.5,0.25
+"Will AI replace over 50 million jobs by end of 2024?",0,2023-09-15,2025-02-01,0.114,0.012996,0.5,0.25
+"Will the 2024 US Presidential election happen normally?",1,2023-09-05,2025-01-21,0.77,0.05289999999999999,0.5,0.25
+"Will a large scale Alignment Project like The Omega Protocol be funded before 2025?",0,2023-09-12,2025-01-14,0.211,0.044521,0.5,0.25
+"Will weed be rescheduled by the end of 2024?",0,2023-09-09,2025-01-06,0.545,0.29702500000000004,0.5,0.25
+"Will marijuana be rescheduled by the US federal government by the end of 2024?",0,2023-09-03,2025-01-01,0.517,0.267289,0.5,0.25
+"Will there be peace talks between Russia and Ukraine in 2024?",0,2023-09-05,2025-01-01,0.569,0.32376099999999997,0.5,0.25
+"Will Taylor Swift be the most streamed artist in 2024?",1,2023-09-02,2024-12-05,0.72,0.07840000000000001,0.5,0.25
+"Will Joe Biden pardon or commute the sentence of Hunter Biden?",1,2023-09-07,2024-12-02,0.135,0.748225,0.5,0.25
+"Will Robert F. Kennedy Jr. win more than 5% of the popular vote in the 2024 US presidential election?",0,2023-09-29,2024-11-12,0.099,0.009801,0.5,0.25
+"Will ANY 2020 red states/districts flip blue in 2024?",0,2023-09-05,2024-11-06,0.684,0.46785600000000005,0.5,0.25
+"Will Joe Biden be re-elected in 2024?",0,2023-09-06,2024-11-06,0.479,0.22944099999999998,0.5,0.25
+"Will Donald Trump win the Presidential Election of the United States of America in 2024? ",1,2023-09-05,2024-11-06,0.379,0.385641,0.5,0.25
+"Will @firstuserhere coauthor a NeurIPS or ICML conference publication before end of 2024? (10,000 Mana subsidy)",0,2023-09-03,2024-10-01,0.471,0.22184099999999998,0.5,0.25
+"Will Google have the best LLM by EOY 2024?",1,2023-09-05,2024-08-01,0.414,0.3433960000000001,0.5,0.25
+"GPT4 or better model available for download by EOY 2024?",1,2023-09-15,2024-07-22,0.612,0.150544,0.5,0.25
+"Will the Labour Party win a landslide victory in the next UK general election? [100 seat majority]",1,2023-09-19,2024-07-08,0.629,0.13764099999999999,0.5,0.25
+"Will Man City make it to the semifinals in the 23/24 UEFA Champions League",0,2023-09-20,2024-05-12,0.761,0.579121,0.5,0.25
+"Do more men think about the Roman Empire daily than women?",0,2023-09-17,2024-04-01,0.765,0.585225,0.5,0.25
+"Will Twitter/X start charging *everyone* to use the platform by the end of March 2024?",0,2023-09-18,2024-04-01,0.067,0.004489000000000001,0.5,0.25
+"Will I get into Columbia University?",0,2023-09-02,2024-03-28,0.131,0.017161000000000003,0.5,0.25
+"Will Intuitive Machines' IM-1 mission successfully land on the moon?",0,2023-09-10,2024-03-01,0.407,0.165649,0.5,0.25
+"Will the San Francisco 49ers win the Super Bowl?",0,2023-09-27,2024-02-12,0.261,0.068121,0.5,0.25
+"Will any AI model generate image of correct QWERTY keyboard consistently, to a prompt, by the end of 2024?",1,2023-09-23,2024-01-03,0.628,0.138384,0.5,0.25
+"Will Destiny appear on jubilee again before 2024?",0,2023-09-20,2024-01-01,0.059,0.0034809999999999997,0.5,0.25
+"Will Israel commit war crimes by cutting off food/water, electricity, and fuel to the Gaza Strip?",1,2023-10-09,2025-06-02,0.481,0.269361,0.5,0.25
+"Will Manifold be more accurate than Polymarket in forecasting the 2024 election?",0,2023-10-26,2025-04-19,0.52,0.27040000000000003,0.5,0.25
+"Will human narration for audiobooks become mostly unnecessary before 2026?",1,2023-10-15,2025-03-20,0.351,0.42120100000000005,0.5,0.25
+"Will Sarah Wagenknecht's BSW be part of the next German federal parliament?",0,2023-10-23,2025-02-24,0.476,0.22657599999999997,0.5,0.25
+"Will manifold markets still have >2000 daily active users in 2025?",0,2023-10-23,2025-01-31,0.919,0.8445610000000001,0.5,0.25
+"Will Guyana and Venezuela have a military conflict by the end of 2024? [Ṁ1,000 subsidy]",0,2023-10-24,2025-01-15,0.155,0.024025,0.5,0.25
+"Will Nicolas Maduro be President of Venezuela on 10 January 2025?",1,2023-10-18,2025-01-11,0.775,0.05062499999999999,0.5,0.25
+"Will a single shooting incident kill at least 20 people in the US during 2024?",0,2023-10-05,2025-01-07,0.53,0.28090000000000004,0.5,0.25
+"Will Gaza be de facto controlled by Israel at the end of 2024?",0,2023-10-16,2025-01-06,0.332,0.11022400000000002,0.5,0.25
+"Will a state-based conflict between Israel and Iran cause at least 1,000 deaths before 2025?",0,2023-10-09,2025-01-06,0.247,0.061009,0.5,0.25
+"Will Benjamin Netanyahu (Bibi) be the prime minister of Israel at the end of 2024",1,2023-10-15,2025-01-01,0.392,0.369664,0.5,0.25
+"Will Humane sell 10k AI Pins before 2025?",1,2023-10-02,2025-01-01,0.5,0.25,0.5,0.25
+"Will Trump spend any time in jail by the end of 2024?",0,2023-10-26,2025-01-01,0.218,0.047524,0.5,0.25
+"Will the US ""vibecession"" continue through all of 2024?",1,2023-10-29,2025-01-01,0.409,0.34928099999999995,0.5,0.25
+"Will Apple Inc. have the highest market cap at the end of 2024?",1,2023-10-27,2024-12-31,0.743,0.066049,0.5,0.25
+"Coup in Iran, Egypt, Syria, Jordan or Lebanon before 2025",1,2023-10-20,2024-12-10,0.295,0.4970250000000001,0.5,0.25
+"Will Bitcoin exceed 100,000 USD In 2024?",1,2023-10-15,2024-12-05,0.348,0.42510400000000004,0.5,0.25
+"Will either Joe Biden or Donald Trump die before the 2024 Presidential election?",0,2023-10-10,2024-11-05,0.162,0.026244,0.5,0.25
+"Will China be competitive in the LLM race compared to OpenAI, Anthropic, and Google by end of 2024?",1,2023-10-13,2024-10-16,0.307,0.4802490000000001,0.5,0.25
+"Will Hezbollah directly engage in combat operations against Israel?",1,2023-10-07,2024-10-03,0.605,0.15602500000000002,0.5,0.25
+"Will Destiny get unbanned from Twitch before October 2024?",0,2023-10-02,2024-10-01,0.509,0.259081,0.5,0.25
+"Will Hezbollah leader Hassan Nasrallah die before 2025?",1,2023-10-30,2024-09-28,0.363,0.405769,0.5,0.25
+"Will Robert F. Kennedy Jr. drop out of the Presidential race before November 1, 2024.",1,2023-10-12,2024-08-29,0.457,0.2948489999999999,0.5,0.25
+"Mohammed Deif (Hamas military commander) killed or captured by Israeli forces by end of 2024?",1,2023-10-30,2024-08-01,0.602,0.15840400000000002,0.5,0.25
+"Will Rep. Dean Phillips win at least one state in the 2024 Democratic primaries?",0,2023-10-21,2024-07-22,0.101,0.010201000000000002,0.5,0.25
+"Will Joe Biden be the 2024 Democratic party nominee for President?",0,2023-10-08,2024-07-21,0.857,0.734449,0.5,0.25
+"Will Casey Newton begin dating an AI before June of 2024",0,2023-10-14,2024-06-02,0.201,0.040401000000000006,0.5,0.25
+"Will a ""lifetime smoking ban"" become law in the UK before the next General Election?",0,2023-10-09,2024-05-31,0.429,0.18404099999999998,0.5,0.25
+"Will we get hallucination rates down to human-expert levels by May 2024?",0,2023-10-22,2024-05-02,0.136,0.018496000000000002,0.5,0.25
+"Trump has broken a gag order twice. Will he do it again in same Manhattan court?",0,2023-10-26,2024-05-01,0.886,0.784996,0.5,0.25
+"Is the proof of P != NP by Ke Xu and Guangyan Zhou valid?",0,2023-10-18,2024-04-15,0.029,0.0008410000000000001,0.5,0.25
+"Will Linda Yaccarino be the CEO of X on April 13, 2024?",1,2023-10-11,2024-04-14,0.649,0.12320099999999999,0.5,0.25
+"Will Jimmy Carter survive the Winter?",1,2023-10-02,2024-03-19,0.681,0.10176099999999996,0.5,0.25
+"Will Vladimir Putin win Russia's 2024 presidential election with 80% or more of the vote?",1,2023-10-09,2024-03-18,0.65,0.12249999999999998,0.5,0.25
+"Riddle: Are there more Eyes than Feet in the world?",0,2023-10-09,2024-03-01,0.693,0.4802489999999999,0.5,0.25
+"Will St. Saturn be stronger than Kizaru?",1,2023-10-06,2024-03-01,0.704,0.08761600000000003,0.5,0.25
+"Will Meta release a model called Llama 3 before March 1, 2024?",0,2023-10-20,2024-03-01,0.92,0.8464,0.5,0.25
+"Will Donald Trump lie under oath while testifying in NY State civil trial?",1,2023-10-27,2024-02-20,0.384,0.379456,0.5,0.25
+"Will Manifold.love reach 1000 daily active users (7d average) by Feb 14, 2024?",0,2023-10-07,2024-02-15,0.155,0.024025,0.5,0.25
+"Will the San Francisco 49ers win the Superbowl in 2024?",0,2023-10-10,2024-02-12,0.272,0.07398400000000001,0.5,0.25
+"Will Travis Kelce and Taylor Swift still be together at the end of the NFL season?",1,2023-10-17,2024-02-12,0.877,0.015129,0.5,0.25
+"Will January 2024 be the hottest January on record in the US?",0,2023-10-12,2024-02-08,0.139,0.019321000000000005,0.5,0.25
+"Will I get into PRIMES-USA?",0,2023-10-21,2024-01-26,0.752,0.565504,0.5,0.25
+"If @Mira applies to OpenAI, will Mira get the job?",0,2023-10-04,2024-01-14,0.046,0.002116,0.5,0.25
+"[Metaculus] Will Hamas lose control of Gaza before 2024?",0,2023-10-08,2024-01-03,0.403,0.16240900000000003,0.5,0.25
+"Will the Sam Bankman-Fried Trial last into 2024? [dup of another]",1,2023-10-03,2024-01-01,0.972,0.0007840000000000014,0.5,0.25
+"Will any other nations join the Hamas-Israel war on the side of Hamas by 2024?",0,2023-10-07,2024-01-01,0.28,0.07840000000000001,0.5,0.25
+"Will Congress approve another Ukraine aid package this year?",0,2023-10-04,2024-01-01,0.019,0.000361,0.5,0.25
+"Will Israel deploy Iron Beam defence before 2024?",0,2023-10-15,2024-01-01,0.035,0.0012250000000000002,0.5,0.25
+"Will Sweden make it into NATO before 2024?",0,2023-10-11,2024-01-01,0.58,0.3364,0.5,0.25
+"xAI Grok will beat OpenAI's flagship model on HumanEval benchmarks by the end of 2024.",0,2023-11-24,2025-06-09,0.232,0.053824000000000004,0.5,0.25
+"Will Tumbles be late to pay back a loan?",1,2023-11-30,2025-06-09,0.073,0.8593290000000001,0.5,0.25
+"Will there be a GPT-4.5 model before GPT-5 is released?",1,2023-11-18,2025-03-07,0.588,0.16974400000000003,0.5,0.25
+"US enter a recession in 2024? (Two quarters negative GDP growth)",0,2023-11-14,2025-03-05,0.387,0.149769,0.5,0.25
+"Will any AI by OpenAI be able to create images of English alphabet characters rotated by 90 degrees?",0,2023-11-24,2025-01-24,0.773,0.597529,0.5,0.25
+"Will the left/right culture war come for AI before the end of 2024?",0,2023-11-24,2025-01-18,0.325,0.10562500000000001,0.5,0.25
+"Will there be a US government shutdown in 2024?",0,2023-11-10,2025-01-05,0.373,0.139129,0.5,0.25
+"Did an openAI model crack AES-192 encryption?",0,2023-11-26,2025-01-04,0.003,9e-06,0.5,0.25
+"Will the front line in Ukraine change significantly in 2024?",0,2023-11-19,2025-01-03,0.604,0.364816,0.5,0.25
+"[Metaculus] Will western sources conclude, before 2025, that Israel has used white phosphorus improperly?",0,2023-11-06,2025-01-03,0.247,0.061009,0.5,0.25
+"Will Destiny publish a manifesto in 2024?",0,2023-11-07,2025-01-02,0.623,0.388129,0.5,0.25
+"Will Venezuela exercise de facto rule over any portion of Guyanese territory before 2025?",0,2023-11-24,2025-01-01,0.195,0.038025,0.5,0.25
+"Will Biden visit China in 2024?",0,2023-11-28,2025-01-01,0.495,0.245025,0.5,0.25
+"Will SpaceX land a space-flown Starship in 2024?",0,2023-11-11,2025-01-01,0.2,0.04000000000000001,0.5,0.25
+"Will Sam Altman be a co-founder of a serious OpenAI competitor by EOY 2024?",0,2023-11-17,2025-01-01,0.545,0.29702500000000004,0.5,0.25
+"Will Sam Altman cease to be CEO of OpenAI again before the end of 2024?",0,2023-11-22,2025-01-01,0.1,0.010000000000000002,0.5,0.25
+"Will there be a US government shutdown before the end of 2024?",0,2023-11-16,2025-01-01,0.387,0.149769,0.5,0.25
+"Will Destiny go on Joe Rogan's podcast in 2024?",0,2023-11-06,2025-01-01,0.397,0.15760900000000003,0.5,0.25
+"Will Sam Altman start a new company before 2025?",0,2023-11-17,2024-12-31,0.656,0.43033600000000005,0.5,0.25
+"In a year, will we think that Sam Altman leaving OpenAI reduced AI risk?",0,2023-11-17,2024-11-26,0.324,0.104976,0.5,0.25
+"Yahya Sinwar killed or captured by Israeli forces by end of 2024?",1,2023-11-02,2024-10-17,0.563,0.19096900000000006,0.5,0.25
+"Will SpaceX land/catch a Super Heavy booster, as part of a space-bound Starship flight, in 2024?",1,2023-11-11,2024-10-13,0.528,0.22278399999999998,0.5,0.25
+"Will the US attack Iran by Aug 15th 2024?",0,2023-11-02,2024-08-17,0.201,0.040401000000000006,0.5,0.25
+"Will the Conservatives / Tories win more than 160 seats at the next UK general election?",0,2023-11-27,2024-07-05,0.723,0.522729,0.5,0.25
+"Will some DPO variant more or less replace RLHF by June 2024?",1,2023-11-26,2024-06-07,0.49,0.2601,0.5,0.25
+"Will Changpeng Zhao (CZ) do any prison time for money laundering?",1,2023-11-21,2024-06-01,0.55,0.20249999999999996,0.5,0.25
+"Will Sam Altman start a new AI company before June 2024?",0,2023-11-17,2024-06-01,0.106,0.011236,0.5,0.25
+"Will Ilya Sutskever continue at OpenAI til end 2024?",0,2023-11-17,2024-05-14,0.422,0.178084,0.5,0.25
+"Will inflation in Argentina be less than 30% for 2024?",0,2023-11-20,2024-04-20,0.178,0.031684,0.5,0.25
+"Will Norman Finkelstein debate Destiny by July 1st, 2024? [Ṁ1000 Pool]",1,2023-11-16,2024-04-14,0.278,0.521284,0.5,0.25
+"Is the Reuters story about OpenAI's Q* substantively true?",0,2023-11-22,2024-04-02,0.234,0.054756000000000006,0.5,0.25
+"Will there be Government shutdown (partial or total) in Q1 of 2024?",0,2023-11-27,2024-03-25,0.41,0.16809999999999997,0.5,0.25
+"Will OpenAI become significantly less closed source as a result of the leadership transition?",0,2023-11-17,2024-03-17,0.054,0.0029159999999999998,0.5,0.25
+"Will Sweden join NATO before March 31st, 2024?",1,2023-11-11,2024-03-07,0.491,0.259081,0.5,0.25
+"Will Apple stock (AAPL) fully break $200 before $180? (2nd attempt)",0,2023-11-20,2024-03-04,0.728,0.529984,0.5,0.25
+"Will Starship launch in February 2024",0,2023-11-19,2024-03-01,0.439,0.192721,0.5,0.25
+"Hamas command center under al-Shifa Hospital?",1,2023-11-10,2024-02-18,0.57,0.18490000000000004,0.5,0.25
+"Will Taylor Swift be in attendance at Super Bowl LVIII?",1,2023-11-03,2024-02-11,0.538,0.21344399999999997,0.5,0.25
+"Will a candidate other than Joe Biden win the 2024 New Hampshire Democratic primaries?",0,2023-11-14,2024-01-24,0.125,0.015625,0.5,0.25
+"Will Nikki Haley finish first in the NH primary on Jan 23, 2024?",0,2023-11-16,2024-01-23,0.16,0.0256,0.5,0.25
+"Will Destiny debate Ben Shapiro in January 2024?",1,2023-11-27,2024-01-23,0.48,0.27040000000000003,0.5,0.25
+"Will there be a US government shutdown before Valentine's Day 2024?",0,2023-11-14,2024-01-19,0.216,0.046655999999999996,0.5,0.25
+"Will there be confirmation by end of December that Khloé Kardashian and Tristan Thompson are back together?",0,2023-11-29,2024-01-01,0.019,0.000361,0.5,0.25
+"Will any image model be able to draw a pentagon before 2025?",0,2023-12-30,2025-03-28,0.877,0.769129,0.5,0.25
+"1 year from the end of the ""Bet on Love"" dating show, will Manifold staff believe that it was a good idea?",1,2023-12-11,2025-02-22,0.489,0.261121,0.5,0.25
+"Riddle: Are there more Eyes than Feet in the world?",0,2023-10-09,2024-03-01,0.693,0.4802489999999999,0.5,0.25
+"Will St. Saturn be stronger than Kizaru?",1,2023-10-06,2024-03-01,0.704,0.08761600000000003,0.5,0.25
+"Will Meta release a model called Llama 3 before March 1, 2024?",0,2023-10-20,2024-03-01,0.92,0.8464,0.5,0.25
+"Will Donald Trump lie under oath while testifying in NY State civil trial?",1,2023-10-27,2024-02-20,0.384,0.379456,0.5,0.25
+"Will Manifold.love reach 1000 daily active users (7d average) by Feb 14, 2024?",0,2023-10-07,2024-02-15,0.155,0.024025,0.5,0.25
+"Will the San Francisco 49ers win the Superbowl in 2024?",0,2023-10-10,2024-02-12,0.272,0.07398400000000001,0.5,0.25
+"Will Travis Kelce and Taylor Swift still be together at the end of the NFL season?",1,2023-10-17,2024-02-12,0.877,0.015129,0.5,0.25
+"Will January 2024 be the hottest January on record in the US?",0,2023-10-12,2024-02-08,0.139,0.019321000000000005,0.5,0.25
+"Will I get into PRIMES-USA?",0,2023-10-21,2024-01-26,0.752,0.565504,0.5,0.25
+"If @Mira applies to OpenAI, will Mira get the job?",0,2023-10-04,2024-01-14,0.046,0.002116,0.5,0.25
+"[Metaculus] Will Hamas lose control of Gaza before 2024?",0,2023-10-08,2024-01-03,0.403,0.16240900000000003,0.5,0.25
+"Will the Sam Bankman-Fried Trial last into 2024? [dup of another]",1,2023-10-03,2024-01-01,0.972,0.0007840000000000014,0.5,0.25
+"Will any other nations join the Hamas-Israel war on the side of Hamas by 2024?",0,2023-10-07,2024-01-01,0.28,0.07840000000000001,0.5,0.25
+"Will Congress approve another Ukraine aid package this year?",0,2023-10-04,2024-01-01,0.019,0.000361,0.5,0.25
+"Will Israel deploy Iron Beam defence before 2024?",0,2023-10-15,2024-01-01,0.035,0.0012250000000000002,0.5,0.25
+"Will Sweden make it into NATO before 2024?",0,2023-10-11,2024-01-01,0.58,0.3364,0.5,0.25
+"xAI Grok will beat OpenAI's flagship model on HumanEval benchmarks by the end of 2024.",0,2023-11-24,2025-06-09,0.232,0.053824000000000004,0.5,0.25
+"Will Tumbles be late to pay back a loan?",1,2023-11-30,2025-06-09,0.073,0.8593290000000001,0.5,0.25
+"Will there be a GPT-4.5 model before GPT-5 is released?",1,2023-11-18,2025-03-07,0.588,0.16974400000000003,0.5,0.25
+"US enter a recession in 2024? (Two quarters negative GDP growth)",0,2023-11-14,2025-03-05,0.387,0.149769,0.5,0.25
+"Will any AI by OpenAI be able to create images of English alphabet characters rotated by 90 degrees?",0,2023-11-24,2025-01-24,0.773,0.597529,0.5,0.25
+"Will the left/right culture war come for AI before the end of 2024?",0,2023-11-24,2025-01-18,0.325,0.10562500000000001,0.5,0.25
+"Will there be a US government shutdown in 2024?",0,2023-11-10,2025-01-05,0.373,0.139129,0.5,0.25
+"Did an openAI model crack AES-192 encryption?",0,2023-11-26,2025-01-04,0.003,9e-06,0.5,0.25
+"Will the front line in Ukraine change significantly in 2024?",0,2023-11-19,2025-01-03,0.604,0.364816,0.5,0.25
+"[Metaculus] Will western sources conclude, before 2025, that Israel has used white phosphorus improperly?",0,2023-11-06,2025-01-03,0.247,0.061009,0.5,0.25
+"Will Destiny publish a manifesto in 2024?",0,2023-11-07,2025-01-02,0.623,0.388129,0.5,0.25
+"Will Venezuela exercise de facto rule over any portion of Guyanese territory before 2025?",0,2023-11-24,2025-01-01,0.195,0.038025,0.5,0.25
+"Will Biden visit China in 2024?",0,2023-11-28,2025-01-01,0.495,0.245025,0.5,0.25
+"Will SpaceX land a space-flown Starship in 2024?",0,2023-11-11,2025-01-01,0.2,0.04000000000000001,0.5,0.25
+"Will Sam Altman be a co-founder of a serious OpenAI competitor by EOY 2024?",0,2023-11-17,2025-01-01,0.545,0.29702500000000004,0.5,0.25
+"Will Sam Altman cease to be CEO of OpenAI again before the end of 2024?",0,2023-11-22,2025-01-01,0.1,0.010000000000000002,0.5,0.25
+"Will there be a US government shutdown before the end of 2024?",0,2023-11-16,2025-01-01,0.387,0.149769,0.5,0.25
+"Will Destiny go on Joe Rogan's podcast in 2024?",0,2023-11-06,2025-01-01,0.397,0.15760900000000003,0.5,0.25
+"Will Sam Altman start a new company before 2025?",0,2023-11-17,2024-12-31,0.656,0.43033600000000005,0.5,0.25
+"In a year, will we think that Sam Altman leaving OpenAI reduced AI risk?",0,2023-11-17,2024-11-26,0.324,0.104976,0.5,0.25
+"Yahya Sinwar killed or captured by Israeli forces by end of 2024?",1,2023-11-02,2024-10-17,0.563,0.19096900000000006,0.5,0.25
+"Will SpaceX land/catch a Super Heavy booster, as part of a space-bound Starship flight, in 2024?",1,2023-11-11,2024-10-13,0.528,0.22278399999999998,0.5,0.25
+"Will the US attack Iran by Aug 15th 2024?",0,2023-11-02,2024-08-17,0.201,0.040401000000000006,0.5,0.25
+"Will the Conservatives / Tories win more than 160 seats at the next UK general election?",0,2023-11-27,2024-07-05,0.723,0.522729,0.5,0.25
+"Will some DPO variant more or less replace RLHF by June 2024?",1,2023-11-26,2024-06-07,0.49,0.2601,0.5,0.25
+"Will Changpeng Zhao (CZ) do any prison time for money laundering?",1,2023-11-21,2024-06-01,0.55,0.20249999999999996,0.5,0.25
+"Will Sam Altman start a new AI company before June 2024?",0,2023-11-17,2024-06-01,0.106,0.011236,0.5,0.25
+"Will Ilya Sutskever continue at OpenAI til end 2024?",0,2023-11-17,2024-05-14,0.422,0.178084,0.5,0.25
+"Will inflation in Argentina be less than 30% for 2024?",0,2023-11-20,2024-04-20,0.178,0.031684,0.5,0.25
+"Will Norman Finkelstein debate Destiny by July 1st, 2024? [Ṁ1000 Pool]",1,2023-11-16,2024-04-14,0.278,0.521284,0.5,0.25
+"Is the Reuters story about OpenAI's Q* substantively true?",0,2023-11-22,2024-04-02,0.234,0.054756000000000006,0.5,0.25
+"Will there be Government shutdown (partial or total) in Q1 of 2024?",0,2023-11-27,2024-03-25,0.41,0.16809999999999997,0.5,0.25
+"Will OpenAI become significantly less closed source as a result of the leadership transition?",0,2023-11-17,2024-03-17,0.054,0.0029159999999999998,0.5,0.25
+"Will Sweden join NATO before March 31st, 2024?",1,2023-11-11,2024-03-07,0.491,0.259081,0.5,0.25
+"Will Apple stock (AAPL) fully break $200 before $180? (2nd attempt)",0,2023-11-20,2024-03-04,0.728,0.529984,0.5,0.25
+"Will Starship launch in February 2024",0,2023-11-19,2024-03-01,0.439,0.192721,0.5,0.25
+"Hamas command center under al-Shifa Hospital?",1,2023-11-10,2024-02-18,0.57,0.18490000000000004,0.5,0.25
+"Will Taylor Swift be in attendance at Super Bowl LVIII?",1,2023-11-03,2024-02-11,0.538,0.21344399999999997,0.5,0.25
+"Will a candidate other than Joe Biden win the 2024 New Hampshire Democratic primaries?",0,2023-11-14,2024-01-24,0.125,0.015625,0.5,0.25
+"Will Nikki Haley finish first in the NH primary on Jan 23, 2024?",0,2023-11-16,2024-01-23,0.16,0.0256,0.5,0.25
+"Will Destiny debate Ben Shapiro in January 2024?",1,2023-11-27,2024-01-23,0.48,0.27040000000000003,0.5,0.25
+"Will there be a US government shutdown before Valentine's Day 2024?",0,2023-11-14,2024-01-19,0.216,0.046655999999999996,0.5,0.25
+"Will there be confirmation by end of December that Khloé Kardashian and Tristan Thompson are back together?",0,2023-11-29,2024-01-01,0.019,0.000361,0.5,0.25
+"Will any image model be able to draw a pentagon before 2025?",0,2023-12-30,2025-03-28,0.877,0.769129,0.5,0.25
+"1 year from the end of the ""Bet on Love"" dating show, will Manifold staff believe that it was a good idea?",1,2023-12-11,2025-02-22,0.489,0.261121,0.5,0.25
+"Will 2024 be the hottest year in the last 25 years",1,2023-12-25,2025-02-01,0.524,0.22657599999999997,0.5,0.25
+"Will OpenAI be the target and victim of a major cyber attack in 2024?",0,2023-12-31,2025-01-27,0.615,0.378225,0.5,0.25
+"Will Putin's approval in Russia fall below 80% in 2024?",0,2023-12-31,2025-01-19,0.728,0.529984,0.5,0.25
+"Will we get AGI before 2025?",0,2023-12-10,2025-01-16,0.102,0.010403999999999998,0.5,0.25
+"Will Trudeau still be prime minister by the end of 2024",1,2023-12-25,2025-01-10,0.745,0.065025,0.5,0.25
+"Will renewable energy sources pass coal power plants as world's largest electricity source in 2024?",0,2023-12-01,2025-01-09,0.762,0.580644,0.5,0.25
+"Will Destiny appear on the Joe Rogan Podcast by the end of 2024",0,2023-12-21,2025-01-09,0.327,0.10692900000000001,0.5,0.25
+"Will Russia conduct a nuclear test in 2024?",0,2023-12-01,2025-01-04,0.203,0.041209,0.5,0.25
+"Will a lawless LLM chatbot get 10 million daily active users by the end of 2024?",0,2023-12-21,2025-01-03,0.481,0.23136099999999998,0.5,0.25
+"Will I think all AI hell broke loose in 2024?",0,2023-12-26,2025-01-02,0.097,0.009409,0.5,0.25
+"Will Threads overtake X in daily active users by the end of 2024?",0,2023-12-21,2025-01-01,0.153,0.023409,0.5,0.25
+"Will Apple sell 500,000 units of Vision Pro in 2024?",0,2023-12-18,2025-01-01,0.421,0.17724099999999998,0.5,0.25
+"Will there be a war between Iran and Israel by the end of 2024",0,2023-12-17,2025-01-01,0.168,0.028224000000000003,0.5,0.25
+"Will the Apple Vision Pro be successful enough to revive interest in mixed reality and the metaverse?",0,2023-12-21,2024-12-31,0.425,0.18062499999999998,0.5,0.25
+"Will Google mostly catch up to OpenAI in LLM quality and neutralize ChatGPT's lead by the end of 2024?",0,2023-12-21,2024-12-31,0.516,0.266256,0.5,0.25
+"Will white-collar workers unionize to prevent job loss to AI/automation in 2024?",0,2023-12-21,2024-12-31,0.223,0.049729,0.5,0.25
+"Will SpaceX deploy any Starlink satellites using Starship in 2024?",0,2023-12-09,2024-12-31,0.693,0.4802489999999999,0.5,0.25
+"Will OpenAI fund/start/buy an AI Chip company (semiconductors) in 2024?",0,2023-12-26,2024-12-31,0.588,0.34574399999999994,0.5,0.25
+"Will Jimmy Carter die in 2024?",1,2023-12-26,2024-12-30,0.742,0.066564,0.5,0.25
+"Will Jimmy Carter Die during 2024",1,2023-12-29,2024-12-29,0.77,0.05289999999999999,0.5,0.25
+"Will a living US President (past or current) pass away before the end of 2024?",1,2023-12-16,2024-12-29,0.845,0.024025000000000008,0.5,0.25
+"Will there be a ceasefire in Gaza by Eoy 2024?",0,2023-12-29,2024-12-18,0.585,0.34222499999999995,0.5,0.25
+"Will an AI system, product, company, concept, or affiliated person be *nominated* for TIME's 2024 Person of The Year?",0,2023-12-07,2024-12-09,0.508,0.258064,0.5,0.25
+"Will Bitcoin reach $100,000 by the end of 2024?",1,2023-12-08,2024-12-05,0.261,0.546121,0.5,0.25
+"2024: Will Bitcoin reach $100,000?",1,2023-12-01,2024-12-05,0.323,0.45832900000000004,0.5,0.25
+"Will the Republicans win a trifecta in 2024 (controlling House, Senate and President)?",1,2023-12-01,2024-11-16,0.2,0.6400000000000001,0.5,0.25
+"Will Taylor Swift be mentioned in the 2024 US Presidential Debates?",0,2023-12-14,2024-11-05,0.387,0.149769,0.5,0.25
+"Will Israel and Lebanon/Hezbollah go to war in 2024?",1,2023-12-07,2024-09-30,0.447,0.30580899999999994,0.5,0.25
+"Will Elon Musk get his own Hunter Biden laptop scandal in 2024?",1,2023-12-21,2024-09-28,0.315,0.46922500000000006,0.5,0.25
+"Will FED cut rates at their September 2024 meeting?",1,2023-12-13,2024-09-18,0.593,0.16564900000000002,0.5,0.25
+"Will Apple’s next iPhone (2024) include an on-device LLM “ChatBot”?",0,2023-12-24,2024-09-13,0.528,0.27878400000000003,0.5,0.25
+"Will there be a major school shooting in the US before the end of 2024?",1,2023-12-26,2024-09-04,0.883,0.013688999999999998,0.5,0.25
+"Will Robert F. Kennedy Jr. Achieve Ballot Access in All 50 States for the 2024 US Presidential Election?",0,2023-12-16,2024-08-24,0.133,0.017689000000000003,0.5,0.25
+"Will Amazon layoff more than 1000+ employees before February 2024?",0,2023-12-20,2024-08-15,0.395,0.15602500000000002,0.5,0.25
+"Will Apple resume advertising on X before July 1st, 2024?",0,2023-12-26,2024-07-03,0.452,0.204304,0.5,0.25
+"Will I get a girlfriend by the end of 2024?",1,2023-12-08,2024-06-17,0.473,0.277729,0.5,0.25
+"Will iOS 18 introduce big improvements to Siri, making it similar to ChatGPT?",1,2023-12-26,2024-06-10,0.355,0.41602500000000003,0.5,0.25
+"Will anyone other than OpenAI rank #1 on Chatbot Arena in 2024? (for >1 week)",1,2023-12-13,2024-04-05,0.49,0.2601,0.5,0.25
+"In 2024, will Israel conduct a military strike against Iran?",1,2023-12-02,2024-04-02,0.287,0.5083690000000001,0.5,0.25
+"Israel-Hamas temporary ceasefire before April 1st, 2024?",0,2023-12-17,2024-04-01,0.763,0.582169,0.5,0.25
+"Did kenshin9000 ""beat all chess engines"" with GPT-4?",0,2023-12-12,2024-04-01,0.036,0.0012959999999999998,0.5,0.25
+"Will OpenAI release GPT 4.5 or GPT 5 before April 2024?",0,2023-12-18,2024-04-01,0.217,0.047089,0.5,0.25
+"Will GPT-4 be available to ChatGPT Free Users before April 2024?",0,2023-12-16,2024-03-31,0.649,0.42120100000000005,0.5,0.25
+"Will the Supreme Court rule 9-0 overturning the Colorado ruling barring Trump from the ballot per 14th amendment?",1,2023-12-20,2024-03-04,0.251,0.561001,0.5,0.25
+"Will SCOTUS reverse the Colorado Supreme Court's decision to bar Trump from the ballot? ",1,2023-12-19,2024-03-04,0.802,0.03920399999999998,0.5,0.25
+"Will Bitcoin trade at $65,000 or higher at any point in 2024?",1,2023-12-12,2024-03-04,0.471,0.279841,0.5,0.25
+"Will the Supreme Court make any decision on the Trump Colorado ballot before March 2024?",0,2023-12-31,2024-03-01,0.865,0.748225,0.5,0.25
+"Will the 2024 Super Bowl be the most watched of all time? 🏈🏆📺",1,2023-12-19,2024-02-12,0.325,0.45562500000000006,0.5,0.25
+"Will Google layoff more than 1000+ employees before February 2024?",1,2023-12-20,2024-02-06,0.3,0.48999999999999994,0.5,0.25
+"Will Ron DeSantis be one of the top three candidates in the 2024 New Hampshire Republican primary?",1,2023-12-04,2024-01-23,0.715,0.08122500000000002,0.5,0.25
+"[1K subsidy]Will the debate between Destiny and Ben Shapiro that is hosted by Lex Friedman be published in January 2024?",1,2023-12-27,2024-01-23,0.455,0.29702499999999993,0.5,0.25
+"Will Nikki Haley get more votes than Ron DeSantis in the Iowa Caucus?",0,2023-12-02,2024-01-16,0.597,0.356409,0.5,0.25
+"Will Nikki Haley overtake and lead Ron DeSantis on 538's Republican Primary page at end of Blue Monday 2024? (Jan 15)",1,2023-12-29,2024-01-16,0.658,0.11696399999999998,0.5,0.25
+"Did Harvard President Claudine Gay plagiarize multiple sections of her PhD thesis, violating Harvard's policies? (*)",1,2023-12-10,2024-01-08,0.845,0.024025000000000008,0.5,0.25
+"Will Claudine Gay remain Harvard’s president until the end of 2024?",0,2023-12-08,2024-01-02,0.315,0.09922500000000001,0.5,0.25
+"Will GPT 4.5 come out in December?",0,2023-12-06,2024-01-01,0.061,0.003721,0.5,0.25
+"Will 2024 be the hottest year in the last 25 years",1,2023-12-25,2025-02-01,0.524,0.22657599999999997,0.5,0.25
+"Will OpenAI be the target and victim of a major cyber attack in 2024?",0,2023-12-31,2025-01-27,0.615,0.378225,0.5,0.25
+"Will Putin's approval in Russia fall below 80% in 2024?",0,2023-12-31,2025-01-19,0.728,0.529984,0.5,0.25
+"Will we get AGI before 2025?",0,2023-12-10,2025-01-16,0.102,0.010403999999999998,0.5,0.25
+"Will Trudeau still be prime minister by the end of 2024",1,2023-12-25,2025-01-10,0.745,0.065025,0.5,0.25
+"Will renewable energy sources pass coal power plants as world's largest electricity source in 2024?",0,2023-12-01,2025-01-09,0.762,0.580644,0.5,0.25
+"Will Destiny appear on the Joe Rogan Podcast by the end of 2024",0,2023-12-21,2025-01-09,0.327,0.10692900000000001,0.5,0.25
+"Will Russia conduct a nuclear test in 2024?",0,2023-12-01,2025-01-04,0.203,0.041209,0.5,0.25
+"Will a lawless LLM chatbot get 10 million daily active users by the end of 2024?",0,2023-12-21,2025-01-03,0.481,0.23136099999999998,0.5,0.25
+"Will I think all AI hell broke loose in 2024?",0,2023-12-26,2025-01-02,0.097,0.009409,0.5,0.25
+"Will Threads overtake X in daily active users by the end of 2024?",0,2023-12-21,2025-01-01,0.153,0.023409,0.5,0.25
+"Will Apple sell 500,000 units of Vision Pro in 2024?",0,2023-12-18,2025-01-01,0.421,0.17724099999999998,0.5,0.25
+"Will there be a war between Iran and Israel by the end of 2024",0,2023-12-17,2025-01-01,0.168,0.028224000000000003,0.5,0.25
+"Will the Apple Vision Pro be successful enough to revive interest in mixed reality and the metaverse?",0,2023-12-21,2024-12-31,0.425,0.18062499999999998,0.5,0.25
+"Will Google mostly catch up to OpenAI in LLM quality and neutralize ChatGPT's lead by the end of 2024?",0,2023-12-21,2024-12-31,0.516,0.266256,0.5,0.25
+"Will white-collar workers unionize to prevent job loss to AI/automation in 2024?",0,2023-12-21,2024-12-31,0.223,0.049729,0.5,0.25
+"Will SpaceX deploy any Starlink satellites using Starship in 2024?",0,2023-12-09,2024-12-31,0.693,0.4802489999999999,0.5,0.25
+"Will OpenAI fund/start/buy an AI Chip company (semiconductors) in 2024?",0,2023-12-26,2024-12-31,0.588,0.34574399999999994,0.5,0.25
+"Will Jimmy Carter die in 2024?",1,2023-12-26,2024-12-30,0.742,0.066564,0.5,0.25
+"Will Jimmy Carter Die during 2024",1,2023-12-29,2024-12-29,0.77,0.05289999999999999,0.5,0.25
+"Will a living US President (past or current) pass away before the end of 2024?",1,2023-12-16,2024-12-29,0.845,0.024025000000000008,0.5,0.25
+"Will there be a ceasefire in Gaza by Eoy 2024?",0,2023-12-29,2024-12-18,0.585,0.34222499999999995,0.5,0.25
+"Will an AI system, product, company, concept, or affiliated person be *nominated* for TIME's 2024 Person of The Year?",0,2023-12-07,2024-12-09,0.508,0.258064,0.5,0.25
+"Will Bitcoin reach $100,000 by the end of 2024?",1,2023-12-08,2024-12-05,0.261,0.546121,0.5,0.25
+"2024: Will Bitcoin reach $100,000?",1,2023-12-01,2024-12-05,0.323,0.45832900000000004,0.5,0.25
+"Will the Republicans win a trifecta in 2024 (controlling House, Senate and President)?",1,2023-12-01,2024-11-16,0.2,0.6400000000000001,0.5,0.25
+"Will Taylor Swift be mentioned in the 2024 US Presidential Debates?",0,2023-12-14,2024-11-05,0.387,0.149769,0.5,0.25
+"Will Israel and Lebanon/Hezbollah go to war in 2024?",1,2023-12-07,2024-09-30,0.447,0.30580899999999994,0.5,0.25
+"Will Elon Musk get his own Hunter Biden laptop scandal in 2024?",1,2023-12-21,2024-09-28,0.315,0.46922500000000006,0.5,0.25
+"Will FED cut rates at their September 2024 meeting?",1,2023-12-13,2024-09-18,0.593,0.16564900000000002,0.5,0.25
+"Will Apple’s next iPhone (2024) include an on-device LLM “ChatBot”?",0,2023-12-24,2024-09-13,0.528,0.27878400000000003,0.5,0.25
+"Will there be a major school shooting in the US before the end of 2024?",1,2023-12-26,2024-09-04,0.883,0.013688999999999998,0.5,0.25
+"Will Robert F. Kennedy Jr. Achieve Ballot Access in All 50 States for the 2024 US Presidential Election?",0,2023-12-16,2024-08-24,0.133,0.017689000000000003,0.5,0.25
+"Will Amazon layoff more than 1000+ employees before February 2024?",0,2023-12-20,2024-08-15,0.395,0.15602500000000002,0.5,0.25
+"Will Apple resume advertising on X before July 1st, 2024?",0,2023-12-26,2024-07-03,0.452,0.204304,0.5,0.25
+"Will I get a girlfriend by the end of 2024?",1,2023-12-08,2024-06-17,0.473,0.277729,0.5,0.25
+"Will iOS 18 introduce big improvements to Siri, making it similar to ChatGPT?",1,2023-12-26,2024-06-10,0.355,0.41602500000000003,0.5,0.25
+"Will anyone other than OpenAI rank #1 on Chatbot Arena in 2024? (for >1 week)",1,2023-12-13,2024-04-05,0.49,0.2601,0.5,0.25
+"In 2024, will Israel conduct a military strike against Iran?",1,2023-12-02,2024-04-02,0.287,0.5083690000000001,0.5,0.25
+"Israel-Hamas temporary ceasefire before April 1st, 2024?",0,2023-12-17,2024-04-01,0.763,0.582169,0.5,0.25
+"Did kenshin9000 ""beat all chess engines"" with GPT-4?",0,2023-12-12,2024-04-01,0.036,0.0012959999999999998,0.5,0.25
+"Will OpenAI release GPT 4.5 or GPT 5 before April 2024?",0,2023-12-18,2024-04-01,0.217,0.047089,0.5,0.25
+"Will GPT-4 be available to ChatGPT Free Users before April 2024?",0,2023-12-16,2024-03-31,0.649,0.42120100000000005,0.5,0.25
+"Will the Supreme Court rule 9-0 overturning the Colorado ruling barring Trump from the ballot per 14th amendment?",1,2023-12-20,2024-03-04,0.251,0.561001,0.5,0.25
+"Will SCOTUS reverse the Colorado Supreme Court's decision to bar Trump from the ballot? ",1,2023-12-19,2024-03-04,0.802,0.03920399999999998,0.5,0.25
+"Will Bitcoin trade at $65,000 or higher at any point in 2024?",1,2023-12-12,2024-03-04,0.471,0.279841,0.5,0.25
+"Will the Supreme Court make any decision on the Trump Colorado ballot before March 2024?",0,2023-12-31,2024-03-01,0.865,0.748225,0.5,0.25
+"Will the 2024 Super Bowl be the most watched of all time? 🏈🏆📺",1,2023-12-19,2024-02-12,0.325,0.45562500000000006,0.5,0.25
+"Will Google layoff more than 1000+ employees before February 2024?",1,2023-12-20,2024-02-06,0.3,0.48999999999999994,0.5,0.25
+"Will Ron DeSantis be one of the top three candidates in the 2024 New Hampshire Republican primary?",1,2023-12-04,2024-01-23,0.715,0.08122500000000002,0.5,0.25
+"[1K subsidy]Will the debate between Destiny and Ben Shapiro that is hosted by Lex Friedman be published in January 2024?",1,2023-12-27,2024-01-23,0.455,0.29702499999999993,0.5,0.25
+"Will Nikki Haley get more votes than Ron DeSantis in the Iowa Caucus?",0,2023-12-02,2024-01-16,0.597,0.356409,0.5,0.25
+"Will Nikki Haley overtake and lead Ron DeSantis on 538's Republican Primary page at end of Blue Monday 2024? (Jan 15)",1,2023-12-29,2024-01-16,0.658,0.11696399999999998,0.5,0.25
+"Did Harvard President Claudine Gay plagiarize multiple sections of her PhD thesis, violating Harvard's policies? (*)",1,2023-12-10,2024-01-08,0.845,0.024025000000000008,0.5,0.25
+"Will Claudine Gay remain Harvard’s president until the end of 2024?",0,2023-12-08,2024-01-02,0.315,0.09922500000000001,0.5,0.25
+"Will GPT 4.5 come out in December?",0,2023-12-06,2024-01-01,0.061,0.003721,0.5,0.25

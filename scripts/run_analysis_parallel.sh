@@ -7,6 +7,7 @@
 #SBATCH --cpus-per-task=4
 #SBATCH --time=1-23:00:00
 #SBATCH --output=logs/analysis_%A_%a.log
+#SBATCH --error=logs/analysis_%A_%a.err
 #SBATCH --mail-type=END,FAIL
 #SBATCH --mail-user=junkais@andrew.cmu.edu
 #SBATCH --array=0-7%8          # 8 parallel jobs, one per port
@@ -30,19 +31,24 @@ LLAMA_PORT=$(( BASE_PORT + GPU_IDX ))
 echo "Analysis job ${SLURM_ARRAY_TASK_ID} (slot ${SLOT}) → using GPU ${GPU_IDX}, vLLM port ${LLAMA_PORT}"
 
 # Point prediction_analysis_parallel.py at the chosen vLLM instance
-export LLM_API_BASE="http://babel-5-31:${LLAMA_PORT}/v1"
+export LLM_API_BASE="http://babel-15-24:${LLAMA_PORT}/v1"
 
+#python /home/junkais/test/src/simulations/prediction_analysis_parallel.py \
+ #   --baseline --extended-conv \
+ #   --extended-rounds 100 \
+ #   --track-brier-rounds \
+ #   --split-id ${SLURM_ARRAY_TASK_ID} \
+ #   --total-splits ${NUM_PARALLEL} \
+ #   --model-url "${LLM_API_BASE}" \
+ #   --output-prefix "analysis_split_f100_${SLURM_ARRAY_TASK_ID}"
+
+
+
+
+# Run the parallel prediction analysis with dataset split
 python /home/junkais/test/src/simulations/prediction_analysis_parallel.py \
-    --baseline --basic --argument-based \
-    --split-id ${SLURM_ARRAY_TASK_ID} \
+    --baseline --adaptive-conv \
+   --split-id ${SLURM_ARRAY_TASK_ID} \
     --total-splits ${NUM_PARALLEL} \
     --model-url "${LLM_API_BASE}" \
     --output-prefix "analysis_split_${SLURM_ARRAY_TASK_ID}"
-
-# Run the parallel prediction analysis with dataset split
-#python /home/junkais/test/src/simulations/prediction_analysis_parallel.py \
-#    --baseline --basic --argument-based --adaptive-conv --extended-conv \
- #   --split-id ${SLURM_ARRAY_TASK_ID} \
-  #  --total-splits ${NUM_PARALLEL} \
-   # --model-url "${LLM_API_BASE}" \
-    #--output-prefix "analysis_split_${SLURM_ARRAY_TASK_ID}"

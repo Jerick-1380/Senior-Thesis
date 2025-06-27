@@ -10,6 +10,8 @@ import os
 import sys
 import math
 from random import sample
+import matplotlib.pyplot as plt
+import numpy as np
 
 # Add the project root to Python path to find helpers
 sys.path.append(os.path.join(os.path.dirname(__file__), '../..'))
@@ -52,7 +54,8 @@ def parse_arguments():
     params_group.add_argument('--args-per-trial', type=int, default=4, help='Number of arguments to generate per prediction trial (default: 4)')
     params_group.add_argument('--overall-rounds', type=int, default=4, help='Number of overall conversation rounds between agent groups (default: 4)')
     params_group.add_argument('--pairwise-exchanges', type=int, default=6, help='Number of back-and-forth exchanges between each pair of agents (default: 6)')
-    params_group.add_argument('--extended-rounds', type=int, default=4, help='Number of overall rounds for extended conversations (default: 8)')
+    params_group.add_argument('--extended-rounds', type=int, default=4, help='Number of overall rounds for extended conversations (default: 4)')
+    params_group.add_argument('--track-brier-rounds', action='store_true', help='Track and plot Brier scores after each conversation round for extended-conv method')
     
     return parser.parse_args()
 
@@ -78,31 +81,69 @@ class BatchConversationalAgent:
             remove_irrelevant=False
         )
     
-    async def batch_start_conversations(self, topics: List[str], partner_ids: List[int]) -> List[str]:
-        """Start multiple conversations in batch."""
-        tasks = []
-        for topic, partner_id in zip(topics, partner_ids):
-            tasks.append(self.agent.start_conversation(topic))
-        return await asyncio.gather(*tasks)
+    async def start_conversation(self, topic: str, partner_id: int) -> str:
+        """Start a conversation about the given topic."""
+        return await self.agent.start_conversation(topic)
     
-    async def batch_continue_conversations(self, topics: List[str], histories: List[str], partner_ids: List[int]) -> List[str]:
-        """Continue multiple conversations in batch."""
-        tasks = []
-        for topic, history, partner_id in zip(topics, histories, partner_ids):
-            tasks.append(self.agent.continue_conversation(topic, history))
-        return await asyncio.gather(*tasks)
+    async def continue_conversation(self, topic: str, conversation_history: str, partner_id: int) -> str:
+        """Continue an ongoing conversation."""
+        return await self.agent.continue_conversation(topic, conversation_history)
     
-    async def batch_predict_with_arguments(self, questions: List[str]) -> List[float]:
-        """Make multiple predictions using the agent's collected arguments in batch."""
+    async def extract_perspective(self, topic: str, conversation_history: str) -> str:
+        """Extract a new perspective from the conversation - matches working version."""
+        # Store the conversation in agent's history temporarily
+        lines = conversation_history.split('\n')
+        
+        # Clear and rebuild history (matches working version exactly)
+        self.agent.user_history = []
+        self.agent.model_history = []
+        
+        for i, line in enumerate(lines):
+            if line.strip():
+                if i % 2 == 0:  # User lines
+                    self.agent.user_history.append(line.strip())
+                else:  # Model lines  
+                    self.agent.model_history.append(line.strip())
+        
+        # Use the agent's improved add_perspective method
+        old_args_count = len(self.agent.args)
+        await self.agent.add_perspective()
+        
+        # Get the new perspective if one was added
+        if len(self.agent.args) > old_args_count:
+            new_perspective = self.agent.args[-1]
+            self.arguments.append(new_perspective)
+            return new_perspective
+        
+        return ""
+    
+    async def predict_with_arguments(self, question: str) -> float:
+        """Make a prediction using the agent's collected arguments."""
+        print(f"Agent {self.agent_id} has {len(self.arguments)} arguments: {self.arguments[:2] if self.arguments else 'None'}")
         if not self.arguments:
-            return [0.5] * len(questions)
+            return 0.5
         
         # Update the agent's arguments with our collected ones
         self.agent.args = self.arguments.copy()
         
-        # Use the enhanced prediction method in batch
-        tasks = [self.agent.predict_with_arguments(question) for question in questions]
-        return await asyncio.gather(*tasks)
+        # Use the enhanced prediction method
+        result = await self.agent.predict_with_arguments(question)
+        print(f"Agent {self.agent_id} prediction: {result}")  # Debug
+        return result
+    
+    def reset_for_new_question(self, new_topic: str):
+        """Properly reset agent for a new question."""
+        self.topic = new_topic
+        self.arguments = []
+        
+        # Reset the underlying Agent's state
+        self.agent.topic = new_topic
+        self.agent.args = []  # Clear previous arguments
+        self.agent.user_history = []  # Clear conversation history
+        self.agent.model_history = []  # Clear model history
+        
+        # Reset any other stateful components
+        self.agent.claims = {"pro": [], "con": [], "connector": ""}
 
 class ParallelPredictionAnalyzer:
     def __init__(self, llama_model, args, run_baseline=True, run_basic=True, run_argument=True, run_conversational=True, run_extended=True):
@@ -119,25 +160,27 @@ class ParallelPredictionAnalyzer:
             raise ValueError("At least one predictor type must be enabled")
     
     def load_and_split_questions(self, filepath: str, split_id: int, total_splits: int) -> List[Dict]:
-        """Load questions from JSON file, filter by date criteria, and return only the assigned split."""
+        """Load questions from JSON file and return only the assigned split."""
         with open(filepath, 'r') as f:
             data = json.load(f)
         
         filtered_questions = []
         for item in data:
-            # Parse dates
-            try:
-                date_begin = datetime.strptime(item['date_begin'], '%Y-%m-%d')
-                date_resolve = datetime.strptime(item['date_resolve_at'], '%Y-%m-%d')
-                
-                # Filter: began before 2024, resolved in 2024
-                if (date_begin.year < 2024 and 
-                    date_resolve.year == 2024 and 
-                    item['is_resolved'] and
-                    item['question_type'] == 'binary'):
-                    filtered_questions.append(item)
-            except (ValueError, KeyError):
-                continue
+            # Only filter for resolved binary questions
+            if (item.get('status') == 'resolved' and 
+                item.get('question_type') == 'BINARY'):
+                # Convert field names to match expected format
+                converted_item = {
+                    'question': item['question'],
+                    'resolution': item.get('resolution', 0),  # Already 0 or 1
+                    'background': item.get('description', ''),
+                    'date_begin': item['begin_date'][:10] if 'begin_date' in item else '',  # Extract date part
+                    'date_resolve_at': item['resolve_date'][:10] if 'resolve_date' in item else '',  # Extract date part
+                    'is_resolved': True,
+                    'question_type': 'binary',
+                    'community_predictions': item.get('community_predictions', [])
+                }
+                filtered_questions.append(converted_item)
         
         # Split the dataset
         total_questions = len(filtered_questions)
@@ -150,36 +193,49 @@ class ParallelPredictionAnalyzer:
         return split_questions
     
     def extract_baseline_prediction(self, question_data: Dict) -> Optional[float]:
-        """Extract the last community prediction before 2024."""
+        """Extract the latest community prediction before 2024."""
         try:
-            # Parse the community_predictions string
-            community_predictions_str = question_data.get('community_predictions', '[]')
-            if not community_predictions_str or community_predictions_str == '[]':
-                return None
+            from datetime import datetime
             
-            # Parse the JSON string
-            predictions = json.loads(community_predictions_str)
+            # Get community predictions - could be a list or string
+            community_predictions = question_data.get('community_predictions', [])
+            
+            # If it's a string, try to parse it as JSON
+            if isinstance(community_predictions, str):
+                if not community_predictions or community_predictions == '[]':
+                    return None
+                try:
+                    predictions = json.loads(community_predictions)
+                except json.JSONDecodeError:
+                    return None
+            else:
+                predictions = community_predictions
             
             if not predictions:
                 return None
             
-            # Find the last prediction before 2024
-            last_prediction_before_2024 = None
-            cutoff_date = datetime(2024, 1, 1)
+            # Filter predictions before 2024 and sort by date
+            valid_predictions = []
             
             for prediction in predictions:
                 if len(prediction) >= 2:
                     date_str, prob = prediction[0], prediction[1]
                     try:
-                        pred_date = datetime.strptime(date_str, '%Y-%m-%d')
-                        if pred_date < cutoff_date:
-                            last_prediction_before_2024 = prob
+                        # Parse date and check if before 2024
+                        pred_date = datetime.strptime(date_str, "%Y-%m-%d")
+                        if pred_date.year < 2024:
+                            valid_predictions.append((pred_date, prob))
                     except (ValueError, TypeError):
                         continue
             
-            return last_prediction_before_2024
+            if not valid_predictions:
+                return None
             
-        except (json.JSONDecodeError, KeyError, TypeError, IndexError) as e:
+            # Sort by date and return the latest probability before 2024
+            valid_predictions.sort(key=lambda x: x[0])
+            return valid_predictions[-1][1]
+            
+        except (KeyError, TypeError, IndexError) as e:
             return None
     
     async def batch_calculate_basic_strengths(self, questions: List[str]) -> List[float]:
@@ -294,44 +350,92 @@ class ParallelPredictionAnalyzer:
         
         return final_strengths
     
-    async def batch_calculate_conversational_strengths(self, questions: List[str]) -> List[float]:
+    async def batch_calculate_conversational_strengths(self, questions: List[str], question_data: List[Dict] = None, track_rounds: bool = False) -> Dict:
         """Calculate conversational strengths using batched agent interactions."""
         
         # Initialize 20 agents (will be reused across questions for efficiency)
         agents = [BatchConversationalAgent(i, self.model, topic="general") for i in range(20)]
         question_strengths = []
         
+        # Initialize round tracking if needed
+        round_data = None
+        if track_rounds and question_data:
+            round_data = {
+                'brier_scores_by_round': [],
+                'predictions_by_round': [],
+                'mean_brier_by_round': []
+            }
+        
         # Process questions in smaller batches to manage memory
         batch_size = 5  # Process 5 questions at a time
         for batch_start in range(0, len(questions), batch_size):
             batch_end = min(batch_start + batch_size, len(questions))
             batch_questions = questions[batch_start:batch_end]
+            batch_question_data = question_data[batch_start:batch_end] if question_data else None
             
             batch_strengths = []
-            for question in batch_questions:
+            for q_idx, question in enumerate(batch_questions):
                 # Reset agents for each question
                 for agent in agents:
-                    agent.arguments = []
+                    agent.reset_for_new_question(question)
                     agent.topic = question
+                
+                question_round_predictions = []
+                question_round_brier_scores = []
                 
                 # Run conversation rounds
                 for round_num in range(self.args.overall_rounds):
                     await self.batch_run_conversation_round(agents, question, self.args.pairwise_exchanges)
                     await asyncio.sleep(0.05)  # Small delay to prevent API overwhelming
+                    
+                    # Get predictions from all agents for this question after this round
+                    prediction_tasks = [agent.agent.predict_with_arguments(question) for agent in agents]
+                    predictions = await asyncio.gather(*prediction_tasks)
+                    
+                    # Calculate average prediction
+                    valid_predictions = [p for p in predictions if p is not None]
+                    avg_prediction = statistics.mean(valid_predictions) if valid_predictions else 0.5
+                    
+                    # Track round data if needed
+                    if track_rounds and batch_question_data:
+                        question_round_predictions.append(avg_prediction)
+                        brier_score = self.calculate_brier_score(avg_prediction, batch_question_data[q_idx]['resolution'])
+                        question_round_brier_scores.append(brier_score)
                 
-                # Get predictions from all agents for this question
-                predictions = await agents[0].batch_predict_with_arguments([question] * len(agents))
+                # Store final prediction
+                final_prediction = question_round_predictions[-1] if question_round_predictions else 0.5
+                batch_strengths.append(final_prediction)
                 
-                # Calculate average prediction
-                valid_predictions = [p for p in predictions if p is not None]
-                if valid_predictions:
-                    batch_strengths.append(statistics.mean(valid_predictions))
-                else:
-                    batch_strengths.append(0.5)
+                # Store round data if tracking
+                if track_rounds and question_round_predictions:
+                    global_q_idx = batch_start + q_idx
+                    
+                    # Initialize round data structures if this is the first question
+                    if global_q_idx == 0:
+                        round_data['brier_scores_by_round'] = [[] for _ in range(len(question_round_brier_scores))]
+                        round_data['predictions_by_round'] = [[] for _ in range(len(question_round_predictions))]
+                    
+                    # Add this question's data to each round
+                    for round_idx in range(len(question_round_predictions)):
+                        round_data['predictions_by_round'][round_idx].append(question_round_predictions[round_idx])
+                        round_data['brier_scores_by_round'][round_idx].append(question_round_brier_scores[round_idx])
             
             question_strengths.extend(batch_strengths)
         
-        return question_strengths
+        # Calculate mean Brier scores by round if tracking
+        if track_rounds and round_data:
+            for round_scores in round_data['brier_scores_by_round']:
+                mean_score = statistics.mean(round_scores) if round_scores else None
+                round_data['mean_brier_by_round'].append(mean_score)
+        
+        # Return results
+        if track_rounds and round_data:
+            return {
+                'final_predictions': question_strengths,
+                'round_data': round_data
+            }
+        else:
+            return {'final_predictions': question_strengths}
     
     async def batch_run_conversation_round(self, agents: List[BatchConversationalAgent], topic: str, 
                                          conversation_length: int = 6) -> None:
@@ -350,54 +454,33 @@ class ParallelPredictionAnalyzer:
         await asyncio.gather(*conversation_tasks)
     
     async def batch_run_paired_conversation(self, agent1: BatchConversationalAgent, agent2: BatchConversationalAgent, 
-                                          topic: str, conversation_length: int) -> None:
+                                      topic: str, conversation_length: int) -> None:
         """Run a conversation between two agents using batching where possible."""
         conversation_history = []
         
         # Agent1 starts the conversation
-        response1 = await agent1.agent.start_conversation(topic, agent2.agent_id)
+        response1 = await agent1.start_conversation(topic, agent2.agent_id)
         conversation_history.append(f"Agent {agent1.agent_id}: {response1}")
         
         # Continue conversation for specified length
         current_speaker = agent2
         other_speaker = agent1
         
-        for turn in range(conversation_length - 1):
+        for turn in range(conversation_length - 1):  # -1 because we already had the first turn
             history_text = "\n".join(conversation_history)
-            response = await current_speaker.agent.continue_conversation(topic, history_text, other_speaker.agent_id)
+            response = await current_speaker.continue_conversation(topic, history_text, other_speaker.agent_id)
             conversation_history.append(f"Agent {current_speaker.agent_id}: {response}")
             
+            # Switch speakers
             current_speaker, other_speaker = other_speaker, current_speaker
         
-        # Extract perspectives from both agents in parallel
+        # Extract perspectives from both agents
         history_text = "\n".join(conversation_history)
         
-        # Store the conversation in agents' history temporarily for perspective extraction
-        lines = history_text.split('\n')
-        for agent in [agent1, agent2]:
-            agent.agent.user_history = []
-            agent.agent.model_history = []
-            for i, line in enumerate(lines):
-                if line.strip():
-                    if i % 2 == 0:  # User lines
-                        agent.agent.user_history.append(line.strip())
-                    else:  # Model lines  
-                        agent.agent.model_history.append(line.strip())
+        perspective1_task = agent1.extract_perspective(topic, history_text)
+        perspective2_task = agent2.extract_perspective(topic, history_text)
         
-        # Use the agent's improved add_perspective method
-        perspective1_task = agent1.agent.add_perspective()
-        perspective2_task = agent2.agent.add_perspective()
-        
-        await asyncio.gather(perspective1_task, perspective2_task)
-        
-        # Get the new perspectives if they were added
-        perspective1 = agent1.agent.args[-1] if agent1.agent.args else ""
-        perspective2 = agent2.agent.args[-1] if agent2.agent.args else ""
-        
-        if perspective1:
-            agent1.arguments.append(perspective1)
-        if perspective2:
-            agent2.arguments.append(perspective2)
+        perspective1, perspective2 = await asyncio.gather(perspective1_task, perspective2_task)
     
     def calculate_brier_score(self, predicted_prob: float, actual_outcome: int) -> float:
         """Calculate Brier score for a single prediction."""
@@ -466,16 +549,35 @@ class ParallelPredictionAnalyzer:
             predictor_results['argument'] = argument_strengths
         
         if self.run_conversational:
-            conversational_strengths = await self.batch_calculate_conversational_strengths(question_texts)
-            predictor_results['conversational'] = conversational_strengths
+            conv_results = await self.batch_calculate_conversational_strengths(question_texts)
+            predictor_results['conversational'] = conv_results['final_predictions']
         
         if self.run_extended:
             # For extended, reuse conversational logic but with more rounds
             old_rounds = self.args.overall_rounds
             self.args.overall_rounds += self.args.extended_rounds
-            extended_strengths = await self.batch_calculate_conversational_strengths(question_texts)
+            
+            # Check if we need to track Brier scores by round
+            track_rounds = hasattr(self.args, 'track_brier_rounds') and self.args.track_brier_rounds
+            extended_results = await self.batch_calculate_conversational_strengths(question_texts, questions if track_rounds else None, track_rounds)
+            
             self.args.overall_rounds = old_rounds  # Reset
-            predictor_results['extended'] = extended_strengths
+            predictor_results['extended'] = extended_results['final_predictions']
+            
+            # Store round data if tracking
+            if track_rounds and 'round_data' in extended_results:
+                self._extended_round_data = extended_results['round_data']
+        
+        # Store round data for aggregation if tracking
+        round_data = None
+        if hasattr(self, '_extended_round_data'):
+            # Don't store individual predictions/brier scores to avoid huge files
+            # Just store the mean brier scores by round for aggregation
+            round_data = {
+                'mean_brier_by_round': self._extended_round_data['mean_brier_by_round'],
+                'num_questions': len(questions),
+                'num_rounds': len(self._extended_round_data['mean_brier_by_round'])
+            }
         
         # Add batch results to individual question results
         for i, result in enumerate(results):
@@ -507,7 +609,7 @@ class ParallelPredictionAnalyzer:
         
         total_time = time.time() - start_time
         
-        return {
+        result_dict = {
             'split_id': self.args.split_id,
             'total_questions': len(questions),
             'mean_brier_baseline': mean_brier_baseline,
@@ -534,6 +636,12 @@ class ParallelPredictionAnalyzer:
             'total_time_minutes': total_time / 60,
             'baseline_questions_available': len(brier_scores_baseline) if brier_scores_baseline else 0
         }
+        
+        # Add round data if available
+        if round_data is not None:
+            result_dict['round_data'] = round_data
+            
+        return result_dict
     
     def print_split_summary(self, analysis_results: Dict):
         """Print summary of split analysis results."""
@@ -615,7 +723,7 @@ async def main():
     # Load and split questions
     import os
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    config_path = os.path.join(script_dir, '../../config/topics/combined.json')
+    config_path = os.path.join(script_dir, '../../config/topics/new_combined.json')
     config_path = os.path.normpath(config_path)
     questions = analyzer.load_and_split_questions(config_path, args.split_id, args.total_splits)
     
@@ -624,6 +732,9 @@ async def main():
     
     # Analyze split questions
     results = await analyzer.analyze_split_questions(questions)
+    
+    # Print split summary
+    analyzer.print_split_summary(results)
     
     # Create output filename with split info
     predictor_suffix = ""
@@ -643,6 +754,34 @@ async def main():
     
     with open(output_filename, 'w') as f:
         json.dump(results, f, indent=2)
+    
+    # Note: Brier score plots will be generated after aggregating all splits
+
+def create_brier_plot(round_data: Dict, filename: str):
+    """Create and save a plot of Brier scores over rounds."""
+    if 'mean_brier_by_round' not in round_data:
+        return
+    
+    rounds = list(range(1, len(round_data['mean_brier_by_round']) + 1))
+    brier_scores = round_data['mean_brier_by_round']
+    
+    plt.figure(figsize=(10, 6))
+    plt.plot(rounds, brier_scores, 'b-', linewidth=2, marker='o', markersize=4)
+    plt.xlabel('Conversation Round')
+    plt.ylabel('Mean Brier Score')
+    plt.title('Brier Score Evolution During Extended Conversations')
+    plt.grid(True, alpha=0.3)
+    
+    # Add improvement annotation
+    if len(brier_scores) > 1:
+        improvement = brier_scores[0] - brier_scores[-1]
+        plt.text(0.02, 0.98, f'Total Improvement: {improvement:.4f}', 
+                transform=plt.gca().transAxes, verticalalignment='top',
+                bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.8))
+    
+    plt.tight_layout()
+    plt.savefig(filename, dpi=300, bbox_inches='tight')
+    plt.close()
 
 if __name__ == "__main__":
     asyncio.run(main())
