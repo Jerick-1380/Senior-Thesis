@@ -96,6 +96,9 @@ argument_survival_data.json
 master_past_strengths.json
 past_strengths_sim_*.json
 
+# Large analysis files (> 100MB) - tracked separately or locally only
+scripts/analysis_results/**/*.json
+
 # Text output files
 combined_*.txt
 summary_results.txt
