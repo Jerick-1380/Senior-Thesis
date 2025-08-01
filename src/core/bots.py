@@ -3,7 +3,7 @@ from datetime import datetime
 import numpy as np
 import asyncio
 import time
-from helpers.advanced_prompts import (
+from src.core.advanced_prompts import (
     ConversationPrompts, 
     PerspectivePrompts, 
     ArgumentPrompts, 

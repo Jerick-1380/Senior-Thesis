@@ -16,12 +16,12 @@ import numpy as np
 # Add the project root to Python path to find helpers
 sys.path.append(os.path.join(os.path.dirname(__file__), '../..'))
 
-from helpers.model import Llama, GPT4o
-from helpers.graph import Grapher, Writer  
-from helpers.bots import Agent
-from helpers.data import ALL_NAMES, PERSONAS
-from helpers.conversation import ConversationCreator
-from helpers.advanced_prompts import (
+from src.core.model import Llama, GPT4o
+from src.core.graph import Grapher, Writer  
+from src.core.bots import Agent
+from src.core.data import ALL_NAMES, PERSONAS
+from src.core.conversation import ConversationCreator
+from src.core.advanced_prompts import (
     PredictionPrompts, 
     ArgumentPrompts,
     StrengthCalculationHelpers

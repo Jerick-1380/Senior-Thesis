@@ -1,7 +1,7 @@
 import openai
 from openai import OpenAI, RateLimitError, APIError, AsyncOpenAI
 import backoff
-from helpers.prompt_template import PromptTemplate as PT
+from src.core.prompt_template import PromptTemplate as PT
 from vllm import LLM, SamplingParams
 import numpy as np
 import aiohttp

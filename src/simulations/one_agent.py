@@ -19,11 +19,11 @@ from tqdm import tqdm
 import matplotlib.pyplot as plt
 
 # Local imports from 'helpers' directory
-from helpers.model import Llama, GPT4o
-from helpers.graph import Grapher, Writer
-from helpers.bots import UselessAgent, Agent
-from helpers.data import ALL_NAMES, PERSONAS
-from helpers.conversation import ConversationCreator
+from src.core.model import Llama, GPT4o
+from src.core.graph import Grapher, Writer
+from src.core.bots import UselessAgent, Agent
+from src.core.data import ALL_NAMES, PERSONAS
+from src.core.conversation import ConversationCreator
 
 
 def parse_args():

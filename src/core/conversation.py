@@ -4,7 +4,7 @@ import random
 import threading
 import re
 from datetime import datetime
-from helpers.bots import batch_add_perspectives
+from src.core.bots import batch_add_perspectives
 import asyncio
 
 def add_newline_after_sentence(paragraph: str) -> str:

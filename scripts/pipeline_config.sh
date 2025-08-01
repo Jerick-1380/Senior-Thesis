@@ -55,7 +55,7 @@ export VLLM_LOG_LEVEL="WARNING"
 #————————————————————————————————————————
 # Analysis Configuration
 #————————————————————————————————————————
-export ANALYSIS_SCRIPT="/home/junkais/test/src/simulations/prediction_analysis_parallel.py"
+export ANALYSIS_SCRIPT="/home/junkais/test/src/analysis/pipeline_analysis/prediction_analysis_parallel.py"
 export ANALYSIS_MODE="--baseline --adaptive-conv"
 # export ANALYSIS_MODE="--baseline --extended-conv --extended-rounds 100 --track-brier-rounds"
 

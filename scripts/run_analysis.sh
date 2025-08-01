@@ -14,7 +14,7 @@ export MKL_SERVICE_FORCE_INTEL=1
 mkdir -p $TMPDIR
 
 # Aggregate results from parallel analysis splits
-python /home/junkais/test/src/simulations/aggregate_analysis_results.py \
+python /home/junkais/test/src/analysis/pipeline_analysis/aggregate_analysis_results.py \
     --input-pattern "analysis_split_*.json" \
     --results-dir "/home/junkais/test/scripts"
 

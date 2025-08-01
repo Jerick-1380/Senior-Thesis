@@ -188,7 +188,7 @@ echo "Analysis job \${SLURM_ARRAY_TASK_ID} (slot \${SLOT}) → using GPU \${GPU_
 
 export LLM_API_BASE="http://\${VLLM_HOST_NODE}:\${LLAMA_PORT}/v1"
 
-python /home/junkais/test/src/simulations/prediction_analysis_parallel.py \\
+python /home/junkais/test/src/analysis/pipeline_analysis/prediction_analysis_parallel.py \\
     --baseline --adaptive-conv\\
     --split-id \${SLURM_ARRAY_TASK_ID} \\
     --total-splits \${NUM_PARALLEL} \\

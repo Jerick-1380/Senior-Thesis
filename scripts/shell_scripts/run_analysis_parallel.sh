@@ -33,7 +33,7 @@ echo "Analysis job ${SLURM_ARRAY_TASK_ID} (slot ${SLOT}) → using GPU ${GPU_IDX
 # Point prediction_analysis_parallel.py at the chosen vLLM instance
 export LLM_API_BASE="http://babel-15-24:${LLAMA_PORT}/v1"
 
-#python /home/junkais/test/src/simulations/prediction_analysis_parallel.py \
+#python /home/junkais/test/src/analysis/pipeline_analysis/prediction_analysis_parallel.py \
  #   --baseline --extended-conv \
  #   --extended-rounds 100 \
  #   --track-brier-rounds \
@@ -46,7 +46,7 @@ export LLM_API_BASE="http://babel-15-24:${LLAMA_PORT}/v1"
 
 
 # Run the parallel prediction analysis with dataset split
-python /home/junkais/test/src/simulations/prediction_analysis_parallel.py \
+python /home/junkais/test/src/analysis/pipeline_analysis/prediction_analysis_parallel.py \
     --baseline --adaptive-conv \
    --split-id ${SLURM_ARRAY_TASK_ID} \
     --total-splits ${NUM_PARALLEL} \
