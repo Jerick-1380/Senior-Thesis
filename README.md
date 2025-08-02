@@ -1,4 +1,4 @@
-# Senior Thesis - LLM Analysis Framework
+# Conversational Calibration - LLM Analysis Framework
 
 This repository contains a comprehensive framework for analyzing Large Language Model behavior, argument tracking, and conversational dynamics.
 
